@@ -1,0 +1,850 @@
+{
+  "questions": [
+    [
+      "Q01",
+      "Direction générale",
+      "Indispensable",
+      "Quel canal contribue le plus au montant des ventes ?",
+      "Ventes + calendrier",
+      "K01, K27",
+      "Arbitrer les moyens par canal",
+      "Calculable sur périmètre commun"
+    ],
+    [
+      "Q02",
+      "Direction générale",
+      "Indispensable",
+      "L’activité progresse-t-elle sur des mois complets comparables ?",
+      "Ventes + dates",
+      "K05",
+      "Réviser les objectifs",
+      "Calculable sous contrôle de couverture"
+    ],
+    [
+      "Q03",
+      "Direction commerciale",
+      "Indispensable",
+      "Quels produits se vendent le plus par canal ?",
+      "Ventes + item",
+      "K02",
+      "Adapter l’assortiment",
+      "Calculable avec item initial + refresh"
+    ],
+    [
+      "Q04",
+      "Direction commerciale",
+      "Utile",
+      "Quelle réduction est observée face au prix catalogue ?",
+      "Montants étendus et net payé",
+      "K08, K18, K19, K20",
+      "Examiner la politique tarifaire",
+      "Écart descriptif, causalité indisponible"
+    ],
+    [
+      "Q05",
+      "Contrôle de gestion",
+      "Indispensable",
+      "Comment se répartissent net payé, taxes et résultat des ventes du kit ?",
+      "Ventes, coût et calendrier",
+      "K01, K13, K14, K17",
+      "Réconcilier les agrégats",
+      "Calculable en unité du kit"
+    ],
+    [
+      "Q06",
+      "Contrôle de gestion",
+      "Utile",
+      "Combien de transactions et quel panier par canal ?",
+      "Tickets / commandes + net payé",
+      "K03, K04, K21",
+      "Distinguer trafic d’achat et valeur",
+      "Calculable par canal et sur paniers complets"
+    ],
+    [
+      "Q07",
+      "Responsable magasin",
+      "Indispensable",
+      "Quelles familles contribuent au volume de mon magasin ?",
+      "Ventes magasin + store + item",
+      "K02",
+      "Réallouer l’espace et les assortiments",
+      "Calculable sur ventes magasin"
+    ],
+    [
+      "Q08",
+      "Responsable magasin",
+      "Utile",
+      "Quels produits ou motifs concentrent les volumes et montants de retour ?",
+      "Retours, motifs et produits",
+      "K06, K15, K16",
+      "Examiner produits et motifs",
+      "Volumes et montants HT mesurés. Perte à qualifier."
+    ],
+    [
+      "Q09",
+      "Logistique",
+      "Indispensable",
+      "Quels niveaux de stock par entrepôt au dernier snapshot ?",
+      "Inventory + date_dim + warehouse + item",
+      "K07, K22",
+      "Prioriser les contrôles de disponibilité",
+      "Calculable avec couverture"
+    ],
+    [
+      "Q10",
+      "Logistique",
+      "Utile",
+      "Quels entrepôts ont des niveaux nuls observés ?",
+      "Inventory et maillage attendu",
+      "K22",
+      "Vérifier ruptures et qualité",
+      "Zéros observés, rupture magasin indisponible"
+    ],
+    [
+      "Q11",
+      "Équipe Data",
+      "Indispensable",
+      "Quelle part des clics possède un client identifié ?",
+      "Web_clickstreams + customer",
+      "K11, K24",
+      "Qualifier la segmentation",
+      "Calculable, couverture seulement"
+    ],
+    [
+      "Q12",
+      "Équipe Data",
+      "Complémentaire",
+      "Quelles familles d’articles recueillent les avis les mieux notés ?",
+      "Product_reviews + item",
+      "K10, K23",
+      "Prioriser l’exploration des avis",
+      "Calculable, biais de sélection"
+    ],
+    [
+      "Q13",
+      "Direction commerciale",
+      "Utile",
+      "Combien de clients identifiés ont acheté par canal ?",
+      "Ventes + customer",
+      "K09",
+      "Comparer la couverture de clientèle",
+      "Calculable selon rôle client"
+    ],
+    [
+      "Q14",
+      "Contrôle de gestion",
+      "Utile",
+      "Quelle part des quantités vendues revient à terme ?",
+      "Retour rattaché + cohorte vente close",
+      "K12",
+      "Cibler les causes des retours",
+      "Suspendu, rattachement et maturité insuffisants"
+    ],
+    [
+      "Q15",
+      "Logistique",
+      "Utile",
+      "Quel délai s’écoule entre vente web et expédition ?",
+      "Dates vente et expédition web, calendrier",
+      "K25",
+      "Examiner les délais par entrepôt",
+      "Calculable à la ligne, délai livraison absent"
+    ],
+    [
+      "Q16",
+      "Direction commerciale",
+      "Complémentaire",
+      "Le prix courant se situe-t-il au-dessus des offres concurrentes comparables ?",
+      "Produit et prix de marché, fenêtres de validité",
+      "K26",
+      "Qualifier un comparatif de prix",
+      "Diagnostic exploratoire, comparabilité à valider"
+    ]
+  ],
+  "kpis": [
+    [
+      "K01",
+      "Montant net payé hors taxe",
+      "Suivre la valeur des ventes avant retours",
+      "SUM(ss_net_paid) en magasin et SUM(ws_net_paid) en web. Total par addition sur un périmètre aligné",
+      "UM du kit",
+      "Ligne de vente → jour / canal",
+      "store_sales.ss_net_paid, web_sales.ws_net_paid",
+      "Date, canal, produit, magasin (physique), site (ligne web)",
+      "Quotidien après publication",
+      "Montant renseigné. Un périmètre et une base monétaire homologues pour un total multicanal.",
+      "Montant des ventes avant retours. Taxes et livraison web suivies séparément. Devise du kit non confirmée.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K02",
+      "Quantités vendues",
+      "Suivre les volumes et classer les produits",
+      "SUM(ss_quantity) ou SUM(ws_quantity)",
+      "Unités",
+      "Ligne → date × canal × produit",
+      "store_sales.ss_quantity, web_sales.ws_quantity, item.i_item_sk / i_item_id",
+      "Date, canal, produit, catégorie, magasin",
+      "Quotidien",
+      "Lignes qualifiées, version produit résolue",
+      "Les quantités ont des unités matérielles hétérogènes. Comparer les volumes d’articles au sein d’une famille cohérente.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K03",
+      "Transactions distinctes",
+      "Mesurer tickets magasin et commandes web",
+      "COUNT DISTINCT de (canal, identifiant d’en-tête) sur la version de publication",
+      "Transactions",
+      "En-tête du ticket magasin / de la commande web",
+      "store_sales.ss_ticket_number, web_sales.ws_order_number",
+      "Date de vente, canal, magasin pour le canal physique",
+      "Quotidien",
+      "Identifiant numérique renseigné, date unique par en-tête, lot accepté. Confirmer la disjonction ou traiter les chevauchements avant de réunir les lots.",
+      "Les identifiants sont communs entre canaux. Les distincts par produit ou site web se recouvrent et ne s’additionnent pas.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K04",
+      "Panier moyen net HT",
+      "Comparer la valeur moyenne des achats",
+      "SUM(net payé HT des transactions complètes) / COUNT(transactions complètes)",
+      "UM par transaction",
+      "En-tête transaction → date / canal",
+      "ss_net_paid + ss_ticket_number ; ws_net_paid + ws_order_number ; dates de vente",
+      "Date, canal, magasin physique",
+      "Quotidien",
+      "Agréger toutes les lignes. Garder les en-têtes à date unique dont les montants et les quantités satisfont les contrôles K04/K21. Dénominateur positif.",
+      "Une sélection d’articles doit, si nécessaire, retenir les paniers complets correspondants. Éviter d’attribuer un panier web à un site unique.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K05",
+      "Évolution mensuelle des ventes",
+      "Repérer accélérations et ralentissements",
+      "100 × (net payé HT du mois courant − net payé HT du mois précédent) / net payé HT du mois précédent",
+      "%",
+      "Mois civil et canal",
+      "Sources K01 + date_dim.d_date",
+      "Mois, canal, magasin à périmètre constant",
+      "Mensuel après clôture",
+      "Mois civils consécutifs, couverture confirmée, univers et définition stables, mois précédent strictement positif.",
+      "La présence de toutes les dates atteste la couverture du calendrier observé. La clôture métier doit être confirmée avant publication.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K06",
+      "Unités retournées",
+      "Comparer volumes et motifs de retour",
+      "SUM(sr_return_quantity) ou SUM(wr_return_quantity)",
+      "Unités",
+      "Ligne de retour → date de retour / canal / produit",
+      "store_returns.sr_return_quantity, web_returns.wr_return_quantity, reason.r_reason_sk",
+      "Date du retour, canal, produit, motif, magasin si physique",
+      "Quotidien",
+      "Inclure toutes les lignes valides du lot. Réunir les lots seulement après validation de la règle de refresh.",
+      "Rapporter les événements à leur date de retour. Les ventes d’origine ne sont pas requises pour cette mesure.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K07",
+      "Quantité de stock observée",
+      "Piloter la disponibilité entrepôt",
+      "SUM(inv_quantity_on_hand) des triplets avec quantité entière non négative à une seule date de snapshot",
+      "Unités",
+      "Date × produit × entrepôt",
+      "inventory.inv_quantity_on_hand, inv_date_sk, inv_item_sk, inv_warehouse_sk",
+      "Snapshot, entrepôt, produit, catégorie",
+      "À chaque lot accepté",
+      "Choisir une date complète pour le périmètre ou indiquer sa couverture. Publier valeurs connues, triplets observés et attendus si le maillage est défini.",
+      "Les quantités absentes restent inconnues. Le stock est semi-additif dans le temps et ne mesure ni mouvements ni rupture en rayon.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K08",
+      "Écart net au tarif catalogue",
+      "Suivre l’écart entre le tarif de référence et le montant payé",
+      "100 × SUM(ext_list_price − net_paid) / SUM(ext_list_price), sur les mêmes lignes",
+      "%",
+      "Ligne de vente → période / canal",
+      "store_sales.ss_ext_list_price, ss_net_paid ; web_sales.ws_ext_list_price, ws_net_paid",
+      "Période, canal, produit, magasin physique",
+      "Hebdo / mensuel",
+      "Montants de liste étendus et net payé valides sur la même ligne ; somme catalogue strictement positive.",
+      "L’écart intègre le passage du prix catalogue au net payé. Les coupons K18 et remises K19 sont des champs propres ; ne pas les additionner à K08.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K09",
+      "Clients acheteurs identifiés",
+      "Suivre la clientèle observable",
+      "COUNT DISTINCT du client de vente magasin ou de facturation web",
+      "Clients identifiés",
+      "Client × période / canal",
+      "store_sales.ss_customer_sk, web_sales.ws_bill_customer_sk, customer.c_customer_sk",
+      "Canal, période, géographie autorisée",
+      "Mensuel",
+      "Prendre les clés client résolues. Afficher le nombre de lignes sans client. Recalculer les distincts pour chaque filtre.",
+      "Les rôles web diffèrent. Recalculer pour un total multicanal après validation de l’identité commune.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K10",
+      "Note moyenne des avis",
+      "Repérer les familles d’articles à examiner",
+      "SUM(pr_review_rating valide) / COUNT(avis ayant une note valide)",
+      "Note sur 5",
+      "Avis → produit / période",
+      "product_reviews.pr_review_rating, pr_review_sk, pr_item_sk, pr_review_date",
+      "Date d’avis, produit, catégorie",
+      "Hebdo / mensuel",
+      "Clé d’avis unique ; note entière dans [1,5]. Fournir le nombre d’avis notés en plus de K23 si des notes manquent.",
+      "Avis synthétiques et sélection des auteurs. Aucun lien causal avec la vente.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K11",
+      "Part des clics avec client résolu",
+      "Mesurer la couverture d’attribution",
+      "100 × COUNT(lignes de clic dont wcs_user_sk est résolu) / COUNT(toutes les lignes de clic valides)",
+      "%",
+      "Ligne de clic → période / page",
+      "web_clickstreams.wcs_user_sk, wcs_click_date_sk, wcs_web_page_sk, customer.c_customer_sk",
+      "Date, page",
+      "Quotidien",
+      "Conserver les clics anonymes et non résolus au dénominateur. Exiger une dimension client unique par clé.",
+      "Couverture des événements et non taux de conversion. Pas d’identifiant de session attesté.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K12",
+      "Taux d’unités retournées par cohorte",
+      "Mesurer les retours associés à une période de vente",
+      "100 × SUM(unités retournées attribuées aux lignes d’une cohorte) / SUM(unités vendues de cette même cohorte arrivée à maturité)",
+      "%",
+      "Cohorte achat par date / canal / article",
+      "Champs K02, K06 et identifiant de ligne d’origine à obtenir",
+      "Canal, cohorte vente, produit",
+      "Après clôture de la fenêtre de retour",
+      "Identifiant de ligne d’origine, produits et canal comparables, traitement des retours multiples, historique de ventes couvert, délai de maturité et dénominateur positif.",
+      "Le couple en-tête–produit reste ambigu et une grande partie du refresh est sans vente candidate. Aucun taux de cohorte calculé.",
+      "Non calculable au J1 · suspendu"
+    ],
+    [
+      "K13",
+      "Résultat des ventes selon le kit",
+      "Diagnostiquer les écarts nets sur les ventes",
+      "SUM(ss_net_profit) ou SUM(ws_net_profit), conserver les signes",
+      "UM du kit",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_net_profit ; web_sales.ws_net_profit",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Ventes seules, même périmètre que K01, montants valides.",
+      "Mesure synthétique de la source. Aucun compte de résultat, coût complet, marge comptable ou effet causal ne peut en être déduit.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K14",
+      "Taux de résultat des ventes selon le kit",
+      "Rapporter le résultat du kit au net payé",
+      "100 × SUM(net_profit) / SUM(net_paid) sur lignes ayant les deux valeurs",
+      "%",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_net_profit, ss_net_paid ; web_sales.ws_net_profit, ws_net_paid",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Dénominateur strictement positif. Sommes sur les mêmes lignes. Conserver les résultats négatifs.",
+      "Ratio pondéré par le montant, à recalculer en cas de changement de périmètre. Le sens du résultat est celui de K13.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K15",
+      "Montant HT des retours",
+      "Suivre la valeur retournée par canal et motif",
+      "SUM(sr_return_amt) ou SUM(wr_return_amt)",
+      "UM du kit",
+      "Ligne de retour → date du retour / canal",
+      "store_returns.sr_return_amt ; web_returns.wr_return_amt",
+      "Date de retour, canal, produit, motif",
+      "Quotidien",
+      "Mesures valides. Laisser les lots traçables.",
+      "Montant HT du retour enregistré. Les moyens de remboursement et le moment de la vente sont des informations distinctes.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K16",
+      "Pertes de retour enregistrées",
+      "Suivre le coût net des retours tel que codé dans le kit",
+      "SUM(sr_net_loss) ou SUM(wr_net_loss)",
+      "UM du kit",
+      "Ligne de retour → date du retour / canal",
+      "store_returns.sr_net_loss ; web_returns.wr_net_loss",
+      "Date de retour, canal, produit, motif",
+      "Mensuel",
+      "Sommes à la ligne de retour à titre de contrôle. Bloquer la publication comme coût métier jusqu’à validation de la formule.",
+      "Le champ vaut port retour + deux fois la taxe dans tous les fichiers contrôlés. La formule de l’annexe B.2 diverge sur 77 210 lignes. Ne pas ajouter cette mesure au montant K15.",
+      "Calculable sous conditions · descriptif"
+    ],
+    [
+      "K17",
+      "Taxes sur les ventes",
+      "Réconcilier le passage du HT au TTC",
+      "SUM(ss_ext_tax) ou SUM(ws_ext_tax), avec contrôle TTC − net payé",
+      "UM du kit",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_ext_tax, ss_net_paid_inc_tax, ss_net_paid ; mêmes champs ws_ dans web_sales",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Taxes des ventes, sans taxe des retours. Montants valides, conserver les zéros.",
+      "Ce champ du kit ne constitue pas une déclaration de taxes ni une règle fiscale.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K18",
+      "Coupons enregistrés",
+      "Suivre l’usage des coupons en valeur",
+      "SUM(ss_coupon_amt) ou SUM(ws_coupon_amt)",
+      "UM du kit",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_coupon_amt ; web_sales.ws_coupon_amt",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Sommer toutes les lignes du périmètre, y compris les coupons à zéro.",
+      "Conserver les coupons séparément de K19. Leur montant ne mesure pas l’effet incrémental d’une promotion.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K19",
+      "Remises de prix enregistrées",
+      "Suivre l’écart catalogue–prix de vente stocké",
+      "SUM(ss_ext_discount_amt) ou SUM(ws_ext_discount_amt)",
+      "UM du kit",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_ext_discount_amt ; web_sales.ws_ext_discount_amt",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Champ étendu à la quantité. Contrôler l’identité catalogue étendu − vente étendue.",
+      "La remise de prix et le coupon sont des composantes distinctes. Le champ promotion n’identifie pas une cause.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K20",
+      "Prix net moyen par unité",
+      "Comparer le niveau de prix payé à périmètre comparable",
+      "SUM(net_paid) / SUM(quantity) sur les mêmes lignes",
+      "UM par unité",
+      "Ligne de vente → période et canal",
+      "store_sales.ss_net_paid, ss_quantity ; web_sales.ws_net_paid, ws_quantity",
+      "Période, canal, produit, magasin physique",
+      "Mensuel",
+      "Net valide, quantité strictement positive, univers comparable.",
+      "Prix moyen pondéré par les unités. Des changements de composition produit peuvent modifier le prix moyen.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K21",
+      "Quantité moyenne par transaction",
+      "Comprendre le volume typique d’achat",
+      "SUM(quantité des transactions complètes) / COUNT(transactions complètes)",
+      "Unités par transaction",
+      "En-tête → période / canal",
+      "store_sales.ss_quantity, ss_ticket_number ; web_sales.ws_quantity, ws_order_number ; contrôles de K04",
+      "Période, canal, magasin physique",
+      "Quotidien",
+      "Même univers de transactions que K04. Calcul préalable à l’en-tête. Dénominateur positif.",
+      "Une transaction peut mêler des articles hétérogènes. Les segments qui partagent des transactions ne sont pas additifs.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K22",
+      "Part des positions de stock à zéro",
+      "Repérer les positions d’entrepôt à examiner",
+      "100 × COUNT(triplets dont inv_quantity_on_hand = 0) / COUNT(triplets dont quantité est connue et ≥ 0)",
+      "%",
+      "Une date × produit × entrepôt",
+      "inventory.inv_date_sk, inv_item_sk, inv_warehouse_sk, inv_quantity_on_hand",
+      "Snapshot, entrepôt, catégorie",
+      "À chaque snapshot",
+      "Compter chaque triplet une fois, sélectionner une date, publier couverture et valeurs exclues.",
+      "Le dénominateur exclut les valeurs inconnues et le taux se lit avec la couverture. Un zéro observé ne mesure pas la rupture en rayon.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K23",
+      "Nombre d’avis produits",
+      "Mesurer la base d’avis qui accompagne K10",
+      "COUNT DISTINCT(pr_review_sk) des avis admissibles",
+      "Avis",
+      "Avis → produit et période",
+      "product_reviews.pr_review_sk, pr_item_sk, pr_review_date",
+      "Date d’avis, produit, catégorie",
+      "Mensuel",
+      "Clé unique vérifiée par lot. Résoudre le produit avant les ventilations.",
+      "Mesure le nombre d’avis du kit, avec ou sans note selon couverture ; ne mesure pas le nombre de clients.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K24",
+      "Événements de navigation observés",
+      "Dimensionner le trafic observé et le pipeline",
+      "COUNT(*) des lignes valides du flux web_clickstreams",
+      "Lignes d’événement",
+      "Ligne de clic → date / page",
+      "web_clickstreams.wcs_click_date_sk, wcs_web_page_sk ; fichier à six positions",
+      "Jour, page, présence ou non d’un client",
+      "Quotidien",
+      "Conserver les événements anonymes. Contrôler largeur, date et page ; tracer le lot de livraison.",
+      "Le flux ne fournit pas de clé d’événement unique attestée. Les lignes ne comptent ni sessions, ni visiteurs, ni conversions.",
+      "Vérifié / calculable"
+    ],
+    [
+      "K25",
+      "Délai moyen avant expédition web",
+      "Suivre la préparation des lignes web",
+      "SUM(date d’expédition − date de vente, en jours) / COUNT(lignes web avec les deux dates résolues et un délai ≥ 0)",
+      "Jours calendaires",
+      "Ligne de vente web → période / entrepôt",
+      "web_sales.ws_ship_date_sk, ws_sold_date_sk, ws_order_number ; date_dim.d_date_sk, d_date",
+      "Date de vente, entrepôt, mode d’expédition",
+      "Quotidien",
+      "Résoudre les deux rôles date ; exclure et comptabiliser délais négatifs et dates manquantes ; dénominateur positif.",
+      "Délai d’expédition à la ligne, hors livraison. Toute mesure à la commande exige une règle sur les expéditions partielles.",
+      "Calculable sous conditions"
+    ],
+    [
+      "K26",
+      "Écart au prix concurrent",
+      "Évaluer la comparabilité des données de prix",
+      "Diagnostic : moyenne par produit de (i_current_price − médiane des prix concurrents actifs à la date)",
+      "UM par produit",
+      "Date d’observation × produit ; dédoublonnage par concurrent",
+      "item.i_current_price, i_rec_start_date, i_rec_end_date ; item_marketprices.imp_item_sk, imp_competitor, imp_competitor_price, imp_start_date, imp_end_date",
+      "Date d’observation, catégorie, comparables",
+      "Mensuel",
+      "Prix positifs, dates de validité résolues, une offre par concurrent et produit. Borne de fin exclusive pour le diagnostic.",
+      "Devise, unité, taxe, périmètre et convention de validité à confirmer. Le diagnostic ne reconstitue pas la compétitivité des ventes.",
+      "À valider · diagnostic uniquement"
+    ],
+    [
+      "K27",
+      "Part du net payé par canal",
+      "Comparer la contribution des canaux",
+      "100 × net payé HT du canal / somme du net payé HT des canaux retenus",
+      "%",
+      "Période commune × canal",
+      "store_sales.ss_net_paid, ss_sold_date_sk ; web_sales.ws_net_paid, ws_sold_date_sk ; date_dim.d_date",
+      "Dates communes, canal",
+      "Mensuel",
+      "Même période, même définition K01, mêmes filtres de fond ; base monétaire homogène confirmée ; dénominateur positif.",
+      "Part sur la valeur payée avant retours. Recalculer le total de référence après chaque changement d’univers.",
+      "Calculable sous conditions"
+    ]
+  ],
+  "architecture": [
+    [
+      "Windows + Python",
+      "Existant, exécuté J1",
+      "Exploration et preuves en lecture seule",
+      "Python standard pour profiling ; dépendances locales pour les rendus"
+    ],
+    [
+      "Linux / Ubuntu",
+      "Obligatoire parcours, proposé",
+      "Hôte local des services",
+      "Versions, mémoire et disque à mesurer avant installation"
+    ],
+    [
+      "Hadoop / HDFS",
+      "Obligatoire parcours, proposé",
+      "Stockage des zones et reprise de fichiers",
+      "Mode pseudo-distribué proposé en formation, pas de haute disponibilité"
+    ],
+    [
+      "Apache NiFi",
+      "Obligatoire parcours, proposé",
+      "Ingestion batch, provenance et suivi des dépôts",
+      "Source locale lue sans déplacement, HDFS cible, reprise via manifeste"
+    ],
+    [
+      "Python / Spark / PySpark",
+      "Obligatoire parcours, proposé",
+      "Validation et transformations Silver/Gold",
+      "PySpark distribue les traitements si le volume le justifie"
+    ],
+    [
+      "Parquet",
+      "Format de référence, proposé",
+      "Fichiers colonnaires typés en Silver/Gold",
+      "Ne confère pas de transactions à l’échelle d’une table"
+    ],
+    [
+      "SQL / restitution BI",
+      "Proposé, choix à valider",
+      "Expose les KPI à partir de Gold",
+      "Interface SQL et outil BI à choisir selon l’environnement"
+    ],
+    [
+      "HBase",
+      "Facultatif, non déployé",
+      "Approfondissement NoSQL",
+      "Aucun besoin de lecture par clé haute fréquence établi au J1"
+    ],
+    [
+      "Delta Lake",
+      "Facultatif, non déployé",
+      "Couche de tables transactionnelles",
+      "Réexaminer si mises à jour, concurrence ou time travel requis"
+    ],
+    [
+      "PDGF",
+      "Selon disponibilité du kit",
+      "Génération mentionnée dans le contexte benchmark",
+      "Version et usage pour cette livraison non vérifiés"
+    ],
+    [
+      "ADLS Gen2",
+      "Objectif obligatoire du parcours J4",
+      "Stockage cloud à espace de noms hiérarchique",
+      "Projection J1, tenant et région à valider"
+    ],
+    [
+      "Azure Data Factory",
+      "Étudié, non déployé",
+      "Copie et orchestration Azure",
+      "IR et connectivité à valider selon le chemin source"
+    ],
+    [
+      "Azure Synapse Analytics",
+      "Étudié, non déployé",
+      "Spark pour transformations et SQL serverless pour Gold",
+      "Quotas, compatibilité, coûts et accès à mesurer au J4"
+    ]
+  ],
+  "compare": [
+    [
+      "Structure / formats",
+      "Schéma intégré, données typées, tables SQL",
+      "Formats natifs en brut, Parquet en zones préparées",
+      "Fichiers ouverts et métadonnées de tables"
+    ],
+    [
+      "Variété / souplesse",
+      "Transformations avant intégration, souplesse via zones dédiées",
+      "Conserve événements et textes, rejouable",
+      "Conserve la diversité et stabilise les tables exposées"
+    ],
+    [
+      "Traitements / requêtes",
+      "SQL OLAP, optimiseur, agrégats",
+      "ELT Python/Spark, performance selon lecture et partitions",
+      "Moteurs analytiques à choisir pour le format de table"
+    ],
+    [
+      "Transactions",
+      "Transactions gérées par le moteur",
+      "Publication contrôlée à concevoir, pas d’ACID multi-fichiers via Parquet",
+      "Transactions et instantanés selon la couche choisie"
+    ],
+    [
+      "Évolutivité / coûts",
+      "Coût du calcul, de l’intégration et de la capacité",
+      "Stockage extensible, scans et exploitation à maîtriser",
+      "Coût du calcul, catalogue, métadonnées, compaction"
+    ],
+    [
+      "Qualité / gouvernance",
+      "Contraintes et gouvernance du modèle intégré",
+      "Contrats de schéma et contrôles à implémenter",
+      "Schémas et historique de table selon moteur, politiques toujours nécessaires"
+    ],
+    [
+      "Sécurité",
+      "Accès centralisés aux tables et vues",
+      "Contrôles sur fichiers, chemins et moteurs",
+      "Contrôles sur fichiers et catalogue, à harmoniser"
+    ],
+    [
+      "Pertinence Retail",
+      "Très bon pour les marts ; brut et rejeu demandent un espace séparé",
+      "Retenu pour lots de forme variée, historisation et Gold en étoile",
+      "Évolution si le refresh exige des mutations concurrentes ou du time travel"
+    ]
+  ],
+  "azure": [
+    [
+      "Collecte",
+      "NiFi batch et registre de lot",
+      "ADF Copy et pipelines, IR selon réseau",
+      "Même manifeste et mêmes clés d’idempotence"
+    ],
+    [
+      "Stockage",
+      "HDFS, répertoires par zone",
+      "Compte ADLS Gen2 HNS et systèmes de fichiers",
+      "Convention de noms, ACL et version de publication"
+    ],
+    [
+      "Transformation",
+      "PySpark + contrats Python",
+      "Synapse Spark étudié, jobs paramétrés",
+      "Rejouer les tests de typage, FK et précision DECIMAL"
+    ],
+    [
+      "Exposition",
+      "SQL et BI sous Linux, moteur à choisir",
+      "Vues Synapse SQL serverless + BI",
+      "Confirmer lecture Parquet, mode Import et sécurité"
+    ],
+    [
+      "Identité",
+      "Identités de services et groupes OS/HDFS",
+      "Microsoft Entra ID, identités managées, RBAC/ACL",
+      "Contrôler les accès par zone et identité"
+    ],
+    [
+      "Suivi",
+      "Journaux NiFi, Spark, registre de contrôles",
+      "Suivi ADF et Synapse, Azure Monitor si activé",
+      "Conserver les mêmes identifiants, seuils et événements"
+    ],
+    [
+      "Dépenses / limites",
+      "Matériel, disque, RAM, exploitation",
+      "Stockage, opérations, IR, Spark, scans SQL, logs et transferts",
+      "Budget et quotas à mesurer avant le pilote"
+    ]
+  ],
+  "kpi_domains": {
+    "K01": "Ventes",
+    "K02": "Ventes",
+    "K03": "Ventes",
+    "K04": "Ventes",
+    "K05": "Ventes",
+    "K06": "Retours",
+    "K07": "Stocks et logistique",
+    "K08": "Finance",
+    "K09": "Clients",
+    "K10": "Web et avis",
+    "K11": "Qualité des données",
+    "K12": "Retours",
+    "K13": "Finance",
+    "K14": "Finance",
+    "K15": "Retours",
+    "K16": "Retours",
+    "K17": "Finance",
+    "K18": "Finance",
+    "K19": "Finance",
+    "K20": "Finance",
+    "K21": "Ventes",
+    "K22": "Stocks et logistique",
+    "K23": "Web et avis",
+    "K24": "Web et avis",
+    "K25": "Stocks et logistique",
+    "K26": "Prix concurrents",
+    "K27": "Ventes"
+  },
+  "kpi_relations": {
+    "K01": "Aucune au total. Date, produit et rôles site ou magasin pour ventiler, sur des dimensions uniques.",
+    "K02": "Produit par clé de substitution. Date et canal au grain ligne.",
+    "K03": "Dimension date 1:N. Dédupliquer les en-têtes après regroupement par canal ; dimensions magasin pour le canal physique.",
+    "K04": "Regrouper les lignes par en-tête unique avant d’appliquer les filtres. Date et magasin 1:N.",
+    "K05": "Une date de vente résolue par ligne. Agréger par mois civil avant la comparaison.",
+    "K06": "Date de retour, produit et motif 1:N. Aucune jointure aux ventes.",
+    "K07": "Date × produit × entrepôt vérifié unique. Les 180 produits du refresh complètent le référentiel.",
+    "K08": "Aucune au total ; dimensions date et produit si ventilation. Promotion uniquement pour description.",
+    "K09": "Clé du client unique dans les dimensions livrées. Rôle client magasin ou client facturé web.",
+    "K10": "Une ligne par clé d’avis ; produit 1:N. Date d’avis portée dans la source.",
+    "K11": "LEFT JOIN 0..1 par clé client, date et page comme axes ; garder les anonymes.",
+    "K12": "Rattachement validé de la ligne de retour à une ligne de vente. Le couple actuel rend 0, 1 ou N correspondances.",
+    "K13": "Aucune au total. Relier uniquement les dimensions 1:N pour ventilation.",
+    "K14": "Même fait pour numérateur et dénominateur. Recalculer au niveau de restitution.",
+    "K15": "Dimensions retour par clés uniques. Aucune jointure à une vente.",
+    "K16": "Même fait de retour ; composants de perte au même grain, pas de jointure aux ventes.",
+    "K17": "Aucune au total. Contrôle TTC − net à la ligne du canal.",
+    "K18": "Aucune au total. Promotion uniquement pour ventilation descriptive.",
+    "K19": "Aucune au total. Remise déjà étendue à la quantité.",
+    "K20": "Numérateur et dénominateur au même grain de ligne et mêmes filtres.",
+    "K21": "En-tête déterminé par canal et identifiant. Agréger les lignes avant toute segmentation.",
+    "K22": "Snapshots au grain date × produit × entrepôt. Le maillage attendu est une référence externe au dénominateur.",
+    "K23": "Clé d’avis unique ; relation produit 1:N.",
+    "K24": "Date et page M:1 pour la ventilation. Préserver la ligne physique et l’identité du lot.",
+    "K25": "Deux jointures M:1 à date_dim pour la vente et l’expédition. Aucun rattachement à une livraison.",
+    "K26": "Offres groupées par produit et concurrent avant médiane. Une seule observation agrégée par produit à la date.",
+    "K27": "Aligner les dates par calendrier et joindre deux agrégats de canal, sans rapprochement des lignes magasin/web."
+  },
+  "kpi_audit": [
+    [
+      "K01",
+      "Conservé",
+      "Qualifié par canal sur le net payé positif ou nul ; rapprochement du TTC et des taxes.",
+      "Montants DECIMAL observés complets. Devise et comparabilité des canaux à confirmer pour le total."
+    ],
+    [
+      "K02",
+      "Conservé",
+      "Grain ligne, sans dédoublonnage du couple achat × produit. Produit enrichi après résolution du référentiel.",
+      "Quantités entières et positives ; limiter les comparaisons entre familles hétérogènes."
+    ],
+    [
+      "K03",
+      "Corrigé",
+      "Distinct du couple canal–identifiant. Les 89 100 identifiants initiaux sont communs aux deux canaux.",
+      "Date d’en-tête vérifiée. Une commande web peut comporter plusieurs sites ; agrégats distincts non additifs par site et produit."
+    ],
+    [
+      "K04",
+      "Corrigé",
+      "Fixe une population commune de transactions complètes pour le numérateur et le dénominateur.",
+      "Toutes les transactions observées satisfont les contrôles de complétude testés. Calcul après agrégation des lignes du panier."
+    ],
+    [
+      "K05",
+      "Corrigé",
+      "Variation relative de K01 dans deux mois civils consécutifs aux périmètres et couvertures comparables.",
+      "Octobre et novembre 2005 sont entièrement observés ; décembre initial est partiel. La clôture métier est distincte de la couverture."
+    ],
+    [
+      "K06",
+      "Conservé",
+      "Somme des unités par date du retour. Les correspondances vente n’interviennent pas.",
+      "Quantités contrôlées sur les deux lots. Règle de réunion des lots de retours à valider."
+    ],
+    [
+      "K07",
+      "Corrigé",
+      "Somme à une date donnée, quantité inconnue distinguée de zéro et taux K22 calculé séparément.",
+      "Grain stock unique. Le 12/12, initial et refresh couvrent des triplets disjoints. L’agrégation temporelle est interdite pour un niveau de stock."
+    ],
+    [
+      "K08",
+      "Corrigé",
+      "Écart catalogue → net calculé au même grain. Sépare l’écart net, les coupons et la remise déjà enregistrée.",
+      "Contrôler la réconciliation des composantes. Aucune attribution causale à une promotion."
+    ],
+    [
+      "K09",
+      "Conservé",
+      "Distinct par rôle et canal après résolution du client ; les rôles facturation et livraison peuvent différer.",
+      "Calcul sur les clients identifiés. Suppression des lignes sans client interdite pour les agrégats de ventes."
+    ],
+    [
+      "K10",
+      "Conservé",
+      "Moyenne de notes valides d’avis à clé unique, accompagnée de l’effectif noté.",
+      "Notes de 1 à 5. La sélection des auteurs et le caractère synthétique limitent la portée."
+    ],
+    [
+      "K11",
+      "Conservé",
+      "Part des événements attribués à une clé client résolue, dénominateur incluant les anonymes.",
+      "Couverture de segmentation uniquement. Le dénominateur n’est ni un visiteur ni une session."
+    ],
+    [
+      "K12",
+      "Corrigé et suspendu",
+      "Numérateur et dénominateur portent sur la cohorte d’achat. L’attribution demande un identifiant de ligne ou une règle démontrée.",
+      "P06 : 19/426 et 29/400 retours refresh appariés, liens parfois multiples. Valider retours successifs et fenêtre de maturité."
+    ]
+  ]
+}

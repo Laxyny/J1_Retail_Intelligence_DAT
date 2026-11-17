@@ -1,0 +1,24 @@
+data/date_dim : 109573 lignes contrôlées
+data/warehouse : 5 lignes contrôlées
+data/item : 17820 lignes contrôlées
+data/customer : 99000 lignes contrôlées
+data_refresh/item : 180 lignes contrôlées
+data_refresh/customer : 1000 lignes contrôlées
+data/store_sales : 667579 lignes contrôlées
+data/web_sales : 668052 lignes contrôlées
+data/store_returns : 37902 lignes contrôlées
+data/web_returns : 38487 lignes contrôlées
+data_refresh/store_sales : 6632 lignes contrôlées
+data_refresh/web_sales : 6879 lignes contrôlées
+data_refresh/store_returns : 426 lignes contrôlées
+data_refresh/web_returns : 400 lignes contrôlées
+data/inventory : 23255100 lignes contrôlées
+data_refresh/inventory : 234900 lignes contrôlées
+data/web_page : 60 lignes contrôlées
+data/product_reviews : 89991 lignes contrôlées
+data/web_clickstreams : 6770550 lignes contrôlées
+data_refresh/product_reviews : 909 lignes contrôlées
+data_refresh/web_clickstreams : 68988 lignes contrôlées
+data/item_marketprices : 89100 lignes contrôlées
+data_refresh/item_marketprices : 900 lignes contrôlées
+{"debut": "2026-11-16T16:00:08+01:00", "fin": "2026-11-16T16:03:23+01:00", "secondes": 195.17, "statut": "succès", "commande": ["C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe", "C:/Users/Kevin GREGOIRE/Desktop/Projet/J1_Retail_Intelligence_DAT/preuves/scripts/auditer_kpi.py"], "source": "C:\\Users\\Kevin GREGOIRE\\Desktop\\Projet\\01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project", "fichiers_sha256": 23, "valeurs": 87, "champs": 86, "controles": 1180, "regle": "Calculs par lot. Réunion stock du 12/12/2005 : diagnostic de couverture."}

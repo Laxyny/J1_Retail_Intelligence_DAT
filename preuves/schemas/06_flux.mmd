@@ -1,0 +1,12 @@
+flowchart TB
+  A["Fichier reçu<br/>lot + chemin + SHA-256"] --> B{"Lot identifié<br/>et parseur connu ?"}
+  B -->|Oui| C["Bronze : octets conservés<br/>Manifeste VALIDÉ"]
+  B -->|Erreur| X["Quarantaine<br/>Motif et source"]
+  C --> D["Silver : schéma explicite<br/>Typage, clés et anti-jointures"]
+  D --> E{"Contrôles de<br/>publication satisfaits ?"}
+  E -->|Oui| F["Gold : faits conformés<br/>Agrégats + couverture"]
+  E -->|Non| X
+  F --> G["Manifeste PUBLIÉ<br/>BI lit cette version"]
+  X -.->|Correction du contrat et rejeu| D
+  classDef control fill:#fff5dd,stroke:#be8a35,color:#513410
+  class X control

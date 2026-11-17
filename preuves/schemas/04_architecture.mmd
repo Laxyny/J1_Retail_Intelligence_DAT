@@ -1,0 +1,12 @@
+flowchart TB
+  A["data<br/>Lot initial"] --> I["Ingestion batch<br/>Identité de lot et empreinte"]
+  B["data_refresh<br/>Lot séparé"] --> I
+  I --> R["Bronze<br/>Fichiers d’origine + manifeste"]
+  R --> T["Préparer, typer et contrôler"]
+  T --> S["Silver<br/>Tables Parquet + rejets tracés"]
+  T -.-> X["Quarantaine<br/>Structure et références à arbitrer"]
+  S --> G["Gold<br/>Faits, dimensions et agrégats"]
+  G --> BI["SQL / BI<br/>KPI, filtres et couverture"]
+  O["Transverse<br/>Accès, qualité, catalogue, lignage, supervision"] -.-> R & S & G
+  classDef control fill:#fff5dd,stroke:#be8a35,color:#513410
+  class X,O control

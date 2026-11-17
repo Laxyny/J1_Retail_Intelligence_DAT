@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-16T16:40:26+01:00",
+  "statut": "succès",
+  "commande": "python -B preuves/scripts/verifier_livrables.py",
+  "empreintes_sources_recontrolees": 39,
+  "pages_pdf": 44,
+  "elements_TP1": 12,
+  "figures_pdf": 7,
+  "classeurs": 4,
+  "onglets": 17,
+  "resultats_kpi_reconcilies": 87,
+  "controles_p09": 1180,
+  "captures_terminal": 6,
+  "captures_verifiees": [
+    {
+      "id": "P01",
+      "page": 39,
+      "sha256": "8ca8cb493826e7c76d1a97b7441b032c4c63a65bf98b9c27fd27c287eaacdde8",
+      "image_complete": true
+    },
+    {
+      "id": "P02",
+      "page": 40,
+      "sha256": "2aef8db5f6c27ecfd026871f97abe9eee69d922ee9a6772fc3dad1c1dad09150",
+      "image_complete": true
+    },
+    {
+      "id": "P03",
+      "page": 41,
+      "sha256": "6f9200b7d7f220346908076c120cd05598ddd8f0fd61ab78755b67c1569b84c4",
+      "image_complete": true
+    },
+    {
+      "id": "P04",
+      "page": 42,
+      "sha256": "0c9548f15350b1926f6bd396662aae36a2e11e08fccb0fee57675d9894007290",
+      "image_complete": true
+    },
+    {
+      "id": "P05",
+      "page": 43,
+      "sha256": "02d052e0b0430e2fe99839400dc1c1002f6153eaf53efda2ba179e54c85a3128",
+      "image_complete": true
+    },
+    {
+      "id": "P06",
+      "page": 44,
+      "sha256": "d5c01a953ac7352439a7080c14a5458969e879b47facf7865be35aacc358df06",
+      "image_complete": true
+    }
+  ]
+}

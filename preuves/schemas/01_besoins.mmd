@@ -1,0 +1,10 @@
+flowchart TB
+  DS["Direction / Finance<br/>Comparer les canaux"] --> D["Montant net payé<br/>Volume et évolution"]
+  CM["Commerce / Magasins<br/>Adapter l’assortiment"] --> C["Quantités et retours<br/>par produit et magasin"]
+  LG["Logistique<br/>Arbitrer la disponibilité"] --> S["Stock de clôture<br/>par entrepôt"]
+  D --> V["Ventes magasin + web<br/>Date et canal"]
+  C --> R["Ventes, retours<br/>Produit et magasin"]
+  S --> I["Inventaire<br/>Date, produit, entrepôt"]
+  S -.-> U["Mouvements & ruptures magasin<br/>Sources à obtenir"]
+  classDef gap fill:#fff5dd,stroke:#be8a35,color:#513410
+  class U gap

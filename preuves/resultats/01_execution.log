@@ -1,0 +1,39 @@
+data/customer/customer.dat                                 99000 lignes  {18: 99000}
+data/customer_address/customer_address.dat                 49500 lignes  {13: 49500}
+data/customer_demographics/customer_demographics.dat     1920800 lignes  {9: 1920800}
+data/date_dim/date_dim.dat                                109573 lignes  {28: 109573}
+data/household_demographics/household_demographics.dat        7200 lignes  {5: 7200}
+data/income_band/income_band.dat                              20 lignes  {3: 20}
+data/inventory/inventory.dat                            23255100 lignes  {4: 23255100}
+data/item/item.dat                                         17820 lignes  {22: 17820}
+data/item_marketprices/item_marketprices.dat               89100 lignes  {6: 89100}
+data/item_marketprices/item_marketprices_audit.csv             5 lignes  {0: 1, 1: 2, 8: 2}
+data/product_reviews/product_reviews.dat                   89991 lignes  {8: 89991}
+data/promotion/promotion.dat                                 300 lignes  {19: 300}
+data/reason/reason.dat                                        35 lignes  {3: 35}
+data/ship_mode/ship_mode.dat                                  20 lignes  {6: 20}
+data/store/store.dat                                          12 lignes  {29: 12}
+data/store_returns/store_returns.dat                       37902 lignes  {20: 37902}
+data/store_sales/store_sales.dat                          667579 lignes  {23: 667579}
+data/time_dim/time_dim.dat                                 86400 lignes  {10: 86400}
+data/warehouse/warehouse.dat                                   5 lignes  {14: 5}
+data/web_clickstreams/web_clickstreams.dat               6770550 lignes  {6: 6770550}
+data/web_page/web_page.dat                                    60 lignes  {14: 60}
+data/web_returns/web_returns.dat                           38487 lignes  {24: 38487}
+data/web_sales/web_sales.dat                              668052 lignes  {34: 668052}
+data/web_site/web_site.dat                                    30 lignes  {26: 30}
+data_refresh/customer/customer.dat                          1000 lignes  {18: 1000}
+data_refresh/customer_address/customer_address.dat           500 lignes  {13: 500}
+data_refresh/inventory/inventory.dat                      234900 lignes  {4: 234900}
+data_refresh/item/item.dat                                   180 lignes  {22: 180}
+data_refresh/item_marketprices/item_marketprices.dat         900 lignes  {6: 900}
+data_refresh/item_marketprices/item_marketprices_audit.csv       17986 lignes  {0: 1, 1: 2, 2: 17981, 8: 2}
+data_refresh/product_reviews/product_reviews.dat             909 lignes  {8: 909}
+data_refresh/store_returns/store_returns.dat                 426 lignes  {20: 426}
+data_refresh/store_sales/store_sales.dat                    6632 lignes  {23: 6632}
+data_refresh/web_clickstreams/web_clickstreams.dat         68988 lignes  {6: 68988}
+data_refresh/web_returns/web_returns.dat                     400 lignes  {24: 400}
+data_refresh/web_sales/web_sales.dat                        6879 lignes  {34: 6879}
+data 24 fichiers ; 1024448074 octets ; 33907541 lignes physiques
+data_refresh 12 fichiers ; 9545513 octets ; 339700 lignes physiques
+Succès en 57.6 s

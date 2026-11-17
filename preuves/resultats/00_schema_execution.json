@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-16T15:20:26+01:00",
+  "statut": "succès",
+  "reference": "https://www.tpc.org/TPC_Documents_Current_Versions/pdf/TPCX-BB_v1.7.0.pdf",
+  "sha256_pdf": "74a0934184af4435f5765a5612effdb8473d0cfea921dc1b500d800381d3ca4e",
+  "octets_pdf": 2845686,
+  "pages_ddl": "120–137",
+  "tables": 23,
+  "commande_equivalente": "python -B preuves/scripts/schema_tpc.py"
+}

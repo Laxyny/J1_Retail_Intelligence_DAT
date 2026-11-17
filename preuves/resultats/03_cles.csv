@@ -1,0 +1,43 @@
+﻿lot;table;cle;valides;distinctes;repetitions;cle_vide_ou_invalide;lignes_cle_dans_initial
+data;customer_address;ca_address_sk;49500;49500;0;0;
+data;customer_address;ca_address_id;49500;49500;0;0;
+data;customer_demographics;cd_demo_sk;1920800;1920800;0;0;
+data;date_dim;d_date_sk;109573;109573;0;0;
+data;income_band;ib_income_band_sk;20;20;0;0;
+data;item;i_item_sk;17820;17820;0;0;
+data;item;i_item_id;17820;17820;0;0;
+data;reason;r_reason_sk;35;35;0;0;
+data;ship_mode;sm_ship_mode_sk;20;20;0;0;
+data;store;s_store_sk;12;12;0;0;
+data;store;s_store_id;12;12;0;0;
+data;time_dim;t_time_sk;86400;86400;0;0;
+data;warehouse;w_warehouse_sk;5;5;0;0;
+data;warehouse;w_warehouse_id;5;5;0;0;
+data;household_demographics;hd_demo_sk;7200;7200;0;0;
+data;customer;c_customer_sk;99000;99000;0;0;
+data;customer;c_customer_id;99000;99000;0;0;
+data;promotion;p_promo_sk;300;300;0;0;
+data;web_page;wp_web_page_sk;60;60;0;0;
+data;web_page;wp_web_page_id;60;60;0;0;
+data;web_site;web_site_sk;30;30;0;0;
+data;web_site;web_site_id;30;30;0;0;
+data_refresh;customer_address;ca_address_sk;500;500;0;0;0
+data_refresh;customer_address;ca_address_id;500;500;0;0;0
+data_refresh;item;i_item_sk;180;180;0;0;0
+data_refresh;item;i_item_id;180;180;0;0;0
+data_refresh;customer;c_customer_sk;1000;1000;0;0;0
+data_refresh;customer;c_customer_id;1000;1000;0;0;0
+data;inventory;inv_date_sk + inv_item_sk + inv_warehouse_sk;23255100;23255100;0;0;
+data_refresh;inventory;inv_date_sk + inv_item_sk + inv_warehouse_sk;234900;234900;0;0;0
+data;store_sales;ss_ticket_number + ss_item_sk;667579;663443;4136;0;
+data_refresh;store_sales;ss_ticket_number + ss_item_sk;6632;6586;46;0;0
+data;web_sales;ws_order_number + ws_item_sk;668052;663976;4076;0;
+data_refresh;web_sales;ws_order_number + ws_item_sk;6879;6840;39;0;0
+data;store_returns;sr_ticket_number + sr_item_sk;37902;37744;158;0;
+data_refresh;store_returns;sr_ticket_number + sr_item_sk;426;426;0;0;2
+data;web_returns;wr_order_number + wr_item_sk;38487;38337;150;0;
+data_refresh;web_returns;wr_order_number + wr_item_sk;400;399;1;0;2
+data;item_marketprices;imp_sk;89100;89100;0;0;
+data_refresh;item_marketprices;imp_sk;900;900;0;0;0
+data;product_reviews;pr_review_sk;89991;89991;0;0;
+data_refresh;product_reviews;pr_review_sk;909;909;0;0;0

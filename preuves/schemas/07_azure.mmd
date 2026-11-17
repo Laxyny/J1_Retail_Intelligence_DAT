@@ -1,0 +1,12 @@
+flowchart TB
+  S["Sources locales autorisées<br/>Lot initial et refresh"]
+  S -.->|Connectivité privée via IR autohébergé si requis| A["Azure Data Factory<br/>Copie, orchestration et suivi"]
+  A --> B["ADLS Gen2 · Bronze<br/>Dépôt et manifeste"]
+  B --> T["Synapse Spark étudié<br/>Transformations et contrôles"]
+  T --> G["ADLS Gen2 · Silver et Gold<br/>Parquet versionné"]
+  T -.-> Q["ADLS · quarantine<br/>Accès restreint"]
+  G --> V["Synapse SQL serverless<br/>Vues Gold"]
+  V --> BI["Consommateurs BI<br/>Identité ou groupe métier"]
+  E["Microsoft Entra ID<br/>Identités managées, RBAC et ACL"] -.-> A & T & V
+  classDef control fill:#fff5dd,stroke:#be8a35,color:#513410
+  class Q,E control

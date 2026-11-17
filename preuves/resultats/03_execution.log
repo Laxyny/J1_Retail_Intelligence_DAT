@@ -1,0 +1,24 @@
+data/inventory : 23255100 lignes / 23255100 grains distincts
+data_refresh/inventory : 234900 lignes / 234900 grains distincts
+data/store_sales : 667579 lignes contrôlées
+data_refresh/store_sales : 6632 lignes contrôlées
+data/web_sales : 668052 lignes contrôlées
+data_refresh/web_sales : 6879 lignes contrôlées
+data/store_returns : 37902 lignes contrôlées
+data_refresh/store_returns : 426 lignes contrôlées
+data/web_returns : 38487 lignes contrôlées
+data_refresh/web_returns : 400 lignes contrôlées
+data/item_marketprices : 89100 lignes contrôlées
+data_refresh/item_marketprices : 900 lignes contrôlées
+data/product_reviews : 89991 lignes contrôlées
+data_refresh/product_reviews : 909 lignes contrôlées
+data/web_clickstreams : 6770550 lignes contrôlées
+data_refresh/web_clickstreams : 68988 lignes contrôlées
+data/store : 12 lignes contrôlées
+data/household_demographics : 7200 lignes contrôlées
+data/customer : 99000 lignes contrôlées
+data_refresh/customer : 1000 lignes contrôlées
+data/promotion : 300 lignes contrôlées
+data/web_page : 60 lignes contrôlées
+data/web_site : 30 lignes contrôlées
+Succès en 113.7 s. 142 relations par lot, 42 clés candidates.

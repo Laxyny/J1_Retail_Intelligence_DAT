@@ -1,0 +1,16 @@
+{
+  "debut": "2026-11-16T16:00:08+01:00",
+  "fin": "2026-11-16T16:03:23+01:00",
+  "secondes": 195.17,
+  "statut": "succès",
+  "commande": [
+    "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "C:/Users/Kevin GREGOIRE/Desktop/Projet/J1_Retail_Intelligence_DAT/preuves/scripts/auditer_kpi.py"
+  ],
+  "source": "C:\\Users\\Kevin GREGOIRE\\Desktop\\Projet\\01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project",
+  "fichiers_sha256": 23,
+  "valeurs": 87,
+  "champs": 86,
+  "controles": 1180,
+  "regle": "Calculs par lot. Réunion stock du 12/12/2005 : diagnostic de couverture."
+}

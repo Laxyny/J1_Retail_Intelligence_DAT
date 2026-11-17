@@ -1,0 +1,43 @@
+p02 • Résumé exécutif • bas 304 pt
+p03 • Sommaire • bas 252 pt
+p04 • 01 · Cadrage métier • bas 120 pt
+p05 • 02 · Questions décisionnelles • bas 228 pt
+p06 • Questions opérationnelles et qualité • bas 177 pt
+p07 • Du besoin métier aux sources • bas 217 pt
+p08 • 03 · Ventes et activité commerciale • bas 177 pt
+p09 • Finance, prix et remises • bas 261 pt
+p10 • Retours, montants et rattachement • bas 310 pt
+p11 • Stocks et départ des expéditions web • bas 298 pt
+p12 • Clients, navigation et avis • bas 302 pt
+p13 • Prix concurrents et contrôles de publication • bas 225 pt
+p14 • 04 · Source et protocole de lecture • bas 200 pt
+p15 • Lot initial · Dimensions et référentiels • bas 281 pt
+p16 • Lot initial · Faits, événements et audit • bas 178 pt
+p17 • Lot rafraîchi · Contenu et périmètre • bas 300 pt
+p18 • Colonnes et types structurants • bas 214 pt
+p19 • 05 · Profil de qualité • bas 209 pt
+p20 • Clés, cardinalités et intégrité • bas 236 pt
+p21 • Transactions et retours • bas 230 pt
+p22 • Rafraîchissement et fenêtres métier • bas 256 pt
+p23 • 06 · Limites et validations attendues • bas 203 pt
+p24 • 07 · Choix d’architecture analytique • bas 243 pt
+p25 • 08 · Architecture logique cible • bas 152 pt
+p26 • 09 · Flux, contrôles et usages • bas 231 pt
+p27 • Bronze, Silver et Gold • bas 182 pt
+p28 • Architecture technique locale • bas 150 pt
+p29 • 10 · Statut des composants • bas 234 pt
+p30 • Modèle logique des données retail • bas 259 pt
+p31 • Relations du modèle en étoile • bas 298 pt
+p32 • Grains et règles de publication Gold • bas 250 pt
+p33 • 11 · Accès et protection des données • bas 219 pt
+p34 • Lignage, qualité et exploitation • bas 360 pt
+p35 • 12 · Architecture cible Azure • bas 146 pt
+p36 • Correspondances, coûts et quotas • bas 225 pt
+p37 • Couverture du TP1 et preuves • bas 248 pt
+p38 • Conclusion • bas 298 pt
+p39 • P01 · Inventaire des deux lots • bas 235 pt
+p40 • P02 · Colonnes des ventes magasin • bas 286 pt
+p41 • P03 · Largeur et champs vides • bas 194 pt
+p42 • P04 · Unicité et répétitions de clés • bas 166 pt
+p43 • P05 · Références résolues par le refresh • bas 179 pt
+p44 • P06 · Retours et contrôles de mesures • bas 291 pt

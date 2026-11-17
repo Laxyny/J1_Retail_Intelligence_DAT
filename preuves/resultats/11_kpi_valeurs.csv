@@ -1,0 +1,88 @@
+﻿kpi;lot;perimetre;unite;numerateur;denominateur;valeur;note
+K01;data;Magasin;UM du kit;1150529586.37;;1150529586.37;
+K02;data;Magasin;unités;33755474;;33755474;
+K03;data;Magasin;transactions;89100;;89100;
+K04;data;Magasin;UM par transaction;1150529586.37;89100;12912.78997048260381593714927;
+K05;data;Magasin · nov. / oct. 2005;%;-49499.57;19395071.49;-0.2552172598359419607377791625;
+K08;data;Magasin;%;1403408689.97;2553938276.34;54.95076772102723244312688353;
+K09;data;Magasin;clients identifiés;37336;;37336;client de vente
+K13;data;Magasin;UM du kit;-552553374.82;;-552553374.82;
+K14;data;Magasin;%;-552553374.82;1150529586.37;-48.02600310030652167243492944;
+K17;data;Magasin;UM du kit;51688496.63;;51688496.63;
+K18;data;Magasin;UM du kit;126694418.24;;126694418.24;
+K19;data;Magasin;UM du kit;1276714271.73;;1276714271.73;
+K20;data;Magasin;UM par unité;1150529586.37;33755474;34.08423731125801995848140068;
+K21;data;Magasin;unités par transaction;33755474;89100;378.8493153759820426487093154;
+K01;data;Web;UM du kit;1535374825.67;;1535374825.67;
+K02;data;Web;unités;33724378;;33724378;
+K03;data;Web;transactions;89100;;89100;
+K04;data;Web;UM par transaction;1535374825.67;89100;17232.04069214365881032547699;
+K05;data;Web · nov. / oct. 2005;%;-997439.63;25837429.70;-3.860444485311942619431684414;
+K08;data;Web;%;1875006143.95;3410380969.62;54.97937505084429394975213919;
+K09;data;Web;clients identifiés;37367;;37367;facturation
+K13;data;Web;UM du kit;-168576494.45;;-168576494.45;
+K14;data;Web;%;-168576494.45;1535374825.67;-10.97950100728252746043345253;
+K17;data;Web;UM du kit;69021450.95;;69021450.95;
+K18;data;Web;UM du kit;168867948.81;;168867948.81;
+K19;data;Web;UM du kit;1706138195.14;;1706138195.14;
+K20;data;Web;UM par unité;1535374825.67;33724378;45.52715029080743905788269839;
+K21;data;Web;unités par transaction;33724378;89100;378.5003142536475869809203143;
+K25;data;Web · ligne expédiée;jours calendaires;40414538;668052;60.49609611227868489279277661;
+K27;data;Magasin · dates communes;%;1150529586.37;2685904412.04;42.83583515528569994165100318;
+K27;data;Web · dates communes;%;1535374825.67;2685904412.04;57.16416484471430005834899682;
+K06;data;Magasin;unités;972092;;972092;
+K15;data;Magasin;UM du kit;36688696.43;;36688696.43;
+K16;data;Magasin;UM du kit;40071461.72;;40071461.72;
+K06;data;Web;unités;992087;;992087;
+K15;data;Web;UM du kit;50260175.31;;50260175.31;
+K16;data;Web;UM du kit;54391267.43;;54391267.43;
+K01;data_refresh;Magasin;UM du kit;11544261.51;;11544261.51;
+K02;data_refresh;Magasin;unités;334027;;334027;
+K03;data_refresh;Magasin;transactions;900;;900;
+K04;data_refresh;Magasin;UM par transaction;11544261.51;900;12826.95723333333333333333333;
+K08;data_refresh;Magasin;%;13856978.65;25401240.16;54.55237052488857693631601017;
+K09;data_refresh;Magasin;clients identifiés;827;;827;client de vente
+K13;data_refresh;Magasin;UM du kit;-5407365.51;;-5407365.51;
+K14;data_refresh;Magasin;%;-5407365.51;11544261.51;-46.84028948335907889529435998;
+K17;data_refresh;Magasin;UM du kit;505352.31;;505352.31;
+K18;data_refresh;Magasin;UM du kit;1298076.09;;1298076.09;
+K19;data_refresh;Magasin;UM du kit;12558902.56;;12558902.56;
+K20;data_refresh;Magasin;UM par unité;11544261.51;334027;34.56086337332012082855577543;
+K21;data_refresh;Magasin;unités par transaction;334027;900;371.1411111111111111111111111;
+K01;data_refresh;Web;UM du kit;15764416.32;;15764416.32;
+K02;data_refresh;Web;unités;347629;;347629;
+K03;data_refresh;Web;transactions;900;;900;
+K04;data_refresh;Web;UM par transaction;15764416.32;900;17516.01813333333333333333333;
+K08;data_refresh;Web;%;19110012.96;34874429.28;54.79663281818729737216792097;
+K09;data_refresh;Web;clients identifiés;847;;847;facturation
+K13;data_refresh;Web;UM du kit;-1683642.24;;-1683642.24;
+K14;data_refresh;Web;%;-1683642.24;15764416.32;-10.68001634709428937486979537;
+K17;data_refresh;Web;UM du kit;704920.45;;704920.45;
+K18;data_refresh;Web;UM du kit;1819415.35;;1819415.35;
+K19;data_refresh;Web;UM du kit;17290597.61;;17290597.61;
+K20;data_refresh;Web;UM par unité;15764416.32;347629;45.34839245287360950898803034;
+K21;data_refresh;Web;unités par transaction;347629;900;386.2544444444444444444444444;
+K25;data_refresh;Web · ligne expédiée;jours calendaires;414718;6879;60.28754179386538741096089548;
+K27;data_refresh;Magasin · dates communes;%;11544261.51;27308677.83;42.27323483716238194751151744;
+K27;data_refresh;Web · dates communes;%;15764416.32;27308677.83;57.72676516283761805248848256;
+K06;data_refresh;Magasin;unités;10808;;10808;
+K15;data_refresh;Magasin;UM du kit;408226.00;;408226.00;
+K16;data_refresh;Magasin;UM du kit;451271.27;;451271.27;
+K06;data_refresh;Web;unités;10214;;10214;
+K15;data_refresh;Web;UM du kit;505524.88;;505524.88;
+K16;data_refresh;Web;UM du kit;581787.49;;581787.49;
+K07;data;2005-12-12 · couverture du lot;unités;17446138;;17446138;35091 quantités connues sur 35100 triplets
+K22;data;2005-12-12 · couverture du lot;%;47;35091;0.1339374768459149069561995953;
+K07;data_refresh;2005-12-12 · couverture du lot;unités;27510720;;27510720;54884 quantités connues sur 54900 triplets
+K22;data_refresh;2005-12-12 · couverture du lot;%;53;54884;0.09656730558997157641571314044;
+K07;data + data_refresh;2005-12-12 · simulation de réunion;unités;44956858;;44956858;89975 quantités connues sur 90000 triplets observés
+K22;data + data_refresh;2005-12-12 · simulation de réunion;%;100;89975;0.1111419838844123367602111698;Couverture du stock à publier avec le taux, politique de refresh à valider
+K10;data;Avis du lot;note sur 5;381520;89991;4.239535064617572868397950906;
+K23;data;Avis du lot;avis;89991;;89991;
+K11;data;Navigation du lot;%;3917089;6770550;57.85481238599522933882771710;
+K24;data;Navigation du lot;lignes événement;6770550;;6770550;
+K10;data_refresh;Avis du lot;note sur 5;3818;909;4.200220022002200220022002200;
+K23;data_refresh;Avis du lot;avis;909;;909;
+K11;data_refresh;Navigation du lot;%;39821;68988;57.72163274772424189714153186;
+K24;data_refresh;Navigation du lot;lignes événement;68988;;68988;
+K26;data;2005-12-12 · diagnostic exploratoire;UM par produit;2277.720;3924;0.5804587155963302752293577982;Prix courant item moins médiane concurrente. Fin exclue, doublons concurrent exclus. Convention et équivalence à valider.

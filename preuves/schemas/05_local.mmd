@@ -1,0 +1,14 @@
+flowchart TB
+  A["Windows, Jour 1<br/>Sources locales en lecture seule et preuves Python"]
+  A -.->|Transfert contrôlé à prévoir| N
+  subgraph U["Ubuntu · architecture cible"]
+    N["NiFi<br/>Détection de lot, contrôle et dépôt"]
+    H["Hadoop / HDFS<br/>Bronze, Silver, Gold, quarantaine"]
+    S["PySpark<br/>Qualité, jointures, agrégats"]
+    Q["Couche SQL / BI<br/>Lecture des versions Gold publiées"]
+    N -->|Dépose| H
+    H -->|Lit Bronze ou Silver| S
+    S -->|Écrit en staging puis publie| H
+    H -->|Expose Gold| Q
+  end
+  M["Journaux / catalogue / alertes"] -.-> N & S

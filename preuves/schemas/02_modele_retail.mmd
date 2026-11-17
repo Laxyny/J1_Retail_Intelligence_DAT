@@ -1,0 +1,9 @@
+flowchart TB
+  C["Axes communs : produit et temps<br/>Référence d’article, version et date d’événement"]
+  C --> V["Vente<br/>Ligne de ticket ou commande<br/>Magasin physique ou canal web"]
+  C --> R["Retour<br/>Ligne de retour magasin ou web<br/>Date du retour et motif"]
+  C --> S["Stock entrepôt<br/>Date de snapshot × produit × entrepôt"]
+  R -.-> O["Vente d’origine à qualifier<br/>Rapprochement par transaction et produit"]
+  V --> A["Contexte de vente<br/>Client, promotion, site selon le canal"]
+  classDef pending fill:#fff5dd,stroke:#be8a35,color:#513410
+  class O pending

@@ -1,0 +1,97 @@
+2026-11-16T15:19:32+01:00
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P01
+P01 | Retail Intelligence Platform | traitement du 11/16/2026 14:56:36 | succès
+data | 24 fichiers | 1024448074 octets
+  customer, customer_address, customer_demographics, date_dim, household_demographics, income_band, inventory, item, item_marketprices, product_reviews, promotion, reason, ship_mode, store, store_returns, store_sales, time_dim, warehouse, web_clickstreams, web_page, web_returns, web_sales, web_site
+data_refresh | 12 fichiers | 9545513 octets
+  customer, customer_address, inventory, item, item_marketprices, product_reviews, store_returns, store_sales, web_clickstreams, web_returns, web_sales
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P02
+P02 | Retail Intelligence Platform | traitement du 11/16/2026 14:56:36 | succès
+
+position colonne               type_ddl     pages_ddl vides echantillon_types echecs_echantillon
+-------- -------               --------     --------- ----- ----------------- ------------------
+1        ss_sold_date_sk       bigint       131-132   0     20000             0
+2        ss_sold_time_sk       bigint       131-132   0     20000             0
+3        ss_item_sk            bigint       131-132   0     20000             0
+4        ss_customer_sk        bigint       131-132   0     20000             0
+5        ss_cdemo_sk           bigint       131-132   238   20000             0
+6        ss_hdemo_sk           bigint       131-132   295   20000             0
+7        ss_addr_sk            bigint       131-132   448   20000             0
+8        ss_store_sk           bigint       131-132   0     20000             0
+9        ss_promo_sk           bigint       131-132   158   20000             0
+10       ss_ticket_number      bigint       131-132   0     20000             0
+11       ss_quantity           int          131-132   0     20000             0
+12       ss_wholesale_cost     decimal(7,2) 131-132   0     20000             0
+13       ss_list_price         decimal(7,2) 131-132   0     20000             0
+14       ss_sales_price        decimal(7,2) 131-132   0     20000             0
+15       ss_ext_discount_amt   decimal(7,2) 131-132   0     20000             0
+16       ss_ext_sales_price    decimal(7,2) 131-132   0     20000             0
+17       ss_ext_wholesale_cost decimal(7,2) 131-132   0     20000             0
+18       ss_ext_list_price     decimal(7,2) 131-132   0     20000             0
+19       ss_ext_tax            decimal(7,2) 131-132   0     20000             0
+20       ss_coupon_amt         decimal(7,2) 131-132   0     20000             0
+21       ss_net_paid           decimal(7,2) 131-132   0     20000             0
+22       ss_net_paid_inc_tax   decimal(7,2) 131-132   0     20000             0
+23       ss_net_profit         decimal(7,2) 131-132   0     20000             0
+
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P03
+P03 | Retail Intelligence Platform | traitement du 11/16/2026 14:56:36 | succès
+data/inventory/inventory.dat
+  ligne 1, 4 champs : <entier 5 oct.> | <entier 1 oct.> | <entier 1 oct.> | <entier 3 oct.>
+data/store_sales/store_sales.dat
+  ligne 1, 23 champs : <entier 5 oct.> | <entier 5 oct.> | <entier 5 oct.> | <entier 5 oct.> | <entier 6 oct.> | <entier 4 oct.> | <entier 5 oct.> | <entier 2 oct.> | <entier 3 oct.> | <entier 1 oct.> | <entier 2 oct.> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal> | <décimal>
+data/web_clickstreams/web_clickstreams.dat
+  ligne 1, 6 champs : <entier 5 oct.> | <entier 5 oct.> | ∅ | <entier 4 oct.> | <entier 2 oct.> | ∅
+
+table              lignes fin_pipe vides_bruts largeur_hors_ddl
+-----              ------ -------- ----------- ----------------
+inventory        23255100     5999        5999                0
+time_dim            86400    50400       50400                0
+web_clickstreams  6770550  2853461     8956123                0
+
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P04
+P04 | Retail Intelligence Platform | traitement du 11/16/2026 15:02:27 | succès
+
+lot          table       cle                                          valides  distinctes repetitions cle_vide_ou_invali
+                                                                                                      de
+---          -----       ---                                          -------  ---------- ----------- ------------------
+data         inventory   inv_date_sk + inv_item_sk + inv_warehouse_sk 23255100 23255100   0           0
+data_refresh inventory   inv_date_sk + inv_item_sk + inv_warehouse_sk 234900   234900     0           0
+data         store_sales ss_ticket_number + ss_item_sk                667579   663443     4136        0
+data_refresh store_sales ss_ticket_number + ss_item_sk                6632     6586       46          0
+data         web_sales   ws_order_number + ws_item_sk                 668052   663976     4076        0
+data_refresh web_sales   ws_order_number + ws_item_sk                 6879     6840       39          0
+
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P05
+P05 | Retail Intelligence Platform | traitement du 11/16/2026 15:02:27 | succès
+
+lot          source      champ               cible    references_valides hors_initial hors_referentiels_livres
+---          ------      -----               -----    ------------------ ------------ ------------------------
+data         inventory   inv_item_sk         item     23255100           232380       0
+data_refresh inventory   inv_item_sk         item     234900             2520         0
+data_refresh store_sales ss_item_sk          item     6632               56           0
+data_refresh store_sales ss_customer_sk      customer 6632               94           0
+data_refresh web_sales   ws_item_sk          item     6879               66           0
+data_refresh web_sales   ws_bill_customer_sk customer 6879               127          0
+data_refresh web_sales   ws_ship_customer_sk customer 6879               123          0
+
+.\preuves\scripts\Afficher-Preuve.ps1 -Id P06
+P06 | Retail Intelligence Platform | traitement du 11/16/2026 15:02:27 | succès
+
+lot          table         controle               resultat
+---          -----         --------               --------
+data_refresh store_returns trouve_lot_comparable  19
+data_refresh store_returns plusieurs_lignes_vente 0
+data_refresh store_returns lignes_retour          426
+data_refresh web_returns   trouve_lot_comparable  29
+data_refresh web_returns   plusieurs_lignes_vente 2
+data_refresh web_returns   lignes_retour          400
+
+
+lot  table       champ                valides  vides zero  somme
+---  -----       -----                -------  ----- ----  -----
+data inventory   inv_quantity_on_hand 23249101 5999  23125 11627790630
+data store_sales ss_net_paid          667579   0     3954  1150529586.37
+data web_sales   ws_net_paid          668052   0     3938  1535374825.67
+
+Statut : succès

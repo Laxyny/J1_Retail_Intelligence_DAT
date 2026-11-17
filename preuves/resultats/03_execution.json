@@ -1,0 +1,13 @@
+{
+  "debut": "2026-11-16T15:00:33+01:00",
+  "fin": "2026-11-16T15:02:27+01:00",
+  "secondes": 113.7,
+  "statut": "succès",
+  "commande": [
+    "C:\\Users\\Kevin GREGOIRE\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "C:/Users/Kevin GREGOIRE/Desktop/Projet/J1_Retail_Intelligence_DAT/preuves/scripts/relations.py"
+  ],
+  "source": "C:\\Users\\Kevin GREGOIRE\\Desktop\\Projet\\01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project",
+  "controles_fk": 142,
+  "controles_cles": 42
+}

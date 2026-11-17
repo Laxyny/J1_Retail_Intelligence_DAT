@@ -1,0 +1,11 @@
+flowchart TB
+  D["Dimensions conformes · clés côté 1<br/>dim_date.d_date_sk / dim_produit.i_item_sk"]
+  D --> V["Faits ventes · côté N<br/>Une ligne de ticket ou commande"]
+  D --> R["Fait retours · côté N<br/>Une ligne de retour par canal"]
+  D --> S["Fait stock · côté N<br/>Date × produit × entrepôt"]
+  V -->|Canal physique| M["dim_magasin<br/>s_store_sk"]
+  R -->|Canal physique| M
+  S --> E["dim_entrepot<br/>w_warehouse_sk"]
+  R -.-> X["Vente d’origine candidate<br/>0, 1 ou plusieurs lignes"]
+  classDef pending fill:#fff5dd,stroke:#be8a35,color:#513410
+  class X pending
