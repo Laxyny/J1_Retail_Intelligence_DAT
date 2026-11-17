@@ -1,0 +1,14 @@
+2026-11-17T12:50:02.2728421+01:00
+hdfs dfs -ls -d /retail-lake/raw/nifi
+drwxr-xr-x   - nifi supergroup          0 2026-11-17 11:48 /retail-lake/raw/nifi
+hdfs dfs -ls /retail-lake/raw/nifi
+Contrôle préexécution : absence de la cible reason.dat et intrant vide
+docker compose cp <raison TPCx-BB> nifi:/opt/nifi/nifi-current/retail-j2/input/reason.dat
+ retail-j2-nifi-1 Copying C:\Users\Kevin GREGOIRE\Desktop\Projet\01. Architecture DataLake, DataWarehouse, Lakehous\retail_project\retail_project\data\reason\reason.dat to retail-j2-nifi-1:/opt/nifi/nifi-current/retail-j2/input/reason.dat
+ retail-j2-nifi-1 Copied C:\Users\Kevin GREGOIRE\Desktop\Projet\01. Architecture DataLake, DataWarehouse, Lakehous\retail_project\retail_project\data\reason\reason.dat to retail-j2-nifi-1:/opt/nifi/nifi-current/retail-j2/input/reason.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /opt/nifi/nifi-current/retail-j2/input/reason.dat
+NiFi REST : démarrage séquentiel PutHDFS puis GetFile
+2026-11-17T11:50:20.955101+00:00 PutHDFS puis GetFile démarrés.
+{"PutHDFS": "RUNNING", "GetFile": "RUNNING"}
+PutHDFS {'id': 'e94060e6-01a1-1000-a103-063e877c4845', 'groupId': 'e9405028-01a1-1000-8349-7b8d7a45cb55', 'name': 'PutHDFS', 'type': 'PutHDFS', 'runStatus': 'Running', 'executionNode': 'ALL', 'bytesRead': 3105, 'bytesWritten': 0, 'read': '3.03 KB', 'written': '0 bytes', 'flowFilesIn': 1, 'bytesIn': 3105, 'input': '1 (3.03 KB)', 'flowFilesOut': 0, 'bytesOut': 0, 'output': '0 (0 bytes)', 'taskCount': 1, 'tasksDurationNanos': 923377508, 'tasks': '1', 'tasksDuration': '00:00:00.923', 'activeThreadCount': 0, 'terminatedThreadCount': 0, 'processingPerformanceStatus': {'identifier': 'e94060e6-01a1-1000-a103-063e877c4845', 'cpuDuration': 513739447, 'contentReadDuration': 0, 'contentWriteDuration': 0, 'sessionCommitDuration': 13375287, 'garbageCollectionDuration': 16}}
+GetFile {'id': 'e9405897-01a1-1000-94b8-fe0cc1fcdef9', 'groupId': 'e9405028-01a1-1000-8349-7b8d7a45cb55', 'name': 'GetFile', 'type': 'GetFile', 'runStatus': 'Running', 'executionNode': 'ALL', 'bytesRead': 3105, 'bytesWritten': 3105, 'read': '3.03 KB', 'written': '3.03 KB', 'flowFilesIn': 0, 'bytesIn': 0, 'input': '0 (0 bytes)', 'flowFilesOut': 1, 'bytesOut': 3105, 'output': '1 (3.03 KB)', 'taskCount': 817029, 'tasksDurationNanos': 7384005101, 'tasks': '817,029', 'tasksDuration': '00:00:07.384', 'activeThreadCount': 1, 'terminatedThreadCount': 0, 'processingPerformanceStatus': {'identifier': 'e9405897-01a1-1000-94b8-fe0cc1fcdef9', 'cpuDuration': 6014447342, 'contentReadDuration': 0, 'contentWriteDuration': 0, 'sessionCommitDuration': 142770363, 'garbageCollectionDuration': 744}}

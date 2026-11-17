@@ -1,0 +1,18 @@
+# Erreurs et corrections
+
+| Erreur ou état observé | Cause | Vérification | Correction ou action | Résultat |
+|---|---|---|---|---|
+| Client Docker incapable de se connecter au pipe `dockerDesktopLinuxEngine` | Docker Desktop était arrêté. | `docker version`, `docker context ls` et état WSL. | Démarrer l’installation existante avec `docker desktop start --detach`. | Le serveur Linux 29.6.2 répond. |
+| Les premiers points de montage HDFS sont propriétaires `root:root` | Les répertoires n’existaient pas dans l’image de départ. | `id`, `ls -ld` des deux chemins. | Dériver l’image en créant les deux points de montage en tant que `hadoop`. | Les deux répertoires neufs sont accessibles en écriture par `hadoop`. [J2-P02](../preuves/hadoop/J2-P02-volumes-neufs.txt) |
+| `hdfs dfsadmin -report` retourne `java.net.ConnectException: Connection refused` avant initialisation | Aucun NameNode ne tourne sur les volumes neufs. | `jps` affiche seulement `Jps` et les volumes sont vides. | Initialiser une seule fois après accord explicite, puis démarrer les deux démons. | RPC accessible et un DataNode actif. [J2-P02](../preuves/hadoop/J2-P02-hdfs-actif.txt) |
+| Premier accès HTTPS NiFi retournant HTTP 000 pendant le démarrage | NiFi chargeait ses extensions. | Statut Compose, journal de démarrage sans identifiants, contrôle `nifi.sh status`. | Attendre l’état UP et refaire la requête. | HTTP 200 et service UP. [J2-P07](../preuves/nifi/J2-P07-service.txt) |
+| API d’authentification NiFi retourne HTTP 406 | L’en-tête `Accept: application/json` ne correspondait pas au jeton en texte. | Requête locale `POST /nifi-api/access/token`. | Accepter le type retourné par le serveur sur cette requête. | Connexion à l’API et récupération du catalogue des processeurs. |
+| GetFile `INVALID`, « Directory does not exist » | `Input Directory` pointait volontairement vers `/opt/nifi/nifi-current/retail-j2/input-inexistant` après l’ingestion réussie. | Le dossier de test était absent et le dossier d’entrée habituel vide. Le canvas et l’API ont affiché la même erreur. | Rétablir `/opt/nifi/nifi-current/retail-j2/input` et refaire la validation. | GetFile est revenu à `VALID`, à l’arrêt. Le groupe exporté contient le chemin rétabli. [Trace](../preuves/nifi/J2-P11-test-erreur.txt) · [Capture](../preuves/captures/J2-P11-erreur-controlee.png) · [Validation](../preuves/nifi/J2-P11-restore.json) |
+| Repli local, `FileExistsError` | Le premier transfert a déjà publié `reason.dat`. | Relancer le script avec la même source et comparer l’empreinte et la date de modification de la cible. | Conserver la copie existante et réserver un autre dossier de travail pour un nouveau test de succès. | Code 1, copie inchangée. [J2-P13](../preuves/repli_local/J2-P13-journal.txt) |
+| Repli local, `FileNotFoundError` | Dossier source inexistant pour le test. | Passer `repertoire-absent/reason.dat` au script. | Employer le chemin original vérifié dans l’inventaire. | Code 1, échec journalisé. [J2-P13](../preuves/repli_local/J2-P13-journal.txt) |
+
+## Test d’erreur contrôlée du TP2
+
+GetFile était à l’arrêt avant la modification. Le chemin a été rejeté par le validateur, sans lecture de fichier. Le test a porté uniquement sur les paramètres du processeur.
+
+Effectuer ce test après le transfert NiFi vérifié. Arrêter **GetFile**. Ouvrir **Configure → Properties**, renseigner temporairement `/opt/nifi/nifi-current/retail-j2/input-inexistant` dans **Input Directory**, appliquer, puis ouvrir le message de validation ou le bulletin du processeur. Conserver une capture du message et relever l’état. Rétablir le chemin `/opt/nifi/nifi-current/retail-j2/input` et vérifier le retour à l’état valide. Le dossier d’entrée doit être vide à cette étape.

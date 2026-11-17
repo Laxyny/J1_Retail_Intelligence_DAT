@@ -1,0 +1,10 @@
+2026-11-17T12:49:27.9692336+01:00
+docker compose cp <fichier source> hdfs:/tmp/j2-reason.dat
+C:\Users\Kevin GREGOIRE\Desktop\Projet\01. Architecture DataLake, DataWarehouse, Lakehous\retail_project\retail_project\data\reason\reason.dat
+ retail-j2-hdfs-1 Copying C:\Users\Kevin GREGOIRE\Desktop\Projet\01. Architecture DataLake, DataWarehouse, Lakehous\retail_project\retail_project\data\reason\reason.dat to retail-j2-hdfs-1:/tmp/j2-reason.dat
+ retail-j2-hdfs-1 Copied C:\Users\Kevin GREGOIRE\Desktop\Projet\01. Architecture DataLake, DataWarehouse, Lakehous\retail_project\retail_project\data\reason\reason.dat to retail-j2-hdfs-1:/tmp/j2-reason.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-reason.dat
+hdfs dfs -put /tmp/j2-reason.dat /retail-lake/raw/tpcxbb/initial/reason.dat
+hdfs dfs -ls -h /retail-lake/raw/tpcxbb/initial
+Found 1 items
+-rw-r--r--   1 hadoop supergroup      3.0 K 2026-11-17 11:49 /retail-lake/raw/tpcxbb/initial/reason.dat

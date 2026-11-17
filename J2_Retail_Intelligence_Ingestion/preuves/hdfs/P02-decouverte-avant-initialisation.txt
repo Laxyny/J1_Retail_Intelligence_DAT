@@ -1,0 +1,10 @@
+2026-11-17T12:37:36.3860088+01:00
+docker compose exec -T hdfs hdfs dfs -D ipc.client.connect.max.retries=0 -ls /
+ls: Call From hdfs/172.18.0.2 to hdfs:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+Code HDFS = 1
+docker compose exec -T hdfs hdfs dfs -D ipc.client.connect.max.retries=0 -du -h /
+du: Call From hdfs/172.18.0.2 to hdfs:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+Code HDFS = 1
+docker compose exec -T hdfs hdfs dfs -D ipc.client.connect.max.retries=0 -df -h /
+df: Call From hdfs/172.18.0.2 to hdfs:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+Code HDFS = 1

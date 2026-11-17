@@ -1,0 +1,25 @@
+2026-11-17T12:48:47.8809223+01:00
+hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/initial /retail-lake/raw/tpcxbb/refresh /retail-lake/raw/nifi /retail-lake/bronze/tpcxbb /retail-lake/silver /retail-lake/gold /retail-lake/quality /retail-lake/logs
+hdfs dfs -chown nifi /retail-lake/raw/nifi
+hdfs dfs -test -d /retail-lake/raw/tpcxbb/initial
+hdfs dfs -test -d /retail-lake/raw/tpcxbb/refresh
+hdfs dfs -test -d /retail-lake/raw/nifi
+hdfs dfs -test -d /retail-lake/bronze/tpcxbb
+hdfs dfs -test -d /retail-lake/silver
+hdfs dfs -test -d /retail-lake/gold
+hdfs dfs -test -d /retail-lake/quality
+hdfs dfs -test -d /retail-lake/logs
+hdfs dfs -ls -d /retail-lake
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake
+hdfs dfs -ls -R /retail-lake
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/bronze
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/bronze/tpcxbb
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/gold
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/logs
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/quality
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/raw
+drwxr-xr-x   - nifi   supergroup          0 2026-11-17 11:48 /retail-lake/raw/nifi
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/raw/tpcxbb
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/raw/tpcxbb/refresh
+drwxr-xr-x   - hadoop supergroup          0 2026-11-17 11:48 /retail-lake/silver

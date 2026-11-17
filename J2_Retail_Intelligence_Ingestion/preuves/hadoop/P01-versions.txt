@@ -1,0 +1,24 @@
+2026-11-17T12:22:15.9955898+01:00
+docker compose exec -T hdfs : id, /etc/os-release, java -version, hadoop version, jps, hdfs getconf
+uid=1001(hadoop) gid=100(users) groups=100(users)
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+openjdk version "17.0.18" 2026-01-20
+OpenJDK Runtime Environment Temurin-17.0.18+8 (build 17.0.18+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.18+8 (build 17.0.18+8, mixed mode, sharing)
+Hadoop 3.5.0
+Source code repository https://github.com/apache/hadoop.git -r dbcc7cd797100e6b32cd84f85b53a5193a5f9af0
+Compiled by cnauroth on 2026-03-24T16:56Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.25.5
+From source with checksum 64582ed0a62a169c39a19c734a8f33b5
+This command was run using /opt/hadoop/share/hadoop/common/hadoop-common-3.5.0.jar
+100 Jps
+fs.defaultFS: hdfs://hdfs:9000
+dfs.namenode.name.dir: file:///opt/hadoop/retail-j2-namenode
+dfs.datanode.data.dir: file:///opt/hadoop/retail-j2-datanode
+dfs.replication: 1

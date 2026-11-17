@@ -1,0 +1,10 @@
+2026-11-17T12:22:22.9715098+01:00
+docker volume inspect retail-j2_namenode retail-j2_datanode (labels Compose projet)
+retail-j2_namenode 2026-11-17T11:19:19Z {"com.docker.compose.config-hash":"5a513d4d3b831a6b905c9f864a859d557f2f71ae107e0a0555fd272f1358f5f1","com.docker.compose.project":"retail-j2","com.docker.compose.version":"5.3.1","com.docker.compose.volume":"namenode"}
+retail-j2_datanode 2026-11-17T11:19:19Z {"com.docker.compose.config-hash":"ea701bb3c968e9902b0e234a9b92e84757cdc1eaffb5a2bf371c46e9f33d992d","com.docker.compose.project":"retail-j2","com.docker.compose.version":"5.3.1","com.docker.compose.volume":"datanode"}
+docker compose exec -T hdfs : contrôle de la vacuité, de la permission et des processus
+drwxr-xr-x 2 hadoop users 4096 Nov 17 11:20 /opt/hadoop/retail-j2-datanode
+drwxr-xr-x 2 hadoop users 4096 Nov 17 11:20 /opt/hadoop/retail-j2-namenode
+Vide et accessible en ecriture: /opt/hadoop/retail-j2-namenode
+Vide et accessible en ecriture: /opt/hadoop/retail-j2-datanode
+318 Jps

@@ -1,0 +1,251 @@
+{
+  "captured_at": "2026-11-17T12:55:23.604173+01:00",
+  "group_id": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+  "processors": {
+    "PutHDFS": {
+      "id": "e94060e6-01a1-1000-a103-063e877c4845",
+      "state": "STOPPED",
+      "validationStatus": "VALID",
+      "validationErrors": [],
+      "properties": {
+        "Hadoop Configuration Resources": "/etc/retail-j2/hadoop/core-site.xml,/etc/retail-j2/hadoop/hdfs-site.xml",
+        "Kerberos User Service": null,
+        "Additional Classpath Resources": null,
+        "Directory": "/retail-lake/raw/nifi",
+        "Conflict Resolution Strategy": "fail",
+        "Append Mode": "DEFAULT",
+        "Writing Strategy": "writeAndRename",
+        "Block Size": null,
+        "IO Buffer Size": null,
+        "Replication": null,
+        "Permissions Umask": null,
+        "Remote Owner": null,
+        "Remote Group": null,
+        "Compression Codec": "NONE",
+        "Ignore Locality": "false",
+        "Resource Transfer Source": "FLOWFILE_CONTENT",
+        "File Resource Service": null
+      },
+      "bundle": {
+        "group": "org.apache.nifi",
+        "artifact": "nifi-hadoop-nar",
+        "version": "2.12.0"
+      }
+    },
+    "GetFile": {
+      "id": "e9405897-01a1-1000-94b8-fe0cc1fcdef9",
+      "state": "STOPPED",
+      "validationStatus": "VALID",
+      "validationErrors": [],
+      "properties": {
+        "Input Directory": "/opt/nifi/nifi-current/retail-j2/input",
+        "File Filter": "^reason[.]dat$",
+        "Path Filter": null,
+        "Batch Size": "10",
+        "Keep Source File": "false",
+        "Recurse Subdirectories": "false",
+        "Polling Interval": "30 sec",
+        "Ignore Hidden Files": "true",
+        "Minimum File Age": "0 sec",
+        "Maximum File Age": null,
+        "Minimum File Size": "0 B",
+        "Maximum File Size": null
+      },
+      "bundle": {
+        "group": "org.apache.nifi",
+        "artifact": "nifi-standard-nar",
+        "version": "2.12.0"
+      }
+    }
+  },
+  "status": {
+    "id": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+    "name": "UC-04 - Ingestion TPCx-BB",
+    "connectionStatusSnapshots": [
+      {
+        "id": "e9407244-01a1-1000-dd14-ddf3bfe170d0",
+        "connectionStatusSnapshot": {
+          "id": "e9407244-01a1-1000-dd14-ddf3bfe170d0",
+          "groupId": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+          "name": "success",
+          "sourceName": "GetFile",
+          "destinationName": "PutHDFS",
+          "flowFilesIn": 1,
+          "bytesIn": 3105,
+          "input": "1 (3.03 KB)",
+          "flowFilesOut": 1,
+          "bytesOut": 3105,
+          "output": "1 (3.03 KB)",
+          "flowFilesQueued": 0,
+          "bytesQueued": 0,
+          "queued": "0 (0 bytes)",
+          "queuedSize": "0 bytes",
+          "queuedCount": "0",
+          "percentUseCount": 0,
+          "percentUseBytes": 0,
+          "flowFileAvailability": "ACTIVE_QUEUE_EMPTY",
+          "loadBalanceStatus": "LOAD_BALANCE_NOT_CONFIGURED"
+        },
+        "canRead": true
+      },
+      {
+        "id": "e9407a92-01a1-1000-d485-04f2e1901260",
+        "connectionStatusSnapshot": {
+          "id": "e9407a92-01a1-1000-d485-04f2e1901260",
+          "groupId": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+          "name": "failure",
+          "sourceName": "PutHDFS",
+          "destinationName": "Echecs a examiner",
+          "flowFilesIn": 0,
+          "bytesIn": 0,
+          "input": "0 (0 bytes)",
+          "flowFilesOut": 0,
+          "bytesOut": 0,
+          "output": "0 (0 bytes)",
+          "flowFilesQueued": 0,
+          "bytesQueued": 0,
+          "queued": "0 (0 bytes)",
+          "queuedSize": "0 bytes",
+          "queuedCount": "0",
+          "percentUseCount": 0,
+          "percentUseBytes": 0,
+          "flowFileAvailability": "ACTIVE_QUEUE_EMPTY",
+          "loadBalanceStatus": "LOAD_BALANCE_NOT_CONFIGURED"
+        },
+        "canRead": true
+      }
+    ],
+    "processorStatusSnapshots": [
+      {
+        "id": "e94060e6-01a1-1000-a103-063e877c4845",
+        "processorStatusSnapshot": {
+          "id": "e94060e6-01a1-1000-a103-063e877c4845",
+          "groupId": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+          "name": "PutHDFS",
+          "type": "PutHDFS",
+          "runStatus": "Stopped",
+          "executionNode": "ALL",
+          "bytesRead": 3105,
+          "bytesWritten": 0,
+          "read": "3.03 KB",
+          "written": "0 bytes",
+          "flowFilesIn": 1,
+          "bytesIn": 3105,
+          "input": "1 (3.03 KB)",
+          "flowFilesOut": 0,
+          "bytesOut": 0,
+          "output": "0 (0 bytes)",
+          "taskCount": 1,
+          "tasksDurationNanos": 923377508,
+          "tasks": "1",
+          "tasksDuration": "00:00:00.923",
+          "activeThreadCount": 0,
+          "terminatedThreadCount": 0,
+          "processingPerformanceStatus": {
+            "identifier": "e94060e6-01a1-1000-a103-063e877c4845",
+            "cpuDuration": 513739447,
+            "contentReadDuration": 0,
+            "contentWriteDuration": 0,
+            "sessionCommitDuration": 13375287,
+            "garbageCollectionDuration": 16
+          }
+        },
+        "canRead": true
+      },
+      {
+        "id": "e9405897-01a1-1000-94b8-fe0cc1fcdef9",
+        "processorStatusSnapshot": {
+          "id": "e9405897-01a1-1000-94b8-fe0cc1fcdef9",
+          "groupId": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+          "name": "GetFile",
+          "type": "GetFile",
+          "runStatus": "Stopped",
+          "executionNode": "ALL",
+          "bytesRead": 3105,
+          "bytesWritten": 3105,
+          "read": "3.03 KB",
+          "written": "3.03 KB",
+          "flowFilesIn": 0,
+          "bytesIn": 0,
+          "input": "0 (0 bytes)",
+          "flowFilesOut": 1,
+          "bytesOut": 3105,
+          "output": "1 (3.03 KB)",
+          "taskCount": 6127401,
+          "tasksDurationNanos": 43404330643,
+          "tasks": "6,127,401",
+          "tasksDuration": "00:00:43.404",
+          "activeThreadCount": 0,
+          "terminatedThreadCount": 0,
+          "processingPerformanceStatus": {
+            "identifier": "e9405897-01a1-1000-94b8-fe0cc1fcdef9",
+            "cpuDuration": 35353190434,
+            "contentReadDuration": 0,
+            "contentWriteDuration": 0,
+            "sessionCommitDuration": 142770363,
+            "garbageCollectionDuration": 2103
+          }
+        },
+        "canRead": true
+      }
+    ],
+    "processGroupStatusSnapshots": [],
+    "remoteProcessGroupStatusSnapshots": [],
+    "inputPortStatusSnapshots": [],
+    "outputPortStatusSnapshots": [
+      {
+        "id": "e9406a05-01a1-1000-cc27-6ec2dc2f0554",
+        "portStatusSnapshot": {
+          "id": "e9406a05-01a1-1000-cc27-6ec2dc2f0554",
+          "groupId": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+          "name": "Echecs a examiner",
+          "activeThreadCount": 0,
+          "flowFilesIn": 0,
+          "bytesIn": 0,
+          "input": "0 (0 bytes)",
+          "flowFilesOut": 0,
+          "bytesOut": 0,
+          "output": "0 (0 bytes)",
+          "runStatus": "Invalid"
+        },
+        "canRead": true
+      }
+    ],
+    "statelessActiveThreadCount": 0,
+    "flowFilesIn": 0,
+    "bytesIn": 0,
+    "input": "0 (0 bytes)",
+    "flowFilesQueued": 0,
+    "bytesQueued": 0,
+    "queued": "0 (0 bytes)",
+    "queuedCount": "0",
+    "queuedSize": "0 bytes",
+    "bytesRead": 6210,
+    "read": "6.06 KB",
+    "bytesWritten": 3105,
+    "written": "3.03 KB",
+    "flowFilesOut": 0,
+    "bytesOut": 0,
+    "output": "0 (0 bytes)",
+    "flowFilesTransferred": 2,
+    "bytesTransferred": 6210,
+    "transferred": "2 (6.06 KB)",
+    "bytesReceived": 3105,
+    "flowFilesReceived": 1,
+    "received": "1 (3.03 KB)",
+    "bytesSent": 3105,
+    "flowFilesSent": 1,
+    "sent": "1 (3.03 KB)",
+    "activeThreadCount": 0,
+    "terminatedThreadCount": 0,
+    "processingNanos": 44327708151,
+    "processingPerformanceStatus": {
+      "identifier": "e9405028-01a1-1000-8349-7b8d7a45cb55",
+      "cpuDuration": 35866929881,
+      "contentReadDuration": 0,
+      "contentWriteDuration": 0,
+      "sessionCommitDuration": 156145650,
+      "garbageCollectionDuration": 2119
+    }
+  }
+}

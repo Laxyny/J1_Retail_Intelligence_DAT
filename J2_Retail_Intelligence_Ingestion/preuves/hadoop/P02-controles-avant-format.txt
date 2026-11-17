@@ -1,0 +1,14 @@
+2026-11-17T12:44:57.7951916+01:00
+Contexte Docker desktop-linux
+Premier contrôle interrompu par une conversion DateTime Windows. Aucune commande de formatage lancée.
+2026-11-17T12:46:44.0964627+01:00
+Contexte Docker desktop-linux
+docker volume inspect retail-j2_namenode ; docker ps -aq --no-trunc --filter volume=retail-j2_namenode
+retail-j2_namenode créé 2026-11-17T11:19:19Z | projet retail-j2 | seul conteneur /retail-j2-hdfs-1 | montage /opt/hadoop/retail-j2-namenode
+docker volume inspect retail-j2_datanode ; docker ps -aq --no-trunc --filter volume=retail-j2_datanode
+retail-j2_datanode créé 2026-11-17T11:19:19Z | projet retail-j2 | seul conteneur /retail-j2-hdfs-1 | montage /opt/hadoop/retail-j2-datanode
+docker top et Get-CimInstance Win32_Process : aucun NameNode ou DataNode actif.
+hdfs getconf, find -mindepth 1, test -w, jps -l
+Volume neuf et vide: /opt/hadoop/retail-j2-namenode
+Volume neuf et vide: /opt/hadoop/retail-j2-datanode
+856 jdk.jcmd/sun.tools.jps.Jps

@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-11-17T12:55:07.158920+01:00",
+  "before": {
+    "state": "STOPPED",
+    "validationStatus": "INVALID",
+    "validationErrors": [
+      "'Input Directory' validated against '/opt/nifi/nifi-current/retail-j2/input-inexistant' is invalid because Directory does not exist"
+    ]
+  },
+  "after": {
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  }
+}

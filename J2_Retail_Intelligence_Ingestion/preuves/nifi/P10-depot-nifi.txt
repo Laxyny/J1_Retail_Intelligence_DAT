@@ -1,0 +1,19 @@
+2026-11-17T12:50:51.8453942+01:00
+hdfs dfs -ls -h /retail-lake/raw/nifi
+Found 1 items
+-rw-r--r--   1 nifi supergroup      3.0 K 2026-11-17 11:50 /retail-lake/raw/nifi/reason.dat
+hdfs dfs -du -h /retail-lake/raw/nifi
+3.0 K  3.0 K  /retail-lake/raw/nifi/reason.dat
+hdfs dfs -stat %n %b %u %g %a %r /retail-lake/raw/nifi/reason.dat
+reason.dat 3105 nifi supergroup 644 1
+hdfs dfs -get /retail-lake/raw/nifi/reason.dat /tmp/j2-relue-nifi.dat
+hdfs dfs -ls -h /retail-lake/raw/tpcxbb/initial
+Found 1 items
+-rw-r--r--   1 hadoop supergroup      3.0 K 2026-11-17 11:49 /retail-lake/raw/tpcxbb/initial/reason.dat
+Vérification conjointe des deux dépôts et de la source contrôlée
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-reason.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-relue-manuel.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-relue-nifi.dat
+Dépôt manuel relu depuis HDFS après NiFi : d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  -
+Copie consommée par GetFile
+SHA-256 original après exécution NiFi = d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091

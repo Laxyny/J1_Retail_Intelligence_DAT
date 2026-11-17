@@ -1,0 +1,161 @@
+[
+  {
+    "id": "3",
+    "eventId": 3,
+    "eventTime": "11/17/2026 11:50:32.827 UTC",
+    "eventType": "DROP",
+    "flowFileUuid": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+    "fileSize": "3.03 KB",
+    "fileSizeBytes": 3105,
+    "componentId": "e94060e6-01a1-1000-a103-063e877c4845",
+    "componentType": "PutHDFS",
+    "componentName": "PutHDFS",
+    "details": "Auto-Terminated by success Relationship",
+    "attributes": [
+      {
+        "name": "absolute.hdfs.path",
+        "value": "/retail-lake/raw/nifi"
+      },
+      {
+        "name": "absolute.path",
+        "value": "/opt/nifi/nifi-current/retail-j2/input/",
+        "previousValue": "/opt/nifi/nifi-current/retail-j2/input/"
+      },
+      {
+        "name": "filename",
+        "value": "reason.dat",
+        "previousValue": "reason.dat"
+      },
+      {
+        "name": "hadoop.file.url",
+        "value": "hdfs://hdfs:9000/retail-lake/raw/nifi/reason.dat"
+      },
+      {
+        "name": "path",
+        "value": "/",
+        "previousValue": "/"
+      },
+      {
+        "name": "uuid",
+        "value": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+        "previousValue": "acc42d0e-ed77-42dd-b81f-c9bf1123277e"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "eventId": 2,
+    "eventTime": "11/17/2026 11:50:32.827 UTC",
+    "eventType": "ATTRIBUTES_MODIFIED",
+    "flowFileUuid": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+    "fileSize": "3.03 KB",
+    "fileSizeBytes": 3105,
+    "componentId": "e94060e6-01a1-1000-a103-063e877c4845",
+    "componentType": "PutHDFS",
+    "componentName": "PutHDFS",
+    "attributes": [
+      {
+        "name": "absolute.hdfs.path",
+        "value": "/retail-lake/raw/nifi"
+      },
+      {
+        "name": "absolute.path",
+        "value": "/opt/nifi/nifi-current/retail-j2/input/",
+        "previousValue": "/opt/nifi/nifi-current/retail-j2/input/"
+      },
+      {
+        "name": "filename",
+        "value": "reason.dat",
+        "previousValue": "reason.dat"
+      },
+      {
+        "name": "hadoop.file.url",
+        "value": "hdfs://hdfs:9000/retail-lake/raw/nifi/reason.dat"
+      },
+      {
+        "name": "path",
+        "value": "/",
+        "previousValue": "/"
+      },
+      {
+        "name": "uuid",
+        "value": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+        "previousValue": "acc42d0e-ed77-42dd-b81f-c9bf1123277e"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "eventId": 1,
+    "eventTime": "11/17/2026 11:50:32.816 UTC",
+    "eventType": "SEND",
+    "flowFileUuid": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+    "fileSize": "3.03 KB",
+    "fileSizeBytes": 3105,
+    "componentId": "e94060e6-01a1-1000-a103-063e877c4845",
+    "componentType": "PutHDFS",
+    "componentName": "PutHDFS",
+    "transitUri": "hdfs://hdfs:9000/retail-lake/raw/nifi/reason.dat",
+    "attributes": [
+      {
+        "name": "absolute.hdfs.path",
+        "value": "/retail-lake/raw/nifi"
+      },
+      {
+        "name": "absolute.path",
+        "value": "/opt/nifi/nifi-current/retail-j2/input/",
+        "previousValue": "/opt/nifi/nifi-current/retail-j2/input/"
+      },
+      {
+        "name": "filename",
+        "value": "reason.dat",
+        "previousValue": "reason.dat"
+      },
+      {
+        "name": "hadoop.file.url",
+        "value": "hdfs://hdfs:9000/retail-lake/raw/nifi/reason.dat"
+      },
+      {
+        "name": "path",
+        "value": "/",
+        "previousValue": "/"
+      },
+      {
+        "name": "uuid",
+        "value": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+        "previousValue": "acc42d0e-ed77-42dd-b81f-c9bf1123277e"
+      }
+    ]
+  },
+  {
+    "id": "0",
+    "eventId": 0,
+    "eventTime": "11/17/2026 11:50:31.769 UTC",
+    "eventType": "RECEIVE",
+    "flowFileUuid": "acc42d0e-ed77-42dd-b81f-c9bf1123277e",
+    "fileSize": "3.03 KB",
+    "fileSizeBytes": 3105,
+    "componentId": "e9405897-01a1-1000-94b8-fe0cc1fcdef9",
+    "componentType": "GetFile",
+    "componentName": "GetFile",
+    "transitUri": "file:/opt/nifi/nifi-current/retail-j2/input/reason.dat",
+    "attributes": [
+      {
+        "name": "absolute.path",
+        "value": "/opt/nifi/nifi-current/retail-j2/input/"
+      },
+      {
+        "name": "filename",
+        "value": "reason.dat"
+      },
+      {
+        "name": "path",
+        "value": "/"
+      },
+      {
+        "name": "uuid",
+        "value": "acc42d0e-ed77-42dd-b81f-c9bf1123277e"
+      }
+    ]
+  }
+]

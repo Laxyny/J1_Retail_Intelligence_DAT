@@ -1,0 +1,60 @@
+2026-11-17T12:47:27.0370487+01:00
+hdfs --daemon start namenode
+hdfs --daemon start datanode
+Safe mode is OFF
+jps -l
+1116 org.apache.hadoop.hdfs.server.datanode.DataNode
+1406 jdk.jcmd/sun.tools.jps.Jps
+1022 org.apache.hadoop.hdfs.server.namenode.NameNode
+hdfs dfsadmin -report
+Configured Capacity: 1081101176832 (1006.85 GB)
+Present Capacity: 1018913841152 (948.94 GB)
+DFS Remaining: 1018913816576 (948.94 GB)
+DFS Used: 24576 (24 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 172.18.0.2:9866 (hdfs)
+Hostname: hdfs
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 7194980352 (6.70 GB)
+DFS Remaining: 1018913816576 (948.94 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 94.25%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Tue Nov 17 11:47:39 UTC 2026
+Last Block Report: Tue Nov 17 11:47:33 UTC 2026
+Num of Blocks: 0
+
+
+hdfs dfs -ls /
+hdfs dfs -du -h /
+hdfs dfs -df -h /
+Filesystem            Size  Used  Available  Use%
+hdfs://hdfs:9000  1006.9 G  24 K    948.9 G    0%
+Identifiant du cluster relevé dans le VERSION HDFS de chaque daemon
+NameNode et DataNode : clusterID=CID-635a5f67-262e-4ceb-ac4f-f100b8d161ad

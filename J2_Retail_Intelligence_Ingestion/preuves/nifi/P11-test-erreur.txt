@@ -1,0 +1,10 @@
+2026-11-17T12:51:47.0008870+01:00
+Chemin de test absent et intrant courant vide.
+API NiFi : arrêter GetFile puis PutHDFS
+API NiFi : définir Input Directory sur le chemin dédié absent
+{"captured_at": "2026-11-17T12:52:19.964781+01:00", "before": {"state": "STOPPED", "validationStatus": "VALID", "validationErrors": []}, "after": {"state": "STOPPED", "validationStatus": "INVALID", "validationErrors": ["'Input Directory' validated against '/opt/nifi/nifi-current/retail-j2/input-inexistant' is invalid because Directory does not exist"]}}
+2026-11-17T12:54:50.8767696+01:00
+API NiFi : rétablir Input Directory sur le dossier testé
+{"captured_at": "2026-11-17T12:55:07.158920+01:00", "before": {"state": "STOPPED", "validationStatus": "INVALID", "validationErrors": ["'Input Directory' validated against '/opt/nifi/nifi-current/retail-j2/input-inexistant' is invalid because Directory does not exist"]}, "after": {"state": "STOPPED", "validationStatus": "VALID", "validationErrors": []}}
+API NiFi : export du groupe avec configuration rétablie
+Group: e9405028-01a1-1000-8349-7b8d7a45cb55 processors: {"PutHDFS": {"id": "e94060e6-01a1-1000-a103-063e877c4845", "validation": "VALID", "errors": []}, "GetFile": {"id": "e9405897-01a1-1000-94b8-fe0cc1fcdef9", "validation": "VALID", "errors": []}}

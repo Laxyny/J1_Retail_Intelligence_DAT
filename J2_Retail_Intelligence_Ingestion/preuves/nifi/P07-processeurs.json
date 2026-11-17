@@ -1,0 +1,21 @@
+{
+  "version": "2.12.0",
+  "types": {
+    "GetFile": {
+      "type": "org.apache.nifi.processors.standard.GetFile",
+      "bundle": {
+        "group": "org.apache.nifi",
+        "artifact": "nifi-standard-nar",
+        "version": "2.12.0"
+      }
+    },
+    "PutHDFS": {
+      "type": "org.apache.nifi.processors.hadoop.PutHDFS",
+      "bundle": {
+        "group": "org.apache.nifi",
+        "artifact": "nifi-hadoop-nar",
+        "version": "2.12.0"
+      }
+    }
+  }
+}

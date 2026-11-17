@@ -1,0 +1,14 @@
+2026-11-17T12:49:44.3288206+01:00
+hdfs dfs -ls -h /retail-lake/raw/tpcxbb/initial/reason.dat
+-rw-r--r--   1 hadoop supergroup      3.0 K 2026-11-17 11:49 /retail-lake/raw/tpcxbb/initial/reason.dat
+hdfs dfs -stat %n %b %u %g %a %r /retail-lake/raw/tpcxbb/initial/reason.dat
+reason.dat 3105 hadoop supergroup 644 1
+hdfs dfs -cat /retail-lake/raw/tpcxbb/initial/reason.dat
+0|59h3KawhwK|slyly thin dugouts on the ironically enticing realms woul
+1|a6TzYqeb5XgwOe|epitaphs will have to affix stealthily even notornis! warhorses since the busy att
+2|R2PsDlX|excuses after the permanent courts try to was excuses? fluffy silent orbits d
+hdfs dfs -get /retail-lake/raw/tpcxbb/initial/reason.dat /tmp/j2-relue-manuel.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-reason.dat
+d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091  /tmp/j2-relue-manuel.dat
+Comparaison octet pour octet : OK
+SHA-256 original après dépôt = d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091

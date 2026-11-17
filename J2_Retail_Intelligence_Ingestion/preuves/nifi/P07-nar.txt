@@ -1,0 +1,5 @@
+2026-11-17T12:24:14.1772732+01:00
+docker compose exec -T nifi; empreintes des montages et droits
+c6496f21a24276070b1db28bac5ded004f21549e00fd143013524ff4e96449be  /opt/nifi/nifi-current/lib/nifi-hadoop-libraries-nar-2.12.0.nar
+1a9c5c32505f4f256bd7b9b3284af761bf32c0d0d8225ba3dc536a07482522a5  /opt/nifi/nifi-current/lib/nifi-hadoop-nar-2.12.0.nar
+drwxr-xr-x 2 nifi nifi 4096 Nov 17 11:20 /opt/nifi/nifi-current/retail-j2/input
