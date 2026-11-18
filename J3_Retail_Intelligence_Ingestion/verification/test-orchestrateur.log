@@ -1,0 +1,36 @@
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/test_spark.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/inventorier.py --sources /sources
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/preparer_entrees.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/notebook.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/transformation/transformer.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/qualite/verifier.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/test_spark.py
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/inventorier.py --sources /sources
+DOCKER SIMULE : exec retail-j3-spark /tmp/retail-j3-venv/bin/python /work/scripts/exploration/preparer_entrees.py
+[
+  {
+    "status": "OK",
+    "test": "Ordre, paramètres, archivage, journaux",
+    "docker": "simulé"
+  },
+  {
+    "status": "OK",
+    "test": "Arrêt après code 7 simulé",
+    "docker": "simulé"
+  },
+  {
+    "status": "OK",
+    "test": "Archive existante préservée",
+    "docker": "aucun appel"
+  },
+  {
+    "status": "OK",
+    "test": "Identifiant de lot contrôlé",
+    "docker": "aucun appel"
+  },
+  {
+    "status": "OK",
+    "test": "Chemins requis vérifiés avant action",
+    "docker": "aucun appel"
+  }
+]

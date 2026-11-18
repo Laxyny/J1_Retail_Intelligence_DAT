@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "real_spark_read": true,
+  "pipeline_reexecuted": false,
+  "secret_pattern_findings": [],
+  "scan_limits": "Recherche de motifs de secrets dans les textes ; aucune garantie universelle de d\u00e9tection",
+  "raw_dat_included": false,
+  "docker_volumes_included": false,
+  "orchestrator_real_end_to_end": false,
+  "orchestrator_mock_cases": 5,
+  "mandatory_deliverables": 11
+}

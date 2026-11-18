@@ -1,0 +1,10 @@
+{
+  "url": "https://www.tpc.org/TPC_Documents_Current_Versions/pdf/TPCX-BB_v1.7.0.pdf",
+  "sha256": "74a0934184af4435f5765a5612effdb8473d0cfea921dc1b500d800381d3ca4e",
+  "pages": 139,
+  "verified_tables": [
+    "store_sales",
+    "item"
+  ],
+  "result": "OK"
+}

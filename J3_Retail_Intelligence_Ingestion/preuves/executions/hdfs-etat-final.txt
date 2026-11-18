@@ -1,0 +1,45 @@
+Configured Capacity: 1081101176832 (1006.85 GB)
+Present Capacity: 1017809326080 (947.91 GB)
+DFS Remaining: 1017598840832 (947.71 GB)
+DFS Used: 210485248 (200.73 MB)
+DFS Used%: 0.02%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 172.18.0.2:9866 (hdfs)
+Hostname: hdfs
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 210485248 (200.73 MB)
+Non DFS Used: 8299495424 (7.73 GB)
+DFS Remaining: 1017598840832 (947.71 GB)
+DFS Used%: 0.02%
+DFS Remaining%: 94.13%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Wed Nov 18 12:03:13 UTC 2026
+Last Block Report: Wed Nov 18 11:32:20 UTC 2026
+Num of Blocks: 16
+
+
+Safe mode is OFF

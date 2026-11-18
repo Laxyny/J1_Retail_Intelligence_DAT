@@ -1,0 +1,21 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/18 11:35:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 4:>                                                          (0 + 1) / 1]                                                                                Python 3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0] Spark 3.5.7
+Java 17.0.18
+Hadoop client Spark 3.3.4
+root
+ |-- reason_sk: long (nullable = true)
+ |-- reason_id: string (nullable = true)
+ |-- description: string (nullable = true)
+
++---------+--------------+------------------------------------------------------------+
+|reason_sk|     reason_id|                                                 description|
++---------+--------------+------------------------------------------------------------+
+|        0|    59h3KawhwK|   slyly thin dugouts on the ironically enticing realms woul|
+|        1|a6TzYqeb5XgwOe|epitaphs will have to affix stealthily even notornis! war...|
+|        2|       R2PsDlX|excuses after the permanent courts try to was excuses? fl...|
++---------+--------------+------------------------------------------------------------+
+only showing top 3 rows
+
+VALIDATION SPARK REUSSIE {'path': 'hdfs://hdfs:9000/retail-lake/quality/j3/smoke-0a7c13a5b006', 'rows_before': 35, 'rows_after': 35, 'same_names_types': True, 'different_rows_detected': 0, 'schema_before': {'type': 'struct', 'fields': [{'name': 'reason_sk', 'type': 'long', 'nullable': True, 'metadata': {}}, {'name': 'reason_id', 'type': 'string', 'nullable': True, 'metadata': {}}, {'name': 'description', 'type': 'string', 'nullable': True, 'metadata': {}}]}, 'schema_after': {'type': 'struct', 'fields': [{'name': 'reason_sk', 'type': 'long', 'nullable': True, 'metadata': {}}, {'name': 'reason_id', 'type': 'string', 'nullable': True, 'metadata': {}}, {'name': 'description', 'type': 'string', 'nullable': True, 'metadata': {}}]}, 'bytes': 3529, 'files': 2, 'compression': 'snappy', 'spark': '3.5.7', 'python': '3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]', 'java': '17.0.18', 'hadoop_client': '3.3.4', 'source': 'hdfs://hdfs:9000/retail-lake/raw/tpcxbb/initial/reason.dat'}

@@ -1,0 +1,20 @@
+{
+  "run_id": "20261118T113628Z-243a5fb5",
+  "fs": "hdfs://hdfs:9000",
+  "sources": {
+    "store_sales": {
+      "local": "/sources/data/store_sales/store_sales.dat",
+      "hdfs": "hdfs://hdfs:9000/retail-lake/raw/j3/20261118T113628Z-243a5fb5/store_sales.dat",
+      "sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "batch": "initial"
+    },
+    "item": {
+      "local": "/sources/data/item/item.dat",
+      "hdfs": "hdfs://hdfs:9000/retail-lake/raw/j3/20261118T113628Z-243a5fb5/item.dat",
+      "sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21",
+      "batch": "initial"
+    }
+  },
+  "silver": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5",
+  "gold": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5"
+}

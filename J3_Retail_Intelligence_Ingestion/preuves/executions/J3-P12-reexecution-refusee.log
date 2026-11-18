@@ -1,0 +1,10 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/18 12:01:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Traceback (most recent call last):
+  File "/work/scripts/transformation/transformer.py", line 117, in <module>
+    main()
+  File "/work/scripts/transformation/transformer.py", line 16, in main
+    assert not fs.exists(spark._jvm.org.apache.hadoop.fs.Path(dest)), 'Lot déjà présent : créer un nouveau lot, jamais écraser'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lot déjà présent : créer un nouveau lot, jamais écraser

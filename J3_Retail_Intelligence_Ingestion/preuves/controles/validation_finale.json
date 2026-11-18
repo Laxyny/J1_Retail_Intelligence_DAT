@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "python_files_parsed": 12,
+  "pdf_pages": 17,
+  "capture_streams_unchanged": 3,
+  "protected_content_files": 158,
+  "failed_blocking_controls": 0,
+  "notebook_executed_cells": 5,
+  "visual_review": "Planches des 17 pages et pages 6 et 13 en pleine taille inspectées ; tableaux, accents et captures lisibles",
+  "limitation": "Wrapper reproduire.ps1 : syntaxe contrôlée, étapes exécutées séparément ; archivage complet non exercé"
+}

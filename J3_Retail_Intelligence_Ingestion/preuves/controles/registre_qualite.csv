@@ -1,0 +1,74 @@
+﻿id,rule,target,result,expected,status,method,justification,limits
+Q001,Volume Raw/Python,store_sales,667579,667579,OK,count vs lecture Python indépendante,,Exhaustif sur les fichiers initiaux retenus
+Q002,Conversions sans perte,store_sales,0,0,OK,try_cast sur chaque valeur non nulle,,Exhaustif sur les fichiers initiaux retenus
+Q003,Complétude ss_sold_date_sk,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q004,Complétude ss_sold_time_sk,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q005,Complétude ss_item_sk,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q006,Complétude ss_customer_sk,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q007,Complétude ss_cdemo_sk,store_sales,238,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q008,Complétude ss_hdemo_sk,store_sales,295,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q009,Complétude ss_addr_sk,store_sales,448,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q010,Complétude ss_store_sk,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q011,Complétude ss_promo_sk,store_sales,158,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q012,Complétude ss_ticket_number,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q013,Complétude ss_quantity,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q014,Complétude ss_wholesale_cost,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q015,Complétude ss_list_price,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q016,Complétude ss_sales_price,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q017,Complétude ss_ext_discount_amt,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q018,Complétude ss_ext_sales_price,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q019,Complétude ss_ext_wholesale_cost,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q020,Complétude ss_ext_list_price,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q021,Complétude ss_ext_tax,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q022,Complétude ss_coupon_amt,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q023,Complétude ss_net_paid,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q024,Complétude ss_net_paid_inc_tax,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q025,Complétude ss_net_profit,store_sales,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q026,Doublons exacts,store_sales,0,0,OK,count - distinct toutes colonnes natives,,Exhaustif sur les fichiers initiaux retenus
+Q027,Conservation Raw=Silver+rejets,store_sales,667579,667579,OK,count,,Exhaustif sur les fichiers initiaux retenus
+Q028,Provenance Silver,store_sales,0,0,OK,comparaison empreinte attendue,,Exhaustif sur les fichiers initiaux retenus
+Q029,Volume Raw/Python,item,17820,17820,OK,count vs lecture Python indépendante,,Exhaustif sur les fichiers initiaux retenus
+Q030,Conversions sans perte,item,0,0,OK,try_cast sur chaque valeur non nulle,,Exhaustif sur les fichiers initiaux retenus
+Q031,Complétude i_item_sk,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q032,Complétude i_item_id,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q033,Complétude i_rec_start_date,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q034,Complétude i_rec_end_date,item,17820,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q035,Complétude i_item_desc,item,4,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q036,Complétude i_current_price,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q037,Complétude i_wholesale_cost,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q038,Complétude i_brand_id,item,8,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q039,Complétude i_brand,item,6,,OBSERVE,SUM(isNull),NULL conservé ; champs facultatifs ou fin de validité ouverte,Exhaustif sur les fichiers initiaux retenus
+Q040,Complétude i_class_id,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q041,Complétude i_class,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q042,Complétude i_category_id,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q043,Complétude i_category,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q044,Complétude i_manufact_id,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q045,Complétude i_manufact,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q046,Complétude i_size,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q047,Complétude i_formulation,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q048,Complétude i_color,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q049,Complétude i_units,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q050,Complétude i_container,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q051,Complétude i_manager_id,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q052,Complétude i_product_name,item,0,,OK,SUM(isNull),Champ renseigné,Exhaustif sur les fichiers initiaux retenus
+Q053,Doublons exacts,item,0,0,OK,count - distinct toutes colonnes natives,,Exhaustif sur les fichiers initiaux retenus
+Q054,Date ISO valide i_rec_start_date,item,0,0,OK,try_cast date non vide,,Exhaustif sur les fichiers initiaux retenus
+Q055,Date ISO valide i_rec_end_date,item,0,0,OK,try_cast date non vide,,Exhaustif sur les fichiers initiaux retenus
+Q056,Ordre dates produit,item,0,0,OK,fin < début ; nulls ouverts exclus,,Exhaustif sur les fichiers initiaux retenus
+Q057,Conservation Raw=Silver+rejets,item,17820,17820,OK,count,,Exhaustif sur les fichiers initiaux retenus
+Q058,Provenance Silver,item,0,0,OK,comparaison empreinte attendue,,Exhaustif sur les fichiers initiaux retenus
+Q059,Unicité clé dimension,item,0,0,OK,count - count distinct i_item_sk,,Exhaustif sur les fichiers initiaux retenus
+Q060,Clé jointure types,store_sales/item,bigint,bigint,OK,schémas explicites,,Exhaustif sur les fichiers initiaux retenus
+Q061,Intégrité référentielle,store_sales/item,0,0,OK,left_anti,,Exhaustif sur les fichiers initiaux retenus
+Q062,Cardinalité jointure gauche,store_sales/item,667579,667579,OK,count avant/après,,Exhaustif sur les fichiers initiaux retenus
+Q063,Réconciliation Silver/Gold quantity,gold,33755474,33755474,OK,SUM et COUNT aux deux grains,,Exhaustif sur les fichiers initiaux retenus
+Q064,Réconciliation Silver/Gold net_paid,gold,1150529586.37,1150529586.37,OK,SUM et COUNT aux deux grains,,Exhaustif sur les fichiers initiaux retenus
+Q065,Réconciliation Silver/Gold rows,gold,667579,667579,OK,SUM et COUNT aux deux grains,,Exhaustif sur les fichiers initiaux retenus
+Q066,Gold clé produit unique,gold,0,0,OK,count-distinct,,Exhaustif sur les fichiers initiaux retenus
+Q067,Somme quantité indépendante,gold,33755474,33755474,OK,SUM Spark vs entiers Python,,Exhaustif sur les fichiers initiaux retenus
+Q068,Somme monétaire indépendante,gold,1150529586.37,1150529586.37,OK,SUM Spark Decimal vs decimal.Decimal Python,,Exhaustif sur les fichiers initiaux retenus
+Q069,Réconciliation de chaque produit,gold,0,0,OK,Toutes les lignes Gold vs groupement Python indépendant,,Exhaustif sur les fichiers initiaux retenus
+Q070,net_plus_tax_mismatch,store_sales,0,0,OK,égalité décimale exhaustive,,Exhaustif sur les fichiers initiaux retenus
+Q071,price_quantity_mismatch,store_sales,0,0,OK,égalité décimale exhaustive,,Exhaustif sur les fichiers initiaux retenus
+Q072,Couple ticket-produit non unique,store_sales,4136,,ANOMALIE_DOCUMENTEE,"count - distinct couple, notebook",Pas une clé de ligne ; aucune suppression,Exhaustif sur les fichiers initiaux retenus
+Q073,Profits négatifs conservés,store_sales,495971,495971,OK,count ss_net_profit<0,"Signe conservé, ne constitue pas un rejet",Exhaustif sur les fichiers initiaux retenus

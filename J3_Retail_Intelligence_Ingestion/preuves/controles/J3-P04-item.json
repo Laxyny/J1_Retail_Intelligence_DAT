@@ -1,0 +1,258 @@
+{
+  "rows": 17820,
+  "nulls": {
+    "i_item_sk": 0,
+    "i_item_id": 0,
+    "i_rec_start_date": 0,
+    "i_rec_end_date": 17820,
+    "i_item_desc": 4,
+    "i_current_price": 0,
+    "i_wholesale_cost": 0,
+    "i_brand_id": 8,
+    "i_brand": 6,
+    "i_class_id": 0,
+    "i_class": 0,
+    "i_category_id": 0,
+    "i_category": 0,
+    "i_manufact_id": 0,
+    "i_manufact": 0,
+    "i_size": 0,
+    "i_formulation": 0,
+    "i_color": 0,
+    "i_units": 0,
+    "i_container": 0,
+    "i_manager_id": 0,
+    "i_product_name": 0
+  },
+  "numeric": [
+    "i_item_sk",
+    "i_current_price",
+    "i_wholesale_cost",
+    "i_brand_id",
+    "i_class_id",
+    "i_category_id",
+    "i_manufact_id",
+    "i_manager_id"
+  ],
+  "text": [
+    "i_item_id",
+    "i_rec_start_date",
+    "i_rec_end_date",
+    "i_item_desc",
+    "i_brand",
+    "i_class",
+    "i_category",
+    "i_manufact",
+    "i_size",
+    "i_formulation",
+    "i_color",
+    "i_units",
+    "i_container",
+    "i_product_name"
+  ],
+  "temporal": [
+    "i_rec_start_date",
+    "i_rec_end_date"
+  ],
+  "extrema": {
+    "i_item_sk_min": 0,
+    "i_item_sk_max": 17819,
+    "i_current_price_min": "0.10",
+    "i_current_price_max": "99.98",
+    "i_wholesale_cost_min": "0.02",
+    "i_wholesale_cost_max": "87.35",
+    "i_brand_id_min": 1001703,
+    "i_brand_id_max": 10015586,
+    "i_class_id_min": 1,
+    "i_class_id_max": 16,
+    "i_category_id_min": 1,
+    "i_category_id_max": 9,
+    "i_manufact_id_min": 1,
+    "i_manufact_id_max": 1000,
+    "i_manager_id_min": 1,
+    "i_manager_id_max": 100
+  },
+  "distinct_product_keys": 17820,
+  "exact_repeated_rows": 0,
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "i_item_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_item_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_rec_start_date",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_rec_end_date",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_item_desc",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_current_price",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_wholesale_cost",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_brand_id",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_brand",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_class_id",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_class",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_category_id",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_category",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_manufact_id",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_manufact",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_size",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_formulation",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_color",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_units",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_container",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_manager_id",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "i_product_name",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "scope": "exhaustif",
+  "domains": {
+    "i_category": [
+      "Books",
+      "Clothing & Accessories",
+      "Electronics",
+      "Home & Kitchen",
+      "Movies & TV",
+      "Music",
+      "Sports & Outdoors",
+      "Tools & Home Improvement",
+      "Toys & Games"
+    ],
+    "i_units": [
+      "Box",
+      "Bunch",
+      "Bundle",
+      "Carton",
+      "Case",
+      "Cup",
+      "Dozen",
+      "Dram",
+      "Each",
+      "Gram",
+      "Gross",
+      "Lb",
+      "N/A",
+      "Ounce",
+      "Oz",
+      "Pallet",
+      "Pound",
+      "Tbl",
+      "Ton",
+      "Tsp",
+      "Unknown"
+    ],
+    "i_container": [
+      "Unknown"
+    ]
+  },
+  "date_errors": {
+    "i_rec_start_date": 0,
+    "i_rec_end_date": 0
+  }
+}

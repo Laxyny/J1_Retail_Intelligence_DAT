@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "pages": 17,
+  "characters_per_page": [
+    2482,
+    2856,
+    2471,
+    761,
+    1832,
+    2984,
+    3180,
+    1929,
+    2572,
+    2702,
+    2230,
+    3464,
+    2561,
+    1794,
+    333,
+    335,
+    328
+  ],
+  "rendered_pages": 17,
+  "authentic_capture_streams_unchanged": 3,
+  "visual_inspection": "Rendus disponibles pour inspection ; ce champ seul ne prouve pas la lecture visuelle"
+}

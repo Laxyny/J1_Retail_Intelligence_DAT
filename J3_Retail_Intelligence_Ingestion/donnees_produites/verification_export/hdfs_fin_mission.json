@@ -1,0 +1,117 @@
+{
+  "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795002240145,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 654121,
+    "mtime": 1795002240086,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:7e7bc9f01c5657c87b7f33862a1f8c61"
+  },
+  "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 653030,
+    "mtime": 1795002240067,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:72bb048f8bd5f43a1a8b0d5bcdb1c00d"
+  },
+  "hdfs://hdfs:9000/retail-lake/quality/j3/smoke-0a7c13a5b006/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795001728484,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/quality/j3/smoke-0a7c13a5b006/part-00000-9c7f52b8-505b-4f93-bd51-8a9cfaeab348-c000.snappy.parquet": {
+    "bytes": 3529,
+    "mtime": 1795001728418,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:dcf2ddbf3ac8bf7a6cecb677ac6dec00"
+  },
+  "hdfs://hdfs:9000/retail-lake/quality/j3/smoke-a04b6774f7d0/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795003282311,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/quality/j3/smoke-a04b6774f7d0/part-00000-f9100994-4491-4fc1-996c-70eda4b9caab-c000.snappy.parquet": {
+    "bytes": 3529,
+    "mtime": 1795003282273,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:f1f1b61baa41aa5859a06db5952227ac"
+  },
+  "hdfs://hdfs:9000/retail-lake/raw/j3/20261118T113628Z-243a5fb5/item.dat": {
+    "bytes": 6799286,
+    "mtime": 1795001800571,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:37c4a2d56b2da2ffec78c0cc66d081ec"
+  },
+  "hdfs://hdfs:9000/retail-lake/raw/j3/20261118T113628Z-243a5fb5/store_sales.dat": {
+    "bytes": 92764700,
+    "mtime": 1795001795957,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:cb3d39d54ed8213ba08dfa4be2768183"
+  },
+  "hdfs://hdfs:9000/retail-lake/raw/nifi/reason.dat": {
+    "bytes": 3105,
+    "mtime": 1794916232754,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:0c408dc5b93a5fa35e88500e1bac882f"
+  },
+  "hdfs://hdfs:9000/retail-lake/raw/tpcxbb/initial/reason.dat": {
+    "bytes": 3105,
+    "mtime": 1794916181031,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:0c408dc5b93a5fa35e88500e1bac882f"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5/store_sales/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795001949949,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5/store_sales/part-00000-2a600392-cb28-4b19-a23d-0b4a86913eaf-c000.snappy.parquet": {
+    "bytes": 18158908,
+    "mtime": 1795001949876,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:3616c9825c88eec812539bf607a8e54b"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5/store_sales/part-00001-2a600392-cb28-4b19-a23d-0b4a86913eaf-c000.snappy.parquet": {
+    "bytes": 16607560,
+    "mtime": 1795001949876,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:70393335f6d3604c171642971092a662"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r2/store_sales/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795002086778,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r2/store_sales/part-00000-d40df334-72a2-4c52-ae79-7c9bce712eb8-c000.snappy.parquet": {
+    "bytes": 18159032,
+    "mtime": 1795002086708,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:3159ba862a66e2a38fdc8a3613dba2ea"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r2/store_sales/part-00001-d40df334-72a2-4c52-ae79-7c9bce712eb8-c000.snappy.parquet": {
+    "bytes": 16607672,
+    "mtime": 1795002086708,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:7ffec071f342ac457b33245d94e9af80"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795002228203,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 2874664,
+    "mtime": 1795002228162,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:bcc4bddaabd726427647134520bade69"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 696555,
+    "mtime": 1795002227918,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:2728acfeeff3d157ff49ffafb4267199"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/_SUCCESS": {
+    "bytes": 0,
+    "mtime": 1795002216417,
+    "hadoop_checksum": "MD5-of-0MD5-of-0CRC32:70bc8f4b72a86921468bf8e8441dce51"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 18159032,
+    "mtime": 1795002216361,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:bd1f2080106e1fa57669fd3c2cfb4346"
+  },
+  "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 16607672,
+    "mtime": 1795002216360,
+    "hadoop_checksum": "MD5-of-0MD5-of-512CRC32C:78c5f8edf95b34994740ff433a6a10bb"
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "status": "OK",
+    "test": "Ordre, paramètres, archivage, journaux",
+    "docker": "simulé"
+  },
+  {
+    "status": "OK",
+    "test": "Arrêt après code 7 simulé",
+    "docker": "simulé"
+  },
+  {
+    "status": "OK",
+    "test": "Archive existante préservée",
+    "docker": "aucun appel"
+  },
+  {
+    "status": "OK",
+    "test": "Identifiant de lot contrôlé",
+    "docker": "aucun appel"
+  },
+  {
+    "status": "OK",
+    "test": "Chemins requis vérifiés avant action",
+    "docker": "aucun appel"
+  }
+]

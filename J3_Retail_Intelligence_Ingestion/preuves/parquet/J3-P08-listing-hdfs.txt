@@ -1,0 +1,14 @@
+drwxr-xr-x   - hadoop supergroup          0 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item
+-rw-r--r--   1 hadoop supergroup          0 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/_SUCCESS
+-rw-r--r--   1 hadoop supergroup    2874664 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet
+-rw-r--r--   1 hadoop supergroup     696555 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet
+drwxr-xr-x   - hadoop supergroup          0 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales
+-rw-r--r--   1 hadoop supergroup          0 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/_SUCCESS
+-rw-r--r--   1 hadoop supergroup   18159032 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet
+-rw-r--r--   1 hadoop supergroup   16607672 2026-11-18 11:43 /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet
+drwxr-xr-x   - hadoop supergroup          0 2026-11-18 11:44 /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit
+-rw-r--r--   1 hadoop supergroup          0 2026-11-18 11:44 /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/_SUCCESS
+-rw-r--r--   1 hadoop supergroup     654121 2026-11-18 11:44 /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet
+-rw-r--r--   1 hadoop supergroup     653030 2026-11-18 11:44 /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet
+38337923  38337923  /retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3
+1307151   1307151   /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3

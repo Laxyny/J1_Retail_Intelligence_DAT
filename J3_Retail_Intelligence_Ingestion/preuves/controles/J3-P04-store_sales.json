@@ -1,0 +1,259 @@
+{
+  "rows": 667579,
+  "nulls": {
+    "ss_sold_date_sk": 0,
+    "ss_sold_time_sk": 0,
+    "ss_item_sk": 0,
+    "ss_customer_sk": 0,
+    "ss_cdemo_sk": 238,
+    "ss_hdemo_sk": 295,
+    "ss_addr_sk": 448,
+    "ss_store_sk": 0,
+    "ss_promo_sk": 158,
+    "ss_ticket_number": 0,
+    "ss_quantity": 0,
+    "ss_wholesale_cost": 0,
+    "ss_list_price": 0,
+    "ss_sales_price": 0,
+    "ss_ext_discount_amt": 0,
+    "ss_ext_sales_price": 0,
+    "ss_ext_wholesale_cost": 0,
+    "ss_ext_list_price": 0,
+    "ss_ext_tax": 0,
+    "ss_coupon_amt": 0,
+    "ss_net_paid": 0,
+    "ss_net_paid_inc_tax": 0,
+    "ss_net_profit": 0
+  },
+  "numeric": [
+    "ss_sold_date_sk",
+    "ss_sold_time_sk",
+    "ss_item_sk",
+    "ss_customer_sk",
+    "ss_cdemo_sk",
+    "ss_hdemo_sk",
+    "ss_addr_sk",
+    "ss_store_sk",
+    "ss_promo_sk",
+    "ss_ticket_number",
+    "ss_quantity",
+    "ss_wholesale_cost",
+    "ss_list_price",
+    "ss_sales_price",
+    "ss_ext_discount_amt",
+    "ss_ext_sales_price",
+    "ss_ext_wholesale_cost",
+    "ss_ext_list_price",
+    "ss_ext_tax",
+    "ss_coupon_amt",
+    "ss_net_paid",
+    "ss_net_paid_inc_tax",
+    "ss_net_profit"
+  ],
+  "text": [],
+  "temporal": [],
+  "extrema": {
+    "ss_sold_date_sk_min": 36890,
+    "ss_sold_date_sk_max": 38697,
+    "ss_sold_time_sk_min": 0,
+    "ss_sold_time_sk_max": 86399,
+    "ss_item_sk_min": 0,
+    "ss_item_sk_max": 17819,
+    "ss_customer_sk_min": 2,
+    "ss_customer_sk_max": 98999,
+    "ss_cdemo_sk_min": 18,
+    "ss_cdemo_sk_max": 1920742,
+    "ss_hdemo_sk_min": 0,
+    "ss_hdemo_sk_max": 7199,
+    "ss_addr_sk_min": 0,
+    "ss_addr_sk_max": 49499,
+    "ss_store_sk_min": 0,
+    "ss_store_sk_max": 11,
+    "ss_promo_sk_min": 0,
+    "ss_promo_sk_max": 299,
+    "ss_ticket_number_min": 0,
+    "ss_ticket_number_max": 89099,
+    "ss_quantity_min": 1,
+    "ss_quantity_max": 100,
+    "ss_wholesale_cost_min": "1.00",
+    "ss_wholesale_cost_max": "100.00",
+    "ss_list_price_min": "1.00",
+    "ss_list_price_max": "200.00",
+    "ss_sales_price_min": "0.00",
+    "ss_sales_price_max": "199.30",
+    "ss_ext_discount_amt_min": "0.00",
+    "ss_ext_discount_amt_max": "18984.00",
+    "ss_ext_sales_price_min": "0.00",
+    "ss_ext_sales_price_max": "18745.00",
+    "ss_ext_wholesale_cost_min": "1.00",
+    "ss_ext_wholesale_cost_max": "9997.00",
+    "ss_ext_list_price_min": "1.20",
+    "ss_ext_list_price_max": "19814.00",
+    "ss_ext_tax_min": "0.00",
+    "ss_ext_tax_max": "1637.80",
+    "ss_coupon_amt_min": "0.00",
+    "ss_coupon_amt_max": "14371.66",
+    "ss_net_paid_min": "0.00",
+    "ss_net_paid_max": "18745.00",
+    "ss_net_paid_inc_tax_min": "0.00",
+    "ss_net_paid_inc_tax_max": "19869.70",
+    "ss_net_profit_min": "-9866.60",
+    "ss_net_profit_max": "9134.00"
+  },
+  "distinct_product_keys": 17820,
+  "exact_repeated_rows": 0,
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "ss_sold_date_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_sold_time_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_item_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_customer_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_cdemo_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_hdemo_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_addr_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_store_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_promo_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ticket_number",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_quantity",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_wholesale_cost",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_list_price",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_sales_price",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ext_discount_amt",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ext_sales_price",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ext_wholesale_cost",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ext_list_price",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_ext_tax",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_coupon_amt",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_net_paid",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_net_paid_inc_tax",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ss_net_profit",
+        "type": "decimal(7,2)",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "scope": "exhaustif",
+  "ticket_item_repetitions": 4136,
+  "signed_values": {
+    "ss_quantity": 0,
+    "ss_net_paid": 0,
+    "ss_net_profit": 495971
+  },
+  "coherence": {
+    "net_plus_tax_mismatch": 0,
+    "price_quantity_mismatch": 0
+  }
+}

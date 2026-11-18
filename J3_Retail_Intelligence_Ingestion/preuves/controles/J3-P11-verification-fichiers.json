@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "protected_files": 158,
+  "baseline_files": 331,
+  "changed_files": [],
+  "git_metadata_files": 173,
+  "git_metadata_changed": [
+    "J1_Retail_Intelligence_DAT\\.git\\logs\\refs\\remotes\\origin\\HEAD"
+  ],
+  "required_files": 15,
+  "present_files": [
+    "configuration/environnement.md",
+    "documentation/inventaire_sources.md",
+    "notebooks/UC06_exploration.ipynb",
+    "documentation/regles_nettoyage.md",
+    "scripts/transformation/transformer.py",
+    "donnees_produites/manifest.json",
+    "preuves/controles/J3-P06-transformation.json",
+    "preuves/parquet/J3-P08-parquet.json",
+    "documentation/rapport_qualite.md",
+    "README.md",
+    "preuves/index.md",
+    "rapport/DAT_Retail_Intelligence_J3.md",
+    "rapport/DAT_Retail_Intelligence_J3.pdf",
+    "verification/suivi_exigences.md",
+    "documentation/questions_recul.md"
+  ]
+}

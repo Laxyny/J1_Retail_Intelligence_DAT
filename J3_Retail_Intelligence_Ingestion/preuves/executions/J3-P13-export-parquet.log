@@ -1,0 +1,7 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/18 13:31:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                silver_store_sales 667579 lignes ; 3 fichiers ; intégrité SHA-256 OK
+silver_item 17820 lignes ; 3 fichiers ; intégrité SHA-256 OK
+gold_ventes_par_produit 17820 lignes ; 3 fichiers ; intégrité SHA-256 OK
+EXPORT VALIDÉ ET PUBLIÉ /work/donnees_produites/export

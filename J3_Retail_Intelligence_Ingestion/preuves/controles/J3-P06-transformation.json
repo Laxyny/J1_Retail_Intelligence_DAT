@@ -1,0 +1,1845 @@
+{
+  "run_id": "20261118T113628Z-243a5fb5-r3",
+  "spark": "3.5.7",
+  "outputs": {
+    "silver_store_sales": {
+      "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales",
+      "rows_before": 667579,
+      "rows_after": 667579,
+      "same_names_types": true,
+      "fingerprints": {
+        "before": {
+          "sum1": "384968951210226615659026",
+          "sum50": "384356958088050046355656"
+        },
+        "after": {
+          "sum1": "384968951210226615659026",
+          "sum50": "384356958088050046355656"
+        }
+      },
+      "schema_before": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_sold_date_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sold_time_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_customer_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_cdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_hdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_addr_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_store_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_promo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ticket_number",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_discount_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_coupon_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid_inc_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_profit",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "schema_after": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_sold_date_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sold_time_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_customer_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_cdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_hdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_addr_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_store_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_promo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ticket_number",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_discount_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_coupon_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid_inc_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_profit",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 34766704,
+      "files": 3,
+      "compression": "snappy"
+    },
+    "silver_item": {
+      "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item",
+      "rows_before": 17820,
+      "rows_after": 17820,
+      "same_names_types": true,
+      "fingerprints": {
+        "before": {
+          "sum1": "10241329665086398780247",
+          "sum50": "10325571607331755583905"
+        },
+        "after": {
+          "sum1": "10241329665086398780247",
+          "sum50": "10325571607331755583905"
+        }
+      },
+      "schema_before": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "i_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_desc",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_current_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_size",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_formulation",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_color",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_units",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_container",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manager_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "schema_after": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "i_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_desc",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_current_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_size",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_formulation",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_color",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_units",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_container",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manager_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 3571219,
+      "files": 3,
+      "compression": "snappy"
+    },
+    "gold_ventes_par_produit": {
+      "path": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit",
+      "rows_before": 17820,
+      "rows_after": 17820,
+      "same_names_types": true,
+      "fingerprints": {
+        "before": {
+          "sum1": "10341900629424653806532",
+          "sum50": "10269430893700998384886"
+        },
+        "after": {
+          "sum1": "10341900629424653806532",
+          "sum50": "10269430893700998384886"
+        }
+      },
+      "schema_before": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "net_paid",
+            "type": "decimal(17,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "sales_line_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sales_sha256",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "_source_item_sha256",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "schema_after": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "net_paid",
+            "type": "decimal(17,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "sales_line_count",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sales_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_item_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 1307151,
+      "files": 3,
+      "compression": "snappy"
+    }
+  },
+  "casts": {
+    "store_sales": {
+      "ss_sold_date_sk": 0,
+      "ss_sold_time_sk": 0,
+      "ss_item_sk": 0,
+      "ss_customer_sk": 0,
+      "ss_cdemo_sk": 0,
+      "ss_hdemo_sk": 0,
+      "ss_addr_sk": 0,
+      "ss_store_sk": 0,
+      "ss_promo_sk": 0,
+      "ss_ticket_number": 0,
+      "ss_quantity": 0,
+      "ss_wholesale_cost": 0,
+      "ss_list_price": 0,
+      "ss_sales_price": 0,
+      "ss_ext_discount_amt": 0,
+      "ss_ext_sales_price": 0,
+      "ss_ext_wholesale_cost": 0,
+      "ss_ext_list_price": 0,
+      "ss_ext_tax": 0,
+      "ss_coupon_amt": 0,
+      "ss_net_paid": 0,
+      "ss_net_paid_inc_tax": 0,
+      "ss_net_profit": 0
+    },
+    "item": {
+      "i_item_sk": 0,
+      "i_item_id": 0,
+      "i_rec_start_date": 0,
+      "i_rec_end_date": 0,
+      "i_item_desc": 0,
+      "i_current_price": 0,
+      "i_wholesale_cost": 0,
+      "i_brand_id": 0,
+      "i_brand": 0,
+      "i_class_id": 0,
+      "i_class": 0,
+      "i_category_id": 0,
+      "i_category": 0,
+      "i_manufact_id": 0,
+      "i_manufact": 0,
+      "i_size": 0,
+      "i_formulation": 0,
+      "i_color": 0,
+      "i_units": 0,
+      "i_container": 0,
+      "i_manager_id": 0,
+      "i_product_name": 0
+    }
+  },
+  "rejects": {
+    "store_sales": 0,
+    "item": 0
+  },
+  "text_changed": {
+    "store_sales": 0,
+    "item": 2575
+  },
+  "totals": {
+    "quantity": 33755474,
+    "net_paid": "1150529586.37",
+    "rows": 667579
+  },
+  "join": {
+    "before": 667579,
+    "after": 667579,
+    "unmatched": 0
+  },
+  "top10": [
+    {
+      "ss_item_sk": 10000,
+      "i_product_name": "vwPR6l3UPyCIv5bljZbIG9k9YHLajogyqKbd6",
+      "i_category": "Home & Kitchen",
+      "i_brand": "lK9qfFbOhIeSjuvriRd0QxTTQXL69DVjeMwXMdnwXg4",
+      "quantity_sold": 454954,
+      "net_paid": "15408393.55",
+      "sales_line_count": 9029,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 10003,
+      "i_product_name": "Z2kc",
+      "i_category": "Electronics",
+      "i_brand": "ggekJbOwBmxGDebLeM3MYRmq17b",
+      "quantity_sold": 439086,
+      "net_paid": "14933870.10",
+      "sales_line_count": 8761,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 10001,
+      "i_product_name": "6VxbaI6thqY49zO",
+      "i_category": "Music",
+      "i_brand": "zfzudPJBvijuqr2QUs8FdKx5A",
+      "quantity_sold": 420138,
+      "net_paid": "14572124.66",
+      "sales_line_count": 8269,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 10002,
+      "i_product_name": "bwTLbeGP8aT6bW7YjgxmDJuCUTlwG1Fz78VewSCYQULiop",
+      "i_category": "Music",
+      "i_brand": "dyZoZ87Uzw7Tr5ZpyuJ1fppr3wEje",
+      "quantity_sold": 377027,
+      "net_paid": "12817437.86",
+      "sales_line_count": 7505,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 17502,
+      "i_product_name": "HUpD",
+      "i_category": "Books",
+      "i_brand": "cx81AW0aEx17G58rwTbiv6YZ11cF5YxZjeBah8U2JGkWhwGts4",
+      "quantity_sold": 94625,
+      "net_paid": "3336529.83",
+      "sales_line_count": 1878,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 10579,
+      "i_product_name": "LlFpTY3OX6EOhNjNssIJxlayUcuh",
+      "i_category": "Music",
+      "i_brand": "jbq3IWXWy4iwXiJNA5bg5fvw",
+      "quantity_sold": 91179,
+      "net_paid": "3250367.57",
+      "sales_line_count": 1767,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 8601,
+      "i_product_name": "Qgphkd7Y",
+      "i_category": "Clothing & Accessories",
+      "i_brand": "pd",
+      "quantity_sold": 89600,
+      "net_paid": "3238749.92",
+      "sales_line_count": 1761,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 5618,
+      "i_product_name": "c4v1x8aCv1KWxIhOcPY3LimEiLB",
+      "i_category": "Music",
+      "i_brand": "pcxcQuJJeIiBkjuzg",
+      "quantity_sold": 95677,
+      "net_paid": "3212955.42",
+      "sales_line_count": 1867,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 2651,
+      "i_product_name": "lJ5jtlBpY9Uj13h4v0x48kO9CQliylWzHnn6Hc73Kvi15jtG",
+      "i_category": "Music",
+      "i_brand": "Bant3qWj",
+      "quantity_sold": 88936,
+      "net_paid": "3172287.79",
+      "sales_line_count": 1730,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    },
+    {
+      "ss_item_sk": 16513,
+      "i_product_name": "I669eBdhzmKpf93OoII6M0kCNYEzNsABm1FK2elIJLmi7Sjw3",
+      "i_category": "Music",
+      "i_brand": "UDX81HAdnVhYbI3NStqbIsb8pyjLgjSRcyfRcyEYbIDc2",
+      "quantity_sold": 91710,
+      "net_paid": "3162636.37",
+      "sales_line_count": 1817,
+      "_run_id": "20261118T113628Z-243a5fb5-r3",
+      "_source_sales_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+      "_source_item_sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+    }
+  ],
+  "checks": [
+    {
+      "id": "Q001",
+      "rule": "Volume Raw/Python",
+      "target": "store_sales",
+      "result": 667579,
+      "expected": 667579,
+      "status": "OK",
+      "method": "count vs lecture Python indépendante",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q002",
+      "rule": "Conversions sans perte",
+      "target": "store_sales",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "try_cast sur chaque valeur non nulle",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q003",
+      "rule": "Complétude ss_sold_date_sk",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q004",
+      "rule": "Complétude ss_sold_time_sk",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q005",
+      "rule": "Complétude ss_item_sk",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q006",
+      "rule": "Complétude ss_customer_sk",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q007",
+      "rule": "Complétude ss_cdemo_sk",
+      "target": "store_sales",
+      "result": 238,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q008",
+      "rule": "Complétude ss_hdemo_sk",
+      "target": "store_sales",
+      "result": 295,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q009",
+      "rule": "Complétude ss_addr_sk",
+      "target": "store_sales",
+      "result": 448,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q010",
+      "rule": "Complétude ss_store_sk",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q011",
+      "rule": "Complétude ss_promo_sk",
+      "target": "store_sales",
+      "result": 158,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q012",
+      "rule": "Complétude ss_ticket_number",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q013",
+      "rule": "Complétude ss_quantity",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q014",
+      "rule": "Complétude ss_wholesale_cost",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q015",
+      "rule": "Complétude ss_list_price",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q016",
+      "rule": "Complétude ss_sales_price",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q017",
+      "rule": "Complétude ss_ext_discount_amt",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q018",
+      "rule": "Complétude ss_ext_sales_price",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q019",
+      "rule": "Complétude ss_ext_wholesale_cost",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q020",
+      "rule": "Complétude ss_ext_list_price",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q021",
+      "rule": "Complétude ss_ext_tax",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q022",
+      "rule": "Complétude ss_coupon_amt",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q023",
+      "rule": "Complétude ss_net_paid",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q024",
+      "rule": "Complétude ss_net_paid_inc_tax",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q025",
+      "rule": "Complétude ss_net_profit",
+      "target": "store_sales",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q026",
+      "rule": "Doublons exacts",
+      "target": "store_sales",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "count - distinct toutes colonnes natives",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q027",
+      "rule": "Conservation Raw=Silver+rejets",
+      "target": "store_sales",
+      "result": 667579,
+      "expected": 667579,
+      "status": "OK",
+      "method": "count",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q028",
+      "rule": "Provenance Silver",
+      "target": "store_sales",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "comparaison empreinte attendue",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q029",
+      "rule": "Volume Raw/Python",
+      "target": "item",
+      "result": 17820,
+      "expected": 17820,
+      "status": "OK",
+      "method": "count vs lecture Python indépendante",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q030",
+      "rule": "Conversions sans perte",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "try_cast sur chaque valeur non nulle",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q031",
+      "rule": "Complétude i_item_sk",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q032",
+      "rule": "Complétude i_item_id",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q033",
+      "rule": "Complétude i_rec_start_date",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q034",
+      "rule": "Complétude i_rec_end_date",
+      "target": "item",
+      "result": 17820,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q035",
+      "rule": "Complétude i_item_desc",
+      "target": "item",
+      "result": 4,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q036",
+      "rule": "Complétude i_current_price",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q037",
+      "rule": "Complétude i_wholesale_cost",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q038",
+      "rule": "Complétude i_brand_id",
+      "target": "item",
+      "result": 8,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q039",
+      "rule": "Complétude i_brand",
+      "target": "item",
+      "result": 6,
+      "expected": null,
+      "status": "OBSERVE",
+      "method": "SUM(isNull)",
+      "justification": "NULL conservé ; champs facultatifs ou fin de validité ouverte",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q040",
+      "rule": "Complétude i_class_id",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q041",
+      "rule": "Complétude i_class",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q042",
+      "rule": "Complétude i_category_id",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q043",
+      "rule": "Complétude i_category",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q044",
+      "rule": "Complétude i_manufact_id",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q045",
+      "rule": "Complétude i_manufact",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q046",
+      "rule": "Complétude i_size",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q047",
+      "rule": "Complétude i_formulation",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q048",
+      "rule": "Complétude i_color",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q049",
+      "rule": "Complétude i_units",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q050",
+      "rule": "Complétude i_container",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q051",
+      "rule": "Complétude i_manager_id",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q052",
+      "rule": "Complétude i_product_name",
+      "target": "item",
+      "result": 0,
+      "expected": null,
+      "status": "OK",
+      "method": "SUM(isNull)",
+      "justification": "Champ renseigné",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q053",
+      "rule": "Doublons exacts",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "count - distinct toutes colonnes natives",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q054",
+      "rule": "Date ISO valide i_rec_start_date",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "try_cast date non vide",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q055",
+      "rule": "Date ISO valide i_rec_end_date",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "try_cast date non vide",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q056",
+      "rule": "Ordre dates produit",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "fin < début ; nulls ouverts exclus",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q057",
+      "rule": "Conservation Raw=Silver+rejets",
+      "target": "item",
+      "result": 17820,
+      "expected": 17820,
+      "status": "OK",
+      "method": "count",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q058",
+      "rule": "Provenance Silver",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "comparaison empreinte attendue",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q059",
+      "rule": "Unicité clé dimension",
+      "target": "item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "count - count distinct i_item_sk",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q060",
+      "rule": "Clé jointure types",
+      "target": "store_sales/item",
+      "result": "bigint",
+      "expected": "bigint",
+      "status": "OK",
+      "method": "schémas explicites",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q061",
+      "rule": "Intégrité référentielle",
+      "target": "store_sales/item",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "left_anti",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q062",
+      "rule": "Cardinalité jointure gauche",
+      "target": "store_sales/item",
+      "result": 667579,
+      "expected": 667579,
+      "status": "OK",
+      "method": "count avant/après",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q063",
+      "rule": "Réconciliation Silver/Gold quantity",
+      "target": "gold",
+      "result": 33755474,
+      "expected": 33755474,
+      "status": "OK",
+      "method": "SUM et COUNT aux deux grains",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q064",
+      "rule": "Réconciliation Silver/Gold net_paid",
+      "target": "gold",
+      "result": "1150529586.37",
+      "expected": "1150529586.37",
+      "status": "OK",
+      "method": "SUM et COUNT aux deux grains",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q065",
+      "rule": "Réconciliation Silver/Gold rows",
+      "target": "gold",
+      "result": 667579,
+      "expected": 667579,
+      "status": "OK",
+      "method": "SUM et COUNT aux deux grains",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q066",
+      "rule": "Gold clé produit unique",
+      "target": "gold",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "count-distinct",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q067",
+      "rule": "Somme quantité indépendante",
+      "target": "gold",
+      "result": 33755474,
+      "expected": 33755474,
+      "status": "OK",
+      "method": "SUM Spark vs entiers Python",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q068",
+      "rule": "Somme monétaire indépendante",
+      "target": "gold",
+      "result": "1150529586.37",
+      "expected": "1150529586.37",
+      "status": "OK",
+      "method": "SUM Spark Decimal vs decimal.Decimal Python",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q069",
+      "rule": "Réconciliation de chaque produit",
+      "target": "gold",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "Toutes les lignes Gold vs groupement Python indépendant",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q070",
+      "rule": "net_plus_tax_mismatch",
+      "target": "store_sales",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "égalité décimale exhaustive",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q071",
+      "rule": "price_quantity_mismatch",
+      "target": "store_sales",
+      "result": 0,
+      "expected": 0,
+      "status": "OK",
+      "method": "égalité décimale exhaustive",
+      "justification": "",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q072",
+      "rule": "Couple ticket-produit non unique",
+      "target": "store_sales",
+      "result": 4136,
+      "expected": null,
+      "status": "ANOMALIE_DOCUMENTEE",
+      "method": "count - distinct couple, notebook",
+      "justification": "Pas une clé de ligne ; aucune suppression",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    },
+    {
+      "id": "Q073",
+      "rule": "Profits négatifs conservés",
+      "target": "store_sales",
+      "result": 495971,
+      "expected": 495971,
+      "status": "OK",
+      "method": "count ss_net_profit<0",
+      "justification": "Signe conservé, ne constitue pas un rejet",
+      "limits": "Exhaustif sur les fichiers initiaux retenus"
+    }
+  ]
+}

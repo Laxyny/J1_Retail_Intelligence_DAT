@@ -1,0 +1,70 @@
+{
+  "path": "hdfs://hdfs:9000/retail-lake/quality/j3/smoke-a04b6774f7d0",
+  "rows_before": 35,
+  "rows_after": 35,
+  "same_names_types": true,
+  "fingerprints": {
+    "before": {
+      "sum1": "18523591802880700239",
+      "sum50": "22582230933256944770"
+    },
+    "after": {
+      "sum1": "18523591802880700239",
+      "sum50": "22582230933256944770"
+    }
+  },
+  "schema_before": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "reason_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "reason_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "schema_after": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "reason_sk",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "reason_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "bytes": 3529,
+  "files": 2,
+  "compression": "snappy",
+  "spark": "3.5.7",
+  "python": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+  "java": "17.0.18",
+  "hadoop_client": "3.3.4",
+  "source": "hdfs://hdfs:9000/retail-lake/raw/tpcxbb/initial/reason.dat"
+}

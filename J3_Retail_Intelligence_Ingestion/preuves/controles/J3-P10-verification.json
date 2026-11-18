@@ -1,0 +1,471 @@
+{
+  "status": "OK",
+  "outputs": {
+    "silver_store_sales": {
+      "rows": 667579,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_sold_date_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sold_time_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_customer_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_cdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_hdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_addr_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_store_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_promo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ticket_number",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_discount_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_coupon_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid_inc_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_profit",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/_SUCCESS",
+          "bytes": 0,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "bytes": 18159032,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "bytes": 16607672,
+          "replication": 1
+        }
+      ]
+    },
+    "silver_item": {
+      "rows": 17820,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "i_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_desc",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_current_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_size",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_formulation",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_color",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_units",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_container",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manager_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/_SUCCESS",
+          "bytes": 0,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "bytes": 2874664,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "bytes": 696555,
+          "replication": 1
+        }
+      ]
+    },
+    "gold_ventes_par_produit": {
+      "rows": 17820,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "net_paid",
+            "type": "decimal(17,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "sales_line_count",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sales_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_item_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/_SUCCESS",
+          "bytes": 0,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "bytes": 654121,
+          "replication": 1
+        },
+        {
+          "path": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "bytes": 653030,
+          "replication": 1
+        }
+      ]
+    }
+  },
+  "totals": {
+    "quantity": 33755474,
+    "net_paid": "1150529586.37",
+    "rows": 667579
+  },
+  "reason_j2_unchanged": {
+    "/retail-lake/raw/tpcxbb/initial/reason.dat": "d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091",
+    "/retail-lake/raw/nifi/reason.dat": "d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091"
+  },
+  "notebook_code_cells": 5,
+  "notebook_errors": 0,
+  "checks": 73,
+  "failed": 0
+}
