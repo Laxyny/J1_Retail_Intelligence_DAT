@@ -1,0 +1,6 @@
+﻿code,nom,valeur,unite,formule,origine
+K01,Net payé HT avant retours,1150529586.37,unités monétaires,SUM(ss_net_paid),UC-01
+K02,Unités vendues,33755474,unités,SUM(ss_quantity),UC-01
+K03,Transactions magasin distinctes,89100,transactions,COUNT(*) après GROUP BY ss_ticket_number qualifié,UC-01
+K04,Panier moyen HT par transaction,12912.7899704826038159,UM par transaction,AVG(SUM(ss_net_paid) par ticket qualifié),UC-01
+J4-L01,Nombre de lignes de vente,667579,lignes,COUNT(*),"Ajout J4, indicateur de volume"

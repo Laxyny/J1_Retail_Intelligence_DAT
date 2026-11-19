@@ -1,0 +1,15 @@
+{
+  "transactions": 89100,
+  "net_paid": "1150529586.37",
+  "sales_lines": 667579,
+  "units": 33755474,
+  "basket_mean": "12912.7899704826038159",
+  "min_lines": 1,
+  "max_lines": 14,
+  "multiline_tickets": 82713,
+  "basket_exact_ratio": "12912.78997048260381593714927",
+  "basket_display": "12912.79",
+  "key": "canal magasin constant + ss_ticket_number",
+  "scope": "initial complet, avant retours",
+  "repetitions_preserved": 4136
+}

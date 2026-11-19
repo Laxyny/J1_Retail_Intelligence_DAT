@@ -1,0 +1,208 @@
+{
+  "version": "J4 V2",
+  "kpi": [
+    {
+      "code": "K01",
+      "nom": "Net payé HT avant retours",
+      "valeur": "1150529586.37",
+      "unite": "unités monétaires",
+      "formule": "SUM(ss_net_paid)",
+      "origine": "UC-01"
+    },
+    {
+      "code": "K02",
+      "nom": "Unités vendues",
+      "valeur": 33755474,
+      "unite": "unités",
+      "formule": "SUM(ss_quantity)",
+      "origine": "UC-01"
+    },
+    {
+      "code": "K03",
+      "nom": "Transactions magasin distinctes",
+      "valeur": 89100,
+      "unite": "transactions",
+      "formule": "COUNT(*) après GROUP BY ss_ticket_number qualifié",
+      "origine": "UC-01"
+    },
+    {
+      "code": "K04",
+      "nom": "Panier moyen HT par transaction",
+      "valeur": "12912.7899704826038159",
+      "unite": "UM par transaction",
+      "formule": "AVG(SUM(ss_net_paid) par ticket qualifié)",
+      "origine": "UC-01"
+    },
+    {
+      "code": "J4-L01",
+      "nom": "Nombre de lignes de vente",
+      "valeur": 667579,
+      "unite": "lignes",
+      "formule": "COUNT(*)",
+      "origine": "Ajout J4, indicateur de volume"
+    }
+  ],
+  "transactions": {
+    "transactions": 89100,
+    "net_paid": "1150529586.37",
+    "sales_lines": 667579,
+    "units": 33755474,
+    "basket_mean": "12912.7899704826038159",
+    "min_lines": 1,
+    "max_lines": 14,
+    "multiline_tickets": 82713,
+    "basket_exact_ratio": "12912.78997048260381593714927",
+    "basket_display": "12912.79",
+    "key": "canal magasin constant + ss_ticket_number",
+    "scope": "initial complet, avant retours",
+    "repetitions_preserved": 4136
+  },
+  "qualification": {
+    "nulls": {
+      "ss_ticket_number": 0,
+      "ss_store_sk": 0,
+      "ss_sold_date_sk": 0,
+      "ss_customer_sk": 0,
+      "ss_net_paid": 0
+    },
+    "distinct_tickets": 89100,
+    "negative_ticket_ids": 0,
+    "tickets_multiple_stores": 0,
+    "tickets_multiple_dates": 0,
+    "tickets_multiple_customers": 0,
+    "distinct_ticket_store_date_customer": 89100,
+    "nonpositive_quantity_lines": 0,
+    "nonpositive_date_keys": 0,
+    "net_plus_tax_mismatch": 0,
+    "net_after_coupon_mismatch": 0,
+    "source_hashes": [
+      "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e"
+    ],
+    "silver_run_ids": [
+      "20261118T113628Z-243a5fb5-r3"
+    ],
+    "reference_source_j1_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+    "valid_key": true
+  },
+  "categories": {
+    "count": 9,
+    "missing_products": 0,
+    "music_books_net_paid": "826818197.09",
+    "music_books_pct": "71.86414038240149007216529647"
+  },
+  "concentration": {
+    "top10_pct": "6.701727098846079542214354294",
+    "top100_pct": "28.12033272701557184554160471",
+    "leader": {
+      "ss_item_sk": 10000,
+      "i_product_name": "vwPR6l3UPyCIv5bljZbIG9k9YHLajogyqKbd6",
+      "i_category": "Home & Kitchen",
+      "quantity_sold": 454954,
+      "net_paid": "15408393.55",
+      "sales_line_count": 9029,
+      "contribution_pct": "1.339243573789"
+    },
+    "somme_parts_pct": "100.000000000863"
+  },
+  "magasins": {
+    "nombre": 12,
+    "premier": {
+      "ss_store_sk": 7,
+      "net_paid": "98950137.76",
+      "quantity_sold": 2915053,
+      "sales_line_count": 57589,
+      "contribution_pct": "8.600399236337"
+    },
+    "dernier": {
+      "ss_store_sk": 2,
+      "net_paid": "94040402.78",
+      "quantity_sold": 2760007,
+      "sales_line_count": 54633,
+      "contribution_pct": "8.173662276405"
+    },
+    "ecart_net_paid": "4909734.98",
+    "rapport_max_min": "1.052208782979013097757384999"
+  },
+  "statistiques": [
+    {
+      "jeu": "store_sales",
+      "colonne": "ss_quantity",
+      "lignes": 667579,
+      "non_null": 667579,
+      "couverture_pct": "100",
+      "median_exact": "51.000000",
+      "min": 1,
+      "max": 100,
+      "mean": 50.564014146640325,
+      "sum": 33755474,
+      "stddev_pop": 28.880874037515213
+    },
+    {
+      "jeu": "store_sales",
+      "colonne": "ss_net_paid",
+      "lignes": 667579,
+      "non_null": 667579,
+      "couverture_pct": "100",
+      "median_exact": "878.540000",
+      "min": "0.00",
+      "max": "18745.00",
+      "mean": "1723.435858",
+      "sum": "1150529586.37",
+      "stddev_pop": 2167.896992775593
+    },
+    {
+      "jeu": "ventes_par_produit",
+      "colonne": "quantity_sold",
+      "lignes": 17820,
+      "non_null": 17820,
+      "couverture_pct": "100",
+      "median_exact": "1044.000000",
+      "min": 230,
+      "max": 454954,
+      "mean": 1894.2465768799102,
+      "sum": 33755474,
+      "stddev_pop": 9315.956111428623
+    },
+    {
+      "jeu": "ventes_par_produit",
+      "colonne": "net_paid",
+      "lignes": 17820,
+      "non_null": 17820,
+      "couverture_pct": "100",
+      "median_exact": "34949.040000",
+      "min": "2786.76",
+      "max": "15408393.55",
+      "mean": "64563.949852",
+      "sum": "1150529586.37",
+      "stddev_pop": 317929.7758860832
+    },
+    {
+      "jeu": "ventes_par_produit",
+      "colonne": "sales_line_count",
+      "lignes": 17820,
+      "non_null": 17820,
+      "couverture_pct": "100",
+      "median_exact": "21.000000",
+      "min": 6,
+      "max": 9029,
+      "mean": 37.462345679012344,
+      "sum": 667579,
+      "stddev_pop": 184.43291885218903
+    }
+  ],
+  "entites": {
+    "produits_silver_distincts": 17820,
+    "produits_vendus_distincts": 17820,
+    "produits_gold_distincts": 17820,
+    "magasins_distincts": 12,
+    "produits_sans_vente": 0,
+    "ticket_produit_repetitions": 4136,
+    "profils_signes": {
+      "ss_quantity_negatifs": 0,
+      "ss_net_paid_negatifs": 0,
+      "ss_net_profit_negatifs": 495971,
+      "net_paid_zero": 3954
+    }
+  },
+  "controles": 45
+}

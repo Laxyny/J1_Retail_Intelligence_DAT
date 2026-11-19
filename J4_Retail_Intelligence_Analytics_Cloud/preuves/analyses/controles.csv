@@ -1,0 +1,46 @@
+﻿controle,observe,attendu,statut
+Silver référence J3 sales_lines,667579,667579,OK
+Gold vs Silver sales_lines,667579,667579,OK
+Magasins vs Silver sales_lines,667579,667579,OK
+Silver référence J3 units,33755474,33755474,OK
+Gold vs Silver units,33755474,33755474,OK
+Magasins vs Silver units,33755474,33755474,OK
+Silver référence J3 net_paid,1150529586.37,1150529586.37,OK
+Gold vs Silver net_paid,1150529586.37,1150529586.37,OK
+Magasins vs Silver net_paid,1150529586.37,1150529586.37,OK
+Clé item unique,17820,17820,OK
+Clé Gold unique,17820,17820,OK
+Ventes sans produit,0,0,OK
+Lot Gold,['20261118T113628Z-243a5fb5-r3'],['20261118T113628Z-243a5fb5-r3'],OK
+store_sales nulls ss_net_paid,0,0,OK
+store_sales nulls ss_quantity,0,0,OK
+store_sales nulls ss_store_sk,0,0,OK
+store_sales nulls ss_item_sk,0,0,OK
+ventes_par_produit nulls net_paid,0,0,OK
+ventes_par_produit nulls quantity_sold,0,0,OK
+ventes_par_produit nulls sales_line_count,0,0,OK
+ventes_par_produit nulls ss_item_sk,0,0,OK
+Chaque produit Gold vs agrégation Silver,0,0,OK
+Somme parts produits proche de 100,True,True,OK
+Somme parts magasins proche de 100,True,True,OK
+Graphique 1 et CSV top10,10,10,OK
+Graphique 2 et CSV magasins,12,12,OK
+En-tête transaction qualifié,True,True,OK
+Provenance initiale J1,['7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e'],['7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e'],OK
+K03 vs référence J1,89100,89100,OK
+Tickets vs en-têtes composites,89100,89100,OK
+Tickets multilignes vs J1,82713,82713,OK
+Répétitions ticket-produit conservées,4136,4136,OK
+Paniers vs Silver net_paid,1150529586.37,1150529586.37,OK
+Paniers vs Silver units,33755474,33755474,OK
+Paniers vs Silver sales_lines,667579,667579,OK
+K04 moyenne paniers vs quotient exact,True,True,OK
+K04 arrondi centime vs J1,12912.79,12912.79,OK
+Catégories manquantes,0,0,OK
+Nombre de catégories,9,9,OK
+Catégories réconciliation net_paid,1150529586.37,1150529586.37,OK
+Catégories réconciliation quantity_sold,33755474,33755474,OK
+Catégories réconciliation sales_line_count,667579,667579,OK
+Catégories réconciliation product_count,17820,17820,OK
+Somme parts catégories proche de 100,True,True,OK
+Graphique 3 et CSV catégories,9,9,OK

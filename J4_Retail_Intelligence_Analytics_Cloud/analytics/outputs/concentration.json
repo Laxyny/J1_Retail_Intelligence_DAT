@@ -1,0 +1,14 @@
+{
+  "top10_pct": "6.701727098846079542214354294",
+  "top100_pct": "28.12033272701557184554160471",
+  "leader": {
+    "ss_item_sk": 10000,
+    "i_product_name": "vwPR6l3UPyCIv5bljZbIG9k9YHLajogyqKbd6",
+    "i_category": "Home & Kitchen",
+    "quantity_sold": 454954,
+    "net_paid": "15408393.55",
+    "sales_line_count": 9029,
+    "contribution_pct": "1.339243573789"
+  },
+  "somme_parts_pct": "100.000000000863"
+}

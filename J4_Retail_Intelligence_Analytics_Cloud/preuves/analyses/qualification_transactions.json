@@ -1,0 +1,27 @@
+{
+  "nulls": {
+    "ss_ticket_number": 0,
+    "ss_store_sk": 0,
+    "ss_sold_date_sk": 0,
+    "ss_customer_sk": 0,
+    "ss_net_paid": 0
+  },
+  "distinct_tickets": 89100,
+  "negative_ticket_ids": 0,
+  "tickets_multiple_stores": 0,
+  "tickets_multiple_dates": 0,
+  "tickets_multiple_customers": 0,
+  "distinct_ticket_store_date_customer": 89100,
+  "nonpositive_quantity_lines": 0,
+  "nonpositive_date_keys": 0,
+  "net_plus_tax_mismatch": 0,
+  "net_after_coupon_mismatch": 0,
+  "source_hashes": [
+    "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e"
+  ],
+  "silver_run_ids": [
+    "20261118T113628Z-243a5fb5-r3"
+  ],
+  "reference_source_j1_sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e",
+  "valid_key": true
+}

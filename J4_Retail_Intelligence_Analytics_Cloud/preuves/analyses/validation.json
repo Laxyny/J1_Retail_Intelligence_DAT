@@ -1,0 +1,278 @@
+{
+  "checks": [
+    {
+      "controle": "Silver référence J3 sales_lines",
+      "observe": "667579",
+      "attendu": "667579",
+      "statut": "OK"
+    },
+    {
+      "controle": "Gold vs Silver sales_lines",
+      "observe": "667579",
+      "attendu": "667579",
+      "statut": "OK"
+    },
+    {
+      "controle": "Magasins vs Silver sales_lines",
+      "observe": "667579",
+      "attendu": "667579",
+      "statut": "OK"
+    },
+    {
+      "controle": "Silver référence J3 units",
+      "observe": "33755474",
+      "attendu": "33755474",
+      "statut": "OK"
+    },
+    {
+      "controle": "Gold vs Silver units",
+      "observe": "33755474",
+      "attendu": "33755474",
+      "statut": "OK"
+    },
+    {
+      "controle": "Magasins vs Silver units",
+      "observe": "33755474",
+      "attendu": "33755474",
+      "statut": "OK"
+    },
+    {
+      "controle": "Silver référence J3 net_paid",
+      "observe": "1150529586.37",
+      "attendu": "1150529586.37",
+      "statut": "OK"
+    },
+    {
+      "controle": "Gold vs Silver net_paid",
+      "observe": "1150529586.37",
+      "attendu": "1150529586.37",
+      "statut": "OK"
+    },
+    {
+      "controle": "Magasins vs Silver net_paid",
+      "observe": "1150529586.37",
+      "attendu": "1150529586.37",
+      "statut": "OK"
+    },
+    {
+      "controle": "Clé item unique",
+      "observe": "17820",
+      "attendu": "17820",
+      "statut": "OK"
+    },
+    {
+      "controle": "Clé Gold unique",
+      "observe": "17820",
+      "attendu": "17820",
+      "statut": "OK"
+    },
+    {
+      "controle": "Ventes sans produit",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "Lot Gold",
+      "observe": "['20261118T113628Z-243a5fb5-r3']",
+      "attendu": "['20261118T113628Z-243a5fb5-r3']",
+      "statut": "OK"
+    },
+    {
+      "controle": "store_sales nulls ss_net_paid",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "store_sales nulls ss_quantity",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "store_sales nulls ss_store_sk",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "store_sales nulls ss_item_sk",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "ventes_par_produit nulls net_paid",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "ventes_par_produit nulls quantity_sold",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "ventes_par_produit nulls sales_line_count",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "ventes_par_produit nulls ss_item_sk",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "Chaque produit Gold vs agrégation Silver",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme parts produits proche de 100",
+      "observe": "True",
+      "attendu": "True",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme parts magasins proche de 100",
+      "observe": "True",
+      "attendu": "True",
+      "statut": "OK"
+    },
+    {
+      "controle": "Graphique 1 et CSV top10",
+      "observe": "10",
+      "attendu": "10",
+      "statut": "OK"
+    },
+    {
+      "controle": "Graphique 2 et CSV magasins",
+      "observe": "12",
+      "attendu": "12",
+      "statut": "OK"
+    },
+    {
+      "controle": "En-tête transaction qualifié",
+      "observe": "True",
+      "attendu": "True",
+      "statut": "OK"
+    },
+    {
+      "controle": "Provenance initiale J1",
+      "observe": "['7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e']",
+      "attendu": "['7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e']",
+      "statut": "OK"
+    },
+    {
+      "controle": "K03 vs référence J1",
+      "observe": "89100",
+      "attendu": "89100",
+      "statut": "OK"
+    },
+    {
+      "controle": "Tickets vs en-têtes composites",
+      "observe": "89100",
+      "attendu": "89100",
+      "statut": "OK"
+    },
+    {
+      "controle": "Tickets multilignes vs J1",
+      "observe": "82713",
+      "attendu": "82713",
+      "statut": "OK"
+    },
+    {
+      "controle": "Répétitions ticket-produit conservées",
+      "observe": "4136",
+      "attendu": "4136",
+      "statut": "OK"
+    },
+    {
+      "controle": "Paniers vs Silver net_paid",
+      "observe": "1150529586.37",
+      "attendu": "1150529586.37",
+      "statut": "OK"
+    },
+    {
+      "controle": "Paniers vs Silver units",
+      "observe": "33755474",
+      "attendu": "33755474",
+      "statut": "OK"
+    },
+    {
+      "controle": "Paniers vs Silver sales_lines",
+      "observe": "667579",
+      "attendu": "667579",
+      "statut": "OK"
+    },
+    {
+      "controle": "K04 moyenne paniers vs quotient exact",
+      "observe": "True",
+      "attendu": "True",
+      "statut": "OK"
+    },
+    {
+      "controle": "K04 arrondi centime vs J1",
+      "observe": "12912.79",
+      "attendu": "12912.79",
+      "statut": "OK"
+    },
+    {
+      "controle": "Catégories manquantes",
+      "observe": "0",
+      "attendu": "0",
+      "statut": "OK"
+    },
+    {
+      "controle": "Nombre de catégories",
+      "observe": "9",
+      "attendu": "9",
+      "statut": "OK"
+    },
+    {
+      "controle": "Catégories réconciliation net_paid",
+      "observe": "1150529586.37",
+      "attendu": "1150529586.37",
+      "statut": "OK"
+    },
+    {
+      "controle": "Catégories réconciliation quantity_sold",
+      "observe": "33755474",
+      "attendu": "33755474",
+      "statut": "OK"
+    },
+    {
+      "controle": "Catégories réconciliation sales_line_count",
+      "observe": "667579",
+      "attendu": "667579",
+      "statut": "OK"
+    },
+    {
+      "controle": "Catégories réconciliation product_count",
+      "observe": "17820",
+      "attendu": "17820",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme parts catégories proche de 100",
+      "observe": "True",
+      "attendu": "True",
+      "statut": "OK"
+    },
+    {
+      "controle": "Graphique 3 et CSV catégories",
+      "observe": "9",
+      "attendu": "9",
+      "statut": "OK"
+    }
+  ],
+  "count": 45,
+  "all_passed": true,
+  "batch": "20261118T113628Z-243a5fb5-r3",
+  "mode": "hdfs"
+}

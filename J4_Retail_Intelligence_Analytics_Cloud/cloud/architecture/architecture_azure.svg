@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="700" height="440" preserveAspectRatio="xMinYMin meet" viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="700" height="440"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-440)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="700" height="440" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="145.944" y="417" style="font-family: Helvetica-Bold; font-size: 16px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,834) scale(1,-1)">Architecture proposée - Aucun service Azure déployé</text>
+			<rect x="20" y="305" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="75.3785" y="359" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,718) scale(1,-1)">Sources TPCx-BB</text>
+			<text x="46.64099999999999" y="344" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,688) scale(1,-1)">Fichiers autorisés uniquement</text>
+			<text x="56.728" y="329" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,658) scale(1,-1)">Arrivées identifiées par lot</text>
+			<rect x="250" y="305" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="279.08299999999997" y="359" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,718) scale(1,-1)">Azure Data Factory envisagé</text>
+			<text x="299.257" y="344" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,688) scale(1,-1)">Copie / orchestration</text>
+			<text x="287.3275" y="329" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,658) scale(1,-1)">Identité de service dédiée</text>
+			<rect x="480" y="305" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="528.3385" y="359" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,718) scale(1,-1)">ADLS Gen2 - Bronze</text>
+			<text x="506.9435" y="344" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,688) scale(1,-1)">Compte StorageV2 avec HNS</text>
+			<text x="540.873" y="329" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,658) scale(1,-1)">Conteneur privé</text>
+			<rect x="480" y="185" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="519.1645" y="239" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,478) scale(1,-1)">Synapse Spark envisagé</text>
+			<text x="519.1754999999999" y="224" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,448) scale(1,-1)">Bronze vers Silver / Gold</text>
+			<text x="513.6645" y="209" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,418) scale(1,-1)">Contrôles avant publication</text>
+			<rect x="250" y="185" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="304.152" y="239" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,478) scale(1,-1)">ADLS Silver / Gold</text>
+			<text x="308.431" y="224" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,448) scale(1,-1)">store_sales, item</text>
+			<text x="290.3855" y="209" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,418) scale(1,-1)">Produits et agrégats KPI</text>
+			<rect x="20" y="185" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="54.27499999999999" y="239" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,478) scale(1,-1)">SQL / restitution envisagés</text>
+			<text x="53.659000000000006" y="224" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,448) scale(1,-1)">Synapse SQL selon besoin</text>
+			<text x="54.27499999999999" y="209" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,418) scale(1,-1)">Exports ou outil BI autorisé</text>
+			<rect x="20" y="85" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="68.344" y="139" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,278) scale(1,-1)">Sécurité transversale</text>
+			<text x="64.6755" y="124" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,248) scale(1,-1)">Entra ID ; RBAC ; ACL</text>
+			<text x="58.862" y="109" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,218) scale(1,-1)">Réseau privé et journaux</text>
+			<rect x="250" y="85" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="308.728" y="139" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,278) scale(1,-1)">Pilotage proposé</text>
+			<text x="276.31100000000004" y="124" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,248) scale(1,-1)">Abonnement / quotas / budget</text>
+			<text x="280.6065" y="109" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,218) scale(1,-1)">Groupe de ressources dédié</text>
+			<rect x="480" y="85" width="200" height="75" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="517.938" y="139" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,278) scale(1,-1)">Synapse Studio envisagé</text>
+			<text x="530.7860000000001" y="124" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,248) scale(1,-1)">Interface workspace</text>
+			<text x="524.6645" y="109" style="font-family: Helvetica; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,218) scale(1,-1)">Notebooks et requêtes</text>
+			<path d="M 220,342.5 L 250,342.5 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="250 342.5, 244 345.5, 244 339.5" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 450,342.5 L 480,342.5 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="480 342.5, 474 345.5, 474 339.5" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 580,305 L 580,260 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="580 260, 577 266, 583 266" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 480,222.5 L 450,222.5 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="450 222.5, 456 225.5, 456 219.5" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 250,222.5 L 220,222.5 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="220 222.5, 226 225.5, 226 219.5" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="20" y="55" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,110) scale(1,-1)">Les flèches indiquent des flux proposés ; aucune création ni requête Azure exécutée.</text>
+			<text x="20" y="40" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,80) scale(1,-1)">ADLS conserve ; ADF orchestre ; Spark calcule ; SQL explore les résultats.</text>
+			<text x="20" y="25" style="font-family: Helvetica; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,50) scale(1,-1)">Identités et permissions seraient testées après un déploiement autorisé.</text>
+		</g>
+	</g>
+</svg>

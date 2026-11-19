@@ -1,0 +1,2470 @@
+{
+  "J1_Retail_Intelligence_DAT\\.gitattributes": {
+    "bytes": 66,
+    "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\DAT_Retail_Intelligence_J1.pdf": {
+    "bytes": 1564947,
+    "sha256": "3fc9bf8ec82b74856c5a80241aa824c82dd17e292f3644c97b05cc8b409bd229"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\README.md": {
+    "bytes": 11851,
+    "sha256": "9917671b7cdca922e208934fe16c4585f6e6d134b32122a752547238048110bb"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\README.md": {
+    "bytes": 14050,
+    "sha256": "471ceca517db9a01b529477825234fcdbf05a43ebe88591864511326f835f9bb"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\annexes\\UC01_dictionnaire_KPI.xlsx": {
+    "bytes": 29952,
+    "sha256": "2a5244c139f7da9e0843adc943fa2a37b2c0f7d38f2c8e05e008c88d5fca6729"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\annexes\\UC01_inventaire_sources.xlsx": {
+    "bytes": 43657,
+    "sha256": "7e9b4c771aa1925e7258e4618f973763598ff3b55a1ca0f65db9aaafe69f920f"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\annexes\\UC01_qualification_donnees.xlsx": {
+    "bytes": 46867,
+    "sha256": "ee3a765fcf4596514e85f18ba16f6e827a5bef28237a09d5bc06ecbd3fd70d1e"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\annexes\\UC02_matrice_architecture.xlsx": {
+    "bytes": 11009,
+    "sha256": "caef6d378d3ebfaa834cfff04e6955ac44c7f15bfb6027974c770594f2cef15f"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\DAT_Retail_Intelligence_J1.md": {
+    "bytes": 82342,
+    "sha256": "bff28942a8f74a320cb308cfd821f2c34437050af8ccd4a6b46cef58a3d4c1ca"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\export_annexes.mjs": {
+    "bytes": 4339,
+    "sha256": "1ad154e1dd9f8267d5faf7af1adbd37a3b25b4d3daf90c714bec429f422103a6"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\notes_verification.md": {
+    "bytes": 6231,
+    "sha256": "8db1590ec5b9dd0725e244c5447481d05f7f91bf8137119982e2824875bf7815"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\referentiel_dat.json": {
+    "bytes": 36137,
+    "sha256": "e79160d4a22b8749725b677277acd73294ffec0173d89e87d6222e51d042add9"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\registre_hypotheses.md": {
+    "bytes": 3500,
+    "sha256": "e16e33cf23957624547b157083adb08d26a7a68b6a3a9c3871302f236c3a804b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\travail\\suivi_livrables.md": {
+    "bytes": 1338,
+    "sha256": "72e191de2861b42b3fae7121d2ab9ecb5654f48d0880967ebca22fdeee36eeb0"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P01.png": {
+    "bytes": 34309,
+    "sha256": "8ca8cb493826e7c76d1a97b7441b032c4c63a65bf98b9c27fd27c287eaacdde8"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P02.png": {
+    "bytes": 103568,
+    "sha256": "2aef8db5f6c27ecfd026871f97abe9eee69d922ee9a6772fc3dad1c1dad09150"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P03.png": {
+    "bytes": 52361,
+    "sha256": "6f9200b7d7f220346908076c120cd05598ddd8f0fd61ab78755b67c1569b84c4"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P04.png": {
+    "bytes": 40944,
+    "sha256": "0c9548f15350b1926f6bd396662aae36a2e11e08fccb0fee57675d9894007290"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P05.png": {
+    "bytes": 42285,
+    "sha256": "02d052e0b0430e2fe99839400dc1c1002f6153eaf53efda2ba179e54c85a3128"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\captures\\P06.png": {
+    "bytes": 49513,
+    "sha256": "d5c01a953ac7352439a7080c14a5458969e879b47facf7865be35aacc358df06"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\00_schema_execution.json": {
+    "bytes": 387,
+    "sha256": "7d3166a05723149f53c4e95d302ab901afae4b054552690a63f9b31d0633a104"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\01_execution.log": {
+    "bytes": 3240,
+    "sha256": "ba641e06febf4ed2675b7087e3152648081b43d62bb212d8d723e8688b11ac5a"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\01_inventaire.csv": {
+    "bytes": 10042,
+    "sha256": "75d5a31278ecbc5ceaa6f69462d61b7833e80785cb2d1cc022145d87076dabfe"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\01_profil.json": {
+    "bytes": 72889,
+    "sha256": "3cf62d214d204ddaf871e2d8dcf99cae055b9c1609dfefa2adcf133f1dc74ba7"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\02_colonnes.csv": {
+    "bytes": 37997,
+    "sha256": "061229dd52169d6bf8ddef7a46219a0fd36c63b123332f3ee098067b6283dbf7"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\03_cles.csv": {
+    "bytes": 2292,
+    "sha256": "e74d62577a34fa91cf4ac6cd898fca68e7da8dbdee3335c39dfb159de1dd5608"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\03_execution.json": {
+    "bytes": 561,
+    "sha256": "f562d589442537627d56f428255d727f2412eae00232d5cd0d6744db77dc7d7e"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\03_execution.log": {
+    "bytes": 1225,
+    "sha256": "794bf8dfed9d8c10a3fc27963e7c5904b88b7dd38af82916225bcc7934230253"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\04_relations.csv": {
+    "bytes": 11642,
+    "sha256": "f975de934ab632e136a1c2f94c11759ae26b7afb57c673f461b2e5f26adc9f36"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\05_periodes.csv": {
+    "bytes": 1102,
+    "sha256": "84c1e6a052e2cf3fefd9398f65797eccaf846e179d1366d1fac6a1d6090fea83"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\06_mesures.csv": {
+    "bytes": 3896,
+    "sha256": "be6e5a3e91430c4016df6994f775dc667f776bcf18c3962c979d2e4625abae49"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\07_diagnostics.csv": {
+    "bytes": 4776,
+    "sha256": "2929925f0affeb1433f0fc93418215f6961c7d4987ab444610a5c2d98e101fd3"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\08_verification_finale.json": {
+    "bytes": 1411,
+    "sha256": "a6b6cb4bde6859f900c5c51244de6f8af22c1d95681f24225fc71378f0f7f238"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\09_affichage_preuves.log": {
+    "bytes": 7071,
+    "sha256": "2f00d06826fefb08b6806c84e8f22078eedcae79f3902be07db10588f32af320"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\10_export_pdf.log": {
+    "bytes": 2450,
+    "sha256": "881b023235147951e6ae394b7388d1f65683f15703d94a218a95a21f8f0e0f6e"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\11_kpi_execution.json": {
+    "bytes": 721,
+    "sha256": "5adc0d490a9206dc04ba3c166c94ceaaa72edac543b316d4383485d8da3e2c56"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\11_kpi_execution.log": {
+    "bytes": 1797,
+    "sha256": "57eca2948147fe24ad57b9f3b65851a8d3cd57e2d4013ad71d49177788e19cc8"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\11_kpi_valeurs.csv": {
+    "bytes": 6395,
+    "sha256": "0f30d2a2d7e1afe18cdd9736a244351aecf9b1e4bb4d748737d104258691e4eb"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\12_kpi_champs.csv": {
+    "bytes": 7735,
+    "sha256": "c12089e02377511bfadbb63e3d8379672aca944084be2608f5732500ae3a5b1d"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\13_kpi_controles.csv": {
+    "bytes": 52702,
+    "sha256": "11474fed2021b5b245ead047e0afcff705c2ba8a19a782b39d3f583d672acc2b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\resultats\\schema_tpc.json": {
+    "bytes": 23615,
+    "sha256": "95b548ea122f6893235802f8afbf860b3e6aeee6472fb1d8f5a3294e20ae756f"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\01_besoins.mmd": {
+    "bytes": 621,
+    "sha256": "55579289977a12dfdb22fc875c31892989811aa24fbbcd4ab2673daba09f38d4"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\01_besoins.png": {
+    "bytes": 80624,
+    "sha256": "e88e0e6fd0ce92366bae71e9717b46e7d77ac7e74a16d747f6b794590d79f215"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\01_besoins.svg": {
+    "bytes": 13448,
+    "sha256": "4397dd283555b434bfbb50d0c9a6ad9d2965d5a9ed830fb197f6c5483e89c6e7"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\02_modele_retail.mmd": {
+    "bytes": 598,
+    "sha256": "48001b2bac71e809e6ced8b66cd623488dfa387f735cc48192b931ec251e9c8b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\02_modele_retail.png": {
+    "bytes": 83249,
+    "sha256": "f156b0e7416d6076f3a05300c546c3cf807e65e12397e5dba46ffa0610cf4c0e"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\02_modele_retail.svg": {
+    "bytes": 11191,
+    "sha256": "de3133284b8071d45ebfcaefc7d2f12dd792f67b456d54d085583c74024c983d"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\03_relations.mmd": {
+    "bytes": 598,
+    "sha256": "db53c235ec4b8c164d200234e50d924a7a66472e5be3cc3354db1255528175d7"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\03_relations.png": {
+    "bytes": 78521,
+    "sha256": "9d6af9c900710243d28a5115c4139a235e90ed96748053381822362e23d9c9e6"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\03_relations.svg": {
+    "bytes": 12351,
+    "sha256": "f592f793de3ab2b93c642fe8928c2e8f7594eee6c156cd1fde8de690c2bf7b4a"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\04_architecture.mmd": {
+    "bytes": 643,
+    "sha256": "37563ff70425c98f837bc185cb83b55e65fa09baea2527d8dbbbf1622d48c438"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\04_architecture.png": {
+    "bytes": 101161,
+    "sha256": "b2aa3bcab6181586a92c8dc445bbf83f937e8944d0154c20bf958a307b991d8b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\04_architecture.svg": {
+    "bytes": 15686,
+    "sha256": "4c2fc4e60fa4407c12d2d3baa40faa9be63a33fdae80e417c2ec4f9067afed15"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\05_local.mmd": {
+    "bytes": 595,
+    "sha256": "c5762ac4561fe89175ca103d005691975bf9f40c463d7b38ac493cfeec1a3a83"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\05_local.png": {
+    "bytes": 107512,
+    "sha256": "8c436e2515332c602770265d6df4bc516595ed6259e51d99d2602a43aa07d505"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\05_local.svg": {
+    "bytes": 11784,
+    "sha256": "62018a4d93a346f1ad27b9785facf0968f20922493ea660f01170283fb5085af"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\06_flux.mmd": {
+    "bytes": 622,
+    "sha256": "c9d03dea05762033612bf5a4c612e0547f3d98649514c2616e0e425a4ff41bc5"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\06_flux.png": {
+    "bytes": 115031,
+    "sha256": "dceb17d3592c0ff2b0fa8f0be284f0b557e7f92fe41cfcdc33df6b385554d74c"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\06_flux.svg": {
+    "bytes": 14038,
+    "sha256": "44cd79d02a4089b2ee4145b73254e9e8e65ae3807bc117d57ab9def8fb1ccf22"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\07_azure.mmd": {
+    "bytes": 715,
+    "sha256": "21df3aaa8f1a9a0e7139aa7e95b7b841a9e31c98ab04a874bca38c0f694405a9"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\07_azure.png": {
+    "bytes": 123422,
+    "sha256": "ca92a2411100a8b048ae48a7a44c471a5487333825b022e1818e9c6d37836df4"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\schemas\\07_azure.svg": {
+    "bytes": 14635,
+    "sha256": "1e916e88ca1b4a72fa684339d48c84e16dc9f31081ede7cfc47ee24d6b79aace"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\Afficher-Preuve.ps1": {
+    "bytes": 3476,
+    "sha256": "b600cf4fc4c915d76f43cb2c95ae2152116f7c1294a41173cae666c8a4b5df4b"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\auditer_kpi.py": {
+    "bytes": 20769,
+    "sha256": "7a6b81a9a9d29a4015de3e9c6517173c93c8b2323d5c3998a6d7890b65401d0e"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\donnees_annexes.py": {
+    "bytes": 10529,
+    "sha256": "75e61d34e4deab5fdeebaa4611819a509a9bab16c363c7ba65c2d3cf87facb24"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\export_dat.py": {
+    "bytes": 9931,
+    "sha256": "f9fb8505e39afa807817790b45a2f6bb636f95d80a6c849a3335b669f0f15821"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\export_schemas.mjs": {
+    "bytes": 2543,
+    "sha256": "91d91d4f2adeb1c73c8defe27fb0952cbc8edb00ee469eaa6ec2c6c49dca7670"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\profiler.py": {
+    "bytes": 9382,
+    "sha256": "518d9151768a0884a16027b17efe01bcc746ba1e1256a4e39dfa7aad5f9aa02d"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\relations.py": {
+    "bytes": 21686,
+    "sha256": "f005b99c776aa2ef7ce149bc365fe45bd399b91b396a17cb018fa3252089b4d8"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\schema_tpc.py": {
+    "bytes": 3599,
+    "sha256": "8a8d129ac23514e916fd81bef2f891eca0b0953ef54f1b0a22bc90ac3c56f4f8"
+  },
+  "J1_Retail_Intelligence_DAT\\J1_Retail_Intelligence_Architecture\\preuves\\scripts\\verifier_livrables.py": {
+    "bytes": 13633,
+    "sha256": "a70108abbdce5f6f511e9e3a3c1c4784878c369bed16520cd52abc066453ab38"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\architecture_hdfs.md": {
+    "bytes": 3920,
+    "sha256": "014af95bc320c97231375908b0cb87c4623a801e9582fc19c7633abfa113ca6e"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\environnement.md": {
+    "bytes": 3025,
+    "sha256": "b0601835cfd83b20de7523ca858ca2d125e8bbd95b963c1c11ac7df3521b4deb"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\erreurs_corrections.md": {
+    "bytes": 3858,
+    "sha256": "76d24fb0daefd01cc5142df69b6d6bb82db009691e2a93de0cfd1a82ccec2f86"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\ingestion_nifi.md": {
+    "bytes": 5137,
+    "sha256": "e2b1a8a854b84465bfd650e569bed695fa888828d7dc9370e3495eed3224ed65"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\inventaire_sources.md": {
+    "bytes": 3118,
+    "sha256": "a47534fe25cdb4610491453a8330ad9b368b2e33e13a57351abb2da38fe01b02"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\provenance.md": {
+    "bytes": 2906,
+    "sha256": "2eeb74b6e006af50e308bd33ffe131799f3b07cc63558aa7a42fe0b37b0a718e"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\documentation\\questions_recul.md": {
+    "bytes": 3288,
+    "sha256": "e4e6c20daed2ba5c74119df808ab30439dc63887efae2a7c7e8c4161bc1f47e2"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\installation\\compose.yaml": {
+    "bytes": 1310,
+    "sha256": "59e69358de53f893d55252d4618e64d2fec9dba55dd55d3725b5727a97b18f34"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\installation\\preparer-nifi.ps1": {
+    "bytes": 908,
+    "sha256": "ba604c0a1447a5f692c6b429ffcd2d0b19702008318b140a0d3ca7f1a376d4c8"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\rapport\\DAT_Retail_Intelligence_J2.pdf": {
+    "bytes": 759568,
+    "sha256": "5994443342f524da5b862bebfa5ca9c3bed63ade097b693f61f1e455aaac743c"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\verification\\suivi_exigences.md": {
+    "bytes": 7814,
+    "sha256": "d24a68da8097db559f61a3d5caa0b6b7fabfbc739e61045e9ba6467a70abb2bf"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\ingestion\\nifi\\UC04-GetFile-PutHDFS.json": {
+    "bytes": 15740,
+    "sha256": "7d7fb2f1f19a3bbd46502fd596a8e1b529b5d3e943eb6917e9a56401669369eb"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\installation\\hadoop\\core-site.xml": {
+    "bytes": 152,
+    "sha256": "eb25975740c2185ccdb3efc7f5497786c56e13bbd5fd881235a4a722d9dbfa74"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\installation\\hadoop\\Dockerfile": {
+    "bytes": 169,
+    "sha256": "5c41225e7c4c5c06b7eea4cf85a5a8443b99adbdd659da9c5ba0a1bb68350320"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\installation\\hadoop\\hdfs-site.xml": {
+    "bytes": 699,
+    "sha256": "93ba6e92b4c48b5363d69c71251c1f7811f86e3505562cf2d06ba24f4afb5283"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P02-hdfs-up.png": {
+    "bytes": 130294,
+    "sha256": "ef50605d1eb80572a9eea6e5cdbbf5036a6e8f186d86841a701175549a90209a"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P08-GetFile.png": {
+    "bytes": 57953,
+    "sha256": "7fa631f6765b8c12eff72bf18030655e4f1a4395514462181d72c0bbb4571959"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P08-PutHDFS.png": {
+    "bytes": 65684,
+    "sha256": "f40806a38d7222f55953edd23373560bdf920ec003155fbb146ff5a8267ea555"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P09-flux.png": {
+    "bytes": 39974,
+    "sha256": "8009b08ab6581533609c539733cca1833b0ade92e30dc408c83fbf39cdcf49dc"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P10-execution-nifi.png": {
+    "bytes": 45830,
+    "sha256": "3c146d26efa6351641a8980cd708beb16ec7b635576d3c98380575d9089ee3a1"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P11-erreur-controlee.png": {
+    "bytes": 50828,
+    "sha256": "bc2afed7ab1a47a828042e3ac7f018f3352cce9524170bf525e8d9102438e53b"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P12-detail-envoi.png": {
+    "bytes": 55667,
+    "sha256": "052e663371e51dca2cd74726a9e89b91badb58bc3ce46030cb4ab50c55ab0ea8"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\captures\\P12-provenance.png": {
+    "bytes": 61831,
+    "sha256": "ed782777d74fc1a84cc1d47ea8f2e28ff7c7c3eba1463d963bb1d5070574f2a0"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P01-versions.txt": {
+    "bytes": 1070,
+    "sha256": "3d0db790784889ec8dfb4d350e2eeb28531426871618d000adf24981c89e9d07"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P02-controles-avant-format.txt": {
+    "bytes": 999,
+    "sha256": "8a9fa191111bd66bc7181ebc5f78740340b35d0b14800ddc943c73c2093afecc"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P02-hdfs-actif.txt": {
+    "bytes": 1894,
+    "sha256": "42eb8ec9d726c6dbe01ed29279e40237b298a887d6c00d243444d7ffce6e25ba"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P02-initialisation-namenode.txt": {
+    "bytes": 28890,
+    "sha256": "f40b2cd8467269bc4b33211121ed1bbc1456c916d09eda89710f75951ed862e1"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P02-rpc-avant-initialisation.txt": {
+    "bytes": 337,
+    "sha256": "6dc5e4bc48845f2aa3b73df56e91695746bb86fed80d8e88ecf0871dead8cffd"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hadoop\\P02-volumes-neufs.txt": {
+    "bytes": 1020,
+    "sha256": "199a6cf8e1f5eaf95d4c55bd9e2c36c90f8deb31e715585585b50444358f2b9c"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hdfs\\P02-decouverte-avant-initialisation.txt": {
+    "bytes": 908,
+    "sha256": "c0ed86a7c5c1b05b97573efe98a07cc14a589ee85d993a9d56e03bf7051daa4e"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hdfs\\P03-arborescence.txt": {
+    "bytes": 1699,
+    "sha256": "9a3074a29f06fa16389c22c060e37efdccd8c4b38bb5f223ef7cd2db1cecfb25"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hdfs\\P04-source.txt": {
+    "bytes": 792,
+    "sha256": "24676cf804c2a90ef7b6e014632a68f9ffd384ef2082df4382cfd7fe92df5325"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hdfs\\P05-depot-manuel.txt": {
+    "bytes": 988,
+    "sha256": "4bf3854b1922c3e928583b4a9154d97b667f6d504e39f4f840ef8a71cfc49e50"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\hdfs\\P06-integrite.txt": {
+    "bytes": 1034,
+    "sha256": "63e2c86a1b05180e147b3e0cb54dddf3cde208893d8964ff523ddfb0691c244f"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P07-nar.txt": {
+    "bytes": 432,
+    "sha256": "9c0ccf58b6f65e509d3fe084b8713c66068627f6cc5128bccb477a43db4dba05"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P07-processeurs.json": {
+    "bytes": 492,
+    "sha256": "76e0c93445ac4bf5832f40f0c95397d46fc869d108390c9be9cfb0a70682e3c6"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P07-service.txt": {
+    "bytes": 3279,
+    "sha256": "c359ac9bd5421ac1bee54dbd99923d5ccef8a9f8ec41f3572d149a5036bd621b"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P08-configuration.json": {
+    "bytes": 8398,
+    "sha256": "992b95a1435c1f3f183aa16125e91e58a8328164ad8ceb34c9c8a04f015cef35"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P10-compteurs.json": {
+    "bytes": 8389,
+    "sha256": "01c954fe2fa764f969c5f9300355e93f3e0d1dfa7ba7eb5f0506156e893df3d1"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P10-depot-nifi.txt": {
+    "bytes": 1207,
+    "sha256": "4cc7343dc22d5818ba3fcc393478b0c1b485a67868470f2cc01d96ba552844b6"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P10-execution.txt": {
+    "bytes": 2686,
+    "sha256": "ce78d01c5deba2c71f8eaeba5dbf6f5829dd583d9276f33308118135c39435fd"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P11-error.json": {
+    "bytes": 423,
+    "sha256": "ed9f536c14f31f12eb83912e15d452e25f3e981a48321d64b6a1bb80e54721bc"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P11-restore.json": {
+    "bytes": 423,
+    "sha256": "a2558af4185e540c65da6069d73180f1bdfd08f2c8bd66a2daa2f8b663e8bc59"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P11-test-erreur.txt": {
+    "bytes": 1308,
+    "sha256": "133fb90d22a3df28f3d4e1e18b189234643942c1f52b8ee97b5229228e8dc8a8"
+  },
+  "J1_Retail_Intelligence_DAT\\J2_Retail_Intelligence_Ingestion\\preuves\\nifi\\P12-provenance.json": {
+    "bytes": 4520,
+    "sha256": "d863ec582e9b245b27e91c07fe430c75decc6e6009a0e61bdcf4e2d68ae596d5"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\environnement.md": {
+    "bytes": 3540,
+    "sha256": "71a7088fb529f5afee00f21d165a2c502d1b301d6de0f8e8abe3d7c2e1f62646"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\installer-python.sh": {
+    "bytes": 157,
+    "sha256": "eb47832e22937cf2896553bf15d9fbd7413e978f5f2353fee1e79e332ee37d09"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\preparer.ps1": {
+    "bytes": 2536,
+    "sha256": "3c674efe14da9760e04e15a1f19c24f5c826ed3f0facd560a91435dd40dd4307"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\requirements-rapport.txt": {
+    "bytes": 49,
+    "sha256": "05ee2f9d6ccf6264b237244702fbe91f5d211aa2c8b476be6e17bcf815746708"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\requirements.lock.txt": {
+    "bytes": 941,
+    "sha256": "0923116c030d2a1e5bb08e04eeacba62b42ca6a9e3b1a4b482caa26110535b0f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\comparaison_formats.md": {
+    "bytes": 3797,
+    "sha256": "00a5cc3d18c2940eeccfa00beafca86411388a8b7ba46dc4db52562ed5e7b409"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\export_et_remise.md": {
+    "bytes": 5000,
+    "sha256": "bf2e04fe5edd10249ae7dfd0a62cdabce08a3643a47b1d9d5e6b5543bbd5c457"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\inventaire_sources.md": {
+    "bytes": 5320,
+    "sha256": "460dea2e954cb47e7e2d36b616829f68f86d24d6402796d7ee8078b21f8c85c4"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\modele_silver_gold.md": {
+    "bytes": 4106,
+    "sha256": "88d92c5276dc23179672faaa02456d7db6686522b652375e94c84432e66621e9"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\questions_recul.md": {
+    "bytes": 3494,
+    "sha256": "b8436570b5b0cef266329d468636f2622d715b6d5854a0156876cadf05b8562b"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\rapport_qualite.md": {
+    "bytes": 4945,
+    "sha256": "fa97e05b2969f82ee20303eeff030bd5d529c04f295eb0f6a5f60a7e96693692"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\regles_nettoyage.md": {
+    "bytes": 3165,
+    "sha256": "bd13db44db5c57446b22a9813d2ed6a83ac6812ecd82d29218519fd6b84a930f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\documentation\\resultats.md": {
+    "bytes": 1367,
+    "sha256": "3fb9b1522d57f346fc9dc5dc91fbdf68c7d0e167fd59c4112e203be9d9097161"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\manifest.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\notebooks\\UC06_exploration.ipynb": {
+    "bytes": 25201,
+    "sha256": "8d55ddd6806d2f655ded92d1cf2ac454bb7ffb1dea5d3398044419ae5b00bb37"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\index.md": {
+    "bytes": 4557,
+    "sha256": "5caf8ee745745367612a237fc7b70a4de6ded156793bb77d942af506896beaee"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\rapport\\DAT_Retail_Intelligence_J3.md": {
+    "bytes": 37284,
+    "sha256": "ad8450f6831e80a9226c48fa73baca00e49bd31dd691e766e01d965192788104"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\rapport\\DAT_Retail_Intelligence_J3.pdf": {
+    "bytes": 420611,
+    "sha256": "a8f7bcaf45790d9cbbed7e47dd524f65e59c18d1f9e3454cdb1525187565cd83"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\rapport\\exporter_pdf.py": {
+    "bytes": 6280,
+    "sha256": "900b8d93463dd41953cb56d4008a3bef916972612972fa3ccaa98a79bb484f5e"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\rapport\\generer_documentation.py": {
+    "bytes": 50209,
+    "sha256": "b0d1ec75d5ec06f26a241ed12b09c56e67a948949b0aa3c98c139657dc3e9028"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\rapport\\sections.json": {
+    "bytes": 37017,
+    "sha256": "685f400b435f81b82ac23bdc925f39efe4820ab714217bb2d3e5795775be2477"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\uc06.py": {
+    "bytes": 6298,
+    "sha256": "b4c0a5fa60441378279ae8bbe0e535d52eb4fcbb475050813b0cb1158d60b008"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\audit_reproduction.md": {
+    "bytes": 3921,
+    "sha256": "147e7c18bdc67a5a0cad4e6760cc065f735b8062617930a29d33976f7bd520ac"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\controle_remise.json": {
+    "bytes": 408,
+    "sha256": "f28b9d83769ddea3b90437b0aa8d0d5c0444d5344f0b99c011d0df396f6abc3d"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\resultats_tests_orchestrateur.json": {
+    "bytes": 550,
+    "sha256": "5f94b23f62533cfc40fb68b57b4a1e7289ee119a8d4dab2a7af899c556b56a0b"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\suivi_exigences.md": {
+    "bytes": 5303,
+    "sha256": "1935f181c4d53f232b3484eab715f4d8ab0b48fc8896e24536d444e8da77ce91"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\test-orchestrateur.log": {
+    "bytes": 1579,
+    "sha256": "35b83fb6e82018b0fec81c0c990a1edcb409ace38cf6e7edaebf46987102aab3"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\test_orchestrateur.ps1": {
+    "bytes": 5522,
+    "sha256": "d2a9c96016167225d6217da1e7dd739addd732081c3e457a37009428f78606c5"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\validation_finale.md": {
+    "bytes": 3029,
+    "sha256": "93e8549b05d63ce1a333978261ea6ac65c1ac20534a26f9b4b9d1c08bf5af0ac"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\verifier_fichiers.py": {
+    "bytes": 1745,
+    "sha256": "faab94c32b4230ff07f2fb8d5419b2ec40f4678d8f5f08703b7c876d6767ed39"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\verifier_pdf.py": {
+    "bytes": 2342,
+    "sha256": "00a04ca656eea486adbd91304d94a6997e798c44cefe86fe02a59241b9c255b3"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\verifier_reference.py": {
+    "bytes": 1558,
+    "sha256": "8b30a6d45fe1f2776731880522b7eb283ace6194bece8063cd53af955f2124b6"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\verification\\verifier_remise.py": {
+    "bytes": 1083,
+    "sha256": "87dedec6c45fcb207fc31a552bc0692a68deb30be613f47b88bfe4a6bdc99c9e"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\parametres\\execution.json": {
+    "bytes": 832,
+    "sha256": "2e2ea90504a1671f7b145d9dafe857adcbb8551f52d13af2b964c89dfd2c82e1"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\configuration\\parametres\\schemas.json": {
+    "bytes": 3018,
+    "sha256": "92abde2df6958f61c58e1464980fd7c369b48268f175e1aea9bd7d12af516ebb"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\controle_export.md": {
+    "bytes": 2063,
+    "sha256": "abb79ed0ea06fb644aab871d7315e661d9ec0d90a699293173654a44ce5d90ce"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\controle_hdfs_final.log": {
+    "bytes": 336,
+    "sha256": "17818b20770b0373a75cadede24be07f2ba51799aeedd10366b802a68f76078d"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_apres.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_avant.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_fin_mission.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\manifeste_export.json": {
+    "bytes": 16371,
+    "sha256": "108b4061ed2046e9c9ca1287d40bc864aa61d64075067b2fc70c2a4b34276c6c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\relecture_locale.log": {
+    "bytes": 587,
+    "sha256": "0ee5f74f547af7756e2cc0a47f3adacd89e1f011f433f6ed3b628ecc203fff1f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\SHA256SUMS.txt": {
+    "bytes": 1419,
+    "sha256": "527d24c484e2b245dc8cb3cfa64c582bdacd39c494e699a81ccad2ffe5ff96b5"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 654121,
+    "sha256": "d09d8d77d1ca08d9d82e60757c3496a0f4b51db7f8fe63dadb6524db0ed9b8f4"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 653030,
+    "sha256": "907738a8ddb04823066f87d2783eedc92f3a6c1e8ce47f67c46fb9407f2b0bf8"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 2874664,
+    "sha256": "7f9c09c3bfd4054ffa3f9b81d3877fd6dff9ed1e51a5a428c1190286062be364"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 696555,
+    "sha256": "4daf3ab39d0ca8260320e4fb52c7f5c7a961d3b590d4a5b7fd11f54bab5d849f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 18159032,
+    "sha256": "38d217b47a6f96a629e2025f561ea1e428db308920c5710c96db860015e338d6"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 16607672,
+    "sha256": "a08fe15f31c1c55c5a0a79d4a7aaff226350fe7611564dcc2a5f78caaa9bad57"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P01-hdfs.jpg": {
+    "bytes": 50196,
+    "sha256": "3508d4bcd352372bd7d16cdc59059b4c1718798669ed244589abe4e418082b68"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P04-notebook.jpg": {
+    "bytes": 76805,
+    "sha256": "951a5ece3f1f8d33077c5bcb6ff38d062486220bed40368b9f7debcdd9923399"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P05-bilan.jpg": {
+    "bytes": 100154,
+    "sha256": "f681911f4849007923865d733d4710255ac521eb0763ebe8321cb768b54323c1"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\empreintes_avant.json": {
+    "bytes": 52039,
+    "sha256": "82ea0a9f02f5d94420aab5b31039a5ca0bc7720b8989d3d630c133551d0b0599"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\inventaire_python.json": {
+    "bytes": 1732555,
+    "sha256": "c732862e1eca54175ba151fc3d84ccf78cb7fb8df8f2b05523a7f6b4a339dc82"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P01-reason-avant.txt": {
+    "bytes": 138,
+    "sha256": "8356a1d71a1f2fccb5b44854ff79c92f5120096e96f60803d25705a11f5153ba"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P02-session-spark.json": {
+    "bytes": 1493,
+    "sha256": "b1c0d5d72dabef22d03a31c3ca499c041a6cf51b649017cd86a8d0ec0835e097"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P03-entrees-hdfs.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P04-item.json": {
+    "bytes": 5102,
+    "sha256": "6c071d5af6f9eb63816fa517f9419a5b6684b5c2bea7c098bba7c715150fed9f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P04-store_sales.json": {
+    "bytes": 6045,
+    "sha256": "6a990df4b54597e5cebfca95f38b2cbcf9c885aebd59690189403ca34c2b1628"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P05-jointure-exploration.json": {
+    "bytes": 101,
+    "sha256": "f6c343147182b6ebb45f47b6b5f07fef9f5d877f04a7a9bef3a150a20baaeac6"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P06-transformation.json": {
+    "bytes": 50662,
+    "sha256": "c87117940b3e0d57f48a9350b9e6ca9c43cb8c577e55c34ceb784f9ac9691774"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P09-qualite.json": {
+    "bytes": 21258,
+    "sha256": "efffb9792f9054f9c34e05117055a5ac9c90d46024addbf843f312f366ee4119"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P10-verification.json": {
+    "bytes": 12371,
+    "sha256": "dd860ee49b72eef578f98a8712e118070eb90fcf0a185bb866a4a6fb1120078b"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P11-verification-fichiers.json": {
+    "bytes": 898,
+    "sha256": "941b08b7c98d95b4bc776ea4b1f794ea63520e086641d0b7b69ad5b2d6940738"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\registre_qualite.csv": {
+    "bytes": 9527,
+    "sha256": "8cf0bb4a37a68d17cf641ed1e36bfa1b4f4b356fbddfe6b3da871cacf2900205"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\schema_reference.json": {
+    "bytes": 269,
+    "sha256": "d04ebfc17907a458a35c13319665fda1c5575994d87776c463fdc0afdd5de9e6"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\validation_finale.json": {
+    "bytes": 472,
+    "sha256": "3aaf919a26b2ad8150b7cfd8bddd64cfd9c5cf8d98f227c5bf611d183b7e1e3d"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\controles\\verification_pdf.json": {
+    "bytes": 436,
+    "sha256": "e6a04eabedd82ba4df1692934e99e140cfc1836e9f4c77a63012f53ee4d3f3d2"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\diagnostic-relecture.log": {
+    "bytes": 2612,
+    "sha256": "9c29fc816a3454d3b3c0f491253c87de95a3606816927b69a977184aa041b00c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\execution-tentative-initiale.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\hdfs-etat-final.txt": {
+    "bytes": 1298,
+    "sha256": "d44a0060fb070c5aa878658dcd4c24f28fc5da1360fa8f5d0af7ef0a69f36500"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\installation-python.log": {
+    "bytes": 17310,
+    "sha256": "886cb33795f68f0ccac8e3fb28a18fc5991a725123d42c8e0cae946e909bd61f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P01-diagnostic.txt": {
+    "bytes": 4710,
+    "sha256": "dbd6acbccbff65270d75f72f146032e488d0e14c39213e9711fc922574f9e58f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P02-session-spark-final.log": {
+    "bytes": 2391,
+    "sha256": "0b0ad37b408bcbeba3920f9cfbcb23fa9e83a892f20e3325f99d87d80c54eff7"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P02-session-spark.log": {
+    "bytes": 2301,
+    "sha256": "1a8b906620d8f08caf1f6ebb5858a6e92ff53371336858ba278e1c478a4162f1"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P03-entrees.log": {
+    "bytes": 190,
+    "sha256": "44ef50ede58b36875b5af3d5a56de57f6de5c62c4dce0290eebabee4dce57d59"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P04-notebook.log": {
+    "bytes": 1342,
+    "sha256": "afb26b20f9b8962887b5c76979f658138fdd56488a609b0669f85d010f648cf1"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-tentative-initiale.log": {
+    "bytes": 1364,
+    "sha256": "c9ef813679ae3f4d7a2e1a692c0b4edb7586d1bc424650f57e2ac2d7626a6980"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-tentative-r2.log": {
+    "bytes": 1282,
+    "sha256": "81ec472af5fc43b408750dc22b2e15441025358e8002bc0b41779e533bf5fa15"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-transformation.log": {
+    "bytes": 15978,
+    "sha256": "236e69c15f1b73d375cde27ef173b6ff22b8c3a18df1eca85e10cd21720c8df7"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P10-verification.log": {
+    "bytes": 12645,
+    "sha256": "f9edb4160be5b09632fc594e504b164dd12536be2ab5ebebf66e4a703c3faedc"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P11-verification-fichiers.log": {
+    "bytes": 900,
+    "sha256": "da725c94350e4db1ee51bd82569a3caa59decfe1bcbfd9124d68b69c84c0823f"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P12-reexecution-refusee.log": {
+    "bytes": 745,
+    "sha256": "6b9754600fbbdd4dd697d2c3a57957ebf07a95a0cbc1a292974918b087604aa3"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P13-export-parquet.log": {
+    "bytes": 703,
+    "sha256": "8092bacd12bf016ac035be3952032fb318e800b902d3eeb9696b0cd1698c637d"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P14-relecture-dossier-remise.log": {
+    "bytes": 587,
+    "sha256": "1c7fc01edc0cc06006c9955e704a39b88e9e9dbf5d460fc8d428e18c3270cd0c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\notebook-html.log": {
+    "bytes": 166,
+    "sha256": "e69e3896d819141e9b1a359b6203255c42d33e96812162b2a2e7c48034be8675"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\spark-thread-diagnostic-r2.txt": {
+    "bytes": 170612,
+    "sha256": "28858aa4ab7b54d298da4869771c4f47ddae7d2b4c57c32d667402fde7e48ae6"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\spark-thread-diagnostic.txt": {
+    "bytes": 58693,
+    "sha256": "e4a7513db4f9df4de1a20ee0e41603bb4db8f595a6cd8f104066b14563d4a901"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\executions\\verification-pdf.log": {
+    "bytes": 438,
+    "sha256": "1f11903764c09ff8b237df7b7e2488dec7560a883ebb8d69ad9579b6c179e21a"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\notebook\\UC06_exploration.html": {
+    "bytes": 308800,
+    "sha256": "0125d21b925749243509a3072f6f25dbdf3402a9565fa3c025acdc23b4abc514"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\parquet\\J3-P08-listing-hdfs.txt": {
+    "bytes": 2069,
+    "sha256": "97b557582cf154d4c4f96f538c3c2833a8ce4981780c5bf6a34a9df23d19225e"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\preuves\\parquet\\J3-P08-parquet.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\exploration\\inventorier.py": {
+    "bytes": 3125,
+    "sha256": "501562eaab1c5deee7ffc0ca9db0b10be7a54246b58f93b4cf0e768624678415"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\exploration\\notebook.py": {
+    "bytes": 5112,
+    "sha256": "5a0e93deb2e1c3c8fe79b67dfc27cb75f61dcaccb518a9b54d0f8fd6425885e5"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 1573,
+    "sha256": "57b0a190ae24b19a4adb62d7a16846a2af672cdfa8220b910fd53522e41e596d"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\exploration\\test_spark.py": {
+    "bytes": 1212,
+    "sha256": "a1c161fdab0cd06c2b6e3fcdceca96f739152ba55cf57051c6bf35ac31a44141"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\qualite\\exporter_parquet.py": {
+    "bytes": 6584,
+    "sha256": "57d2a1f98d57478ab7901617d5037a60d5df0c5f177a82376bbc711a7cfb420c"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\qualite\\relire_export.py": {
+    "bytes": 2225,
+    "sha256": "f19af1b77b679f97e9742730d596caa4736c9a94e00b9c6d4cc0a47b7e7548ea"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\qualite\\verifier.py": {
+    "bytes": 2898,
+    "sha256": "09f45bafd2c72c1a70447a2f4e1d193fc58e8e82c0962322284388664a16cb45"
+  },
+  "J1_Retail_Intelligence_DAT\\J3_Retail_Intelligence_Transformation\\scripts\\transformation\\transformer.py": {
+    "bytes": 8974,
+    "sha256": "c64a6569e00c857109a1619d4d34bb590f9ef358b3b83e6e8532d55ebc8d9319"
+  },
+  "J2_Retail_Intelligence_Ingestion\\installation\\hadoop\\core-site.xml": {
+    "bytes": 152,
+    "sha256": "eb25975740c2185ccdb3efc7f5497786c56e13bbd5fd881235a4a722d9dbfa74"
+  },
+  "J2_Retail_Intelligence_Ingestion\\installation\\hadoop\\hdfs-site.xml": {
+    "bytes": 699,
+    "sha256": "93ba6e92b4c48b5363d69c71251c1f7811f86e3505562cf2d06ba24f4afb5283"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3.zip": {
+    "bytes": 31964265,
+    "sha256": "ec450eb3090b998725722e4f50fb16e4d4376f76a946d750966403033fd2e93f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3.zip.sha256": {
+    "bytes": 85,
+    "sha256": "5adb86edf8a0b1ea18d89e446e4c2c74b90e19de9f69371b2621e6b039ceef24"
+  },
+  "J3_Retail_Intelligence_Transformation\\README.md": {
+    "bytes": 14050,
+    "sha256": "471ceca517db9a01b529477825234fcdbf05a43ebe88591864511326f835f9bb"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\LIRE_AVANT_REMISE.md": {
+    "bytes": 2922,
+    "sha256": "0a49501f5310e732621320d524689aeb05f28c010675ebae0c64bf0c6f467d8f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\MANIFESTE_REMISE.json": {
+    "bytes": 17930,
+    "sha256": "07df3aae0c8097226cb2300696ebd027b32784ef731afb7d624e7791e8017cef"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\README.md": {
+    "bytes": 14050,
+    "sha256": "471ceca517db9a01b529477825234fcdbf05a43ebe88591864511326f835f9bb"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\environnement.md": {
+    "bytes": 3540,
+    "sha256": "71a7088fb529f5afee00f21d165a2c502d1b301d6de0f8e8abe3d7c2e1f62646"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\installer-python.sh": {
+    "bytes": 157,
+    "sha256": "eb47832e22937cf2896553bf15d9fbd7413e978f5f2353fee1e79e332ee37d09"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\preparer.ps1": {
+    "bytes": 2536,
+    "sha256": "3c674efe14da9760e04e15a1f19c24f5c826ed3f0facd560a91435dd40dd4307"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\requirements-rapport.txt": {
+    "bytes": 49,
+    "sha256": "05ee2f9d6ccf6264b237244702fbe91f5d211aa2c8b476be6e17bcf815746708"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\requirements.lock.txt": {
+    "bytes": 941,
+    "sha256": "0923116c030d2a1e5bb08e04eeacba62b42ca6a9e3b1a4b482caa26110535b0f"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\comparaison_formats.md": {
+    "bytes": 3797,
+    "sha256": "00a5cc3d18c2940eeccfa00beafca86411388a8b7ba46dc4db52562ed5e7b409"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\export_et_remise.md": {
+    "bytes": 5000,
+    "sha256": "bf2e04fe5edd10249ae7dfd0a62cdabce08a3643a47b1d9d5e6b5543bbd5c457"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\inventaire_sources.md": {
+    "bytes": 5320,
+    "sha256": "460dea2e954cb47e7e2d36b616829f68f86d24d6402796d7ee8078b21f8c85c4"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\modele_silver_gold.md": {
+    "bytes": 4106,
+    "sha256": "88d92c5276dc23179672faaa02456d7db6686522b652375e94c84432e66621e9"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\questions_recul.md": {
+    "bytes": 3494,
+    "sha256": "b8436570b5b0cef266329d468636f2622d715b6d5854a0156876cadf05b8562b"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\rapport_qualite.md": {
+    "bytes": 4945,
+    "sha256": "fa97e05b2969f82ee20303eeff030bd5d529c04f295eb0f6a5f60a7e96693692"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\regles_nettoyage.md": {
+    "bytes": 3165,
+    "sha256": "bd13db44db5c57446b22a9813d2ed6a83ac6812ecd82d29218519fd6b84a930f"
+  },
+  "J3_Retail_Intelligence_Transformation\\documentation\\resultats.md": {
+    "bytes": 1367,
+    "sha256": "3fb9b1522d57f346fc9dc5dc91fbdf68c7d0e167fd59c4112e203be9d9097161"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\manifest.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J3_Retail_Intelligence_Transformation\\notebooks\\UC06_exploration.ipynb": {
+    "bytes": 25201,
+    "sha256": "8d55ddd6806d2f655ded92d1cf2ac454bb7ffb1dea5d3398044419ae5b00bb37"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\index.md": {
+    "bytes": 4557,
+    "sha256": "5caf8ee745745367612a237fc7b70a4de6ded156793bb77d942af506896beaee"
+  },
+  "J3_Retail_Intelligence_Transformation\\rapport\\DAT_Retail_Intelligence_J3.md": {
+    "bytes": 37284,
+    "sha256": "ad8450f6831e80a9226c48fa73baca00e49bd31dd691e766e01d965192788104"
+  },
+  "J3_Retail_Intelligence_Transformation\\rapport\\DAT_Retail_Intelligence_J3.pdf": {
+    "bytes": 420611,
+    "sha256": "a8f7bcaf45790d9cbbed7e47dd524f65e59c18d1f9e3454cdb1525187565cd83"
+  },
+  "J3_Retail_Intelligence_Transformation\\rapport\\exporter_pdf.py": {
+    "bytes": 6280,
+    "sha256": "900b8d93463dd41953cb56d4008a3bef916972612972fa3ccaa98a79bb484f5e"
+  },
+  "J3_Retail_Intelligence_Transformation\\rapport\\generer_documentation.py": {
+    "bytes": 50209,
+    "sha256": "b0d1ec75d5ec06f26a241ed12b09c56e67a948949b0aa3c98c139657dc3e9028"
+  },
+  "J3_Retail_Intelligence_Transformation\\rapport\\sections.json": {
+    "bytes": 37017,
+    "sha256": "685f400b435f81b82ac23bdc925f39efe4820ab714217bb2d3e5795775be2477"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\uc06.py": {
+    "bytes": 6298,
+    "sha256": "b4c0a5fa60441378279ae8bbe0e535d52eb4fcbb475050813b0cb1158d60b008"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\audit_reproduction.md": {
+    "bytes": 3921,
+    "sha256": "147e7c18bdc67a5a0cad4e6760cc065f735b8062617930a29d33976f7bd520ac"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\suivi_exigences.md": {
+    "bytes": 5303,
+    "sha256": "1935f181c4d53f232b3484eab715f4d8ab0b48fc8896e24536d444e8da77ce91"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\test_orchestrateur.ps1": {
+    "bytes": 5522,
+    "sha256": "d2a9c96016167225d6217da1e7dd739addd732081c3e457a37009428f78606c5"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\validation_finale.md": {
+    "bytes": 3029,
+    "sha256": "93e8549b05d63ce1a333978261ea6ac65c1ac20534a26f9b4b9d1c08bf5af0ac"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\verifier_fichiers.py": {
+    "bytes": 1745,
+    "sha256": "faab94c32b4230ff07f2fb8d5419b2ec40f4678d8f5f08703b7c876d6767ed39"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\verifier_pdf.py": {
+    "bytes": 2342,
+    "sha256": "00a04ca656eea486adbd91304d94a6997e798c44cefe86fe02a59241b9c255b3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\verifier_reference.py": {
+    "bytes": 1558,
+    "sha256": "8b30a6d45fe1f2776731880522b7eb283ace6194bece8063cd53af955f2124b6"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\verifier_remise.py": {
+    "bytes": 1083,
+    "sha256": "87dedec6c45fcb207fc31a552bc0692a68deb30be613f47b88bfe4a6bdc99c9e"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\environnement.md": {
+    "bytes": 3540,
+    "sha256": "71a7088fb529f5afee00f21d165a2c502d1b301d6de0f8e8abe3d7c2e1f62646"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\installer-python.sh": {
+    "bytes": 157,
+    "sha256": "eb47832e22937cf2896553bf15d9fbd7413e978f5f2353fee1e79e332ee37d09"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\preparer.ps1": {
+    "bytes": 2536,
+    "sha256": "3c674efe14da9760e04e15a1f19c24f5c826ed3f0facd560a91435dd40dd4307"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\requirements-rapport.txt": {
+    "bytes": 49,
+    "sha256": "05ee2f9d6ccf6264b237244702fbe91f5d211aa2c8b476be6e17bcf815746708"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\requirements.lock.txt": {
+    "bytes": 941,
+    "sha256": "0923116c030d2a1e5bb08e04eeacba62b42ca6a9e3b1a4b482caa26110535b0f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\comparaison_formats.md": {
+    "bytes": 3797,
+    "sha256": "00a5cc3d18c2940eeccfa00beafca86411388a8b7ba46dc4db52562ed5e7b409"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\export_et_remise.md": {
+    "bytes": 5000,
+    "sha256": "bf2e04fe5edd10249ae7dfd0a62cdabce08a3643a47b1d9d5e6b5543bbd5c457"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\inventaire_sources.md": {
+    "bytes": 5320,
+    "sha256": "460dea2e954cb47e7e2d36b616829f68f86d24d6402796d7ee8078b21f8c85c4"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\modele_silver_gold.md": {
+    "bytes": 4106,
+    "sha256": "88d92c5276dc23179672faaa02456d7db6686522b652375e94c84432e66621e9"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\questions_recul.md": {
+    "bytes": 3494,
+    "sha256": "b8436570b5b0cef266329d468636f2622d715b6d5854a0156876cadf05b8562b"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\rapport_qualite.md": {
+    "bytes": 4945,
+    "sha256": "fa97e05b2969f82ee20303eeff030bd5d529c04f295eb0f6a5f60a7e96693692"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\regles_nettoyage.md": {
+    "bytes": 3165,
+    "sha256": "bd13db44db5c57446b22a9813d2ed6a83ac6812ecd82d29218519fd6b84a930f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\documentation\\resultats.md": {
+    "bytes": 1367,
+    "sha256": "3fb9b1522d57f346fc9dc5dc91fbdf68c7d0e167fd59c4112e203be9d9097161"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\manifest.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\notebooks\\UC06_exploration.ipynb": {
+    "bytes": 25201,
+    "sha256": "8d55ddd6806d2f655ded92d1cf2ac454bb7ffb1dea5d3398044419ae5b00bb37"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\index.md": {
+    "bytes": 4557,
+    "sha256": "5caf8ee745745367612a237fc7b70a4de6ded156793bb77d942af506896beaee"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\rapport\\DAT_Retail_Intelligence_J3.md": {
+    "bytes": 37284,
+    "sha256": "ad8450f6831e80a9226c48fa73baca00e49bd31dd691e766e01d965192788104"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\rapport\\DAT_Retail_Intelligence_J3.pdf": {
+    "bytes": 420611,
+    "sha256": "a8f7bcaf45790d9cbbed7e47dd524f65e59c18d1f9e3454cdb1525187565cd83"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\rapport\\exporter_pdf.py": {
+    "bytes": 6280,
+    "sha256": "900b8d93463dd41953cb56d4008a3bef916972612972fa3ccaa98a79bb484f5e"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\rapport\\generer_documentation.py": {
+    "bytes": 50209,
+    "sha256": "b0d1ec75d5ec06f26a241ed12b09c56e67a948949b0aa3c98c139657dc3e9028"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\rapport\\sections.json": {
+    "bytes": 37017,
+    "sha256": "685f400b435f81b82ac23bdc925f39efe4820ab714217bb2d3e5795775be2477"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\uc06.py": {
+    "bytes": 6298,
+    "sha256": "b4c0a5fa60441378279ae8bbe0e535d52eb4fcbb475050813b0cb1158d60b008"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\audit_reproduction.md": {
+    "bytes": 3921,
+    "sha256": "147e7c18bdc67a5a0cad4e6760cc065f735b8062617930a29d33976f7bd520ac"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\controle_remise.json": {
+    "bytes": 408,
+    "sha256": "f28b9d83769ddea3b90437b0aa8d0d5c0444d5344f0b99c011d0df396f6abc3d"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\resultats_tests_orchestrateur.json": {
+    "bytes": 550,
+    "sha256": "5f94b23f62533cfc40fb68b57b4a1e7289ee119a8d4dab2a7af899c556b56a0b"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\suivi_exigences.md": {
+    "bytes": 5303,
+    "sha256": "1935f181c4d53f232b3484eab715f4d8ab0b48fc8896e24536d444e8da77ce91"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\test-orchestrateur.log": {
+    "bytes": 1579,
+    "sha256": "35b83fb6e82018b0fec81c0c990a1edcb409ace38cf6e7edaebf46987102aab3"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\test_orchestrateur.ps1": {
+    "bytes": 5522,
+    "sha256": "d2a9c96016167225d6217da1e7dd739addd732081c3e457a37009428f78606c5"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\validation_finale.md": {
+    "bytes": 3029,
+    "sha256": "93e8549b05d63ce1a333978261ea6ac65c1ac20534a26f9b4b9d1c08bf5af0ac"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\verifier_fichiers.py": {
+    "bytes": 1745,
+    "sha256": "faab94c32b4230ff07f2fb8d5419b2ec40f4678d8f5f08703b7c876d6767ed39"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\verifier_pdf.py": {
+    "bytes": 2342,
+    "sha256": "00a04ca656eea486adbd91304d94a6997e798c44cefe86fe02a59241b9c255b3"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\verifier_reference.py": {
+    "bytes": 1558,
+    "sha256": "8b30a6d45fe1f2776731880522b7eb283ace6194bece8063cd53af955f2124b6"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\verification\\verifier_remise.py": {
+    "bytes": 1083,
+    "sha256": "87dedec6c45fcb207fc31a552bc0692a68deb30be613f47b88bfe4a6bdc99c9e"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\parametres\\execution.json": {
+    "bytes": 832,
+    "sha256": "2e2ea90504a1671f7b145d9dafe857adcbb8551f52d13af2b964c89dfd2c82e1"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\configuration\\parametres\\schemas.json": {
+    "bytes": 3018,
+    "sha256": "92abde2df6958f61c58e1464980fd7c369b48268f175e1aea9bd7d12af516ebb"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\controle_export.md": {
+    "bytes": 2063,
+    "sha256": "abb79ed0ea06fb644aab871d7315e661d9ec0d90a699293173654a44ce5d90ce"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\controle_hdfs_final.log": {
+    "bytes": 336,
+    "sha256": "17818b20770b0373a75cadede24be07f2ba51799aeedd10366b802a68f76078d"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\hdfs_apres.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\hdfs_avant.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\hdfs_fin_mission.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\manifeste_export.json": {
+    "bytes": 16371,
+    "sha256": "108b4061ed2046e9c9ca1287d40bc864aa61d64075067b2fc70c2a4b34276c6c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\relecture_locale.log": {
+    "bytes": 587,
+    "sha256": "0ee5f74f547af7756e2cc0a47f3adacd89e1f011f433f6ed3b628ecc203fff1f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\verification_export\\SHA256SUMS.txt": {
+    "bytes": 1419,
+    "sha256": "527d24c484e2b245dc8cb3cfa64c582bdacd39c494e699a81ccad2ffe5ff96b5"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 654121,
+    "sha256": "d09d8d77d1ca08d9d82e60757c3496a0f4b51db7f8fe63dadb6524db0ed9b8f4"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 653030,
+    "sha256": "907738a8ddb04823066f87d2783eedc92f3a6c1e8ce47f67c46fb9407f2b0bf8"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\gold\\ventes_par_produit\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\item\\part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 2874664,
+    "sha256": "7f9c09c3bfd4054ffa3f9b81d3877fd6dff9ed1e51a5a428c1190286062be364"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\item\\part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 696555,
+    "sha256": "4daf3ab39d0ca8260320e4fb52c7f5c7a961d3b590d4a5b7fd11f54bab5d849f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\item\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\store_sales\\part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 18159032,
+    "sha256": "38d217b47a6f96a629e2025f561ea1e428db308920c5710c96db860015e338d6"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\store_sales\\part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 16607672,
+    "sha256": "a08fe15f31c1c55c5a0a79d4a7aaff226350fe7611564dcc2a5f78caaa9bad57"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\donnees_produites\\export\\silver\\store_sales\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\captures\\J3-P01-hdfs.jpg": {
+    "bytes": 50196,
+    "sha256": "3508d4bcd352372bd7d16cdc59059b4c1718798669ed244589abe4e418082b68"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\captures\\J3-P04-notebook.jpg": {
+    "bytes": 76805,
+    "sha256": "951a5ece3f1f8d33077c5bcb6ff38d062486220bed40368b9f7debcdd9923399"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\captures\\J3-P05-bilan.jpg": {
+    "bytes": 100154,
+    "sha256": "f681911f4849007923865d733d4710255ac521eb0763ebe8321cb768b54323c1"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\empreintes_avant.json": {
+    "bytes": 52039,
+    "sha256": "82ea0a9f02f5d94420aab5b31039a5ca0bc7720b8989d3d630c133551d0b0599"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\inventaire_python.json": {
+    "bytes": 1732555,
+    "sha256": "c732862e1eca54175ba151fc3d84ccf78cb7fb8df8f2b05523a7f6b4a339dc82"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P01-reason-avant.txt": {
+    "bytes": 138,
+    "sha256": "8356a1d71a1f2fccb5b44854ff79c92f5120096e96f60803d25705a11f5153ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P02-session-spark.json": {
+    "bytes": 1493,
+    "sha256": "b1c0d5d72dabef22d03a31c3ca499c041a6cf51b649017cd86a8d0ec0835e097"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P03-entrees-hdfs.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P04-item.json": {
+    "bytes": 5102,
+    "sha256": "6c071d5af6f9eb63816fa517f9419a5b6684b5c2bea7c098bba7c715150fed9f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P04-store_sales.json": {
+    "bytes": 6045,
+    "sha256": "6a990df4b54597e5cebfca95f38b2cbcf9c885aebd59690189403ca34c2b1628"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P05-jointure-exploration.json": {
+    "bytes": 101,
+    "sha256": "f6c343147182b6ebb45f47b6b5f07fef9f5d877f04a7a9bef3a150a20baaeac6"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P06-transformation.json": {
+    "bytes": 50662,
+    "sha256": "c87117940b3e0d57f48a9350b9e6ca9c43cb8c577e55c34ceb784f9ac9691774"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P09-qualite.json": {
+    "bytes": 21258,
+    "sha256": "efffb9792f9054f9c34e05117055a5ac9c90d46024addbf843f312f366ee4119"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P10-verification.json": {
+    "bytes": 12371,
+    "sha256": "dd860ee49b72eef578f98a8712e118070eb90fcf0a185bb866a4a6fb1120078b"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\J3-P11-verification-fichiers.json": {
+    "bytes": 898,
+    "sha256": "941b08b7c98d95b4bc776ea4b1f794ea63520e086641d0b7b69ad5b2d6940738"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\registre_qualite.csv": {
+    "bytes": 9527,
+    "sha256": "8cf0bb4a37a68d17cf641ed1e36bfa1b4f4b356fbddfe6b3da871cacf2900205"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\schema_reference.json": {
+    "bytes": 269,
+    "sha256": "d04ebfc17907a458a35c13319665fda1c5575994d87776c463fdc0afdd5de9e6"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\validation_finale.json": {
+    "bytes": 472,
+    "sha256": "3aaf919a26b2ad8150b7cfd8bddd64cfd9c5cf8d98f227c5bf611d183b7e1e3d"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\controles\\verification_pdf.json": {
+    "bytes": 436,
+    "sha256": "e6a04eabedd82ba4df1692934e99e140cfc1836e9f4c77a63012f53ee4d3f3d2"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\diagnostic-relecture.log": {
+    "bytes": 2612,
+    "sha256": "9c29fc816a3454d3b3c0f491253c87de95a3606816927b69a977184aa041b00c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\execution-tentative-initiale.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\hdfs-etat-final.txt": {
+    "bytes": 1298,
+    "sha256": "d44a0060fb070c5aa878658dcd4c24f28fc5da1360fa8f5d0af7ef0a69f36500"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\installation-python.log": {
+    "bytes": 17310,
+    "sha256": "886cb33795f68f0ccac8e3fb28a18fc5991a725123d42c8e0cae946e909bd61f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P01-diagnostic.txt": {
+    "bytes": 4710,
+    "sha256": "dbd6acbccbff65270d75f72f146032e488d0e14c39213e9711fc922574f9e58f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P02-session-spark-final.log": {
+    "bytes": 2391,
+    "sha256": "0b0ad37b408bcbeba3920f9cfbcb23fa9e83a892f20e3325f99d87d80c54eff7"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P02-session-spark.log": {
+    "bytes": 2301,
+    "sha256": "1a8b906620d8f08caf1f6ebb5858a6e92ff53371336858ba278e1c478a4162f1"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P03-entrees.log": {
+    "bytes": 190,
+    "sha256": "44ef50ede58b36875b5af3d5a56de57f6de5c62c4dce0290eebabee4dce57d59"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P04-notebook.log": {
+    "bytes": 1342,
+    "sha256": "afb26b20f9b8962887b5c76979f658138fdd56488a609b0669f85d010f648cf1"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P06-tentative-initiale.log": {
+    "bytes": 1364,
+    "sha256": "c9ef813679ae3f4d7a2e1a692c0b4edb7586d1bc424650f57e2ac2d7626a6980"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P06-tentative-r2.log": {
+    "bytes": 1282,
+    "sha256": "81ec472af5fc43b408750dc22b2e15441025358e8002bc0b41779e533bf5fa15"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P06-transformation.log": {
+    "bytes": 15978,
+    "sha256": "236e69c15f1b73d375cde27ef173b6ff22b8c3a18df1eca85e10cd21720c8df7"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P10-verification.log": {
+    "bytes": 12645,
+    "sha256": "f9edb4160be5b09632fc594e504b164dd12536be2ab5ebebf66e4a703c3faedc"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P11-verification-fichiers.log": {
+    "bytes": 900,
+    "sha256": "da725c94350e4db1ee51bd82569a3caa59decfe1bcbfd9124d68b69c84c0823f"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P12-reexecution-refusee.log": {
+    "bytes": 745,
+    "sha256": "6b9754600fbbdd4dd697d2c3a57957ebf07a95a0cbc1a292974918b087604aa3"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P13-export-parquet.log": {
+    "bytes": 703,
+    "sha256": "8092bacd12bf016ac035be3952032fb318e800b902d3eeb9696b0cd1698c637d"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\J3-P14-relecture-dossier-remise.log": {
+    "bytes": 587,
+    "sha256": "1c7fc01edc0cc06006c9955e704a39b88e9e9dbf5d460fc8d428e18c3270cd0c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\notebook-html.log": {
+    "bytes": 166,
+    "sha256": "e69e3896d819141e9b1a359b6203255c42d33e96812162b2a2e7c48034be8675"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\spark-thread-diagnostic-r2.txt": {
+    "bytes": 170612,
+    "sha256": "28858aa4ab7b54d298da4869771c4f47ddae7d2b4c57c32d667402fde7e48ae6"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\spark-thread-diagnostic.txt": {
+    "bytes": 58693,
+    "sha256": "e4a7513db4f9df4de1a20ee0e41603bb4db8f595a6cd8f104066b14563d4a901"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\executions\\verification-pdf.log": {
+    "bytes": 438,
+    "sha256": "1f11903764c09ff8b237df7b7e2488dec7560a883ebb8d69ad9579b6c179e21a"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\notebook\\UC06_exploration.html": {
+    "bytes": 308800,
+    "sha256": "0125d21b925749243509a3072f6f25dbdf3402a9565fa3c025acdc23b4abc514"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\parquet\\J3-P08-listing-hdfs.txt": {
+    "bytes": 2069,
+    "sha256": "97b557582cf154d4c4f96f538c3c2833a8ce4981780c5bf6a34a9df23d19225e"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\preuves\\parquet\\J3-P08-parquet.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\exploration\\inventorier.py": {
+    "bytes": 3125,
+    "sha256": "501562eaab1c5deee7ffc0ca9db0b10be7a54246b58f93b4cf0e768624678415"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\exploration\\notebook.py": {
+    "bytes": 5112,
+    "sha256": "5a0e93deb2e1c3c8fe79b67dfc27cb75f61dcaccb518a9b54d0f8fd6425885e5"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 1573,
+    "sha256": "57b0a190ae24b19a4adb62d7a16846a2af672cdfa8220b910fd53522e41e596d"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\exploration\\test_spark.py": {
+    "bytes": 1212,
+    "sha256": "a1c161fdab0cd06c2b6e3fcdceca96f739152ba55cf57051c6bf35ac31a44141"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\qualite\\exporter_parquet.py": {
+    "bytes": 6584,
+    "sha256": "57d2a1f98d57478ab7901617d5037a60d5df0c5f177a82376bbc711a7cfb420c"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\qualite\\relire_export.py": {
+    "bytes": 2225,
+    "sha256": "f19af1b77b679f97e9742730d596caa4736c9a94e00b9c6d4cc0a47b7e7548ea"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\qualite\\verifier.py": {
+    "bytes": 2898,
+    "sha256": "09f45bafd2c72c1a70447a2f4e1d193fc58e8e82c0962322284388664a16cb45"
+  },
+  "J3_Retail_Intelligence_Transformation\\A_REMETTRE_J3\\scripts\\transformation\\transformer.py": {
+    "bytes": 8974,
+    "sha256": "c64a6569e00c857109a1619d4d34bb590f9ef358b3b83e6e8532d55ebc8d9319"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\parametres\\execution.json": {
+    "bytes": 832,
+    "sha256": "2e2ea90504a1671f7b145d9dafe857adcbb8551f52d13af2b964c89dfd2c82e1"
+  },
+  "J3_Retail_Intelligence_Transformation\\configuration\\parametres\\schemas.json": {
+    "bytes": 3018,
+    "sha256": "92abde2df6958f61c58e1464980fd7c369b48268f175e1aea9bd7d12af516ebb"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\controle_export.md": {
+    "bytes": 2063,
+    "sha256": "abb79ed0ea06fb644aab871d7315e661d9ec0d90a699293173654a44ce5d90ce"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\controle_hdfs_final.log": {
+    "bytes": 336,
+    "sha256": "17818b20770b0373a75cadede24be07f2ba51799aeedd10366b802a68f76078d"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_apres.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_avant.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\hdfs_fin_mission.json": {
+    "bytes": 5823,
+    "sha256": "ed36fd06176d8be7516c4e108638fa6284c2b4b87c4b0dfdee03fbb470f3b856"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\manifeste_export.json": {
+    "bytes": 16371,
+    "sha256": "108b4061ed2046e9c9ca1287d40bc864aa61d64075067b2fc70c2a4b34276c6c"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\relecture_locale.log": {
+    "bytes": 587,
+    "sha256": "0ee5f74f547af7756e2cc0a47f3adacd89e1f011f433f6ed3b628ecc203fff1f"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\verification_export\\SHA256SUMS.txt": {
+    "bytes": 1419,
+    "sha256": "527d24c484e2b245dc8cb3cfa64c582bdacd39c494e699a81ccad2ffe5ff96b5"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 654121,
+    "sha256": "d09d8d77d1ca08d9d82e60757c3496a0f4b51db7f8fe63dadb6524db0ed9b8f4"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+    "bytes": 653030,
+    "sha256": "907738a8ddb04823066f87d2783eedc92f3a6c1e8ce47f67c46fb9407f2b0bf8"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\gold\\ventes_par_produit\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 2874664,
+    "sha256": "7f9c09c3bfd4054ffa3f9b81d3877fd6dff9ed1e51a5a428c1190286062be364"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+    "bytes": 696555,
+    "sha256": "4daf3ab39d0ca8260320e4fb52c7f5c7a961d3b590d4a5b7fd11f54bab5d849f"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\item\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 18159032,
+    "sha256": "38d217b47a6f96a629e2025f561ea1e428db308920c5710c96db860015e338d6"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+    "bytes": 16607672,
+    "sha256": "a08fe15f31c1c55c5a0a79d4a7aaff226350fe7611564dcc2a5f78caaa9bad57"
+  },
+  "J3_Retail_Intelligence_Transformation\\donnees_produites\\export\\silver\\store_sales\\_SUCCESS": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P01-hdfs.jpg": {
+    "bytes": 50196,
+    "sha256": "3508d4bcd352372bd7d16cdc59059b4c1718798669ed244589abe4e418082b68"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P04-notebook.jpg": {
+    "bytes": 76805,
+    "sha256": "951a5ece3f1f8d33077c5bcb6ff38d062486220bed40368b9f7debcdd9923399"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\captures\\J3-P05-bilan.jpg": {
+    "bytes": 100154,
+    "sha256": "f681911f4849007923865d733d4710255ac521eb0763ebe8321cb768b54323c1"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\consignes\\Cours 3.pdf.txt": {
+    "bytes": 37960,
+    "sha256": "d5c1d514de17ea15523147f4eafc743cf8a82169a2e1ae111751c7a90a29798d"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\consignes\\DAT_Retail_Intelligence_J1.txt": {
+    "bytes": 77566,
+    "sha256": "6c4107466b6e1f9f36f46167192b9dd7bd41b5489fad7cc811ef25e98f73ba19"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\consignes\\DAT_Retail_Intelligence_J2.txt": {
+    "bytes": 26136,
+    "sha256": "65ad25d9a5df598cb7dcb5e68eb885b039cd0633bc9da73e34da4d7838efb29f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\consignes\\TP 3 .pdf.txt": {
+    "bytes": 105179,
+    "sha256": "928a9a1903af795df6b8f432513a9a50599c09a5b2ca4c709fb2b383819c1101"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\consignes\\TPCX-BB_v1.7.0.pdf": {
+    "bytes": 2845686,
+    "sha256": "74a0934184af4435f5765a5612effdb8473d0cfea921dc1b500d800381d3ca4e"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\empreintes_avant.json": {
+    "bytes": 52039,
+    "sha256": "82ea0a9f02f5d94420aab5b31039a5ca0bc7720b8989d3d630c133551d0b0599"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\inventaire_python.json": {
+    "bytes": 1732555,
+    "sha256": "c732862e1eca54175ba151fc3d84ccf78cb7fb8df8f2b05523a7f6b4a339dc82"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P01-reason-avant.txt": {
+    "bytes": 138,
+    "sha256": "8356a1d71a1f2fccb5b44854ff79c92f5120096e96f60803d25705a11f5153ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P02-session-spark.json": {
+    "bytes": 1493,
+    "sha256": "b1c0d5d72dabef22d03a31c3ca499c041a6cf51b649017cd86a8d0ec0835e097"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P03-entrees-hdfs.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P04-item.json": {
+    "bytes": 5102,
+    "sha256": "6c071d5af6f9eb63816fa517f9419a5b6684b5c2bea7c098bba7c715150fed9f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P04-store_sales.json": {
+    "bytes": 6045,
+    "sha256": "6a990df4b54597e5cebfca95f38b2cbcf9c885aebd59690189403ca34c2b1628"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P05-jointure-exploration.json": {
+    "bytes": 101,
+    "sha256": "f6c343147182b6ebb45f47b6b5f07fef9f5d877f04a7a9bef3a150a20baaeac6"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P06-transformation.json": {
+    "bytes": 50662,
+    "sha256": "c87117940b3e0d57f48a9350b9e6ca9c43cb8c577e55c34ceb784f9ac9691774"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P09-qualite.json": {
+    "bytes": 21258,
+    "sha256": "efffb9792f9054f9c34e05117055a5ac9c90d46024addbf843f312f366ee4119"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P10-verification.json": {
+    "bytes": 12371,
+    "sha256": "dd860ee49b72eef578f98a8712e118070eb90fcf0a185bb866a4a6fb1120078b"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\J3-P11-verification-fichiers.json": {
+    "bytes": 898,
+    "sha256": "941b08b7c98d95b4bc776ea4b1f794ea63520e086641d0b7b69ad5b2d6940738"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\registre_qualite.csv": {
+    "bytes": 9527,
+    "sha256": "8cf0bb4a37a68d17cf641ed1e36bfa1b4f4b356fbddfe6b3da871cacf2900205"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\schema_reference.json": {
+    "bytes": 269,
+    "sha256": "d04ebfc17907a458a35c13319665fda1c5575994d87776c463fdc0afdd5de9e6"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\validation_finale.json": {
+    "bytes": 472,
+    "sha256": "3aaf919a26b2ad8150b7cfd8bddd64cfd9c5cf8d98f227c5bf611d183b7e1e3d"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\controles\\verification_pdf.json": {
+    "bytes": 436,
+    "sha256": "e6a04eabedd82ba4df1692934e99e140cfc1836e9f4c77a63012f53ee4d3f3d2"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\diagnostic-relecture.log": {
+    "bytes": 2612,
+    "sha256": "9c29fc816a3454d3b3c0f491253c87de95a3606816927b69a977184aa041b00c"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\execution-tentative-initiale.json": {
+    "bytes": 802,
+    "sha256": "c241a45c331844a5bc3068cb6cc02f2da6634b6bd0ea670b7909a2f14d27d657"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\hdfs-etat-final.txt": {
+    "bytes": 1298,
+    "sha256": "d44a0060fb070c5aa878658dcd4c24f28fc5da1360fa8f5d0af7ef0a69f36500"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\installation-python.log": {
+    "bytes": 17310,
+    "sha256": "886cb33795f68f0ccac8e3fb28a18fc5991a725123d42c8e0cae946e909bd61f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P01-diagnostic.txt": {
+    "bytes": 4710,
+    "sha256": "dbd6acbccbff65270d75f72f146032e488d0e14c39213e9711fc922574f9e58f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P02-session-spark-final.log": {
+    "bytes": 2391,
+    "sha256": "0b0ad37b408bcbeba3920f9cfbcb23fa9e83a892f20e3325f99d87d80c54eff7"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P02-session-spark.log": {
+    "bytes": 2301,
+    "sha256": "1a8b906620d8f08caf1f6ebb5858a6e92ff53371336858ba278e1c478a4162f1"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P03-entrees.log": {
+    "bytes": 190,
+    "sha256": "44ef50ede58b36875b5af3d5a56de57f6de5c62c4dce0290eebabee4dce57d59"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P04-notebook.log": {
+    "bytes": 1342,
+    "sha256": "afb26b20f9b8962887b5c76979f658138fdd56488a609b0669f85d010f648cf1"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-tentative-initiale.log": {
+    "bytes": 1364,
+    "sha256": "c9ef813679ae3f4d7a2e1a692c0b4edb7586d1bc424650f57e2ac2d7626a6980"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-tentative-r2.log": {
+    "bytes": 1282,
+    "sha256": "81ec472af5fc43b408750dc22b2e15441025358e8002bc0b41779e533bf5fa15"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P06-transformation.log": {
+    "bytes": 15978,
+    "sha256": "236e69c15f1b73d375cde27ef173b6ff22b8c3a18df1eca85e10cd21720c8df7"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P10-verification.log": {
+    "bytes": 12645,
+    "sha256": "f9edb4160be5b09632fc594e504b164dd12536be2ab5ebebf66e4a703c3faedc"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P11-verification-fichiers.log": {
+    "bytes": 900,
+    "sha256": "da725c94350e4db1ee51bd82569a3caa59decfe1bcbfd9124d68b69c84c0823f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P12-reexecution-refusee.log": {
+    "bytes": 745,
+    "sha256": "6b9754600fbbdd4dd697d2c3a57957ebf07a95a0cbc1a292974918b087604aa3"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\J3-P13-export-parquet.log": {
+    "bytes": 703,
+    "sha256": "8092bacd12bf016ac035be3952032fb318e800b902d3eeb9696b0cd1698c637d"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\notebook-html.log": {
+    "bytes": 166,
+    "sha256": "e69e3896d819141e9b1a359b6203255c42d33e96812162b2a2e7c48034be8675"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\spark-thread-diagnostic-r2.txt": {
+    "bytes": 170612,
+    "sha256": "28858aa4ab7b54d298da4869771c4f47ddae7d2b4c57c32d667402fde7e48ae6"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\spark-thread-diagnostic.txt": {
+    "bytes": 58693,
+    "sha256": "e4a7513db4f9df4de1a20ee0e41603bb4db8f595a6cd8f104066b14563d4a901"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\executions\\verification-pdf.log": {
+    "bytes": 438,
+    "sha256": "1f11903764c09ff8b237df7b7e2488dec7560a883ebb8d69ad9579b6c179e21a"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\notebook\\UC06_exploration.html": {
+    "bytes": 308800,
+    "sha256": "0125d21b925749243509a3072f6f25dbdf3402a9565fa3c025acdc23b4abc514"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\parquet\\J3-P08-listing-hdfs.txt": {
+    "bytes": 2069,
+    "sha256": "97b557582cf154d4c4f96f538c3c2833a8ce4981780c5bf6a34a9df23d19225e"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\parquet\\J3-P08-parquet.json": {
+    "bytes": 19368,
+    "sha256": "7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\contact-01.png": {
+    "bytes": 428485,
+    "sha256": "21a3c33f293b4a52dd10829675f6a6f6fa8eedf6286ccfd0de1c2285d62d36ea"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\contact-13.png": {
+    "bytes": 164283,
+    "sha256": "e55e893f3a152747691edaf9281028609279ce131ada08d49da65f45b708f18d"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-01.png": {
+    "bytes": 206379,
+    "sha256": "2dd0c2ebabb83acaa4621e58f2856ba03fa0061af8ccc63572ecb5ae4676b488"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-02.png": {
+    "bytes": 232009,
+    "sha256": "6e98ea2b7819eb1f7b8f60585b88c59178ce5f0bb4c471591b51055cd86f26e7"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-03.png": {
+    "bytes": 208991,
+    "sha256": "5eacf118f43ff93b5f28713e8f4a4bea88beb66f2b1695dc0c9422c626fa31c3"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-04.png": {
+    "bytes": 80104,
+    "sha256": "da279841868c37b1dea4e40642415d2ebaffd0d044df0cf9709df6e1ba87d5e2"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-05.png": {
+    "bytes": 149988,
+    "sha256": "e8d39e894bd218b47acfe7b07afc6f80eb165a56167ed17575043a16d2989a4f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-06.png": {
+    "bytes": 213081,
+    "sha256": "cc80fc8bdcaf42ddf6b37f6c6ddc7b49e4f864a696aadf6b3074df476322fb7f"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-07.png": {
+    "bytes": 253709,
+    "sha256": "3bf0d35a296f6f41d4b12cfbd99662a92e25df0c2524ecd199b78dfe0cac0c1d"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-08.png": {
+    "bytes": 168066,
+    "sha256": "ebaf327cc753353ea1fc8454b00a69d1908a03f1c435161dfa0999ee662c7da6"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-09.png": {
+    "bytes": 205499,
+    "sha256": "2ec0113caafb6a529f7c8c7d953f51b0ef7abf17376ec866db77f292f5ae65a7"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-10.png": {
+    "bytes": 204310,
+    "sha256": "15cf8bb54bd164e3421ea7a98a642d2ae40a905040d7d11c57209141ec3f46c8"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-11.png": {
+    "bytes": 186204,
+    "sha256": "7a3459585547c4fe92dcca796044ee8e41bd0085b59a3b5d409b2dfb1029b85b"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-12.png": {
+    "bytes": 279522,
+    "sha256": "6d50d94f4030b468be2e54bd6b1877df39b10d5a6f2252da923aee6d65e1d04a"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-13.png": {
+    "bytes": 213040,
+    "sha256": "f932c259ef159fb2fb98cb80689e82d5f982c7d180e0f5e260edbdd3b5ee2ee9"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-14.png": {
+    "bytes": 155717,
+    "sha256": "18de1f110e98a2fa87d7c4a408285bb47edd97fb47c0dd8281f0b6004327e5f1"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-15.png": {
+    "bytes": 197296,
+    "sha256": "ac23b572df12ad3168c2b97c535fb58f2f8b3208eb434c5c4bcc29b492b99a60"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-16.png": {
+    "bytes": 326771,
+    "sha256": "e7e78117dccc2dd42d05431e1f71fe3dc4e7ed52520a14183a69a3c7361d58cf"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\page-17.png": {
+    "bytes": 439398,
+    "sha256": "013bd37fbab2fe7e174b11c038ad9155df47e7308413d7b4e5f81b5d8e2bb0ef"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-18.png": {
+    "bytes": 93522,
+    "sha256": "80ce3378a1b47f5a890258fb301dcdd7ce0c4380f2a99e6674ff14256e7d3426"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-19.png": {
+    "bytes": 183810,
+    "sha256": "c00c0a4193b23d9c9d92f81707bbfb68e4f167c971839b9ddd50c259ab99f818"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-20.png": {
+    "bytes": 160263,
+    "sha256": "e9023bff226b41b43276dfdb8919bf8ecd725e27f596926f17ecb1c573f7f28e"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-21.png": {
+    "bytes": 197281,
+    "sha256": "ed28531a22101942e63698fc999c9080d58513da34aa4dc581866bb4a8bde202"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-22.png": {
+    "bytes": 326966,
+    "sha256": "54cdb95e1fc2b90c1eb92b017683ec9b64b1980ed5b79965f88331d39b260f27"
+  },
+  "J3_Retail_Intelligence_Transformation\\preuves\\relecture_pdf\\essai_initial_23_pages\\page-23.png": {
+    "bytes": 439507,
+    "sha256": "4faa9c9d15698953ceb1a9a12919cbf984ba9c6bb8f864b1a8d0fc19e2440446"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\exploration\\inventorier.py": {
+    "bytes": 3125,
+    "sha256": "501562eaab1c5deee7ffc0ca9db0b10be7a54246b58f93b4cf0e768624678415"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\exploration\\notebook.py": {
+    "bytes": 5112,
+    "sha256": "5a0e93deb2e1c3c8fe79b67dfc27cb75f61dcaccb518a9b54d0f8fd6425885e5"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 1573,
+    "sha256": "57b0a190ae24b19a4adb62d7a16846a2af672cdfa8220b910fd53522e41e596d"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\exploration\\test_spark.py": {
+    "bytes": 1212,
+    "sha256": "a1c161fdab0cd06c2b6e3fcdceca96f739152ba55cf57051c6bf35ac31a44141"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\qualite\\exporter_parquet.py": {
+    "bytes": 6584,
+    "sha256": "57d2a1f98d57478ab7901617d5037a60d5df0c5f177a82376bbc711a7cfb420c"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\qualite\\relire_export.py": {
+    "bytes": 2225,
+    "sha256": "f19af1b77b679f97e9742730d596caa4736c9a94e00b9c6d4cc0a47b7e7548ea"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\qualite\\verifier.py": {
+    "bytes": 2898,
+    "sha256": "09f45bafd2c72c1a70447a2f4e1d193fc58e8e82c0962322284388664a16cb45"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\transformation\\transformer.py": {
+    "bytes": 8974,
+    "sha256": "c64a6569e00c857109a1619d4d34bb590f9ef358b3b83e6e8532d55ebc8d9319"
+  },
+  "J3_Retail_Intelligence_Transformation\\scripts\\__pycache__\\uc06.cpython-312.pyc": {
+    "bytes": 13768,
+    "sha256": "0a0d90ab1a89e02e248c52d1fcb85ce1e734bd99b6a25e873018392fe781e023"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\controle_pdf.json": {
+    "bytes": 122,
+    "sha256": "263030ba2e5871aa0d04e3733b8619f3c1305f2df7490e09758dfed2bd864599"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\empreintes_j3_avant.json": {
+    "bytes": 12305,
+    "sha256": "4759a8b1ba0cde3d871d3f6eef4fc50d50d81b8e4b35e239c2fa4a167820b551"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\mettre_a_jour.py": {
+    "bytes": 6948,
+    "sha256": "4b11dce0cfad03e96fddbd5d0148fd03f6824cfcab54bf05805aa49803350085"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\preparer_remise.py": {
+    "bytes": 9307,
+    "sha256": "902231dc3f7822d2db63d596d443422a6de9694025f9815c5c3c68dc4250d2e5"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\test-orchestrateur.log": {
+    "bytes": 1579,
+    "sha256": "35b83fb6e82018b0fec81c0c990a1edcb409ace38cf6e7edaebf46987102aab3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\validation_globale.json": {
+    "bytes": 1258,
+    "sha256": "6078602893bf05eb893633b995de6c65a11c854b277b7267603f237e44436b5d"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\validation_remise.json": {
+    "bytes": 555,
+    "sha256": "0c6f4a7393110e0f06712521ba8d4b202e498aa5afcd8d371c58544beeba6865"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\verifier_global.py": {
+    "bytes": 3531,
+    "sha256": "4340cc23299e55f7e5caf25ef0f64fbf85b26f406b610608954adc3e2aab19b8"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\README.md": {
+    "bytes": 9045,
+    "sha256": "971257c34cefd43196acd3118e3ae74fd991a96afd7aa54acb0556b9cc166f13"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\contact-01.png": {
+    "bytes": 434006,
+    "sha256": "91637d85fb2457dae8bd270ad99f1506277028e1f5eaaedb43f2e4686babbd59"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\contact-13.png": {
+    "bytes": 163800,
+    "sha256": "3e3adaedc33e620f117d36e4259e05c3f388528ce5bb5415bc20dfe17b5b17c6"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-01.png": {
+    "bytes": 185821,
+    "sha256": "5c59ce32462be6c15f63c0eefb81756c7f4417826a763ce4b39c6b39b39ba7b3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-02.png": {
+    "bytes": 180256,
+    "sha256": "79e45969570d3cb33b759285b355342d3d1f8008edc15cb5252f44ab43627ffb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-03.png": {
+    "bytes": 162767,
+    "sha256": "0a8e37870c26f7c8866e71db3762145b03fa23ee49143bfcd885a634ad945462"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-04.png": {
+    "bytes": 62857,
+    "sha256": "e0881c078baa210ee9785190f867b218eb75ec89a3643a96849d3eaee71e54da"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-05.png": {
+    "bytes": 117402,
+    "sha256": "202e60ee2bd5fe7613f23ac5800ea34ddccf3fbf9506a00d6b7c64b5033ce187"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-06.png": {
+    "bytes": 150607,
+    "sha256": "dcb848123c3f70311d8f3e64b8e605a48389e01f0f68ceef04090355f1667e10"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-07.png": {
+    "bytes": 198584,
+    "sha256": "96e5d6ae019158516213a4120b62b7181979057cf868e7258bf86901efecda16"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-08.png": {
+    "bytes": 132037,
+    "sha256": "573c699a4660650fc1997478ac1a838c9a999cf6fa5b210ce33f999903138cac"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-09.png": {
+    "bytes": 158241,
+    "sha256": "7adb3ec264c4e5b72fd8ebd8f2b20588277a46c26363aedf915b8daadd25e1ec"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-10.png": {
+    "bytes": 159896,
+    "sha256": "df0a118a114fc8c13600151b06ac97a5fb602f2225c8ac14527d58404a681f85"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-11.png": {
+    "bytes": 144832,
+    "sha256": "963547e6df063888d5b83ac5b60e5eb9b727baf465ec4fd7a8e64af3e46c31a7"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-12.png": {
+    "bytes": 217087,
+    "sha256": "97a758230a112eb463f71d8cfaca97611cf283793a1df2d837344b25c92ec69a"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-13.png": {
+    "bytes": 157378,
+    "sha256": "93b0dec30a8298553819845cbb75d5d95e25c89eb1246f2c983e1b7acf269c44"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-14.png": {
+    "bytes": 119774,
+    "sha256": "4760e01079adb8b7d7f6f0bd8df4881bdc93aeeb37eef8c18f9267136855cc31"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-15.png": {
+    "bytes": 146478,
+    "sha256": "ff243993ddf6189092762c8a4420e153f01386dc01300b372b3a97056b3f7a8e"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-16.png": {
+    "bytes": 236564,
+    "sha256": "8faaffde66fd94b42023577a21a96fc93799be7b83c6d358a861617ab7791db0"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\qa_pdf\\page-17.png": {
+    "bytes": 318546,
+    "sha256": "b97d00f80c50cec7c0dc90182a0d5eaf7add9779d645823db5cb7be2de45a28d"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\resultats.json": {
+    "bytes": 550,
+    "sha256": "5f94b23f62533cfc40fb68b57b4a1e7289ee119a8d4dab2a7af899c556b56a0b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\configuration\\preparer.ps1": {
+    "bytes": 1882,
+    "sha256": "2599d29c37bf70cbcee3f337bf78c2f8618d3d26de76552b602723ddba8790a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\rapport\\DAT_Retail_Intelligence_J3.md": {
+    "bytes": 36909,
+    "sha256": "975c70449aac50123de97eb6413374f87adcabc5e37650599b49326c5f547089"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\rapport\\DAT_Retail_Intelligence_J3.pdf": {
+    "bytes": 420366,
+    "sha256": "8e630a607984b23a4e5d68ab9009bca0fa79b5a0ecba0c1519db041f6aa679b1"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\rapport\\exporter_pdf.py": {
+    "bytes": 6280,
+    "sha256": "900b8d93463dd41953cb56d4008a3bef916972612972fa3ccaa98a79bb484f5e"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\rapport\\generer_documentation.py": {
+    "bytes": 49520,
+    "sha256": "ccde21b33dddec2faa85005c4528e4ef9ebff904a2ab7ca69d909a508a59ee92"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\rapport\\sections.json": {
+    "bytes": 36646,
+    "sha256": "1b4be3a9a3692e8c53797c38a8a0cb0671de35bc30c6c5d729db7b425e101def"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\scripts\\reproduire.ps1": {
+    "bytes": 1559,
+    "sha256": "7ada1f63e5fcce0ef9bc52a7f94e1a2c8fd2f15939472673d92352108649ab7c"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\originaux\\verification\\suivi_exigences.md": {
+    "bytes": 4258,
+    "sha256": "9e101ae51df97ca151192b62338e1148707de26cdfd5177638e822cee7aaf82c"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\configuration\\preparer.ps1": {
+    "bytes": 26,
+    "sha256": "bc697a651f7be7791fd6ee2da0775a2553966fd3fc23120a4aa058d1e17ac3a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\donnees_produites\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\configuration\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\preuves\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\conserver.txt": {
+    "bytes": 17,
+    "sha256": "bf0600ecedb7bbf191318de9a3ac23ba9db4bb850be21945ab04d4d4925b9407"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\exploration\\inventorier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\exploration\\notebook.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\exploration\\test_spark.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\qualite\\verifier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\archive-existante\\scripts\\transformation\\transformer.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\configuration\\preparer.ps1": {
+    "bytes": 26,
+    "sha256": "bc697a651f7be7791fd6ee2da0775a2553966fd3fc23120a4aa058d1e17ac3a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\donnees_produites\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\configuration\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\executions\\inventorier.py-20261118-143256.log": {
+    "bytes": 129,
+    "sha256": "f41a0fdc4d921ef49f50b0cb52f738276dc076c5d85d1793f84f8f1cfacd6c47"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\executions\\preparer_entrees.py-20261118-143256.log": {
+    "bytes": 115,
+    "sha256": "46e2cc1c88d4c0fc8a4b7583372b755da801ee33248ac0ce2a02b01018bda61c"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\executions\\test_spark.py-20261118-143256.log": {
+    "bytes": 109,
+    "sha256": "e38e13e17fadf801cae21962508e5867aa5f71da995a6f2c6d7dd8b854b0e6f4"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\exploration\\inventorier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\exploration\\notebook.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\exploration\\test_spark.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\qualite\\verifier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\echec-etape\\scripts\\transformation\\transformer.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\configuration\\preparer.ps1": {
+    "bytes": 26,
+    "sha256": "bc697a651f7be7791fd6ee2da0775a2553966fd3fc23120a4aa058d1e17ac3a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\donnees_produites\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\configuration\\parametres\\execution.json": {
+    "bytes": 29,
+    "sha256": "e5423547031bc41f714da1fb5e6a1f6b80a5a683a5072bb95813afdff63ef770"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\preuves\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\exploration\\inventorier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\exploration\\notebook.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\exploration\\test_spark.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\qualite\\verifier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\identifiant-invalide\\scripts\\transformation\\transformer.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\configuration\\preparer.ps1": {
+    "bytes": 26,
+    "sha256": "bc697a651f7be7791fd6ee2da0775a2553966fd3fc23120a4aa058d1e17ac3a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\donnees_produites\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\configuration\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\preuves\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\exploration\\inventorier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\exploration\\notebook.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\exploration\\test_spark.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\qualite\\verifier.py.fixture-conservee": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\script-manquant\\scripts\\transformation\\transformer.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\configuration\\preparer.ps1": {
+    "bytes": 26,
+    "sha256": "bc697a651f7be7791fd6ee2da0775a2553966fd3fc23120a4aa058d1e17ac3a3"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\donnees_produites\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\reproduire.ps1": {
+    "bytes": 2344,
+    "sha256": "457011d7e8cf42770a5358f3014ffc091f22a5341643a7d27f99aedefdf8d299"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\configuration\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\inventorier.py-20261118-143256.log": {
+    "bytes": 129,
+    "sha256": "f41a0fdc4d921ef49f50b0cb52f738276dc076c5d85d1793f84f8f1cfacd6c47"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\notebook.py-20261118-143256.log": {
+    "bytes": 107,
+    "sha256": "0490bf76cae96ec38a5e6012f1b128c04fcb47ecc3cb3915638cccde637738e4"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\preparer_entrees.py-20261118-143256.log": {
+    "bytes": 115,
+    "sha256": "46e2cc1c88d4c0fc8a4b7583372b755da801ee33248ac0ce2a02b01018bda61c"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\test_spark.py-20261118-143256.log": {
+    "bytes": 109,
+    "sha256": "e38e13e17fadf801cae21962508e5867aa5f71da995a6f2c6d7dd8b854b0e6f4"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\transformer.py-20261118-143256.log": {
+    "bytes": 113,
+    "sha256": "4c4590ce65e7316553d22be4fd89e30242c7d0fe5e4125ec9496be286fabed3b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\executions\\verifier.py-20261118-143256.log": {
+    "bytes": 103,
+    "sha256": "c3d4bfa63097167f3dd8ab3bd7fe3539acd35bff2944b09585666e0b8cd4cfeb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\manifest.json": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\controles\\original.json": {
+    "bytes": 22,
+    "sha256": "bbccf91a8b04c4f5516a294c6915b9b3b66d3fe7ce6b49379d41cf477daa634b"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\notebooks\\original.ipynb": {
+    "bytes": 18,
+    "sha256": "b82ac5463dd73045b6a798d2fe3bee4dc4d1b548d0f21b778ef9370a955ac5bc"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\preuves\\historique\\20261118T113628Z-243a5fb5-r3\\parametres\\execution.json": {
+    "bytes": 43,
+    "sha256": "2506b342588d487a1702306b2088077c82eb96d7bd4e6ddb2483ff73c9945afb"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\exploration\\inventorier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\exploration\\notebook.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\exploration\\preparer_entrees.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\exploration\\test_spark.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\qualite\\verifier.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "J3_Retail_Intelligence_Transformation\\verification\\correction_20261118\\tests-ccc0bee8\\succes\\scripts\\transformation\\transformer.py": {
+    "bytes": 26,
+    "sha256": "e25d3b713aa4085adc18797196614a5c931bb324f668bf632105870cdebe98ba"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\Cours 1 .pdf": {
+    "bytes": 289388,
+    "sha256": "eece856caf326bb68f6e145c1dbdfee73361eb216d26ef38095ad07697ff2f8f"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\projet_fil_rouge.pdf": {
+    "bytes": 220422,
+    "sha256": "42436d3f3424375d669c37b57f8c32f64c7d1af27de85459e71b05b5ab682fe6"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\TP1.pdf": {
+    "bytes": 260475,
+    "sha256": "3ec9e73c1852eb54962e29cdae9db28f4dd9c2e187e7d1a1c40ab86bca9c2cdf"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\customer\\customer.dat": {
+    "bytes": 13279063,
+    "sha256": "de44f7b0cf8f0457ba17896ccd6291a55ddee01e54c853197305413e6b32fe16"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\customer_address\\customer_address.dat": {
+    "bytes": 5387229,
+    "sha256": "bb31fb5678016474eaa121f221b37b3c39b225fbc52c2d30ea7d38bfc244c601"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\customer_demographics\\customer_demographics.dat": {
+    "bytes": 77753083,
+    "sha256": "fd619e705edcf330fb557bda816107ae723f68a52124adf0044a2ac7e6bdc759"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\date_dim\\date_dim.dat": {
+    "bytes": 15395800,
+    "sha256": "325c892265c040d6c85491d708e4e081d1bf8532f949b3a18b14ba6e73a456af"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\household_demographics\\household_demographics.dat": {
+    "bytes": 155100,
+    "sha256": "915aa15ea23e2beee3fa13bee3a94ae8ed5b0d170ea97e25ff81f79417fdfaf7"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\income_band\\income_band.dat": {
+    "bytes": 327,
+    "sha256": "7d8b1e18b6367edb8dc9374d9ef167df3af5c50e3556852c4a1e3ba7749dd5a4"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\inventory\\inventory.dat": {
+    "bytes": 424943678,
+    "sha256": "95d7d5f06fe59329a96eacab95d4fb559f35567103bb7667e8aabc2610fb89d7"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\item\\item.dat": {
+    "bytes": 6799286,
+    "sha256": "d8d4863009914b86119c2df6f6a55a581cc07617304551ab7b741400ef7fed21"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\item_marketprices\\item_marketprices.dat": {
+    "bytes": 4201170,
+    "sha256": "f7575798bfe0ebb8f91c45088727c8d98b86244f03922dcf8439f70cad26bbb4"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\item_marketprices\\item_marketprices_audit.csv": {
+    "bytes": 273,
+    "sha256": "3465c2360f4b5eb6e36c7c2a54de2aef1f80a9526520e2bf08cb9f689e1dbce4"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\product_reviews\\product_reviews.dat": {
+    "bytes": 56355389,
+    "sha256": "ef1d5c78f8a3384cf7a98d872d9326b1e1617613410e47d5c4af080cf5b0980f"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\promotion\\promotion.dat": {
+    "bytes": 46396,
+    "sha256": "51885034be6f3d53e212111523306c4a6b087de2a0ddeb853d158cec1dd5bd3d"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\reason\\reason.dat": {
+    "bytes": 3105,
+    "sha256": "d5edc45cb1e76afde3b7c0718cdd5d5d45e5f1d720fb940b36db0cd4dcf6b091"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\ship_mode\\ship_mode.dat": {
+    "bytes": 1220,
+    "sha256": "8c48d71b318dbab1c048fd2b9fd5e6a6cba087ce07940537472bb0d5d5540125"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\store\\store.dat": {
+    "bytes": 3386,
+    "sha256": "a936bc38692bdddc222cf86d08ed9d0feb761af26769212d789cf6729d1808ef"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\store_returns\\store_returns.dat": {
+    "bytes": 4337400,
+    "sha256": "7b80fbfbce4a065b3971ebb47169d4b6d2190191fa8077dc0b7924de8d2ade10"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\store_sales\\store_sales.dat": {
+    "bytes": 92764700,
+    "sha256": "7e0a7f16b47483741754bb641c92601dd7384dacc8331d0bcfb8abac82ed3d2e"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\time_dim\\time_dim.dat": {
+    "bytes": 5107780,
+    "sha256": "10b9494b4f8ac00091622229bdfc93584b8d23bc6880bee33965e243562b2f2a"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\warehouse\\warehouse.dat": {
+    "bytes": 584,
+    "sha256": "16ae9bbc6b786acf72d91c61ae3cdf6e8a7ece099d70d50c83826bac1e6c4d0d"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\web_clickstreams\\web_clickstreams.dat": {
+    "bytes": 178722140,
+    "sha256": "da5e6e60121924f920c1ad7eac8f503a8b0a8987f4dfbb8eff692ef6f0410671"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\web_page\\web_page.dat": {
+    "bytes": 8040,
+    "sha256": "98a64599d41f4f0beaec864d5d22c7c15bd7bdf48ced0303011fdc9a163af407"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\web_returns\\web_returns.dat": {
+    "bytes": 5383513,
+    "sha256": "bacbe486660bce550e1ded72b28fcba4a21f70d1f318c3d1c28aa01192e152a6"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\web_sales\\web_sales.dat": {
+    "bytes": 133790574,
+    "sha256": "e9c5a08589977dd073a3952ec9850aac6f5648f40dfee2d4640bae78577bff14"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data\\web_site\\web_site.dat": {
+    "bytes": 8838,
+    "sha256": "79c0711ae46c63aa2be1f451e9166f51dd7be0c26fed90f84c1cd071e06e46a3"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\customer\\customer.dat": {
+    "bytes": 134360,
+    "sha256": "544f3d1893a5f48762c039a149be22f456f888d11e5b7fb28348fe0d768c7e30"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\customer_address\\customer_address.dat": {
+    "bytes": 54587,
+    "sha256": "b777de89572b0106847d6a2548a6e332ca851bc80b08505ce27b695c911b9bfa"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\inventory\\inventory.dat": {
+    "bytes": 4292915,
+    "sha256": "05f3d9305e760bdcf013bf2042b7c415418d1c16f1e2ab646e96529c1c213147"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\item\\item.dat": {
+    "bytes": 69173,
+    "sha256": "33d3b6ec6c1e3b7cd0680ba1c800bc06973399f3464d43ac8dc545c6583a05eb"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\item_marketprices\\item_marketprices.dat": {
+    "bytes": 42547,
+    "sha256": "fb1538dd03ce3d8ac7250f3ce6503a69e3dfc9518f952139441e058f7df71014"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\item_marketprices\\item_marketprices_audit.csv": {
+    "bytes": 151009,
+    "sha256": "e944c9080ead4ccdfc426fc1ee09673b162b08fafa203beff2b1f75db3cfecf2"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\product_reviews\\product_reviews.dat": {
+    "bytes": 573685,
+    "sha256": "78c0de245f4c85c6304aa2a41530e997fb1e319d921628196714257e162edb37"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\store_returns\\store_returns.dat": {
+    "bytes": 48825,
+    "sha256": "6644a1b17fcc3ca181bce87d7b4e58ceb4c7e5e94e87b4028678e6a889aff15c"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\store_sales\\store_sales.dat": {
+    "bytes": 922171,
+    "sha256": "3c71c010a17d15c90564ddb12be4a1286f494669198b55e782edef6f8e8b23df"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\web_clickstreams\\web_clickstreams.dat": {
+    "bytes": 1821864,
+    "sha256": "d0834c9542533b733dd71f2cdbcd2704767281a94ac49386a8baa06548d18956"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\web_returns\\web_returns.dat": {
+    "bytes": 55952,
+    "sha256": "338ddd0c1453dcae85834e5db6a80d81fdbcc577cebe275bf59d5d060c60e104"
+  },
+  "01. Architecture DataLake, DataWarehouse, Lakehous\\retail_project\\retail_project\\data_refresh\\web_sales\\web_sales.dat": {
+    "bytes": 1378425,
+    "sha256": "680d0ed18bd2039bde1df8dce3c0d9ab495021bb37e5dcefc284e9367e068e14"
+  }
+}

@@ -1,0 +1,1181 @@
+﻿lot;domaine;controle;valeur
+data;store_sales;net_vs_vente_moins_coupon;0
+data;store_sales;ecart_max_net_centimes;0
+data;store_sales;taxe_vs_ttc_moins_net;0
+data;store_sales;remise_vs_catalogue_moins_vente;0
+data;store_sales;resultat_vs_net_moins_cout;0
+data;store_sales;net_superieur_catalogue;0
+data;store_sales;coupons_superieurs_montant_vente;0
+data;store_sales;lignes_incompletes_finance;0
+data;store_sales;date_vente_non_resolue;0
+data;store_sales;transactions_date_incoherente;0
+data;store_sales;en_tete_invalide;0
+data;store_sales;client_vide;0
+data;store_sales;client_non_resolu;0
+data;store_sales;transactions_incompletes_exclues;0
+data;web_sales;net_vs_vente_moins_coupon;0
+data;web_sales;ecart_max_net_centimes;0
+data;web_sales;taxe_vs_ttc_moins_net;0
+data;web_sales;remise_vs_catalogue_moins_vente;0
+data;web_sales;resultat_vs_net_moins_cout;0
+data;web_sales;net_superieur_catalogue;0
+data;web_sales;coupons_superieurs_montant_vente;0
+data;web_sales;lignes_incompletes_finance;0
+data;web_sales;date_vente_non_resolue;0
+data;web_sales;transactions_date_incoherente;0
+data;web_sales;en_tete_invalide;0
+data;web_sales;client_vide;0
+data;web_sales;client_non_resolu;0
+data;web_sales;date_expedition_vide;0
+data;web_sales;date_expedition_non_resolue;0
+data;web_sales;expedition_avant_vente;0
+data;web_sales;ventes_sans_delai_valide;0
+data;web_sales;transactions_incompletes_exclues;0
+data;web_sales;lignes_delai_valide;668052
+data;web_sales;delai_min_jours;1
+data;web_sales;delai_max_jours;120
+data;web_sales;commandes_dates_expedition_multiples;82676
+data;ventes_canaux;jours_communs;1808
+data;ventes_canaux;jours_exclus_magasin;0
+data;ventes_canaux;jours_exclus_web;0
+data;store_returns;ttc_vs_ht_plus_taxe;0
+data;store_returns;perte_vs_formule_tpc;37899
+data;store_returns;perte_vs_port_plus_deux_taxes;0
+data;store_returns;remboursement_vs_montant_ht;0
+data;store_returns;date_retour_non_resolue;0
+data;web_returns;ttc_vs_ht_plus_taxe;0
+data;web_returns;perte_vs_formule_tpc;38485
+data;web_returns;perte_vs_port_plus_deux_taxes;0
+data;web_returns;remboursement_vs_montant_ht;0
+data;web_returns;date_retour_non_resolue;0
+data_refresh;store_sales;net_vs_vente_moins_coupon;0
+data_refresh;store_sales;ecart_max_net_centimes;0
+data_refresh;store_sales;taxe_vs_ttc_moins_net;0
+data_refresh;store_sales;remise_vs_catalogue_moins_vente;0
+data_refresh;store_sales;resultat_vs_net_moins_cout;0
+data_refresh;store_sales;net_superieur_catalogue;0
+data_refresh;store_sales;coupons_superieurs_montant_vente;0
+data_refresh;store_sales;lignes_incompletes_finance;0
+data_refresh;store_sales;date_vente_non_resolue;0
+data_refresh;store_sales;transactions_date_incoherente;0
+data_refresh;store_sales;en_tete_invalide;0
+data_refresh;store_sales;client_vide;0
+data_refresh;store_sales;client_non_resolu;0
+data_refresh;store_sales;transactions_incompletes_exclues;0
+data_refresh;web_sales;net_vs_vente_moins_coupon;0
+data_refresh;web_sales;ecart_max_net_centimes;0
+data_refresh;web_sales;taxe_vs_ttc_moins_net;0
+data_refresh;web_sales;remise_vs_catalogue_moins_vente;0
+data_refresh;web_sales;resultat_vs_net_moins_cout;0
+data_refresh;web_sales;net_superieur_catalogue;0
+data_refresh;web_sales;coupons_superieurs_montant_vente;0
+data_refresh;web_sales;lignes_incompletes_finance;0
+data_refresh;web_sales;date_vente_non_resolue;0
+data_refresh;web_sales;transactions_date_incoherente;0
+data_refresh;web_sales;en_tete_invalide;0
+data_refresh;web_sales;client_vide;0
+data_refresh;web_sales;client_non_resolu;0
+data_refresh;web_sales;date_expedition_vide;0
+data_refresh;web_sales;date_expedition_non_resolue;0
+data_refresh;web_sales;expedition_avant_vente;0
+data_refresh;web_sales;ventes_sans_delai_valide;0
+data_refresh;web_sales;transactions_incompletes_exclues;0
+data_refresh;web_sales;lignes_delai_valide;6879
+data_refresh;web_sales;delai_min_jours;1
+data_refresh;web_sales;delai_max_jours;120
+data_refresh;web_sales;commandes_dates_expedition_multiples;835
+data_refresh;ventes_canaux;jours_communs;19
+data_refresh;ventes_canaux;jours_exclus_magasin;0
+data_refresh;ventes_canaux;jours_exclus_web;0
+data_refresh;store_returns;ttc_vs_ht_plus_taxe;0
+data_refresh;store_returns;perte_vs_formule_tpc;426
+data_refresh;store_returns;perte_vs_port_plus_deux_taxes;0
+data_refresh;store_returns;remboursement_vs_montant_ht;0
+data_refresh;store_returns;date_retour_non_resolue;0
+data_refresh;web_returns;ttc_vs_ht_plus_taxe;0
+data_refresh;web_returns;perte_vs_formule_tpc;400
+data_refresh;web_returns;perte_vs_port_plus_deux_taxes;0
+data_refresh;web_returns;remboursement_vs_montant_ht;0
+data_refresh;web_returns;date_retour_non_resolue;0
+data;stock 2001-01-01;triplets_observes;90000
+data;stock 2001-01-01;quantites_connues;89978
+data;stock 2001-01-01;zeros;81
+data;stock 2001-01-01;quantite_observee;45027272
+data;stock 2001-01-08;triplets_observes;90000
+data;stock 2001-01-08;quantites_connues;89981
+data;stock 2001-01-08;zeros;104
+data;stock 2001-01-08;quantite_observee;44874154
+data;stock 2001-01-15;triplets_observes;90000
+data;stock 2001-01-15;quantites_connues;89974
+data;stock 2001-01-15;zeros;76
+data;stock 2001-01-15;quantite_observee;45057888
+data;stock 2001-01-22;triplets_observes;90000
+data;stock 2001-01-22;quantites_connues;89977
+data;stock 2001-01-22;zeros;95
+data;stock 2001-01-22;quantite_observee;45074663
+data;stock 2001-01-29;triplets_observes;90000
+data;stock 2001-01-29;quantites_connues;89982
+data;stock 2001-01-29;zeros;102
+data;stock 2001-01-29;quantite_observee;44968372
+data;stock 2001-02-05;triplets_observes;90000
+data;stock 2001-02-05;quantites_connues;89972
+data;stock 2001-02-05;zeros;99
+data;stock 2001-02-05;quantite_observee;44971339
+data;stock 2001-02-12;triplets_observes;90000
+data;stock 2001-02-12;quantites_connues;89980
+data;stock 2001-02-12;zeros;76
+data;stock 2001-02-12;quantite_observee;44929726
+data;stock 2001-02-19;triplets_observes;90000
+data;stock 2001-02-19;quantites_connues;89978
+data;stock 2001-02-19;zeros;103
+data;stock 2001-02-19;quantite_observee;45070894
+data;stock 2001-02-26;triplets_observes;90000
+data;stock 2001-02-26;quantites_connues;89976
+data;stock 2001-02-26;zeros;93
+data;stock 2001-02-26;quantite_observee;45052143
+data;stock 2001-03-05;triplets_observes;90000
+data;stock 2001-03-05;quantites_connues;89978
+data;stock 2001-03-05;zeros;100
+data;stock 2001-03-05;quantite_observee;45154777
+data;stock 2001-03-12;triplets_observes;90000
+data;stock 2001-03-12;quantites_connues;89978
+data;stock 2001-03-12;zeros;87
+data;stock 2001-03-12;quantite_observee;45018600
+data;stock 2001-03-19;triplets_observes;90000
+data;stock 2001-03-19;quantites_connues;89983
+data;stock 2001-03-19;zeros;91
+data;stock 2001-03-19;quantite_observee;45086954
+data;stock 2001-03-26;triplets_observes;90000
+data;stock 2001-03-26;quantites_connues;89977
+data;stock 2001-03-26;zeros;85
+data;stock 2001-03-26;quantite_observee;44903029
+data;stock 2001-04-02;triplets_observes;90000
+data;stock 2001-04-02;quantites_connues;89982
+data;stock 2001-04-02;zeros;80
+data;stock 2001-04-02;quantite_observee;45067082
+data;stock 2001-04-09;triplets_observes;90000
+data;stock 2001-04-09;quantites_connues;89975
+data;stock 2001-04-09;zeros;94
+data;stock 2001-04-09;quantite_observee;44955229
+data;stock 2001-04-16;triplets_observes;90000
+data;stock 2001-04-16;quantites_connues;89980
+data;stock 2001-04-16;zeros;85
+data;stock 2001-04-16;quantite_observee;44893276
+data;stock 2001-04-23;triplets_observes;90000
+data;stock 2001-04-23;quantites_connues;89986
+data;stock 2001-04-23;zeros;90
+data;stock 2001-04-23;quantite_observee;44878957
+data;stock 2001-04-30;triplets_observes;90000
+data;stock 2001-04-30;quantites_connues;89980
+data;stock 2001-04-30;zeros;92
+data;stock 2001-04-30;quantite_observee;45047705
+data;stock 2001-05-07;triplets_observes;90000
+data;stock 2001-05-07;quantites_connues;89981
+data;stock 2001-05-07;zeros;92
+data;stock 2001-05-07;quantite_observee;44910636
+data;stock 2001-05-14;triplets_observes;90000
+data;stock 2001-05-14;quantites_connues;89981
+data;stock 2001-05-14;zeros;91
+data;stock 2001-05-14;quantite_observee;45185519
+data;stock 2001-05-21;triplets_observes;90000
+data;stock 2001-05-21;quantites_connues;89973
+data;stock 2001-05-21;zeros;111
+data;stock 2001-05-21;quantite_observee;45044142
+data;stock 2001-05-28;triplets_observes;90000
+data;stock 2001-05-28;quantites_connues;89965
+data;stock 2001-05-28;zeros;88
+data;stock 2001-05-28;quantite_observee;45199356
+data;stock 2001-06-04;triplets_observes;90000
+data;stock 2001-06-04;quantites_connues;89977
+data;stock 2001-06-04;zeros;79
+data;stock 2001-06-04;quantite_observee;45077089
+data;stock 2001-06-11;triplets_observes;90000
+data;stock 2001-06-11;quantites_connues;89977
+data;stock 2001-06-11;zeros;103
+data;stock 2001-06-11;quantite_observee;45128080
+data;stock 2001-06-18;triplets_observes;90000
+data;stock 2001-06-18;quantites_connues;89973
+data;stock 2001-06-18;zeros;86
+data;stock 2001-06-18;quantite_observee;44994262
+data;stock 2001-06-25;triplets_observes;90000
+data;stock 2001-06-25;quantites_connues;89975
+data;stock 2001-06-25;zeros;82
+data;stock 2001-06-25;quantite_observee;44951447
+data;stock 2001-07-02;triplets_observes;90000
+data;stock 2001-07-02;quantites_connues;89970
+data;stock 2001-07-02;zeros;79
+data;stock 2001-07-02;quantite_observee;44911101
+data;stock 2001-07-09;triplets_observes;90000
+data;stock 2001-07-09;quantites_connues;89978
+data;stock 2001-07-09;zeros;81
+data;stock 2001-07-09;quantite_observee;45035952
+data;stock 2001-07-16;triplets_observes;90000
+data;stock 2001-07-16;quantites_connues;89977
+data;stock 2001-07-16;zeros;80
+data;stock 2001-07-16;quantite_observee;45054090
+data;stock 2001-07-23;triplets_observes;90000
+data;stock 2001-07-23;quantites_connues;89978
+data;stock 2001-07-23;zeros;98
+data;stock 2001-07-23;quantite_observee;45006554
+data;stock 2001-07-30;triplets_observes;90000
+data;stock 2001-07-30;quantites_connues;89981
+data;stock 2001-07-30;zeros;102
+data;stock 2001-07-30;quantite_observee;44913220
+data;stock 2001-08-06;triplets_observes;90000
+data;stock 2001-08-06;quantites_connues;89981
+data;stock 2001-08-06;zeros;87
+data;stock 2001-08-06;quantite_observee;45082583
+data;stock 2001-08-13;triplets_observes;90000
+data;stock 2001-08-13;quantites_connues;89972
+data;stock 2001-08-13;zeros;98
+data;stock 2001-08-13;quantite_observee;45100254
+data;stock 2001-08-20;triplets_observes;90000
+data;stock 2001-08-20;quantites_connues;89977
+data;stock 2001-08-20;zeros;92
+data;stock 2001-08-20;quantite_observee;45127062
+data;stock 2001-08-27;triplets_observes;90000
+data;stock 2001-08-27;quantites_connues;89987
+data;stock 2001-08-27;zeros;84
+data;stock 2001-08-27;quantite_observee;44989251
+data;stock 2001-09-03;triplets_observes;90000
+data;stock 2001-09-03;quantites_connues;89968
+data;stock 2001-09-03;zeros;96
+data;stock 2001-09-03;quantite_observee;45071322
+data;stock 2001-09-10;triplets_observes;90000
+data;stock 2001-09-10;quantites_connues;89968
+data;stock 2001-09-10;zeros;82
+data;stock 2001-09-10;quantite_observee;44922869
+data;stock 2001-09-17;triplets_observes;90000
+data;stock 2001-09-17;quantites_connues;89982
+data;stock 2001-09-17;zeros;99
+data;stock 2001-09-17;quantite_observee;44986733
+data;stock 2001-09-24;triplets_observes;90000
+data;stock 2001-09-24;quantites_connues;89972
+data;stock 2001-09-24;zeros;85
+data;stock 2001-09-24;quantite_observee;45059472
+data;stock 2001-10-01;triplets_observes;90000
+data;stock 2001-10-01;quantites_connues;89974
+data;stock 2001-10-01;zeros;100
+data;stock 2001-10-01;quantite_observee;45140206
+data;stock 2001-10-08;triplets_observes;90000
+data;stock 2001-10-08;quantites_connues;89968
+data;stock 2001-10-08;zeros;84
+data;stock 2001-10-08;quantite_observee;44971403
+data;stock 2001-10-15;triplets_observes;90000
+data;stock 2001-10-15;quantites_connues;89978
+data;stock 2001-10-15;zeros;95
+data;stock 2001-10-15;quantite_observee;45016900
+data;stock 2001-10-22;triplets_observes;90000
+data;stock 2001-10-22;quantites_connues;89972
+data;stock 2001-10-22;zeros;90
+data;stock 2001-10-22;quantite_observee;44973360
+data;stock 2001-10-29;triplets_observes;90000
+data;stock 2001-10-29;quantites_connues;89974
+data;stock 2001-10-29;zeros;105
+data;stock 2001-10-29;quantite_observee;45056702
+data;stock 2001-11-05;triplets_observes;90000
+data;stock 2001-11-05;quantites_connues;89982
+data;stock 2001-11-05;zeros;88
+data;stock 2001-11-05;quantite_observee;44928977
+data;stock 2001-11-12;triplets_observes;90000
+data;stock 2001-11-12;quantites_connues;89982
+data;stock 2001-11-12;zeros;96
+data;stock 2001-11-12;quantite_observee;45116804
+data;stock 2001-11-19;triplets_observes;90000
+data;stock 2001-11-19;quantites_connues;89984
+data;stock 2001-11-19;zeros;79
+data;stock 2001-11-19;quantite_observee;44997092
+data;stock 2001-11-26;triplets_observes;90000
+data;stock 2001-11-26;quantites_connues;89984
+data;stock 2001-11-26;zeros;88
+data;stock 2001-11-26;quantite_observee;45012960
+data;stock 2001-12-03;triplets_observes;90000
+data;stock 2001-12-03;quantites_connues;89979
+data;stock 2001-12-03;zeros;89
+data;stock 2001-12-03;quantite_observee;44826867
+data;stock 2001-12-10;triplets_observes;90000
+data;stock 2001-12-10;quantites_connues;89975
+data;stock 2001-12-10;zeros;84
+data;stock 2001-12-10;quantite_observee;45081072
+data;stock 2001-12-17;triplets_observes;90000
+data;stock 2001-12-17;quantites_connues;89970
+data;stock 2001-12-17;zeros;105
+data;stock 2001-12-17;quantite_observee;45046030
+data;stock 2001-12-24;triplets_observes;90000
+data;stock 2001-12-24;quantites_connues;89977
+data;stock 2001-12-24;zeros;107
+data;stock 2001-12-24;quantite_observee;45030829
+data;stock 2001-12-31;triplets_observes;90000
+data;stock 2001-12-31;quantites_connues;89981
+data;stock 2001-12-31;zeros;80
+data;stock 2001-12-31;quantite_observee;45039612
+data;stock 2002-01-07;triplets_observes;90000
+data;stock 2002-01-07;quantites_connues;89971
+data;stock 2002-01-07;zeros;88
+data;stock 2002-01-07;quantite_observee;44964135
+data;stock 2002-01-14;triplets_observes;90000
+data;stock 2002-01-14;quantites_connues;89972
+data;stock 2002-01-14;zeros;99
+data;stock 2002-01-14;quantite_observee;44956531
+data;stock 2002-01-21;triplets_observes;90000
+data;stock 2002-01-21;quantites_connues;89972
+data;stock 2002-01-21;zeros;94
+data;stock 2002-01-21;quantite_observee;44816426
+data;stock 2002-01-28;triplets_observes;90000
+data;stock 2002-01-28;quantites_connues;89974
+data;stock 2002-01-28;zeros;94
+data;stock 2002-01-28;quantite_observee;44877590
+data;stock 2002-02-04;triplets_observes;90000
+data;stock 2002-02-04;quantites_connues;89977
+data;stock 2002-02-04;zeros;87
+data;stock 2002-02-04;quantite_observee;44932515
+data;stock 2002-02-11;triplets_observes;90000
+data;stock 2002-02-11;quantites_connues;89982
+data;stock 2002-02-11;zeros;100
+data;stock 2002-02-11;quantite_observee;45108040
+data;stock 2002-02-18;triplets_observes;90000
+data;stock 2002-02-18;quantites_connues;89983
+data;stock 2002-02-18;zeros;83
+data;stock 2002-02-18;quantite_observee;45036583
+data;stock 2002-02-25;triplets_observes;90000
+data;stock 2002-02-25;quantites_connues;89980
+data;stock 2002-02-25;zeros;81
+data;stock 2002-02-25;quantite_observee;44856781
+data;stock 2002-03-04;triplets_observes;90000
+data;stock 2002-03-04;quantites_connues;89978
+data;stock 2002-03-04;zeros;88
+data;stock 2002-03-04;quantite_observee;45103101
+data;stock 2002-03-11;triplets_observes;90000
+data;stock 2002-03-11;quantites_connues;89972
+data;stock 2002-03-11;zeros;98
+data;stock 2002-03-11;quantite_observee;44898294
+data;stock 2002-03-18;triplets_observes;90000
+data;stock 2002-03-18;quantites_connues;89975
+data;stock 2002-03-18;zeros;77
+data;stock 2002-03-18;quantite_observee;45152628
+data;stock 2002-03-25;triplets_observes;90000
+data;stock 2002-03-25;quantites_connues;89973
+data;stock 2002-03-25;zeros;87
+data;stock 2002-03-25;quantite_observee;44849018
+data;stock 2002-04-01;triplets_observes;90000
+data;stock 2002-04-01;quantites_connues;89978
+data;stock 2002-04-01;zeros;87
+data;stock 2002-04-01;quantite_observee;45154543
+data;stock 2002-04-08;triplets_observes;90000
+data;stock 2002-04-08;quantites_connues;89969
+data;stock 2002-04-08;zeros;80
+data;stock 2002-04-08;quantite_observee;45064009
+data;stock 2002-04-15;triplets_observes;90000
+data;stock 2002-04-15;quantites_connues;89985
+data;stock 2002-04-15;zeros;84
+data;stock 2002-04-15;quantite_observee;45135536
+data;stock 2002-04-22;triplets_observes;90000
+data;stock 2002-04-22;quantites_connues;89974
+data;stock 2002-04-22;zeros;92
+data;stock 2002-04-22;quantite_observee;44887920
+data;stock 2002-04-29;triplets_observes;90000
+data;stock 2002-04-29;quantites_connues;89979
+data;stock 2002-04-29;zeros;88
+data;stock 2002-04-29;quantite_observee;45022225
+data;stock 2002-05-06;triplets_observes;90000
+data;stock 2002-05-06;quantites_connues;89975
+data;stock 2002-05-06;zeros;95
+data;stock 2002-05-06;quantite_observee;45079317
+data;stock 2002-05-13;triplets_observes;90000
+data;stock 2002-05-13;quantites_connues;89970
+data;stock 2002-05-13;zeros;79
+data;stock 2002-05-13;quantite_observee;45031477
+data;stock 2002-05-20;triplets_observes;90000
+data;stock 2002-05-20;quantites_connues;89971
+data;stock 2002-05-20;zeros;105
+data;stock 2002-05-20;quantite_observee;44896388
+data;stock 2002-05-27;triplets_observes;90000
+data;stock 2002-05-27;quantites_connues;89973
+data;stock 2002-05-27;zeros;87
+data;stock 2002-05-27;quantite_observee;45058345
+data;stock 2002-06-03;triplets_observes;90000
+data;stock 2002-06-03;quantites_connues;89974
+data;stock 2002-06-03;zeros;83
+data;stock 2002-06-03;quantite_observee;44883414
+data;stock 2002-06-10;triplets_observes;90000
+data;stock 2002-06-10;quantites_connues;89983
+data;stock 2002-06-10;zeros;72
+data;stock 2002-06-10;quantite_observee;45147786
+data;stock 2002-06-17;triplets_observes;90000
+data;stock 2002-06-17;quantites_connues;89974
+data;stock 2002-06-17;zeros;84
+data;stock 2002-06-17;quantite_observee;45058815
+data;stock 2002-06-24;triplets_observes;90000
+data;stock 2002-06-24;quantites_connues;89975
+data;stock 2002-06-24;zeros;98
+data;stock 2002-06-24;quantite_observee;45015376
+data;stock 2002-07-01;triplets_observes;90000
+data;stock 2002-07-01;quantites_connues;89972
+data;stock 2002-07-01;zeros;99
+data;stock 2002-07-01;quantite_observee;44870131
+data;stock 2002-07-08;triplets_observes;90000
+data;stock 2002-07-08;quantites_connues;89970
+data;stock 2002-07-08;zeros;80
+data;stock 2002-07-08;quantite_observee;44937565
+data;stock 2002-07-15;triplets_observes;90000
+data;stock 2002-07-15;quantites_connues;89983
+data;stock 2002-07-15;zeros;89
+data;stock 2002-07-15;quantite_observee;45000869
+data;stock 2002-07-22;triplets_observes;90000
+data;stock 2002-07-22;quantites_connues;89982
+data;stock 2002-07-22;zeros;81
+data;stock 2002-07-22;quantite_observee;45099620
+data;stock 2002-07-29;triplets_observes;90000
+data;stock 2002-07-29;quantites_connues;89978
+data;stock 2002-07-29;zeros;93
+data;stock 2002-07-29;quantite_observee;45086521
+data;stock 2002-08-05;triplets_observes;90000
+data;stock 2002-08-05;quantites_connues;89978
+data;stock 2002-08-05;zeros;77
+data;stock 2002-08-05;quantite_observee;45042153
+data;stock 2002-08-12;triplets_observes;90000
+data;stock 2002-08-12;quantites_connues;89978
+data;stock 2002-08-12;zeros;91
+data;stock 2002-08-12;quantite_observee;45035352
+data;stock 2002-08-19;triplets_observes;90000
+data;stock 2002-08-19;quantites_connues;89977
+data;stock 2002-08-19;zeros;84
+data;stock 2002-08-19;quantite_observee;45153333
+data;stock 2002-08-26;triplets_observes;90000
+data;stock 2002-08-26;quantites_connues;89979
+data;stock 2002-08-26;zeros;91
+data;stock 2002-08-26;quantite_observee;45115651
+data;stock 2002-09-02;triplets_observes;90000
+data;stock 2002-09-02;quantites_connues;89986
+data;stock 2002-09-02;zeros;82
+data;stock 2002-09-02;quantite_observee;44900856
+data;stock 2002-09-09;triplets_observes;90000
+data;stock 2002-09-09;quantites_connues;89969
+data;stock 2002-09-09;zeros;116
+data;stock 2002-09-09;quantite_observee;45012059
+data;stock 2002-09-16;triplets_observes;90000
+data;stock 2002-09-16;quantites_connues;89971
+data;stock 2002-09-16;zeros;77
+data;stock 2002-09-16;quantite_observee;45048501
+data;stock 2002-09-23;triplets_observes;90000
+data;stock 2002-09-23;quantites_connues;89985
+data;stock 2002-09-23;zeros;107
+data;stock 2002-09-23;quantite_observee;45113579
+data;stock 2002-09-30;triplets_observes;90000
+data;stock 2002-09-30;quantites_connues;89976
+data;stock 2002-09-30;zeros;96
+data;stock 2002-09-30;quantite_observee;45041998
+data;stock 2002-10-07;triplets_observes;90000
+data;stock 2002-10-07;quantites_connues;89978
+data;stock 2002-10-07;zeros;83
+data;stock 2002-10-07;quantite_observee;45065606
+data;stock 2002-10-14;triplets_observes;90000
+data;stock 2002-10-14;quantites_connues;89981
+data;stock 2002-10-14;zeros;108
+data;stock 2002-10-14;quantite_observee;45132390
+data;stock 2002-10-21;triplets_observes;90000
+data;stock 2002-10-21;quantites_connues;89983
+data;stock 2002-10-21;zeros;93
+data;stock 2002-10-21;quantite_observee;45127065
+data;stock 2002-10-28;triplets_observes;90000
+data;stock 2002-10-28;quantites_connues;89984
+data;stock 2002-10-28;zeros;93
+data;stock 2002-10-28;quantite_observee;45031402
+data;stock 2002-11-04;triplets_observes;90000
+data;stock 2002-11-04;quantites_connues;89981
+data;stock 2002-11-04;zeros;85
+data;stock 2002-11-04;quantite_observee;45104656
+data;stock 2002-11-11;triplets_observes;90000
+data;stock 2002-11-11;quantites_connues;89980
+data;stock 2002-11-11;zeros;89
+data;stock 2002-11-11;quantite_observee;44945250
+data;stock 2002-11-18;triplets_observes;90000
+data;stock 2002-11-18;quantites_connues;89979
+data;stock 2002-11-18;zeros;100
+data;stock 2002-11-18;quantite_observee;44854843
+data;stock 2002-11-25;triplets_observes;90000
+data;stock 2002-11-25;quantites_connues;89980
+data;stock 2002-11-25;zeros;106
+data;stock 2002-11-25;quantite_observee;44996950
+data;stock 2002-12-02;triplets_observes;90000
+data;stock 2002-12-02;quantites_connues;89981
+data;stock 2002-12-02;zeros;78
+data;stock 2002-12-02;quantite_observee;44906047
+data;stock 2002-12-09;triplets_observes;90000
+data;stock 2002-12-09;quantites_connues;89982
+data;stock 2002-12-09;zeros;79
+data;stock 2002-12-09;quantite_observee;45006380
+data;stock 2002-12-16;triplets_observes;90000
+data;stock 2002-12-16;quantites_connues;89976
+data;stock 2002-12-16;zeros;87
+data;stock 2002-12-16;quantite_observee;44859422
+data;stock 2002-12-23;triplets_observes;90000
+data;stock 2002-12-23;quantites_connues;89980
+data;stock 2002-12-23;zeros;82
+data;stock 2002-12-23;quantite_observee;45079034
+data;stock 2002-12-30;triplets_observes;90000
+data;stock 2002-12-30;quantites_connues;89979
+data;stock 2002-12-30;zeros;94
+data;stock 2002-12-30;quantite_observee;44971235
+data;stock 2003-01-06;triplets_observes;90000
+data;stock 2003-01-06;quantites_connues;89972
+data;stock 2003-01-06;zeros;87
+data;stock 2003-01-06;quantite_observee;44942291
+data;stock 2003-01-13;triplets_observes;90000
+data;stock 2003-01-13;quantites_connues;89973
+data;stock 2003-01-13;zeros;89
+data;stock 2003-01-13;quantite_observee;44968613
+data;stock 2003-01-20;triplets_observes;90000
+data;stock 2003-01-20;quantites_connues;89968
+data;stock 2003-01-20;zeros;100
+data;stock 2003-01-20;quantite_observee;44959810
+data;stock 2003-01-27;triplets_observes;90000
+data;stock 2003-01-27;quantites_connues;89979
+data;stock 2003-01-27;zeros;86
+data;stock 2003-01-27;quantite_observee;44858511
+data;stock 2003-02-03;triplets_observes;90000
+data;stock 2003-02-03;quantites_connues;89982
+data;stock 2003-02-03;zeros;99
+data;stock 2003-02-03;quantite_observee;44971273
+data;stock 2003-02-10;triplets_observes;90000
+data;stock 2003-02-10;quantites_connues;89976
+data;stock 2003-02-10;zeros;88
+data;stock 2003-02-10;quantite_observee;44992998
+data;stock 2003-02-17;triplets_observes;90000
+data;stock 2003-02-17;quantites_connues;89977
+data;stock 2003-02-17;zeros;106
+data;stock 2003-02-17;quantite_observee;45047994
+data;stock 2003-02-24;triplets_observes;90000
+data;stock 2003-02-24;quantites_connues;89981
+data;stock 2003-02-24;zeros;76
+data;stock 2003-02-24;quantite_observee;45002354
+data;stock 2003-03-03;triplets_observes;90000
+data;stock 2003-03-03;quantites_connues;89978
+data;stock 2003-03-03;zeros;83
+data;stock 2003-03-03;quantite_observee;44855169
+data;stock 2003-03-10;triplets_observes;90000
+data;stock 2003-03-10;quantites_connues;89980
+data;stock 2003-03-10;zeros;89
+data;stock 2003-03-10;quantite_observee;44987192
+data;stock 2003-03-17;triplets_observes;90000
+data;stock 2003-03-17;quantites_connues;89977
+data;stock 2003-03-17;zeros;80
+data;stock 2003-03-17;quantite_observee;44896372
+data;stock 2003-03-24;triplets_observes;90000
+data;stock 2003-03-24;quantites_connues;89961
+data;stock 2003-03-24;zeros;89
+data;stock 2003-03-24;quantite_observee;44962155
+data;stock 2003-03-31;triplets_observes;90000
+data;stock 2003-03-31;quantites_connues;89974
+data;stock 2003-03-31;zeros;79
+data;stock 2003-03-31;quantite_observee;45122090
+data;stock 2003-04-07;triplets_observes;90000
+data;stock 2003-04-07;quantites_connues;89983
+data;stock 2003-04-07;zeros;82
+data;stock 2003-04-07;quantite_observee;44973323
+data;stock 2003-04-14;triplets_observes;90000
+data;stock 2003-04-14;quantites_connues;89979
+data;stock 2003-04-14;zeros;88
+data;stock 2003-04-14;quantite_observee;45032623
+data;stock 2003-04-21;triplets_observes;90000
+data;stock 2003-04-21;quantites_connues;89971
+data;stock 2003-04-21;zeros;76
+data;stock 2003-04-21;quantite_observee;45088566
+data;stock 2003-04-28;triplets_observes;90000
+data;stock 2003-04-28;quantites_connues;89976
+data;stock 2003-04-28;zeros;98
+data;stock 2003-04-28;quantite_observee;45001657
+data;stock 2003-05-05;triplets_observes;90000
+data;stock 2003-05-05;quantites_connues;89969
+data;stock 2003-05-05;zeros;85
+data;stock 2003-05-05;quantite_observee;44959291
+data;stock 2003-05-12;triplets_observes;90000
+data;stock 2003-05-12;quantites_connues;89976
+data;stock 2003-05-12;zeros;88
+data;stock 2003-05-12;quantite_observee;45031819
+data;stock 2003-05-19;triplets_observes;90000
+data;stock 2003-05-19;quantites_connues;89973
+data;stock 2003-05-19;zeros;113
+data;stock 2003-05-19;quantite_observee;44924033
+data;stock 2003-05-26;triplets_observes;90000
+data;stock 2003-05-26;quantites_connues;89980
+data;stock 2003-05-26;zeros;82
+data;stock 2003-05-26;quantite_observee;45053864
+data;stock 2003-06-02;triplets_observes;90000
+data;stock 2003-06-02;quantites_connues;89986
+data;stock 2003-06-02;zeros;98
+data;stock 2003-06-02;quantite_observee;45086024
+data;stock 2003-06-09;triplets_observes;90000
+data;stock 2003-06-09;quantites_connues;89972
+data;stock 2003-06-09;zeros;74
+data;stock 2003-06-09;quantite_observee;44842495
+data;stock 2003-06-16;triplets_observes;90000
+data;stock 2003-06-16;quantites_connues;89978
+data;stock 2003-06-16;zeros;108
+data;stock 2003-06-16;quantite_observee;45112299
+data;stock 2003-06-23;triplets_observes;90000
+data;stock 2003-06-23;quantites_connues;89977
+data;stock 2003-06-23;zeros;74
+data;stock 2003-06-23;quantite_observee;45115066
+data;stock 2003-06-30;triplets_observes;90000
+data;stock 2003-06-30;quantites_connues;89985
+data;stock 2003-06-30;zeros;87
+data;stock 2003-06-30;quantite_observee;45052516
+data;stock 2003-07-07;triplets_observes;90000
+data;stock 2003-07-07;quantites_connues;89982
+data;stock 2003-07-07;zeros;99
+data;stock 2003-07-07;quantite_observee;45000259
+data;stock 2003-07-14;triplets_observes;90000
+data;stock 2003-07-14;quantites_connues;89976
+data;stock 2003-07-14;zeros;76
+data;stock 2003-07-14;quantite_observee;44775315
+data;stock 2003-07-21;triplets_observes;90000
+data;stock 2003-07-21;quantites_connues;89977
+data;stock 2003-07-21;zeros;85
+data;stock 2003-07-21;quantite_observee;44949021
+data;stock 2003-07-28;triplets_observes;90000
+data;stock 2003-07-28;quantites_connues;89980
+data;stock 2003-07-28;zeros;84
+data;stock 2003-07-28;quantite_observee;45071546
+data;stock 2003-08-04;triplets_observes;90000
+data;stock 2003-08-04;quantites_connues;89980
+data;stock 2003-08-04;zeros;91
+data;stock 2003-08-04;quantite_observee;45005831
+data;stock 2003-08-11;triplets_observes;90000
+data;stock 2003-08-11;quantites_connues;89978
+data;stock 2003-08-11;zeros;75
+data;stock 2003-08-11;quantite_observee;44952871
+data;stock 2003-08-18;triplets_observes;90000
+data;stock 2003-08-18;quantites_connues;89970
+data;stock 2003-08-18;zeros;81
+data;stock 2003-08-18;quantite_observee;45031599
+data;stock 2003-08-25;triplets_observes;90000
+data;stock 2003-08-25;quantites_connues;89978
+data;stock 2003-08-25;zeros;82
+data;stock 2003-08-25;quantite_observee;44907234
+data;stock 2003-09-01;triplets_observes;90000
+data;stock 2003-09-01;quantites_connues;89981
+data;stock 2003-09-01;zeros;94
+data;stock 2003-09-01;quantite_observee;45184818
+data;stock 2003-09-08;triplets_observes;90000
+data;stock 2003-09-08;quantites_connues;89974
+data;stock 2003-09-08;zeros;90
+data;stock 2003-09-08;quantite_observee;44994344
+data;stock 2003-09-15;triplets_observes;90000
+data;stock 2003-09-15;quantites_connues;89977
+data;stock 2003-09-15;zeros;92
+data;stock 2003-09-15;quantite_observee;45006413
+data;stock 2003-09-22;triplets_observes;90000
+data;stock 2003-09-22;quantites_connues;89975
+data;stock 2003-09-22;zeros;78
+data;stock 2003-09-22;quantite_observee;44995815
+data;stock 2003-09-29;triplets_observes;90000
+data;stock 2003-09-29;quantites_connues;89969
+data;stock 2003-09-29;zeros;97
+data;stock 2003-09-29;quantite_observee;45006015
+data;stock 2003-10-06;triplets_observes;90000
+data;stock 2003-10-06;quantites_connues;89974
+data;stock 2003-10-06;zeros;94
+data;stock 2003-10-06;quantite_observee;44981044
+data;stock 2003-10-13;triplets_observes;90000
+data;stock 2003-10-13;quantites_connues;89977
+data;stock 2003-10-13;zeros;102
+data;stock 2003-10-13;quantite_observee;44878047
+data;stock 2003-10-20;triplets_observes;90000
+data;stock 2003-10-20;quantites_connues;89978
+data;stock 2003-10-20;zeros;90
+data;stock 2003-10-20;quantite_observee;45024759
+data;stock 2003-10-27;triplets_observes;90000
+data;stock 2003-10-27;quantites_connues;89974
+data;stock 2003-10-27;zeros;85
+data;stock 2003-10-27;quantite_observee;44940918
+data;stock 2003-11-03;triplets_observes;90000
+data;stock 2003-11-03;quantites_connues;89982
+data;stock 2003-11-03;zeros;89
+data;stock 2003-11-03;quantite_observee;45107815
+data;stock 2003-11-10;triplets_observes;90000
+data;stock 2003-11-10;quantites_connues;89978
+data;stock 2003-11-10;zeros;93
+data;stock 2003-11-10;quantite_observee;45104453
+data;stock 2003-11-17;triplets_observes;90000
+data;stock 2003-11-17;quantites_connues;89979
+data;stock 2003-11-17;zeros;94
+data;stock 2003-11-17;quantite_observee;45099782
+data;stock 2003-11-24;triplets_observes;90000
+data;stock 2003-11-24;quantites_connues;89974
+data;stock 2003-11-24;zeros;94
+data;stock 2003-11-24;quantite_observee;44849235
+data;stock 2003-12-01;triplets_observes;90000
+data;stock 2003-12-01;quantites_connues;89980
+data;stock 2003-12-01;zeros;87
+data;stock 2003-12-01;quantite_observee;45032268
+data;stock 2003-12-08;triplets_observes;90000
+data;stock 2003-12-08;quantites_connues;89976
+data;stock 2003-12-08;zeros;96
+data;stock 2003-12-08;quantite_observee;44870178
+data;stock 2003-12-15;triplets_observes;90000
+data;stock 2003-12-15;quantites_connues;89976
+data;stock 2003-12-15;zeros;84
+data;stock 2003-12-15;quantite_observee;45026789
+data;stock 2003-12-22;triplets_observes;90000
+data;stock 2003-12-22;quantites_connues;89974
+data;stock 2003-12-22;zeros;95
+data;stock 2003-12-22;quantite_observee;45007820
+data;stock 2003-12-29;triplets_observes;90000
+data;stock 2003-12-29;quantites_connues;89983
+data;stock 2003-12-29;zeros;91
+data;stock 2003-12-29;quantite_observee;44959743
+data;stock 2004-01-05;triplets_observes;90000
+data;stock 2004-01-05;quantites_connues;89976
+data;stock 2004-01-05;zeros;89
+data;stock 2004-01-05;quantite_observee;45040530
+data;stock 2004-01-12;triplets_observes;90000
+data;stock 2004-01-12;quantites_connues;89978
+data;stock 2004-01-12;zeros;97
+data;stock 2004-01-12;quantite_observee;45007241
+data;stock 2004-01-19;triplets_observes;90000
+data;stock 2004-01-19;quantites_connues;89978
+data;stock 2004-01-19;zeros;68
+data;stock 2004-01-19;quantite_observee;45035322
+data;stock 2004-01-26;triplets_observes;90000
+data;stock 2004-01-26;quantites_connues;89964
+data;stock 2004-01-26;zeros;84
+data;stock 2004-01-26;quantite_observee;45044532
+data;stock 2004-02-02;triplets_observes;90000
+data;stock 2004-02-02;quantites_connues;89975
+data;stock 2004-02-02;zeros;115
+data;stock 2004-02-02;quantite_observee;44864523
+data;stock 2004-02-09;triplets_observes;90000
+data;stock 2004-02-09;quantites_connues;89982
+data;stock 2004-02-09;zeros;90
+data;stock 2004-02-09;quantite_observee;44969307
+data;stock 2004-02-16;triplets_observes;90000
+data;stock 2004-02-16;quantites_connues;89979
+data;stock 2004-02-16;zeros;78
+data;stock 2004-02-16;quantite_observee;44987992
+data;stock 2004-02-23;triplets_observes;90000
+data;stock 2004-02-23;quantites_connues;89985
+data;stock 2004-02-23;zeros;83
+data;stock 2004-02-23;quantite_observee;44854771
+data;stock 2004-03-01;triplets_observes;90000
+data;stock 2004-03-01;quantites_connues;89978
+data;stock 2004-03-01;zeros;84
+data;stock 2004-03-01;quantite_observee;44909324
+data;stock 2004-03-08;triplets_observes;90000
+data;stock 2004-03-08;quantites_connues;89980
+data;stock 2004-03-08;zeros;98
+data;stock 2004-03-08;quantite_observee;45126817
+data;stock 2004-03-15;triplets_observes;90000
+data;stock 2004-03-15;quantites_connues;89978
+data;stock 2004-03-15;zeros;72
+data;stock 2004-03-15;quantite_observee;44987297
+data;stock 2004-03-22;triplets_observes;90000
+data;stock 2004-03-22;quantites_connues;89976
+data;stock 2004-03-22;zeros;86
+data;stock 2004-03-22;quantite_observee;44840770
+data;stock 2004-03-29;triplets_observes;90000
+data;stock 2004-03-29;quantites_connues;89984
+data;stock 2004-03-29;zeros;101
+data;stock 2004-03-29;quantite_observee;45108609
+data;stock 2004-04-05;triplets_observes;90000
+data;stock 2004-04-05;quantites_connues;89980
+data;stock 2004-04-05;zeros;105
+data;stock 2004-04-05;quantite_observee;45019062
+data;stock 2004-04-12;triplets_observes;90000
+data;stock 2004-04-12;quantites_connues;89972
+data;stock 2004-04-12;zeros;91
+data;stock 2004-04-12;quantite_observee;45004103
+data;stock 2004-04-19;triplets_observes;90000
+data;stock 2004-04-19;quantites_connues;89982
+data;stock 2004-04-19;zeros;85
+data;stock 2004-04-19;quantite_observee;45063370
+data;stock 2004-04-26;triplets_observes;90000
+data;stock 2004-04-26;quantites_connues;89975
+data;stock 2004-04-26;zeros;89
+data;stock 2004-04-26;quantite_observee;45058879
+data;stock 2004-05-03;triplets_observes;90000
+data;stock 2004-05-03;quantites_connues;89970
+data;stock 2004-05-03;zeros;85
+data;stock 2004-05-03;quantite_observee;44977205
+data;stock 2004-05-10;triplets_observes;90000
+data;stock 2004-05-10;quantites_connues;89968
+data;stock 2004-05-10;zeros;90
+data;stock 2004-05-10;quantite_observee;44955626
+data;stock 2004-05-17;triplets_observes;90000
+data;stock 2004-05-17;quantites_connues;89979
+data;stock 2004-05-17;zeros;98
+data;stock 2004-05-17;quantite_observee;45091084
+data;stock 2004-05-24;triplets_observes;90000
+data;stock 2004-05-24;quantites_connues;89983
+data;stock 2004-05-24;zeros;78
+data;stock 2004-05-24;quantite_observee;44943247
+data;stock 2004-05-31;triplets_observes;90000
+data;stock 2004-05-31;quantites_connues;89982
+data;stock 2004-05-31;zeros;102
+data;stock 2004-05-31;quantite_observee;45015735
+data;stock 2004-06-07;triplets_observes;90000
+data;stock 2004-06-07;quantites_connues;89976
+data;stock 2004-06-07;zeros;96
+data;stock 2004-06-07;quantite_observee;45039582
+data;stock 2004-06-14;triplets_observes;90000
+data;stock 2004-06-14;quantites_connues;89975
+data;stock 2004-06-14;zeros;84
+data;stock 2004-06-14;quantite_observee;44806923
+data;stock 2004-06-21;triplets_observes;90000
+data;stock 2004-06-21;quantites_connues;89967
+data;stock 2004-06-21;zeros;82
+data;stock 2004-06-21;quantite_observee;44895951
+data;stock 2004-06-28;triplets_observes;90000
+data;stock 2004-06-28;quantites_connues;89970
+data;stock 2004-06-28;zeros;76
+data;stock 2004-06-28;quantite_observee;44848950
+data;stock 2004-07-05;triplets_observes;90000
+data;stock 2004-07-05;quantites_connues;89976
+data;stock 2004-07-05;zeros;91
+data;stock 2004-07-05;quantite_observee;45000165
+data;stock 2004-07-12;triplets_observes;90000
+data;stock 2004-07-12;quantites_connues;89979
+data;stock 2004-07-12;zeros;84
+data;stock 2004-07-12;quantite_observee;44911129
+data;stock 2004-07-19;triplets_observes;90000
+data;stock 2004-07-19;quantites_connues;89978
+data;stock 2004-07-19;zeros;78
+data;stock 2004-07-19;quantite_observee;45040122
+data;stock 2004-07-26;triplets_observes;90000
+data;stock 2004-07-26;quantites_connues;89984
+data;stock 2004-07-26;zeros;95
+data;stock 2004-07-26;quantite_observee;44992706
+data;stock 2004-08-02;triplets_observes;90000
+data;stock 2004-08-02;quantites_connues;89969
+data;stock 2004-08-02;zeros;101
+data;stock 2004-08-02;quantite_observee;45043035
+data;stock 2004-08-09;triplets_observes;90000
+data;stock 2004-08-09;quantites_connues;89970
+data;stock 2004-08-09;zeros;108
+data;stock 2004-08-09;quantite_observee;45123050
+data;stock 2004-08-16;triplets_observes;90000
+data;stock 2004-08-16;quantites_connues;89975
+data;stock 2004-08-16;zeros;87
+data;stock 2004-08-16;quantite_observee;44972724
+data;stock 2004-08-23;triplets_observes;90000
+data;stock 2004-08-23;quantites_connues;89976
+data;stock 2004-08-23;zeros;82
+data;stock 2004-08-23;quantite_observee;44941093
+data;stock 2004-08-30;triplets_observes;90000
+data;stock 2004-08-30;quantites_connues;89976
+data;stock 2004-08-30;zeros;76
+data;stock 2004-08-30;quantite_observee;44938552
+data;stock 2004-09-06;triplets_observes;90000
+data;stock 2004-09-06;quantites_connues;89976
+data;stock 2004-09-06;zeros;87
+data;stock 2004-09-06;quantite_observee;45185409
+data;stock 2004-09-13;triplets_observes;90000
+data;stock 2004-09-13;quantites_connues;89983
+data;stock 2004-09-13;zeros;68
+data;stock 2004-09-13;quantite_observee;45035370
+data;stock 2004-09-20;triplets_observes;90000
+data;stock 2004-09-20;quantites_connues;89980
+data;stock 2004-09-20;zeros;84
+data;stock 2004-09-20;quantite_observee;45000502
+data;stock 2004-09-27;triplets_observes;90000
+data;stock 2004-09-27;quantites_connues;89981
+data;stock 2004-09-27;zeros;85
+data;stock 2004-09-27;quantite_observee;45093739
+data;stock 2004-10-04;triplets_observes;90000
+data;stock 2004-10-04;quantites_connues;89972
+data;stock 2004-10-04;zeros;68
+data;stock 2004-10-04;quantite_observee;45105364
+data;stock 2004-10-11;triplets_observes;90000
+data;stock 2004-10-11;quantites_connues;89985
+data;stock 2004-10-11;zeros;99
+data;stock 2004-10-11;quantite_observee;45023143
+data;stock 2004-10-18;triplets_observes;90000
+data;stock 2004-10-18;quantites_connues;89979
+data;stock 2004-10-18;zeros;101
+data;stock 2004-10-18;quantite_observee;44973583
+data;stock 2004-10-25;triplets_observes;90000
+data;stock 2004-10-25;quantites_connues;89976
+data;stock 2004-10-25;zeros;91
+data;stock 2004-10-25;quantite_observee;44897635
+data;stock 2004-11-01;triplets_observes;90000
+data;stock 2004-11-01;quantites_connues;89977
+data;stock 2004-11-01;zeros;82
+data;stock 2004-11-01;quantite_observee;45045606
+data;stock 2004-11-08;triplets_observes;90000
+data;stock 2004-11-08;quantites_connues;89974
+data;stock 2004-11-08;zeros;96
+data;stock 2004-11-08;quantite_observee;44999901
+data;stock 2004-11-15;triplets_observes;90000
+data;stock 2004-11-15;quantites_connues;89972
+data;stock 2004-11-15;zeros;82
+data;stock 2004-11-15;quantite_observee;45013079
+data;stock 2004-11-22;triplets_observes;90000
+data;stock 2004-11-22;quantites_connues;89972
+data;stock 2004-11-22;zeros;80
+data;stock 2004-11-22;quantite_observee;45223133
+data;stock 2004-11-29;triplets_observes;90000
+data;stock 2004-11-29;quantites_connues;89975
+data;stock 2004-11-29;zeros;94
+data;stock 2004-11-29;quantite_observee;44922708
+data;stock 2004-12-06;triplets_observes;90000
+data;stock 2004-12-06;quantites_connues;89975
+data;stock 2004-12-06;zeros;92
+data;stock 2004-12-06;quantite_observee;44986169
+data;stock 2004-12-13;triplets_observes;90000
+data;stock 2004-12-13;quantites_connues;89977
+data;stock 2004-12-13;zeros;111
+data;stock 2004-12-13;quantite_observee;44964279
+data;stock 2004-12-20;triplets_observes;90000
+data;stock 2004-12-20;quantites_connues;89973
+data;stock 2004-12-20;zeros;94
+data;stock 2004-12-20;quantite_observee;44979861
+data;stock 2004-12-27;triplets_observes;90000
+data;stock 2004-12-27;quantites_connues;89980
+data;stock 2004-12-27;zeros;90
+data;stock 2004-12-27;quantite_observee;44972927
+data;stock 2005-01-03;triplets_observes;90000
+data;stock 2005-01-03;quantites_connues;89975
+data;stock 2005-01-03;zeros;110
+data;stock 2005-01-03;quantite_observee;45008733
+data;stock 2005-01-10;triplets_observes;90000
+data;stock 2005-01-10;quantites_connues;89981
+data;stock 2005-01-10;zeros;94
+data;stock 2005-01-10;quantite_observee;45014295
+data;stock 2005-01-17;triplets_observes;90000
+data;stock 2005-01-17;quantites_connues;89982
+data;stock 2005-01-17;zeros;79
+data;stock 2005-01-17;quantite_observee;45186827
+data;stock 2005-01-24;triplets_observes;90000
+data;stock 2005-01-24;quantites_connues;89975
+data;stock 2005-01-24;zeros;88
+data;stock 2005-01-24;quantite_observee;44999806
+data;stock 2005-01-31;triplets_observes;90000
+data;stock 2005-01-31;quantites_connues;89972
+data;stock 2005-01-31;zeros;93
+data;stock 2005-01-31;quantite_observee;45030543
+data;stock 2005-02-07;triplets_observes;90000
+data;stock 2005-02-07;quantites_connues;89971
+data;stock 2005-02-07;zeros;96
+data;stock 2005-02-07;quantite_observee;44967130
+data;stock 2005-02-14;triplets_observes;90000
+data;stock 2005-02-14;quantites_connues;89972
+data;stock 2005-02-14;zeros;98
+data;stock 2005-02-14;quantite_observee;45001507
+data;stock 2005-02-21;triplets_observes;90000
+data;stock 2005-02-21;quantites_connues;89971
+data;stock 2005-02-21;zeros;82
+data;stock 2005-02-21;quantite_observee;45024655
+data;stock 2005-02-28;triplets_observes;90000
+data;stock 2005-02-28;quantites_connues;89983
+data;stock 2005-02-28;zeros;71
+data;stock 2005-02-28;quantite_observee;44944617
+data;stock 2005-03-07;triplets_observes;90000
+data;stock 2005-03-07;quantites_connues;89982
+data;stock 2005-03-07;zeros;74
+data;stock 2005-03-07;quantite_observee;45009446
+data;stock 2005-03-14;triplets_observes;90000
+data;stock 2005-03-14;quantites_connues;89977
+data;stock 2005-03-14;zeros;92
+data;stock 2005-03-14;quantite_observee;45176065
+data;stock 2005-03-21;triplets_observes;90000
+data;stock 2005-03-21;quantites_connues;89972
+data;stock 2005-03-21;zeros;103
+data;stock 2005-03-21;quantite_observee;44873596
+data;stock 2005-03-28;triplets_observes;90000
+data;stock 2005-03-28;quantites_connues;89974
+data;stock 2005-03-28;zeros;80
+data;stock 2005-03-28;quantite_observee;44910554
+data;stock 2005-04-04;triplets_observes;90000
+data;stock 2005-04-04;quantites_connues;89971
+data;stock 2005-04-04;zeros;91
+data;stock 2005-04-04;quantite_observee;45076343
+data;stock 2005-04-11;triplets_observes;90000
+data;stock 2005-04-11;quantites_connues;89981
+data;stock 2005-04-11;zeros;94
+data;stock 2005-04-11;quantite_observee;44907450
+data;stock 2005-04-18;triplets_observes;90000
+data;stock 2005-04-18;quantites_connues;89982
+data;stock 2005-04-18;zeros;83
+data;stock 2005-04-18;quantite_observee;44894278
+data;stock 2005-04-25;triplets_observes;90000
+data;stock 2005-04-25;quantites_connues;89979
+data;stock 2005-04-25;zeros;84
+data;stock 2005-04-25;quantite_observee;45043904
+data;stock 2005-05-02;triplets_observes;90000
+data;stock 2005-05-02;quantites_connues;89977
+data;stock 2005-05-02;zeros;102
+data;stock 2005-05-02;quantite_observee;44984053
+data;stock 2005-05-09;triplets_observes;90000
+data;stock 2005-05-09;quantites_connues;89984
+data;stock 2005-05-09;zeros;85
+data;stock 2005-05-09;quantite_observee;45229010
+data;stock 2005-05-16;triplets_observes;90000
+data;stock 2005-05-16;quantites_connues;89963
+data;stock 2005-05-16;zeros;99
+data;stock 2005-05-16;quantite_observee;44962079
+data;stock 2005-05-23;triplets_observes;90000
+data;stock 2005-05-23;quantites_connues;89975
+data;stock 2005-05-23;zeros;99
+data;stock 2005-05-23;quantite_observee;44919880
+data;stock 2005-05-30;triplets_observes;90000
+data;stock 2005-05-30;quantites_connues;89974
+data;stock 2005-05-30;zeros;75
+data;stock 2005-05-30;quantite_observee;44987791
+data;stock 2005-06-06;triplets_observes;90000
+data;stock 2005-06-06;quantites_connues;89982
+data;stock 2005-06-06;zeros;95
+data;stock 2005-06-06;quantite_observee;44932749
+data;stock 2005-06-13;triplets_observes;90000
+data;stock 2005-06-13;quantites_connues;89972
+data;stock 2005-06-13;zeros;90
+data;stock 2005-06-13;quantite_observee;44885664
+data;stock 2005-06-20;triplets_observes;90000
+data;stock 2005-06-20;quantites_connues;89977
+data;stock 2005-06-20;zeros;80
+data;stock 2005-06-20;quantite_observee;44965747
+data;stock 2005-06-27;triplets_observes;90000
+data;stock 2005-06-27;quantites_connues;89977
+data;stock 2005-06-27;zeros;91
+data;stock 2005-06-27;quantite_observee;45130480
+data;stock 2005-07-04;triplets_observes;90000
+data;stock 2005-07-04;quantites_connues;89981
+data;stock 2005-07-04;zeros;85
+data;stock 2005-07-04;quantite_observee;44940355
+data;stock 2005-07-11;triplets_observes;90000
+data;stock 2005-07-11;quantites_connues;89977
+data;stock 2005-07-11;zeros;83
+data;stock 2005-07-11;quantite_observee;45130810
+data;stock 2005-07-18;triplets_observes;90000
+data;stock 2005-07-18;quantites_connues;89974
+data;stock 2005-07-18;zeros;77
+data;stock 2005-07-18;quantite_observee;44855592
+data;stock 2005-07-25;triplets_observes;90000
+data;stock 2005-07-25;quantites_connues;89976
+data;stock 2005-07-25;zeros;85
+data;stock 2005-07-25;quantite_observee;44804604
+data;stock 2005-08-01;triplets_observes;90000
+data;stock 2005-08-01;quantites_connues;89980
+data;stock 2005-08-01;zeros;89
+data;stock 2005-08-01;quantite_observee;45110503
+data;stock 2005-08-08;triplets_observes;90000
+data;stock 2005-08-08;quantites_connues;89976
+data;stock 2005-08-08;zeros;89
+data;stock 2005-08-08;quantite_observee;44994181
+data;stock 2005-08-15;triplets_observes;90000
+data;stock 2005-08-15;quantites_connues;89970
+data;stock 2005-08-15;zeros;90
+data;stock 2005-08-15;quantite_observee;44843536
+data;stock 2005-08-22;triplets_observes;90000
+data;stock 2005-08-22;quantites_connues;89971
+data;stock 2005-08-22;zeros;84
+data;stock 2005-08-22;quantite_observee;44967035
+data;stock 2005-08-29;triplets_observes;90000
+data;stock 2005-08-29;quantites_connues;89985
+data;stock 2005-08-29;zeros;84
+data;stock 2005-08-29;quantite_observee;45081382
+data;stock 2005-09-05;triplets_observes;90000
+data;stock 2005-09-05;quantites_connues;89979
+data;stock 2005-09-05;zeros;90
+data;stock 2005-09-05;quantite_observee;45119187
+data;stock 2005-09-12;triplets_observes;90000
+data;stock 2005-09-12;quantites_connues;89979
+data;stock 2005-09-12;zeros;96
+data;stock 2005-09-12;quantite_observee;45125892
+data;stock 2005-09-19;triplets_observes;90000
+data;stock 2005-09-19;quantites_connues;89972
+data;stock 2005-09-19;zeros;108
+data;stock 2005-09-19;quantite_observee;44909212
+data;stock 2005-09-26;triplets_observes;90000
+data;stock 2005-09-26;quantites_connues;89977
+data;stock 2005-09-26;zeros;92
+data;stock 2005-09-26;quantite_observee;44865552
+data;stock 2005-10-03;triplets_observes;90000
+data;stock 2005-10-03;quantites_connues;89979
+data;stock 2005-10-03;zeros;80
+data;stock 2005-10-03;quantite_observee;45030873
+data;stock 2005-10-10;triplets_observes;90000
+data;stock 2005-10-10;quantites_connues;89969
+data;stock 2005-10-10;zeros;82
+data;stock 2005-10-10;quantite_observee;44976910
+data;stock 2005-10-17;triplets_observes;90000
+data;stock 2005-10-17;quantites_connues;89972
+data;stock 2005-10-17;zeros;83
+data;stock 2005-10-17;quantite_observee;44789503
+data;stock 2005-10-24;triplets_observes;90000
+data;stock 2005-10-24;quantites_connues;89980
+data;stock 2005-10-24;zeros;98
+data;stock 2005-10-24;quantite_observee;44972124
+data;stock 2005-10-31;triplets_observes;90000
+data;stock 2005-10-31;quantites_connues;89972
+data;stock 2005-10-31;zeros;89
+data;stock 2005-10-31;quantite_observee;44926129
+data;stock 2005-11-07;triplets_observes;90000
+data;stock 2005-11-07;quantites_connues;89979
+data;stock 2005-11-07;zeros;84
+data;stock 2005-11-07;quantite_observee;45021382
+data;stock 2005-11-14;triplets_observes;90000
+data;stock 2005-11-14;quantites_connues;89976
+data;stock 2005-11-14;zeros;90
+data;stock 2005-11-14;quantite_observee;44902929
+data;stock 2005-11-21;triplets_observes;90000
+data;stock 2005-11-21;quantites_connues;89980
+data;stock 2005-11-21;zeros;104
+data;stock 2005-11-21;quantite_observee;44846826
+data;stock 2005-11-28;triplets_observes;90000
+data;stock 2005-11-28;quantites_connues;89977
+data;stock 2005-11-28;zeros;99
+data;stock 2005-11-28;quantite_observee;44915415
+data;stock 2005-12-05;triplets_observes;90000
+data;stock 2005-12-05;quantites_connues;89974
+data;stock 2005-12-05;zeros;87
+data;stock 2005-12-05;quantite_observee;45114163
+data;stock 2005-12-12;triplets_observes;35100
+data;stock 2005-12-12;quantites_connues;35091
+data;stock 2005-12-12;zeros;47
+data;stock 2005-12-12;quantite_observee;17446138
+data_refresh;stock 2005-12-12;triplets_observes;54900
+data_refresh;stock 2005-12-12;quantites_connues;54884
+data_refresh;stock 2005-12-12;zeros;53
+data_refresh;stock 2005-12-12;quantite_observee;27510720
+data_refresh;stock 2005-12-19;triplets_observes;90000
+data_refresh;stock 2005-12-19;quantites_connues;89984
+data_refresh;stock 2005-12-19;zeros;78
+data_refresh;stock 2005-12-19;quantite_observee;45110235
+data_refresh;stock 2005-12-26;triplets_observes;90000
+data_refresh;stock 2005-12-26;quantites_connues;89969
+data_refresh;stock 2005-12-26;zeros;106
+data_refresh;stock 2005-12-26;quantite_observee;44891357
+data + data_refresh;stock 2005-12-12;triplets_observes;90000
+data + data_refresh;stock 2005-12-12;quantites_connues;89975
+data + data_refresh;stock 2005-12-12;triplets_attendus_panier_reference;90000
+data;product_reviews;cle_invalide;0
+data;product_reviews;cle_repetee;0
+data;product_reviews;note_hors_1_5;0
+data;product_reviews;produit_non_resolu;0
+data;web_clickstreams;lignes;6770550
+data;web_clickstreams;client_resolu;3917089
+data;web_clickstreams;client_renseigne_non_resolu;0
+data;web_clickstreams;client_vide;2853461
+data;web_clickstreams;date_non_resolue;0
+data;web_clickstreams;page_vide;164
+data;web_clickstreams;page_renseignee_non_resolue;0
+data_refresh;product_reviews;cle_invalide;0
+data_refresh;product_reviews;cle_repetee;0
+data_refresh;product_reviews;note_hors_1_5;0
+data_refresh;product_reviews;produit_non_resolu;0
+data_refresh;web_clickstreams;lignes;68988
+data_refresh;web_clickstreams;client_resolu;39821
+data_refresh;web_clickstreams;client_renseigne_non_resolu;0
+data_refresh;web_clickstreams;client_vide;29167
+data_refresh;web_clickstreams;date_non_resolue;0
+data_refresh;web_clickstreams;page_vide;2
+data_refresh;web_clickstreams;page_renseignee_non_resolue;0
+data;prix marché 2005-12-12;plage_inversee;0
+data;prix marché 2005-12-12;plage_non_resolue;30
+data;prix marché 2005-12-12;offres_actives_fin_exclue;4458
+data;prix marché 2005-12-12;offres_actives_fin_incluse;4672
+data;prix marché 2005-12-12;produits_comparables;3924
+data_refresh;prix marché 2005-12-12;plage_inversee;0
+data_refresh;prix marché 2005-12-12;offres_actives_fin_exclue;0
+data_refresh;prix marché 2005-12-12;offres_actives_fin_incluse;0
+data_refresh;prix marché 2005-12-12;produits_comparables;0

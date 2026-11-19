@@ -1,0 +1,12 @@
+# Références J3 copiées en lecture seule
+
+| Chemin projet original | SHA-256 |
+| --- | --- |
+| J3_Retail_Intelligence_Transformation/donnees_produites/manifest.json | 7405830ae819c2664716e29c08245ff281540ecb2945f280bcf0d6f42b3b615c |
+| J3_Retail_Intelligence_Transformation/preuves/controles/J3-P09-qualite.json | efffb9792f9054f9c34e05117055a5ac9c90d46024addbf843f312f366ee4119 |
+| J3_Retail_Intelligence_Transformation/donnees_produites/verification_export/manifeste_export.json | 108b4061ed2046e9c9ca1287d40bc864aa61d64075067b2fc70c2a4b34276c6c |
+| J3_Retail_Intelligence_Transformation/documentation/rapport_qualite.md | fa97e05b2969f82ee20303eeff030bd5d529c04f295eb0f6a5f60a7e96693692 |
+| J1_Retail_Intelligence_DAT/J1_Retail_Intelligence_Architecture/preuves/resultats/07_diagnostics.csv | 2929925f0affeb1433f0fc93418215f6961c7d4987ab444610a5c2d98e101fd3 |
+| J1_Retail_Intelligence_DAT/J1_Retail_Intelligence_Architecture/preuves/resultats/13_kpi_controles.csv | 11474fed2021b5b245ead047e0afcff705c2ba8a19a782b39d3f583d672acc2b |
+| J1_Retail_Intelligence_DAT/J1_Retail_Intelligence_Architecture/preuves/resultats/11_kpi_valeurs.csv | 0f30d2a2d7e1afe18cdd9736a244351aecf9b1e4bb4d748737d104258691e4eb |
+| J1_Retail_Intelligence_DAT/J1_Retail_Intelligence_Architecture/preuves/resultats/01_inventaire.csv | 75d5a31278ecbc5ceaa6f69462d61b7833e80785cb2d1cc022145d87076dabfe |

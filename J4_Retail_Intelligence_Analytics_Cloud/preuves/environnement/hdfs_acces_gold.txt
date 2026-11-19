@@ -1,0 +1,7 @@
+# file: /retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit
+# owner: hadoop
+# group: supergroup
+user::rwx
+group::r-x
+other::r-x
+

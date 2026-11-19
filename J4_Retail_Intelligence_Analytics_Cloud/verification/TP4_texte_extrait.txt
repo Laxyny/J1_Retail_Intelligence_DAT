@@ -1,0 +1,1727 @@
+=== PAGE 1 ===
+Support de travaux pratiques
+Retail Intelligence Platform
+Jour 4 – Analyse décisionnelle et architectures Data
+(Azure et Open Source)
+IPSSI
+Mastère Développement, Data & IA – 5e année
+TP J4 – UC-08 et UC-07
+Support reconstruit en LaTeX éditable à partir du PDF fourni
+=== PAGE 2 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1 Installation, configuration et prise en main des outils
+Point de vigilance
+Vous avez préparé un environnement Python, Jupyter et PySpark au TP3 doivent réutiliser cet
+environnement s’il fonctionne correctement. Il n’est pas nécessaire de réinstaller Spark ou de
+reconstruire l’environnement Big Data pour réaliser les analyses du TP4. Le vous devez préciser
+les versions et l’environnement de référence utilisés pendant le TP.
+1.1 Quels outils utiliser pour réaliser les visualisations?
+Plusieurs outils permettent de représenter des données. Ils n’ont pas tous le même rôle et ne
+nécessitent pas le même niveau de prise en main.
+1.1.1 Outils retenus pour le socle obligatoire
+Pour ce TP, la solution recommandée est la suivante :
+Outil Rôle Utilisation
+JupyterLab Interface interactive pour écrire et exécuter du code Python. Environnement de
+travail.
+PySpark Lecture, transformation et agrégation des données. Préparation et
+calculs.
+Pandas Manipulation de petits tableaux de résultats. Passage des résultats
+vers les graphiques.
+Matplotlib Création de graphiques : courbes, barres, histogrammes, etc. Visualisation.
+Pourquoi cette combinaison? Les données du projet peuvent être volumineuses. Il est donc préférable
+de laisser Spark effectuer les traitements et les agrégations. Une fois les résultats calculés, on peut
+récupérer un petit tableau de synthèse dans Pandas, puis créer un graphique avec Matplotlib. Le
+fonctionnement général est le suivant :
+Point de vigilance
+Matplotlib n’est pas un moteur Big Data. Il sert à représenter les résultats. Il ne faut pas
+récupérer toutes les lignes d’un grand DataFrame Spark dans Pandas uniquement pour dessiner
+un graphique. La bonne méthode consiste à effectuer les calculs et les agrégations avec Spark,
+puis à transférer uniquement le petit résultat nécessaire à la visualisation.
+1.1.2 Autres outils possibles
+D’autres outils peuvent être utilisés si le formateur les met à disposition.
+1
+=== PAGE 3 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Fichiers Silver / Gold
+PySpark
+Lecture, nettoyage et calcul des indicateurs
+Petit tableau de résultats
+Agrégation par mois, magasin, produit ou catégorie
+Pandas
+Récupération du tableau de synthèse
+Matplotlib
+Création du graphique
+Résultat
+Graphique affiché dans Jupyter et exporté en PNG
+Figure 1– Chaîne de traitement et de visualisation des données
+Outil Intérêt Statut dans ce
+TP
+Power BI Création de tableaux de bord interactifs, filtres et indicateurs. Complémentaire, si
+disponible.
+Plotly Création de graphiques interactifs en Python. Facultatif.
+Apache Superset Création de tableaux de bord à partir de sources de données
+connectées.
+Facultatif.
+Excel /
+LibreOffice Calc
+Création de graphiques simples à partir de tableaux exportés. Solution de secours
+possible.
+2
+=== PAGE 4 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Point de vigilance
+Pour le socle obligatoire, les deux graphiques demandés peuvent être réalisés avec Matplotlib
+directement dans JupyterLab. Aucun abonnement Power BI ni aucun déploiement de plateforme
+de visualisation supplémentaire ne sont nécessaires.
+1.2 Vérifier l’environnement existant du TP3
+Avant d’installer quoi que ce soit, vérifier si l’environnement utilisé au TP3 est toujours disponible.
+Ouvrir un terminal et se placer dans le dossier du projet. Exemple :
+cd \~/retail-intelligence
+Si un environnement virtuel a été créé au TP3, l’activer :
+source .venv/bin/activate
+Vérifier Python :
+python --version
+Vérifier Java : java -version
+Vérifier PySpark :
+python -c "import pyspark; print(pyspark.\_\_version\_\_)"
+Vérifier Jupyter :
+jupyter --version
+Si les commandes fonctionnent, il est possible de réutiliser l’environnement existant.
+1.3 Installer les bibliothèques nécessaires aux visualisations
+1.3.1 Étape 1 – Activer l’environnement Python
+Dans le terminal :
+cd \~/retail-intelligence
+source .venv/bin/activate
+Si le dossier .venv n’existe pas, se référer à la procédure d’installation du TP3 ou demander au
+formateur de préparer l’environnement.
+1.3.2 Étape 2 – Installer les bibliothèques
+Les bibliothèques nécessaires aux visualisations sont :
+— matplotlib : création des graphiques;
+— pandas : manipulation de petits tableaux;
+— jupyterlab : interface de travail;
+— ipykernel : noyau Python utilisé par Jupyter.
+Dans le terminal, avec l’environnement virtuel activé :
+python -m pip install --upgrade pip
+python -m pip install matplotlib pandas jupyterlab ipykernel
+3
+=== PAGE 5 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+PySpark doit déjà être disponible depuis le TP3. Si ce n’est pas le cas, vérifier auprès du formateur
+quelle version doit être installée afin de rester compatible avec l’environnement utilisé.
+1.3.3 Étape 3 – Vérifier les installations
+Exécuter :
+python -c "import matplotlib; print(matplotlib.\_\_version\_\_)"
+python -c "import pandas; print(pandas.\_\_version\_\_)"
+python -c "import pyspark; print(pyspark.\_\_version\_\_)"
+Chaquecommandedoitafficheruneversiondebibliothèque.OnpeutégalementvérifierqueJupyterLab
+est disponible :
+jupyter lab --version
+1.3.4 Étape 4 – Enregistrer l’environnement dans Jupyter
+Pour pouvoir sélectionner facilement l’environnement Python dans Jupyter, exécuter :
+python -m ipykernel install --user \\
+\--name retail-tp4 \\
+\--display-name "Python - Retail TP4"
+Cette commande enregistre un noyau Jupyter correspondant à l’environnement Python utilisé.
+1.4 Lancer JupyterLab
+Dans le terminal, se placer dans le dossier du projet :
+cd \~/retail-intelligence
+source .venv/bin/activate
+jupyter lab
+JupyterLab s’ouvre généralement dans le navigateur. Si le navigateur ne s’ouvre pas automatiquement,
+utiliser l’adresse locale affichée dans le terminal.
+1.4.1 Créer un notebook dédié au TP4
+Dans JupyterLab :
+1. ouvrir le dossier du projet;
+2. créer un nouveau notebook Python;
+3. sélectionner le noyau Python - Retail TP4 si celui-ci est proposé;
+4. nommer le notebook TP4_Retail_Intelligence.ipynb;
+5. enregistrer régulièrement le travail.
+Point de vigilance
+Si Jupyter ne propose pas le noyau attendu, vérifier que l’environnement virtuel est activé et
+que la commande d’enregistrement du noyau a bien été exécutée. Ne pas installer une seconde
+version de Python sans avoir identifié l’origine du problème.
+4
+=== PAGE 6 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.4.2 Organisation recommandée du notebook TP4
+Le notebook peut être organisé de la façon suivante :
+1. Titre, groupe et objectifs de l’analyse.
+2. Import des bibliothèques.
+3. Création de la session Spark.
+4. Chargement des jeux de données.
+5. Vérification des schémas et des volumes.
+1. Calcul des KPI.
+2. Statistiques descriptives.
+3. Première analyse métier.
+4. Première visualisation.
+5. Deuxième analyse métier.
+6. Deuxième visualisation.
+7. Interprétation et limites.
+8. Conclusion et recommandations.
+Il est recommandé d’ajouter une cellule Markdown avant chaque grande étape pour expliquer l’objectif
+du traitement.
+1.5 Créer une première session Spark dans Jupyter
+Dans une cellule de code, saisir :
+from pyspark.sql import SparkSession
+spark = (
+SparkSession.builder
+.appName("TP4-Retail-Intelligence")
+.master("local[\*]")
+.getOrCreate()
+)
+print("Version Spark :", spark.version)
+Le paramètre local[] permet d’exécuter Spark sur la machine locale en utilisant les processeurs
+disponibles. Dans le cadre d’un cluster fourni par le formateur, les paramètres de connexion seront
+différents et devront être communiqués par celui-ci.
+1.6 Charger les données du projet
+Les analyses doivent être réalisées à partir des données effectivement produites aux TP précédents.
+Les jeux Silver et Gold sont à privilégier lorsqu’ils sont disponibles.
+1.6.1 Lire un fichier Parquet
+Si les résultats du TP3 ont été enregistrés au format Parquet, utiliser :
+chemin = "data/gold/ventes"
+df_ventes = spark.read.parquet(chemin)
+5
+=== PAGE 7 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+df_ventes.show(5) df_ventes.printSchema()
+print("Nombre de lignes :", df_ventes.count())
+Le chemin est un exemple. Il doit être remplacé par le chemin réel du fichier ou du répertoire Parquet.
+1.6.2 Lire un fichier CSV
+Si les données sont au format CSV :
+chemin = "data/silver/ventes.csv"
+df_ventes = (
+spark.read
+.option("header", True)
+.option("inferSchema", True)
+.option("sep", ",")
+.csv(chemin)
+)
+df_ventes.show(5)
+df_ventes.printSchema()
+Si le séparateur du fichier est le point-virgule, remplacer "," par ";".
+Point de vigilance
+Les noms de fichiers et de colonnes de ces exemples sont indicatifs. Les étudiants doivent examiner
+le schéma réel avant de reprendre les exemples. Il ne faut pas supposer que les colonnes sales,
+store_id ou order_date existent dans tous les jeux fournis.
+1.7 Comprendre la différence entre calcul et visualisation
+Une visualisation ne consiste pas à afficher directement toutes les données. Il faut d’abord déterminer
+ce que l’on souhaite montrer. Exemple : répondre à la question métier : Quel est le montant total des
+ventes par magasin? La démarche est la suivante :
+1. identifier la colonne contenant le magasin;
+2. identifier la colonne contenant le montant des ventes;
+3. regrouper les lignes par magasin;
+4. calculer la somme des ventes;
+5. récupérer le petit tableau de synthèse;
+6. construire un graphique en barres.
+Le graphique ne doit pas être construit avant d’avoir vérifié que le calcul est correct.
+1.7.1 Étape 1 – Calculer le résultat avec PySpark
+Exemple à adapter aux colonnes réellement présentes :
+from pyspark.sql import functions as F
+ventes_par_magasin = (
+df_ventes
+.groupBy("store_id")
+6
+=== PAGE 8 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+.agg(
+F.sum("sales").alias("total_sales")
+)
+.orderBy(F.desc("total_sales"))
+)
+ventes_par_magasin.show() Cette opération produit un tableau contenant un résultat par magasin.
+1.7.2 Étape 2 – Récupérer le résultat dans Pandas
+Une fois l’agrégation effectuée, le résultat peut être converti en DataFrame Pandas :
+pdf_ventes = ventes_par_magasin.toPandas()
+pdf_ventes.head() La méthode toPandas() transfère les données vers la mémoire de la machine qui
+exécute le notebook. Elle doit être utilisée uniquement lorsque le résultat est suffisamment petit.
+Point de vigilance
+Ne jamais appliquer directement toPandas() à un DataFrame Spark contenant des millions de
+lignes sans avoir évalué le volume et la mémoire disponible. Dans ce TP, on utilise cette méthode
+après une agrégation qui réduit fortement le nombre de lignes. Si le résultat reste trop volumineux,
+il faut réduire le périmètre ou le nombre de catégories représentées.
+1.8 Créer un premier graphique avec Matplotlib
+Matplotlib est une bibliothèque Python qui permet de produire des graphiques. Elle sera utilisée
+pour les visualisations obligatoires du TP.
+1.8.1 Étape 1 – Importer la bibliothèque
+Dans une nouvelle cellule :
+import matplotlib.pyplot as plt
+1.8.2 Étape 2 – Créer un graphique en barres
+À partir du DataFrame Pandas créé précédemment :
+plt.figure(figsize=(10, 5))
+plt.bar(
+pdf_ventes["store_id"].astype(str),
+pdf_ventes["total_sales"]
+)
+plt.title("Montant total des ventes par magasin")
+plt.xlabel("Magasin")
+plt.ylabel("Montant total des ventes")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+Ce graphique permet de comparer les montants de ventes entre les magasins.
+7
+=== PAGE 9 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.8.3 Étape 3 – Enregistrer le graphique
+Pour conserver le graphique dans le dossier des livrables :
+plt.figure(figsize=(10, 5))
+plt.bar(
+pdf_ventes["store_id"].astype(str),
+pdf_ventes["total_sales"]
+)
+plt.title("Montant total des ventes par magasin")
+plt.xlabel("Magasin")
+plt.ylabel("Montant total des ventes")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig(
+"visualisations/ventes_par_magasin.png",
+dpi=150,
+bbox_inches="tight"
+)
+plt.show()
+Avant d’enregistrer le graphique, créer le dossier de destination si nécessaire :
+from pathlib import Path
+Path("visualisations").mkdir(
+parents=True,
+exist_ok=True
+)
+Le fichier PNG pourra être intégré au rapport du groupe.
+1.9 Créer une visualisation temporelle
+Une question métier fréquente consiste à observer l’évolution des ventes au cours du temps. Cette
+analyse nécessite une colonne de date exploitable et une colonne de mesure. Dans l’exemple suivant,
+on suppose que :
+— la colonne de date s’appelle order_date;
+— la colonne de montant s’appelle sales.
+Ces noms doivent être adaptés au schéma réel.
+1.9.1 Étape 1 – Regrouper les ventes par mois
+from pyspark.sql import functions as F
+ventes_par_mois = (
+df_ventes
+.withColumn(
+"mois",
+F.date_format(
+F.to_date("order_date"),
+"yyyy-MM"
+8
+=== PAGE 10 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+)
+)
+.groupBy("mois")
+.agg(
+F.sum("sales").alias("total_sales")
+)
+.orderBy("mois")
+)
+ventes_par_mois.show()
+1.9.2 Étape 2 – Convertir le résultat en Pandas
+pdf_mois = ventes_par_mois.toPandas()
+1.9.3 Étape 3 – Créer une courbe
+plt.figure(figsize=(10, 5))
+plt.plot(
+pdf_mois["mois"],
+pdf_mois["total_sales"],
+marker="o"
+)
+plt.title("Evolution des ventes par mois")
+plt.xlabel("Mois")
+plt.ylabel("Montant total des ventes")
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+Cette courbe permet d’observer l’évolution des ventes sur les périodes disponibles.
+Point de vigilance
+Une évolution temporelle ne peut être calculée que si la colonne de date est présente, exploitable
+et cohérente. Si les données ne couvrent qu’une seule période ou si la date n’est pas disponible, il
+faut choisir une autre analyse et expliquer cette limite.
+9
+=== PAGE 11 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.10 Les principaux types de graphiques et leurs usages
+Il faut choisir un graphique en fonction de la question à laquelle on souhaite répondre.
+Type de
+graphique
+Utilisation Exemple Retail
+Barres Comparer des catégories. Ventes par magasin ou par produit.
+Courbe Observer une évolution dans le temps. Ventes par mois.
+Histogramme Observer la distribution d’une variable nu-
+mérique.
+Distribution des montants de transaction.
+Secteurs Présenter une répartition simple entre
+quelques catégories.
+Répartition des ventes par canal, si dispo-
+nible.
+Tableau Présenter des valeurs précises. Synthèse des KPI par magasin.
+Table 1– Principaux types de graphiques et leurs usages
+1.10.1 Exemple : histogramme
+Un histogramme permet d’observer la distribution d’une variable numérique. Il peut par exemple
+servir à étudier la distribution des montants de transactions.
+plt.figure(figsize=(8, 5))
+plt.hist(
+pdf_transactions["transaction_amount"],
+bins=20
+)
+plt.title("Distribution des montants")
+plt.xlabel("Montant de la transaction")
+plt.ylabel("Nombre de transactions")
+plt.tight_layout()
+plt.show()
+Cet exemple suppose que le groupe dispose d’un tableau Pandas contenant une ligne par transaction
+et une colonne transaction_amount. Il ne faut pas appliquer cet exemple à un DataFrame qui ne
+respecte pas cette granularité.
+1.10.2 Exemple : diagramme circulaire
+Un diagramme circulaire peut être utilisé pour présenter une répartition simple entre quelques
+catégories.
+plt.figure(figsize=(7, 7))
+plt.pie(
+pdf_canaux["total_sales"],
+labels=pdf_canaux["channel"],
+autopct="%1.1f%%"
+)
+plt.title("Repartition des ventes par canal")
+plt.tight_layout()
+plt.show()
+10
+=== PAGE 12 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Cet exemple suppose que la colonne channel existe réellement et que les catégories sont suffisamment
+peu nombreuses pour rester lisibles. Pour comparer beaucoup de catégories, préférer un graphique en
+barres.
+1.11 Comment choisir une visualisation adaptée?
+Avant de créer un graphique, se poser les questions suivantes :
+1. Quel est le message que je souhaite faire comprendre?
+2. Est-ce que je compare des catégories?
+3. Est-ce que j’observe une évolution dans le temps?
+4. Est-ce que j’étudie la distribution d’une valeur?
+5. Est-ce que je présente une proportion?
+6. Le nombre de catégories permet-il de lire le graphique?
+7. Les unités et les périodes sont-elles explicites?
+Exemples de choix : Question métier Graphique conseillé
+Quel magasin réalise le plus de ventes? Barres
+Comment les ventes évoluent-elles par mois? Courbe
+Comment les montants des transactions sont-ils répartis? Histogramme
+Quelle est la part de chaque canal dans les ventes? Barres ou secteurs
+Quels sont les KPI exacts de chaque magasin? Tableau
+1.12 Bonnes pratiques de visualisation
+Un graphique doit aider à comprendre les données. Il ne doit pas simplement décorer un rapport.
+Les règles suivantes doivent être respectées.
+1.12.1 1. Donner un titre explicite
+Éviter les titres génériques comme :
+— Graphique 1;
+— Résultats;
+— Analyse des données.
+Préférer :
+— Montant total des ventes par magasin;
+— Évolution mensuelle du chiffre d’affaires;
+— Répartition des quantités vendues par catégorie.
+1.12.2 2. Nommer les axes
+Les axes doivent être compréhensibles. Par exemple :
+— axe horizontal : mois;
+— axe vertical : montant des ventes en euros.
+Ne pas afficher un montant sans préciser son unité.
+11
+=== PAGE 13 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.12.3 3. Choisir une échelle cohérente
+Les valeurs doivent être représentées sur des échelles qui ne déforment pas la lecture. Pour comparer
+des magasins, utiliser une même unité et une même période.
+1.12.4 4. Limiter le nombre de catégories
+Un graphique contenant plusieurs dizaines de catégories peut devenir difficile à lire. Il est possible
+de sélectionner les principales catégories, à condition de documenter le filtre utilisé. Par exemple,
+afficher les dix magasins ayant les ventes les plus importantes.
+1.12.5 5. Éviter les effets graphiques inutiles
+Éviter :
+— les effets 3D;
+— les couleurs trop nombreuses;
+— les légendes inutiles;
+— les titres ambigus;
+— les axes sans unité;
+— les graphiques trop chargés.
+1.12.6 6. Toujours commenter le résultat
+Sous chaque graphique, rédiger quelques phrases précisant :
+— ce que le graphique montre;
+— le résultat principal observé;
+— l’interprétation possible;
+— les limites de l’analyse.
+Point de vigilance
+Un graphique ne prouve pas automatiquement une explication métier. Par exemple, constater
+que les ventes sont plus élevées dans un magasin ne permet pas, à lui seul, de conclure que ce
+magasin est plus performant. Il faudrait également tenir compte du nombre de clients, de la taille
+du magasin, de la période, des prix et des autres facteurs disponibles.
+1.13 Exporter les résultats pour les livrables
+Les graphiques doivent être conservés dans le dossier du projet afin de pouvoir être intégrés au
+rapport final. L’arborescence proposée est la suivante :
+•retail-intelligence-platform/
+–analytics/
+–notebooks/TP4_Retail_Intelligence.ipynb
+–outputs/: fichierskpi.csvetstatistiques.csv
+–visualizations/ : fichiers ventes_par_magasin.png et
+evolution_ventes_mensuelles.png
+–docs/analytics/analyse-metier.md
+12
+=== PAGE 14 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Créer les dossiers nécessaires depuis le notebook :
+from pathlib import Path
+Path("analytics/outputs").mkdir(
+parents=True,
+exist_ok=True
+)
+Path("analytics/visualizations").mkdir(
+parents=True,
+exist_ok=True
+)
+Exporter un tableau Pandas au format CSV :
+pdf_ventes.to_csv("analytics/outputs/ventes_par_magasin.csv", index=False)
+Enregistrer un graphique :
+plt.savefig(
+"analytics/visualizations/ventes_par_magasin.png",
+dpi=150,
+bbox_inches="tight"
+)
+Les exports doivent être reproductibles : le notebook doit contenir les instructions permettant de
+recalculer les tableaux et les graphiques.
+1.14 Utiliser Power BI en complément, si disponible
+Power BI peut être utilisé pour construire un tableau de bord plus interactif. Il n’est cependant
+pas nécessaire pour valider le socle obligatoire. Si le poste Windows équipé de Power BI Desktop ou
+un environnement Power BI autorisé sur le solde de l’offre de 200$ d’Azure, le groupe peut suivre la
+démarche suivante :
+1. calculer les KPI avec PySpark;
+2. exporter les tableaux agrégés en CSV;
+3. ouvrir Power BI Desktop ou l’environnement fourni;
+4. importer les fichiers CSV;
+5. vérifier les types de colonnes;
+6. créer des graphiques à partir des résultats;
+7. organiser les graphiques dans une page de rapport;
+8. ajouter des filtres si nécessaire;
+9. enregistrer le rapport et produire une capture.
+Exemples de visuels possibles :
+— cartes affichant les principaux KPI;
+— histogramme des ventes par magasin;
+— courbe d’évolution des ventes;
+— tableau de synthèse;
+— filtres par période ou catégorie.
+13
+=== PAGE 15 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Point de vigilance
+Power BI ne doit pas être utilisé pour contourner les contrôles de qualité ou les calculs métier. Les
+définitions des KPI doivent rester documentées dans le projet. Le groupe doit pouvoir expliquer
+comment les valeurs affichées ont été calculées. Ne pas déposer de données sensibles dans un
+service cloud sans autorisation.
+1.15 Principales commandes à connaître
+1.15.1 Commandes Python et Jupyter
+Commande Utilité
+python --version Afficher la version de Python.
+python -m pip list Afficher les bibliotheques installees.
+python -m pip show Verifier Matplotlib.
+matplotlib
+python -m pip show Verifier Pandas.
+pandas
+jupyter lab Lancer JupyterLab.
+jupyter kernelspec list Lister les noyaux disponibles.
+1.15.2 Instructions PySpark utiles pour l’analyse
+Instruction Utilité
+df.show(5) Afficher cinq lignes.
+df.printSchema() Afficher les colonnes et leurs types.
+df.count() Compter les lignes.
+df.select(...) Selectionner des colonnes.
+df.filter(...) Filtrer les lignes.
+df.groupBy(...) Regrouper les donnees.
+df.agg(...) Calculer des agregations.
+df.orderBy(...) Trier les resultats.
+df.toPandas() Convertir un resultat de petite taille en Pandas.
+14
+=== PAGE 16 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.15.3 Instructions Matplotlib utiles
+Méthodes :
+plt.figure(figsize=(10,5)) Definir la taille du graphique.
+plt.bar(x,y) Creer un graphique en barres.
+plt.plot(x,y) Creer une courbe.
+plt.hist(x) Creer un histogramme.
+plt.pie(x) Creer un diagramme circulaire.
+plt.title("Titre") Ajouter un titre.
+plt.xlabel("Nom") Nommer l’axe horizontal.
+plt.ylabel("Nom") Nommer l’axe vertical.
+plt.legend() Afficher une legende.
+plt.grid(True) Afficher une grille.
+plt.tight_layout() Ajuster la disposition.
+plt.savefig("fichier.png") Enregistrer le graphique.
+plt.show() Afficher le graphique.
+1.16 Erreurs fréquentes et solutions
+Problème Cause possible Solution
+No module named
+matplotlib
+Matplotlib n’est pas installé dans l’envi-
+ronnement utilisé.
+Activer le bon environnement et installer
+Matplotlib.
+No module named
+pandas
+Pandas n’est pas disponible. Vérifier l’environnement Python et instal-
+ler Pandas.
+Le graphique ne
+s’affiche pas
+La cellule n’a pas été exécutée ou le code
+est incomplet.
+Réexécuter la cellule et vérifier les instruc-
+tions.
+KeyErrorsur une
+colonne
+Le nom de colonne utilisé n’existe pas
+dans le tableau.
+Examiner le schéma Spark et les colonnes
+Pandas.
+Le graphique est
+vide
+Le résultat ne contient aucune ligne ou le
+filtre est trop restrictif.
+Afficher le tableau avant de créer le gra-
+phique.
+Le notebook ne
+trouve pas PySpark
+Le noyau sélectionné n’utilise pas le bon
+environnement.
+Sélectionner le noyau correspondant à
+l’environnement du TP.
+Le notebook est
+lent ou manque de
+mémoire
+Trop de données ont été transférées vers
+Pandas.
+Effectuer une agrégation avec Spark avant
+la conversion.
+Le fichier PNG
+n’est pas créé
+Le dossier de destination n’existe pas ou
+le chemin est incorrect.
+Créer le dossier et vérifier le chemin d’ex-
+port.
+Table 2– Erreurs fréquentes et solutions
+15
+=== PAGE 17 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+1.17 Vérification avant de commencer UC-08
+Point à vérifier Validation
+Je peux ouvrir mon environnement JupyterLab.□
+Le notebook utilise le bon environnement Python.□
+Je peux importer PySpark.□
+Je peux importer Pandas.□
+Je peux importer Matplotlib.□
+Je peux créer une session Spark.□
+Je connais les chemins des données Silver et Gold disponibles.□
+Je peux lire un fichier du projet.□
+Je peux calculer une agrégation avec Spark.□
+Je peux afficher un graphique avec Matplotlib.□
+Je sais enregistrer un graphique au format PNG.□
+Table 3– Liste de contrôle avant de commencer UC-08
+1. Le formateur montre comment enregistrer le graphique.
+2. Les étudiants reproduisent la démarche avec leurs propres KPI et leurs propres données.
+Le formateur doit fournir un exemple fonctionnel avant de demander aux étudiants de produire leurs
+propres visualisations.
+Point de vigilance
+Le but de cette journée n’est pas de devenir expert en datavisualisation ou en Business Intelligence.
+L’objectif est de savoir passer d’une question métier à un indicateur, puis d’un indicateur à une
+représentation graphique lisible et correctement interprétée.
+Point de vigilance
+Ce TP s’inscrit dans la continuité des travaux réalisés aux Jours 1, 2 et 3. Il ne demande pas de
+reconstruire toute la plateforme : les groupes doivent réutiliser les résultats réellement produits
+précédemment. Les activités complémentaires et avancées sont facultatives. Elles ne conditionnent
+pas la validation du socle obligatoire.
+2 Présentation générale du TP
+2.1 Contexte professionnel
+3 Prérequis
+Vous devez disposer des éléments suivants :
+— les résultats du TP UC-01 : questions métier, inventaire des sources et dictionnaire initial des
+KPI;
+— les choix d’architecture et le modèle conceptuel élaborés dans UC-02;
+— les données accessibles dans les zones Raw/Bronze, Silver et, si elles ont été produites, Gold;
+— les scripts ou notebooks Python/PySpark du TP UC-06;
+16
+=== PAGE 18 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+— les résultats des contrôles qualité réalisés au Jour 3;
+— un environnement Linux/Ubuntu ou un environnement de travail mis à disposition;
+— les connaissances de base en Python, SQL et analyse de données;
+— pour la séquence cloud, un accès Azure autorisé ou les supports de simulation fournis par le
+formateur.
+Point de vigilance
+L’indisponibilité d’un composant facultatif ne doit pas empêcher la réalisation du socle obligatoire.
+HBase et Delta Lake ne sont pas des prérequis de ce TP. Azure Data Factory et Synapse
+Analytics sont étudiés et présentés; leur déploiement n’est pas exigé dans le socle obligatoire de
+cette journée.
+4 Comprendre les deux environnements : Azure ou local / open
+source
+4.1 Pourquoi deux parcours?
+LeTPconservelesmêmesobjectifspédagogiquesetlesmêmeslivrables,quelquesoitl’environnement
+utilisé. Chaque groupe choisit un parcours en fonction de ses accès et des ressources disponibles :
+— Parcours A – Azure :à utiliser si un abonnement actif, autorisé et suffisamment provisionné est
+disponible.
+— Parcours B – local / open source :à utiliser si l’offre Azure gratuite a déjà été consommée,
+si aucun moyen de paiement ne peut être associé au compte, ou si l’établissement souhaite éviter
+toute consommation cloud.
+Le choix du parcours ne modifie ni les questions métier, ni les KPI, ni le niveau d’exigence
+documentaire. Il modifie uniquement les composants techniques utilisés pour illustrer le stockage, le
+traitement, les requêtes et l’orchestration.
+Point de vigilance
+Aucun étudiant ne doit être pénalisé parce qu’il ne dispose plus de crédits Azure. Le parcours
+local est une véritable modalité de réalisation et non une simple simulation de secours. Les
+étudiants doivent cependant indiquer clairement ce qui a été exécuté, ce qui a été simulé et ce
+qui reste une proposition d’architecture.
+4.2 Azure expliqué simplement
+Microsoft Azure est une plateforme de services cloud. Au lieu d’acheter, d’installer et de maintenir
+tous les serveurs dans une salle informatique, une organisation utilise des ressources hébergées dans les
+centres de données de Microsoft. Ces ressources sont créées, configurées et supervisées depuis le portail
+Azure, des interfaces en ligne de commande ou des API.
+Dans ce TP, Azure est étudié comme une plateforme de stockage et de traitement de données. Les
+notions suivantes doivent être comprises :
+Abonnement cadre contractuel et de facturation auquel sont rattachées les ressources Azure. Un
+abonnement n’est pas un serveur.
+Groupe de ressources
+conteneur logique qui regroupe des ressources liées à un projet, afin de faciliter leur
+gestion, leur suivi et leur suppression.
+26
+=== PAGE 19 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Compte de stockage
+ressource Azure qui fournit des capacités de stockage. Il peut héberger des données
+objets et, avec les options adaptées, des données organisées comme un Data Lake.
+Conteneur espace logique dans le compte de stockage, dans lequel sont organisés les répertoires et
+fichiers.
+ADLS Gen2 Azure Data Lake Storage Gen2, solution de stockage conçue pour les usages analytiques
+et les grands volumes de données. Elle s’appuie sur le stockage Azure Blob et ajoute
+des capacités adaptées au Data Lake.
+Hierarchical Namespace (HNS)
+option qui active un espace de noms hiérarchique : les répertoires et fichiers sont gérés
+comme une arborescence. Cette organisation facilite notamment les opérations sur les
+répertoires et la gestion des ACL.
+Microsoft Entra ID
+service d’identité utilisé pour authentifier les utilisateurs, groupes et applications.
+Azure RBAC
+contrôle les autorisations attribuées à une identité sur une ressource ou un périmètre
+Azure.
+ACL listes de contrôle d’accès permettant de définir des permissions plus fines sur les
+répertoires et fichiers ADLS Gen2.
+4.3 Vue d’ensemble d’une architecture Azure
+Le schéma suivant présente une architecture cible possible. Il ne signifie pas que tous les services
+doivent être créés pendant le TP.
+Sources
+TPCx-BB et
+fichiers projet
+Ingestion
+Azure Data
+Factory
+(si nécessaire)
+Compte de
+stockage
+ADLS Gen2
+Bronze /
+Silver / Gold
+Traitements
+Synapse Spark
+ou autre moteur
+Analyse SQL
+Synapse SQL
+selon le besoin
+Restitution
+Power BI
+/ exports
+Lecture du schéma :les données proviennent des sources du projet. Un outil d’intégration peut les
+déplacer ou planifier leur arrivée. ADLS Gen2 les conserve dans les zones Bronze, Silver et Gold. Un
+moteur de calcul comme Spark prépare les données; les services SQL et BI permettent ensuite de les
+interroger et de les présenter.
+4.4 À quoi servent Azure Data Factory et Synapse Analytics?
+— Azure Data Factory (ADF)est un service d’intégration et d’orchestration. Il permet de définir
+des pipelines, de déplacer des données, de déclencher des traitements et de suivre leur exécution.
+ADF n’est pas le Data Lake et ne remplace pas le moteur de calcul.
+— Azure Synapse Analyticsest un environnement analytique intégrant plusieurs capacités, notam-
+ment des espaces de travail, des traitements Spark et des capacités SQL. Les capacités réellement
+utilisées dépendent de l’architecture et de la configuration choisies.
+— Synapse Sparkfournit des environnements Spark managés pour exécuter des traitements distribués.
+Spark est le moteur de calcul; ADLS reste le stockage des données.
+— Synapse SQL permet d’interroger des données avec SQL selon les capacités et le mode SQL
+configurés. Il ne faut pas le confondre avec le stockage lui-même.
+27
+=== PAGE 20 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+4.5 Parcours B – architecture locale et open source
+Le parcours local reproduit les fonctions principales sans abonnement Azure. Il peut être réalisé sur
+un ordinateur Linux, Windows avec WSL2, ou sur une machine virtuelle préparée par l’établissement.
+Sources
+fichiers
+du projet
+MinIO ou
+disque
+stockage
+objet S3
+Apache Iceberg
+tables ana-
+lytiques
+format Parquet
+Apache Spark
+PySpark
+transformations
+Trino ou
+Spark SQL
+requêtes
+analytiques
+Jupyter /
+Superset
+Power BI
+Desktop
+exports CSV
+Cette architecture est une proposition cohérente de remplacement. Les composants sont complémentaires
+et ne sont pas des copies commerciales exactes des services Azure.
+4.5.1 Comprendre le rôle de chaque composant open source
+MinIO stockage objet compatible avec l’API S3. Il peut être utilisé pour simuler localement
+un stockage objet, mais il n’est pas obligatoire : un répertoire local suffit pour les
+exercices de calcul du TP4.
+Apache Iceberg
+format de table ouvert pour les tables analytiques. Il gère notamment les métadon-
+nées et l’évolution des tables. Iceberg n’est pas un moteur SQL, ni un service de
+calcul, ni un équivalent direct de Synapse Analytics.
+Apache Parquet
+format de fichier colonne souvent utilisé pour stocker efficacement les données
+analytiques. Iceberg peut référencer des fichiers Parquet.
+Apache Spark / PySpark
+moteur de traitement distribué utilisé pour nettoyer, transformer et agréger les
+données. Spark peut lire et écrire des tables Iceberg lorsqu’il est configuré avec les
+dépendances adaptées.
+Trino moteur de requêtes SQL distribué, utile pour interroger des données et des tables
+compatibles. Il peut compléter Spark, mais ne remplace pas à lui seul toutes les
+capacités de Synapse.
+Nessie ou un catalogue compatible Iceberg
+composant facultatif de catalogue et de gestion des métadonnées. Le choix du
+catalogue dépend des versions et de la configuration retenues.
+Apache Airflow outil facultatif d’orchestration de workflows. Il peut planifier et enchaîner des tâches,
+mais ne réalise pas lui-même les transformations Spark.
+Apache Superset
+outil facultatif de visualisation et de tableaux de bord, connecté à une source SQL
+telle que Trino.
+28
+=== PAGE 21 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+4.5.2 Correspondance fonctionnelle Azure / open source
+Fonction Parcours Azure Parcours local / open source
+Stockage Data Lake ADLS Gen2 Disque local ou MinIO
+Tables analytiques Tables et fichiers du Lakehouse Apache Iceberg + Parquet
+Traitement distri-
+bué
+Synapse Spark Apache Spark / PySpark
+Requêtes SQL Synapse SQL Trino ou Spark SQL
+Catalogue / méta-
+données
+Catalogue et métadonnées des services
+Azure
+Catalogue Iceberg, Nessie ou Hive Metas-
+tore selon configuration
+Intégration / orches-
+tration
+Azure Data Factory Airflow ou scripts planifiés; NiFi en option
+Visualisation Power BI Matplotlib, Jupyter ou Superset
+Identités et permis-
+sions
+Microsoft Entra ID, RBAC et ACL Comptes locaux, droits du système, secrets
+gérés localement et politiques du service
+Environnement
+d’exécution
+Services cloud managés Docker / Podman ou machine virtuelle
+Point de vigilance
+Iceberg n’est pas « le Synapse open source ». Iceberg représente le format de table et ses
+métadonnées. Pour retrouver plusieurs fonctions couvertes par Synapse, il faut assembler plusieurs
+briques : Spark pour le calcul, Trino ou Spark SQL pour les requêtes, un catalogue pour les
+métadonnées, un stockage objet ou fichier pour les données, et éventuellement Airflow pour
+l’orchestration.
+4.6 Virtualisation et conteneurisation : quelle différence?
+Unemachine virtuelle (VM)émule un ordinateur complet avec son propre système d’exploitation
+invité. Des outils comme VirtualBox ou VMware Workstation peuvent être utilisés pour fournir une
+machine Linux isolée. Une VM consomme davantage de mémoire et de stockage, mais offre une
+séparation proche d’une machine autonome.
+Un conteneur isole une application et ses dépendances tout en partageant le noyau du système
+hôte. Docker et Podman facilitent le lancement de services reproductibles, par exemple MinIO, Trino
+ou un catalogue. Les conteneurs sont généralement plus légers que des VM, mais ne remplacent pas
+toutes les fonctions d’une machine virtuelle.
+Virtualisation
+Application
+Bibliothèques
+Système invité
+Hyperviseur puis matériel hôte
+Conteneurisation
+Application
+Bibliothèques
+Runtime conteneur
+Noyau partagé puis système hôte
+Pour ce TP, la solution la plus simple est de réutiliser l’environnement Python / PySpark du TP3.
+Docker ou Podman peuvent être utilisés si le groupe souhaite lancer plusieurs services locaux. Une VM
+Linux est une possibilité si le poste ou l’établissement fournit suffisamment de ressources.
+4.7 Installer un socle local minimal
+Le socle obligatoire du TP4 ne nécessite pas de déployer toute l’architecture Lakehouse. Il suffit
+de disposer de Python, JupyterLab, PySpark, Pandas et Matplotlib, comme indiqué dans la section
+d’installation. Pour la partie architecture, les étudiants peuvent produire un schéma et une matrice
+comparative sans installer MinIO, Iceberg, Trino ou Airflow.
+29
+=== PAGE 22 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Si un approfondissement technique est demandé, le formateur peut fournir un environnement
+Docker Compose préconfiguré. Les versions des images, les ports, les volumes et les paramètres de
+sécurité doivent alors être communiqués par le formateur; les étudiants ne doivent pas improviser une
+configuration de production.
+4.8 Offre Azure gratuite : crédits, quotas et prévention des coûts
+L’offre gratuite Azure est soumise à des conditions d’éligibilité et à des limites qui peuvent évoluer.
+Selon l’offre disponible au moment de l’inscription, un nouveau client peut bénéficier d’un crédit
+promotionnel limité dans le temps et de certains services gratuits sous quotas. Cette offre n’est pas un
+droit renouvelable à chaque TP et un étudiant ayant déjà utilisé son crédit peut ne plus être éligible.
+Avant toute manipulation, vérifier les conditions officielles et l’état de l’abonnement dans le portail
+Azure. Ne pas supposer qu’un service est gratuit parce qu’il apparaît dans le portail.
+Point de vigilance
+Les ressources de calcul, clusters Spark, bases analytiques, adresses IP, disques et transferts
+peuvent générer des coûts selon leur configuration et leur durée d’utilisation. Le crédit promo-
+tionnel n’empêche pas automatiquement toute facturation ultérieure.
+Règles impératives :
+— ne pas saisir de moyen de paiement ni activer une offre sans comprendre les conditions et
+obtenir l’accord requis;
+— ne créer aucune ressource payante sans validation du formateur;
+— définir un budget et des alertes lorsque cette fonction est disponible;
+— arrêter ou supprimer les ressources de test après usage;
+— vérifier les disques, IP publiques, clusters et ressources persistantes;
+— ne jamais publier de clés, jetons, mots de passe ou données sensibles.
+En cas de doute, choisir le parcours local / open source.
+5 Environnement technique
+5.1 Environnement local
+L’environnement local de référence repose sur Linux/Ubuntu. Les outils effectivement retenus par
+le groupe peuvent inclure :
+— Python;
+— Jupyter Notebook ou un environnement de développement équivalent;
+— Apache Spark et PySpark, selon l’environnement préparé au Jour 3;
+— les fichiers analytiques issus du projet;
+— un outil de visualisation adapté.
+Les versions utilisées doivent être relevées dans le dossier technique du groupe. Aucune version ne
+doit être supposée compatible sans vérification.
+5.2 Environnement Azure
+La déclinaison cloud est étudiée dans le parcours A. Les étudiants du parcours B produisent une
+architecture locale / open source comparable fonctionnellement, sans créer de ressources Azure.
+Dans le parcours A, la déclinaison cloud porte principalement sur :
+— un abonnement Azure ou un environnement pédagogique mis à disposition;
+30
+=== PAGE 23 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+— un groupe de ressources;
+— un compte de stockage;
+— Azure Data Lake Storage Gen2;
+— l’espace de noms hiérarchique, ouHierarchical Namespace (HNS);
+— les mécanismes d’identité, de rôles et de permissions.
+Azure Data Factory et Azure Synapse Analytics sont étudiés dans la conception et la comparaison
+des services.
+Point de vigilance
+Avant toute création de ressource Azure, vérifier les droits du compte, les quotas, les coûts
+potentiels et les consignes du formateur.
+Ne pas créer de ressource payante sans autorisation. Ne jamais déposer de secret, mot de passe
+ou clé d’accès dans un dépôt Git ou dans un document partagé.
+6 Données d’entrée et provenance
+6.1 Source principale
+La source principale du projet est le jeu de données synthétique TPCx-BB préparé pour la formation.
+TPCx-BB sert ici de source de données pour les activités d’exploration, de transformation et
+d’analyse.
+Point de vigilance
+Les apprenants n’ont pas à exécuter le benchmark TPCx-BB. Le projet pédagogique n’a pas
+pour objectif de produire un score officiel ni de démontrer une conformité au benchmark.
+Les tables, colonnes, relations et volumes doivent être vérifiés dans les fichiers réellement fournis.
+Les noms de tables cités dans les supports sont indicatifs et ne garantissent pas leur présence
+dans le kit utilisé.
+6.2 Données réutilisées
+Le groupe réutilise prioritairement les jeux de données produits lors du TP UC-06 :
+— jeux de données Silver nettoyés et harmonisés;
+— jeux de données Gold préparés pour les questions métier;
+— fichiers Parquet lorsqu’ils ont été produits;
+— rapports de contrôles qualité;
+— dictionnaire de données mis à jour;
+— dictionnaire des KPI défini dans UC-01.
+6.3 Vérification préalable obligatoire
+Avant de calculer un indicateur, le groupe doit vérifier :
+1. le nom exact du fichier ou de la table;
+2. la provenance de la donnée;
+3. le format réellement utilisé;
+4. les colonnes disponibles;
+5. les types de données;
+31
+=== PAGE 24 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+6. la granularité des enregistrements;
+7. les clés candidates et les relations vérifiées;
+8. les valeurs manquantes et anomalies connues;
+9. les règles de transformation appliquées.
+6.4 Inventaire des jeux utilisés
+Compléter le tableau suivant avec les jeux réellement disponibles dans le projet.
+Jeu de don-
+nées
+Zone Format Granularité Usage prévu
+À renseigner Silver/Gold À vérifier À vérifier Analyse métier
+À renseigner Silver/Gold À vérifier À vérifier KPI
+À renseigner Silver/Gold À vérifier À vérifier Visualisation
+Si un jeu de données n’a pas été produit au Jour 3, le groupe doit le signaler et expliquer la solution
+retenue. Il ne doit pas inventer des colonnes ou des résultats.
+6.5 Données complémentaires
+Toute donnée ajoutée en dehors de TPCx-BB doit être identifiée explicitement comme complémen-
+taire.
+Une donnée JSON, un journal applicatif, un événement de navigation simulé ou une donnée
+logistique générée pour les besoins d’une démonstration ne doit pas être présentée comme une donnée
+native TPCx-BB.
+7 Schéma fonctionnel du TP
+7.1 Vue d’ensemble
+Sources Préparation Analyse Restitution Déclinaison cloud
+TPCx-BB et
+données com-
+plémentaires
+Silver /
+Gold
+KPI et
+statistiques
+Graphiques
+et rapport
+ADLS Gen2 et architecture Azure
+7.2 Chaîne de valorisation
+Le groupe doit être capable d’expliquer le cheminement suivant :
+1. les sources sont inventoriées et qualifiées;
+2. les données sont préparées dans Silver et Gold;
+3. les indicateurs sont calculés à partir de règles explicites;
+4. les analyses sont produites et contrôlées;
+5. les résultats sont présentés à un public métier;
+32
+=== PAGE 25 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+6. une architecture Azure cohérente est proposée;
+7. les données peuvent être organisées dans ADLS Gen2 selon les zones du projet.
+8 Consignes générales
+1. Travailler à partir des résultats réellement obtenus aux journées précédentes.
+2. Ne pas supposer l’existence d’une table, d’une colonne ou d’une relation.
+3. Justifier les KPI et les méthodes de calcul.
+4. Documenter les filtres, unités et granularités.
+5. Conserver les scripts, notebooks et résultats utiles.
+6. Ne pas modifier silencieusement les données sources.
+7. Distinguer les observations, les hypothèses et les recommandations.
+8. Ne pas confondre une simulation Azure avec un déploiement réellement effectué.
+9. Respecter les règles de sécurité et les consignes de gestion des ressources cloud.
+10. Intégrer les livrables au dossier projet commun.
+9 Partie 1 – Obligatoire
+Partie obligatoire – Socle à réaliser et à évaluer
+Cette partie constitue le socle pédagogique du TP Jour 4. Elle doit être réalisée et évaluée.
+Elle comprend les deux activités obligatoires de la journée :
+— UC-08 : analyse des données, calcul des KPI et visualisation;
+— UC-07 : étude et déclinaison de l’architecture Azure, avec un travail obligatoire sur ADLS
+Gen2.
+La réalisation réelle sur Azure est attendue lorsque l’environnement pédagogique est accessible et
+autorisé. À défaut, une simulation ou une étude documentée est admise, à condition de distinguer
+clairement ce qui a été réalisé de ce qui a été proposé.
+9.1 UC-08 – Analyse des données et visualisation
+9.1.1 Objectifs
+À la fin de cette activité, le groupe doit être capable de :
+— sélectionner des données Silver et Gold pertinentes;
+— vérifier leur qualité et leur granularité;
+— calculer des indicateurs métier définis dans UC-01;
+— produire des statistiques descriptives;
+— réaliser des analyses répondant à des questions métier;
+— produire des visualisations lisibles;
+— interpréter les résultats sans dépasser ce que les données permettent d’affirmer.
+33
+=== PAGE 26 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+9.1.2 Consignes
+Étape 1 – Sélectionner les donnéesSélectionner au minimum un jeu de données Silver et un jeu
+de données Gold lorsqu’ils sont disponibles.
+Pour chaque jeu sélectionné :
+1. indiquer son nom exact;
+2. préciser sa provenance;
+3. relever son format;
+4. afficher ou consulter son schéma;
+5. préciser sa granularité;
+6. rappeler les contrôles qualité disponibles;
+7. expliquer pourquoi il est adapté à l’analyse.
+Si le groupe ne dispose pas de jeu Gold, il doit le signaler et travailler sur un jeu Silver adapté. Il
+doit également documenter ce qui manque pour construire le jeu Gold.
+Étape 2 – Vérifier les KPIReprendre le dictionnaire des KPI du TP UC-01.
+Pour chaque indicateur retenu, préciser :
+— son nom;
+— sa définition métier;
+— sa formule de calcul;
+— les champs utilisés;
+— les filtres appliqués;
+— sa granularité;
+— son unité;
+— ses limites d’interprétation.
+Sélectionner au minimum trois KPI calculables à partir des données effectivement disponibles.
+Exemples possibles, sous réserve de disponibilité des champs :
+— montant total des ventes;
+— quantités vendues;
+— nombre de transactions distinctes;
+— montant moyen par transaction;
+— répartition des ventes par canal;
+— volume de retours;
+— répartition des ventes par produit ou magasin.
+Point de vigilance
+Ne pas calculer un panier moyen à partir d’un simple nombre de lignes de vente si le nombre de
+transactions distinctes n’est pas disponible ou vérifiable.
+Ne pas assimiler le nombre de lignes, le nombre d’articles, le nombre de transactions et le nombre
+de commandes.
+Ne pas calculer une marge si les coûts nécessaires ne sont pas présents et qualifiés.
+Le taux de retour doit préciser son numérateur, son dénominateur, sa période et la granularité
+utilisée.
+34
+=== PAGE 27 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Étape 3 – Produire des statistiques descriptivesPour au moins un jeu de données pertinent,
+calculer des statistiques adaptées à sa nature :
+— nombre d’enregistrements;
+— valeurs minimales et maximales;
+— moyenne et médiane lorsque cela a du sens;
+— sommes pour les mesures additives;
+— répartition par catégorie ou dimension;
+— évolution temporelle si une date exploitable existe.
+Présenter les résultats dans un tableau ou une sortie de notebook clairement identifiable.
+Étape 4 – Réaliser des analyses métierRéaliser au minimum deux analyses répondant à des
+questions métier issues du TP UC-01.
+Exemples :
+— comment évoluent les ventes dans le temps?
+— quels produits contribuent le plus au montant des ventes?
+— quelles différences observe-t-on entre les magasins?
+— quelle est la répartition des ventes par canal, si le canal est réellement identifiable?
+— quelle évolution observe-t-on sur les retours, si les données nécessaires existent?
+Pour chaque analyse, présenter :
+1. la question métier;
+2. les données utilisées;
+3. la méthode de calcul;
+4. les résultats obtenus;
+5. l’interprétation;
+6. les limites éventuelles.
+Étape 5 – Produire des visualisationsCréer au minimum deux visualisations complémentaires.
+Exemples :
+— courbe d’évolution temporelle;
+— histogramme ou diagramme en barres;
+— comparaison entre catégories;
+— tableau de synthèse;
+— représentation d’une distribution.
+Chaque visualisation doit comporter :
+— un titre explicite;
+— des axes et unités identifiables;
+— une légende lorsque nécessaire;
+— une source de données;
+— une courte interprétation.
+35
+=== PAGE 28 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Étape 6 – Formuler des constats Rédiger au minimum deux constats métier fondés sur les
+résultats obtenus.
+Pour chaque constat, distinguer :
+— le résultat observé;
+— son interprétation possible;
+— la limite de l’analyse;
+— une éventuelle recommandation.
+Point de vigilance
+Une corrélation ne démontre pas une causalité.
+Les données TPCx-BB sont synthétiques. Les résultats permettent de travailler sur une démarche
+analytique pédagogique, mais ne doivent pas être présentés comme des observations réelles d’une
+entreprise.
+9.1.3 Résultats attendus
+À la fin de l’activité UC-08, le groupe doit disposer de :
+— jeux de données sélectionnés et documentés;
+— au moins trois KPI calculés, si les champs nécessaires sont disponibles;
+— statistiques descriptives;
+— au moins deux analyses métier;
+— au moins deux visualisations;
+— interprétations et limites documentées;
+— recommandations cohérentes avec les résultats.
+9.1.4 Livrables
+Résultats attendus et preuves à remettre
+1. Notebook ou scripts d’analyse.
+2. Inventaire des jeux de données utilisés.
+3. Dictionnaire des KPI mis à jour.
+4. Tableau des statistiques descriptives.
+5. Résultats des analyses métier.
+6. Deux visualisations au minimum.
+7. Synthèse des constats, limites et recommandations.
+8. Instructions permettant de reproduire les analyses.
+9.2 UC-07 – Transposition de la plateforme sur Azure
+9.2.1 Objectifs
+À la fin de cette activité, le groupe doit être capable de :
+— identifier les principaux composants d’une architecture Data sur Microsoft Azure;
+— expliquer le rôle d’Azure Data Lake Storage Gen2;
+36
+=== PAGE 29 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+— expliquer le rôle du Hierarchical Namespace;
+— proposer une organisation des zones Bronze, Silver et Gold dans ADLS Gen2;
+— identifier les principes de sécurité et de gestion des accès;
+— distinguer les composants déployés, étudiés et simulés;
+— justifier les choix de transposition cloud.
+9.2.2 Choisir le parcours de réalisation
+Au début de l’activité, le groupe indique le parcours retenu :
+— Parcours A – Azure :l’étudiant dispose d’un abonnement autorisé et le formateur confirme que
+les ressources nécessaires peuvent être utilisées sans risque de facturation non maîtrisée.
+— Parcours B – local / open source :l’étudiant a déjà utilisé son offre gratuite, ne dispose pas
+d’un abonnement adapté ou préfère travailler sans cloud. Il réalise la transposition à l’aide de
+l’architecture MinIO / Iceberg / Spark / Trino décrite précédemment. Le déploiement complet de
+toutes ces briques n’est pas exigé pour le socle obligatoire.
+Les deux parcours doivent produire les mêmes éléments : schéma d’architecture, organisation Bronze
+/ Silver / Gold, matrice de sécurité, correspondance des services, description des traitements et analyse
+des coûts / limites. Les captures d’écran ne sont demandées que pour les composants effectivement
+exécutés.
+Point de vigilance
+Ne jamais créer un deuxième compte pour contourner les conditions d’éligibilité à une offre
+gratuite. Le parcours B est prévu précisément pour éviter cette situation.
+9.2.3 Consignes
+Étape 1 – Identifier les composants AzurePrésenter les composants suivants et leur rôle dans
+le projet :
+— abonnement Azure;
+— groupe de ressources;
+— compte de stockage;
+— conteneur;
+— Azure Data Lake Storage Gen2;
+— Hierarchical Namespace;
+— Microsoft Entra ID;
+— Azure RBAC et ACL.
+Expliquer les relations entre ces composants.
+Étape 2 – Concevoir l’organisation ADLS Gen2Proposer une organisation logique correspon-
+dant aux zones du projet.
+Exemple d’organisation possible :
+retail-intelligence/
+|
++-- bronze/
+\| +-- tpcxbb/
+|
++-- silver/
+\| +-- ventes/
+37
+=== PAGE 30 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+\| +-- produits/
+|
++-- gold/
+\| +-- indicateurs/
+\| +-- analyses/
+|
++-- quality/
+|
++-- documentation/
+Cette organisation est une proposition pédagogique. Elle doit être adaptée aux données réellement
+disponibles et aux conventions retenues par le groupe.
+Pour chaque zone, préciser :
+— sa fonction;
+— les données qui peuvent y être déposées;
+— les utilisateurs ou traitements concernés;
+— les règles de nommage;
+— les règles de conservation et de traçabilité.
+Étape 3 – Expliquer le rôle du HNSExpliquer ce qu’apporte le Hierarchical Namespace dans
+ADLS Gen2.
+Présenter notamment :
+— l’organisation hiérarchique des répertoires;
+— les opérations sur les chemins;
+— les mécanismes de permissions au niveau des répertoires et fichiers;
+— les différences d’usage avec un stockage objet sans espace de noms hiérarchique activé.
+Étape 4 – Réaliser ou documenter une mise en œuvreLorsque l’accès Azure est disponible et
+autorisé :
+1. identifier le compte de stockage utilisé;
+2. vérifier qu’il dispose des caractéristiques attendues pour ADLS Gen2;
+3. identifier ou créer le conteneur prévu, selon les consignes du formateur;
+4. créer ou documenter l’organisation des répertoires;
+5. déposer un fichier de démonstration autorisé;
+6. vérifier que le fichier est accessible;
+7. relever les chemins et les preuves de réalisation.
+Le fichier utilisé peut être un échantillon maîtrisé issu des résultats du projet, sous réserve des
+autorisations et des contraintes de stockage.
+Lorsque l’environnement Azure n’est pas accessible, réaliser une simulation documentaire :
+1. présenter l’organisation cible;
+2. décrire les ressources Azure qui seraient nécessaires;
+3. préciser les opérations de création et de dépôt;
+4. identifier les contrôles qui seraient effectués;
+5. distinguer les actions non exécutées des actions réellement réalisées.
+38
+=== PAGE 31 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Étape 5 – Étudier la sécuritéProposer une matrice simple de droits d’accès.
+Exemple à adapter :
+Profil Bronze Silver Gold
+Équipe ingestion Écriture contrôlée Lecture limitée Aucun accès par
+défaut
+Équipe Data Engi-
+neering
+Lecture / écriture
+selon besoin
+Lecture / écriture Écriture contrôlée
+Analyste métier Aucun accès par
+défaut
+Lecture selon be-
+soin
+Lecture
+Administrateur Gestion selon ha-
+bilitation
+Gestion selon ha-
+bilitation
+Gestion selon ha-
+bilitation
+Expliquer la différence entre :
+— les rôles Azure RBAC;
+— les ACL du Data Lake;
+— les identités et mécanismes d’authentification;
+— les secrets et informations sensibles.
+Ne pas attribuer de droits excessifs par simplicité. Les permissions doivent suivre le principe du
+moindre privilège.
+Étape 6 – Étudier ADF et SynapsePrésenter le rôle possible des services suivants :
+— Azure Data Factory;
+— Azure Synapse Analytics;
+— Synapse Studio;
+— Spark Pools;
+— capacités SQL et exploration des données.
+Distinguer les responsabilités :
+— ADLS Gen2 : stockage des données;
+— Data Factory : intégration, déplacement et orchestration;
+— Synapse : environnement d’analyse et de traitement selon les capacités retenues;
+— Spark : moteur de traitement distribué lorsqu’il est utilisé dans l’architecture.
+Cette étape relève de l’étude et de la présentation. La création d’un pipeline ADF ou d’un Workspace
+Synapse n’est pas exigée dans le socle obligatoire.
+Étape 7 – Produire le schéma d’architecture Azure Produire un schéma présentant au
+minimum :
+— les sources TPCx-BB;
+— les données complémentaires, si elles existent, clairement séparées;
+— les mécanismes d’ingestion envisagés;
+39
+=== PAGE 32 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+— ADLS Gen2 et ses zones;
+— les traitements éventuels;
+— les jeux Gold;
+— les usages analytiques;
+— les principes de sécurité.
+Le schéma doit distinguer les composants réellement déployés des composants seulement étudiés ou
+proposés.
+Étape 8 – Décliner l’architecture sans Azure (parcours B)Les groupes ayant choisi le parcours
+local réalisent les activités suivantes :
+1. Identifier le répertoire local ou le stockage objet MinIO qui joue le rôle de zone de stockage.
+2. Décrire comment les zones Bronze, Silver et Gold sont matérialisées par des répertoires ou des
+espaces logiques.
+3. Expliquer le rôle d’Apache Iceberg comme format de table et celui de Parquet comme format de
+fichiers.
+4. Associer Apache Spark / PySpark au traitement des données.
+5. Associer Trino ou Spark SQL aux requêtes analytiques.
+6. Identifier le catalogue utilisé ou proposer Nessie / Hive Metastore si un catalogue doit être ajouté.
+7. Présenter Airflow ou un mécanisme de scripts planifiés comme possibilité d’orchestration.
+8. Décrire les mécanismes locaux de sécurité : comptes, permissions système, gestion des secrets et
+séparation des environnements.
+Pour le socle obligatoire, un schéma argumenté et une démonstration du traitement local déjà utilisé
+en UC-08 suffisent. Iceberg, MinIO et Trino peuvent rester des composants étudiés si l’environnement
+n’est pas fourni. Toute installation réellement effectuée doit être documentée avec ses versions et ses
+preuves.
+Étape 9 – Comparer les responsabilités, pas seulement les nomsCompléter le tableau de
+correspondance Azure / open source présenté dans la section précédente. Pour chaque ligne, préciser :
+— le rôle fonctionnel;
+— le composant retenu dans le parcours du groupe;
+— le composant éventuellement non déployé;
+— les limites de l’équivalence proposée.
+Il est attendu que les étudiants expliquent pourquoi plusieurs composants open source peuvent être
+nécessaires pour couvrir les fonctions d’un service cloud intégré comme Synapse Analytics.
+9.2.4 Résultats attendus
+À la fin de l’activité UC-07, le groupe doit disposer de :
+— une architecture Azure cohérente ou son architecture locale / open source équivalente sur le plan
+fonctionnel;
+— une organisation des zones ADLS Gen2;
+— une explication du HNS;
+— une matrice des droits d’accès;
+— une présentation du rôle d’ADF et de Synapse, ainsi que de leurs alternatives fonctionnelles dans le
+parcours local;
+40
+=== PAGE 33 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+— des preuves de réalisation réelle ou une simulation explicitement documentée;
+— une justification des choix et des limites.
+9.2.5 Livrables
+Résultats attendus et preuves à remettre
+1. Schéma d’architecture correspondant au parcours choisi (Azure ou local / open source).
+2. Description de l’organisation ADLS Gen2.
+3. Explication du Hierarchical Namespace.
+4. Matrice des rôles et permissions.
+5. Présentation du rôle d’ADF et de Synapse et comparaison avec Spark, Trino, Iceberg et
+l’orchestration locale.
+6. Captures ou preuves de réalisation lorsque l’environnement est accessible.
+7. Dossier de simulation si le déploiement n’a pas été possible.
+8. Justification des choix et des limites.
+10 Partie 2 – Complémentaire
+Partie complémentaire – Approfondissement facultatif
+Cette partie permet d’approfondir les analyses et la compréhension de l’architecture cloud.
+Elle est facultative et ne conditionne pas la validation du socle obligatoire.
+Les groupes peuvent sélectionner une ou plusieurs activités en fonction du temps disponible.
+10.1 CO-01 – Approfondissement des analyses métier
+10.1.1 Objectifs
+— approfondir les analyses produites dans UC-08;
+— comparer plusieurs dimensions métier;
+— améliorer la qualité de la restitution;
+— identifier des indicateurs complémentaires.
+10.1.2 Consignes
+Sélectionner une analyse supplémentaire parmi les thèmes suivants, sous réserve de disponibilité
+des données :
+— évolution des ventes par période;
+— comparaison des magasins;
+— comparaison des produits;
+— analyse des retours;
+— analyse des stocks;
+— analyse des promotions;
+— analyse des avis produits;
+— analyse des événements de navigation.
+Documenter les données utilisées, la méthode, les résultats et les limites.
+41
+=== PAGE 34 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+10.1.3 Résultats attendus
+Une analyse métier supplémentaire, cohérente et reproductible.
+Livrable :Notebook ou script, résultat graphique et commentaire d’interprétation.
+10.2 CO-02 – Amélioration du tableau de bord
+10.2.1 Objectifs
+Améliorer la lisibilité et l’utilité décisionnelle des visualisations.
+10.2.2 Consignes
+— organiser les indicateurs par thème;
+— ajouter des filtres pertinents lorsque l’outil le permet;
+— harmoniser les unités et les périodes;
+— différencier les indicateurs principaux et secondaires;
+— ajouter une courte notice d’utilisation.
+10.2.3 Résultats attendus
+Un tableau de bord ou une page de restitution enrichie.
+Livrable :Capture ou export du tableau de bord et documentation des indicateurs affichés.
+10.3 CO-03 – Étude comparative des services Azure
+10.3.1 Objectifs
+Approfondir la compréhension des services de données Azure.
+10.3.2 Consignes
+Comparer ADLS Gen2, Azure Data Factory et Synapse Analytics selon les critères suivants :
+— fonction principale;
+— place dans l’architecture;
+— type d’opération;
+— intégration avec les autres services;
+— avantages et limites;
+— coûts et contraintes d’exploitation à surveiller.
+10.3.3 Résultats attendus
+Une comparaison structurée des services et une justification de leur place dans l’architecture Retail
+Intelligence.
+Livrable :Tableau comparatif et schéma annoté.
+10.4 CO-04 – Formats analytiques
+10.4.1 Objectifs
+Comprendre l’intérêt de Parquet dans une architecture analytique.
+42
+=== PAGE 35 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+10.4.2 Consignes
+À partir de fichiers disponibles, comparer CSV et Parquet sur les aspects suivants :
+— organisation des données;
+— présence ou non d’un schéma exploitable;
+— taille des fichiers observés;
+— facilité de lecture;
+— compatibilité avec les outils utilisés;
+— intérêt pour les traitements analytiques.
+Ne pas tirer de conclusion générale à partir d’un seul fichier sans préciser le contexte du test.
+10.4.3 Résultats attendus
+Une comparaison fondée sur des fichiers réellement testés ou sur une étude documentée.
+Livrable :Tableau de comparaison et courte synthèse.
+10.5 CO-05 – Sécurité et gouvernance cloud
+10.5.1 Objectifs
+Approfondir les principes de gouvernance et de sécurité dans le stockage cloud.
+10.5.2 Consignes
+Étudier les sujets suivants :
+— séparation des environnements;
+— gestion des identités;
+— principe du moindre privilège;
+— séparation des responsabilités;
+— classification des données;
+— journalisation et suivi des accès.
+10.5.3 Résultats attendus
+Une proposition de règles de gouvernance adaptées au projet.
+Livrable :Matrice de sécurité enrichie et recommandations.
+11 Partie 3 – Avancée
+Partie avancée – Défi technique facultatif
+Cette partie est destinée aux groupes ayant terminé le socle obligatoire et souhaitant relever un
+défi technique.
+Elle est facultative. Elle ne doit pas retarder la remise des livrables obligatoires et n’est pas
+intégrée automatiquement à la notation du socle.
+11.1 AV-01 – Automatisation d’une analyse
+11.1.1 Objectifs
+Automatiser la production d’un indicateur ou d’une analyse à partir des données disponibles.
+43
+=== PAGE 36 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+11.1.2 Consignes
+— sélectionner un KPI existant;
+— organiser le calcul dans un script réutilisable;
+— séparer les paramètres des traitements;
+— produire un résultat exportable;
+— documenter les conditions d’exécution;
+— vérifier la reproductibilité du calcul.
+11.1.3 Résultats attendus
+Un traitement automatisé et reproductible.
+Livrable :Script, paramètres documentés, résultat et procédure d’exécution.
+11.2 AV-02 – Transposition d’un traitement PySpark vers Azure
+11.2.1 Objectifs
+Étudier comment un traitement existant pourrait être exécuté dans une architecture Azure.
+11.2.2 Consignes
+— sélectionner un traitement PySpark du projet;
+— identifier ses entrées et sorties;
+— identifier les adaptations nécessaires pour ADLS Gen2;
+— étudier le rôle possible d’un environnement Spark dans Azure;
+— décrire les paramètres et dépendances;
+— identifier les contrôles à effectuer après exécution.
+Une exécution réelle peut être réalisée si l’environnement est disponible et autorisé. À défaut,
+produire une étude technique documentée.
+11.2.3 Résultats attendus
+Une proposition de transposition argumentée.
+Livrable :Schéma, description du traitement et procédure de transposition ou preuve d’exécution.
+11.3 AV-03 – Étude des performances analytiques
+11.3.1 Objectifs
+Comparer plusieurs stratégies de lecture ou de traitement sur un jeu de données disponible.
+11.3.2 Consignes
+Étudier, selon les possibilités de l’environnement :
+— lecture d’un fichier CSV;
+— lecture d’un fichier Parquet;
+— lecture d’un jeu partitionné;
+— effet d’une sélection de colonnes;
+— effet d’un filtre;
+— effet d’une agrégation.
+Documenter le contexte d’exécution, les volumes et les limites de la comparaison.
+44
+=== PAGE 37 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+11.3.3 Résultats attendus
+Une comparaison argumentée des méthodes testées.
+Livrable :Tableau de mesures, scripts et analyse des résultats.
+11.4 AV-04 – Architecture Lakehouse avancée
+11.4.1 Objectifs
+Étudier les mécanismes qui complètent le stockage Parquet dans une architecture Lakehouse.
+11.4.2 Consignes
+Présenter une technologie de gestion de tables transactionnelles, par exemple Delta Lake, Apache
+Iceberg ou Apache Hudi.
+Expliquer notamment :
+— la gestion des métadonnées;
+— les transactions;
+— l’évolution du schéma;
+— l’historisation;
+— les conditions de compatibilité avec les moteurs et outils retenus.
+Ne pas présenter Parquet seul comme garantissant les transactions ACID d’une table Lakehouse.
+11.4.3 Résultats attendus
+Une comparaison technique et une proposition d’architecture.
+Livrable :Fiche comparative et schéma d’architecture proposé.
+12 Tests et critères de validation
+12.1 Tests de l’activité UC-08
+Le groupe doit vérifier les éléments suivants :
+Contrôle État Preuve
+Les jeux de données utilisés sont identifiés. □ Référence
+Les schémas et granularités ont été vérifiés. □ Capture /
+note
+Les KPI disposent d’une définition explicite. □ Dictionnaire
+Les calculs sont reproductibles. □ Script / no-
+tebook
+Les statistiques sont cohérentes avec les données. □ Résultat
+Les visualisations sont lisibles et légendées. □ Graphiques
+Les interprétations sont justifiées. □ Rapport
+45
+=== PAGE 38 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+Les limites des données sont mentionnées. □ Rapport
+12.2 Tests de l’activité UC-07
+Contrôle État Preuve
+Le rôle d’ADLS Gen2 est expliqué. □ Document
+Le rôle du HNS est expliqué. □ Document
+Les zones Bronze, Silver et Gold sont organisées. □ Schéma
+Les chemins et conventions sont documentés. □ Arborescence
+La sécurité et les accès sont étudiés. □ Matrice
+Les rôles d’ADF et Synapse sont distingués. □ Synthèse
+Le déploiement réel ou la simulation est clairement
+identifié.
+□ Preuve
+Les coûts et contraintes d’accès sont pris en compte.□ Note
+12.3 Critères de validation globaux
+Le travail est considéré comme satisfaisant lorsque :
+— les analyses répondent à des questions métier;
+— les indicateurs sont définis et calculés correctement;
+— les résultats sont interprétables et reproductibles;
+— les visualisations facilitent la compréhension;
+— l’architecture Azure proposée est cohérente;
+— ADLS Gen2 et le HNS sont correctement expliqués;
+— les questions de sécurité sont prises en compte;
+— les réalisations et simulations sont distinguées;
+— les livrables sont intégrés au dossier projet.
+13 Livrables à remettre
+13.1 Livrables obligatoires
+Chaque groupe doit remettre les éléments suivants :
+Code Livrable Contenu attendu
+46
+=== PAGE 39 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+J4-01 Inventaire analytique Jeux Silver/Gold, prove-
+nance, schémas et granu-
+larités.
+J4-02 Dictionnaire des KPI Définitions, formules,
+unités, filtres et limites.
+J4-03 Analyses statistiques Statistiques descriptives
+et résultats calculés.
+J4-04 Analyses métier Au moins deux analyses
+documentées.
+J4-05 Visualisations Au moins deux gra-
+phiques ou représenta-
+tions.
+J4-06 Synthèse décisionnelle Constats, limites et re-
+commandations.
+J4-07 Architecture Azure Schéma de l’architecture
+cible.
+J4-08 Organisation ADLS Gen2 Zones, chemins, conven-
+tions et rôle du HNS.
+J4-09 Sécurité Matrice des droits et
+principes d’accès.
+J4-10 Preuves Azure Captures de réalisation
+ou simulation documen-
+tée.
+J4-11 README J4 Instructions de repro-
+duction et inventaire des
+livrables.
+13.2 Organisation conseillée dans le dossier projet
+Les livrables peuvent être intégrés dans l’arborescence commune du projet :
+retail-intelligence-platform/
+|
++-- docs/
+\| +-- analytics/
+\| | +-- kpi-dictionary.md
+\| | +-- business-analysis.md
+\| | +-- interpretation.md
+\| |
+\| +-- cloud/
+\| +-- azure-architecture.md
+\| +-- adls-organization.md
+\| +-- security-matrix.md
+|
++-- analytics/
+47
+=== PAGE 40 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+\| +-- notebooks/
+\| +-- scripts/
+\| +-- outputs/
+\| +-- visualizations/
+|
++-- azure/
+\| +-- architecture/
+\| +-- configuration/
+\| +-- evidence/
+\| +-- simulation/
+|
++-- tests/
+|
++-- README.md
+Les données volumineuses ne doivent pas nécessairement être stockées dans le dépôt Git. Le dépôt
+doit contenir les scripts, configurations non sensibles, documentations et instructions nécessaires à la
+reproduction.
+14 Difficultés possibles et solutions de repli
+Difficulté Cause possible Solution attendue
+Jeu Gold absent Transformation non ter-
+minée au Jour 3
+Utiliser un jeu Silver
+adapté et documenter le
+manque.
+Champ KPI absent Donnée non fournie ou
+schéma différent
+Ne pas inventer la valeur;
+choisir un autre KPI cal-
+culable.
+Jointure impossible Clé non vérifiée ou rela-
+tion absente
+Revoir le modèle et docu-
+menter la limite.
+Résultat incohérent Granularité ou agrégation
+incorrecte
+Contrôler les doublons,
+clés et règles de calcul.
+Visualisation vide Filtre ou sélection incor-
+recte
+Vérifier les données avant
+de modifier le graphique.
+Accès Azure refusé Droits insuffisants Demander l’accès au for-
+mateur et documenter le
+blocage.
+Ressource Azure indis-
+ponible
+Quota, abonnement ou
+environnement
+Réaliser une simulation
+clairement identifiée.
+Dépôt ADLS impossible Configuration ou permis-
+sions
+Vérifier identité, RBAC,
+ACL et chemin.
+Coût Azure inattendu Ressource ou service actif Arrêter les ressources
+non nécessaires selon les
+consignes.
+48
+=== PAGE 41 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+14.1 Procédure de dépannage
+En cas de difficulté, appliquer la démarche suivante :
+1. reproduire l’erreur;
+2. identifier le composant concerné;
+3. vérifier les versions et prérequis;
+4. vérifier les chemins, permissions, ports et variables;
+5. consulter les journaux disponibles;
+6. tester séparément les composants;
+7. réduire le périmètre de l’opération;
+8. appliquer une solution de repli documentée;
+9. conserver une preuve du résultat ou du blocage.
+15 Questions de recul
+Question de recul
+Répondre de manière argumentée aux questions suivantes. Les réponses doivent s’appuyer sur
+les travaux réalisés et les données effectivement disponibles.
+1. Pourquoi faut-il vérifier la granularité avant de calculer un KPI?
+2. Quelle différence existe entre un nombre de lignes et un nombre de transactions?
+3. Quelles limites avez-vous rencontrées dans les données utilisées pour vos analyses?
+4. Quels indicateurs n’avez-vous pas pu calculer, et pour quelles raisons?
+5. Comment avez-vous vérifié la cohérence des résultats?
+6. Quelle différence existe entre un constat statistique et une conclusion causale?
+7. Pourquoi les données synthétiques doivent-elles être identifiées dans la restitution?
+8. Quel est le rôle d’ADLS Gen2 dans votre architecture?
+9. Quel intérêt apporte le Hierarchical Namespace?
+10. Quelle différence existe entre RBAC et ACL?
+11. Dans quels cas Azure Data Factory serait-il utile?
+12. Quel rôle pourrait jouer Synapse Analytics?
+13. Quels éléments de votre architecture sont réellement déployés et lesquels restent théoriques?
+14. Quels seraient les principaux risques de coût ou de sécurité dans une mise en production?
+16 Synthèse du TP Jour 4
+À l’issue de cette journée, le groupe doit avoir prolongé la plateforme Retail Intelligence sur deux
+dimensions.
+49
+=== PAGE 42 ===
+Retail Intelligence Platform IPSSI – TP Jour 4
+16.1 Dimension décisionnelle
+Les données préparées doivent être exploitées pour :
+— calculer des KPI documentés;
+— produire des analyses métier;
+— créer des visualisations;
+— formuler des constats et recommandations;
+— expliciter les limites des résultats.
+16.2 Dimension cloud
+L’architecture doit être déclinée vers Azure en intégrant :
+— ADLS Gen2;
+— le Hierarchical Namespace;
+— les zones Bronze, Silver et Gold;
+— les principes de sécurité et de gestion des accès;
+— le rôle des services d’intégration et d’analyse;
+— les contraintes de coûts, quotas et exploitation.
+Point de vigilance
+La validation du TP porte sur la compréhension, la qualité des analyses, la pertinence des choix,
+la vérification des résultats et la qualité de la documentation.
+Elle ne dépend pas du nombre de services cloud installés ou du nombre de composants techniques
+mobilisés.
+16.3 Préparation de la suite du projet
+Les livrables du Jour 4 doivent être intégrés au dossier projet collectif. Ils serviront à préparer la
+consolidation finale du projet et la soutenance.
+Le groupe devra être capable de présenter :
+— le besoin métier et les sources utilisées;
+— les choix d’architecture;
+— le stockage et les traitements;
+— les contrôles qualité;
+— les indicateurs et analyses;
+— la déclinaison Azure ou l’architecture locale / open source fonctionnellement comparable;
+— les limites et pistes d’amélioration.
+Fin du TP Jour 4
+Retail Intelligence Platform – IPSSI
+50

@@ -1,0 +1,511 @@
+{
+  "status": "OK",
+  "lot": "20261118T113628Z-243a5fb5-r3",
+  "exported_at": "2026-11-18T13:31:47.927741+00:00",
+  "export_method": "hdfs dfs -get, sans -f ; publication du staging après validation",
+  "datasets": {
+    "silver_store_sales": {
+      "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales",
+      "local_relative": "donnees_produites/export/silver/store_sales",
+      "rows": 667579,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_sold_date_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sold_time_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_customer_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_cdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_hdemo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_addr_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_store_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_promo_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ticket_number",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_discount_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_sales_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_list_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_ext_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_coupon_amt",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_paid_inc_tax",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ss_net_profit",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 34766704,
+      "parquet_files": 2,
+      "total_files": 3,
+      "files": {
+        "_SUCCESS": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/_SUCCESS",
+          "bytes": 0,
+          "sha256_hdfs": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_relative": "donnees_produites/export/silver/store_sales/_SUCCESS",
+          "sha256_windows": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "bytes": 18159032,
+          "sha256_hdfs": "38d217b47a6f96a629e2025f561ea1e428db308920c5710c96db860015e338d6",
+          "local_relative": "donnees_produites/export/silver/store_sales/part-00000-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "sha256_windows": "38d217b47a6f96a629e2025f561ea1e428db308920c5710c96db860015e338d6"
+        },
+        "part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/store_sales/part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "bytes": 16607672,
+          "sha256_hdfs": "a08fe15f31c1c55c5a0a79d4a7aaff226350fe7611564dcc2a5f78caaa9bad57",
+          "local_relative": "donnees_produites/export/silver/store_sales/part-00001-4e080bda-d246-4b83-9620-69324122038e-c000.snappy.parquet",
+          "sha256_windows": "a08fe15f31c1c55c5a0a79d4a7aaff226350fe7611564dcc2a5f78caaa9bad57"
+        }
+      },
+      "totals": {
+        "quantity": 33755474,
+        "net_paid": "1150529586.37"
+      },
+      "status": "OK"
+    },
+    "silver_item": {
+      "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item",
+      "local_relative": "donnees_produites/export/silver/item",
+      "rows": 17820,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "i_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_rec_end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_item_desc",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_current_price",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_wholesale_cost",
+            "type": "decimal(7,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_class",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manufact",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_size",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_formulation",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_color",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_units",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_container",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_manager_id",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_uri",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_batch",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 3571219,
+      "parquet_files": 2,
+      "total_files": 3,
+      "files": {
+        "_SUCCESS": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/_SUCCESS",
+          "bytes": 0,
+          "sha256_hdfs": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_relative": "donnees_produites/export/silver/item/_SUCCESS",
+          "sha256_windows": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "bytes": 2874664,
+          "sha256_hdfs": "7f9c09c3bfd4054ffa3f9b81d3877fd6dff9ed1e51a5a428c1190286062be364",
+          "local_relative": "donnees_produites/export/silver/item/part-00000-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "sha256_windows": "7f9c09c3bfd4054ffa3f9b81d3877fd6dff9ed1e51a5a428c1190286062be364"
+        },
+        "part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/silver/j3/20261118T113628Z-243a5fb5-r3/item/part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "bytes": 696555,
+          "sha256_hdfs": "4daf3ab39d0ca8260320e4fb52c7f5c7a961d3b590d4a5b7fd11f54bab5d849f",
+          "local_relative": "donnees_produites/export/silver/item/part-00001-d7ce6063-3fba-4002-a03f-8b39c4e4b611-c000.snappy.parquet",
+          "sha256_windows": "4daf3ab39d0ca8260320e4fb52c7f5c7a961d3b590d4a5b7fd11f54bab5d849f"
+        }
+      },
+      "totals": {},
+      "status": "OK"
+    },
+    "gold_ventes_par_produit": {
+      "hdfs": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit",
+      "local_relative": "donnees_produites/export/gold/ventes_par_produit",
+      "rows": 17820,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ss_item_sk",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_product_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_category",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "i_brand",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "net_paid",
+            "type": "decimal(17,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "sales_line_count",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_run_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_sales_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "_source_item_sha256",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "bytes": 1307151,
+      "parquet_files": 2,
+      "total_files": 3,
+      "files": {
+        "_SUCCESS": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/_SUCCESS",
+          "bytes": 0,
+          "sha256_hdfs": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_relative": "donnees_produites/export/gold/ventes_par_produit/_SUCCESS",
+          "sha256_windows": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "bytes": 654121,
+          "sha256_hdfs": "d09d8d77d1ca08d9d82e60757c3496a0f4b51db7f8fe63dadb6524db0ed9b8f4",
+          "local_relative": "donnees_produites/export/gold/ventes_par_produit/part-00000-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "sha256_windows": "d09d8d77d1ca08d9d82e60757c3496a0f4b51db7f8fe63dadb6524db0ed9b8f4"
+        },
+        "part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet": {
+          "hdfs": "hdfs://hdfs:9000/retail-lake/gold/j3/20261118T113628Z-243a5fb5-r3/ventes_par_produit/part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "bytes": 653030,
+          "sha256_hdfs": "907738a8ddb04823066f87d2783eedc92f3a6c1e8ce47f67c46fb9407f2b0bf8",
+          "local_relative": "donnees_produites/export/gold/ventes_par_produit/part-00001-1edd018b-174d-4aed-8e80-05d093bec662-c000.snappy.parquet",
+          "sha256_windows": "907738a8ddb04823066f87d2783eedc92f3a6c1e8ce47f67c46fb9407f2b0bf8"
+        }
+      },
+      "totals": {
+        "quantity": 33755474,
+        "net_paid": "1150529586.37",
+        "sales_rows": 667579
+      },
+      "status": "OK"
+    }
+  },
+  "hdfs_unchanged": true,
+  "hdfs_files_checked": 23,
+  "hdfs_comparison": "chemins, tailles, dates de modification et checksums Hadoop ; SHA-256 complets des 9 fichiers exportés",
+  "pipeline_reexecuted": false
+}

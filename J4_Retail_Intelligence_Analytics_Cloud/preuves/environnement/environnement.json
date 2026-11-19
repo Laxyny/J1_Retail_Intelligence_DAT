@@ -1,0 +1,22 @@
+{
+  "date_utc": "2026-11-19T09:50:50.850573+00:00",
+  "python": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+  "executable": "/tmp/retail-j3-venv/bin/python",
+  "system": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "mode": "hdfs",
+  "versions": {
+    "pyspark": "3.5.7",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "numpy": "2.5.5",
+    "notebook": "7.3.3",
+    "jupyterlab": "4.3.8",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.4",
+    "nbconvert": "7.16.6",
+    "ipykernel": "6.31.0"
+  },
+  "spark": "3.5.7",
+  "java": "17.0.18",
+  "hadoop_client": "3.3.4"
+}

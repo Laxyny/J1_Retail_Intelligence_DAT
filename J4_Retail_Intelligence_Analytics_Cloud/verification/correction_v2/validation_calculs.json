@@ -1,0 +1,234 @@
+{
+  "checks": [
+    {
+      "controle": "Quatre KPI métier et un indicateur secondaire",
+      "statut": "OK"
+    },
+    {
+      "controle": "K01 valeur CSV",
+      "statut": "OK"
+    },
+    {
+      "controle": "K02 valeur CSV",
+      "statut": "OK"
+    },
+    {
+      "controle": "J4-L01 valeur CSV",
+      "statut": "OK"
+    },
+    {
+      "controle": "K03 valeur CSV",
+      "statut": "OK"
+    },
+    {
+      "controle": "K04 quotient indépendant Decimal",
+      "statut": "OK"
+    },
+    {
+      "controle": "K04 arrondi au centime",
+      "statut": "OK"
+    },
+    {
+      "controle": "Paniers totalisent K01",
+      "statut": "OK"
+    },
+    {
+      "controle": "Complétude en-tête",
+      "statut": "OK"
+    },
+    {
+      "controle": "Clé transaction qualifiée",
+      "statut": "OK"
+    },
+    {
+      "controle": "En-têtes composites et tickets distincts",
+      "statut": "OK"
+    },
+    {
+      "controle": "Distribution tickets exhaustive",
+      "statut": "OK"
+    },
+    {
+      "controle": "Distribution lignes exhaustive",
+      "statut": "OK"
+    },
+    {
+      "controle": "Multilignes et répétitions conservés",
+      "statut": "OK"
+    },
+    {
+      "controle": "K03 vs preuve J1",
+      "statut": "OK"
+    },
+    {
+      "controle": "K04 vs preuve J1 non arrondie",
+      "statut": "OK"
+    },
+    {
+      "controle": "Provenance initiale J1 vérifiée",
+      "statut": "OK"
+    },
+    {
+      "controle": "Clés produits sauvegardées uniques",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante produits net_paid",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante produits quantity_sold",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante produits sales_line_count",
+      "statut": "OK"
+    },
+    {
+      "controle": "Contributions recomputées produits",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante magasins net_paid",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante magasins quantity_sold",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante magasins sales_line_count",
+      "statut": "OK"
+    },
+    {
+      "controle": "Contributions recomputées magasins",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante catégories net_paid",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante catégories quantity_sold",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme CSV indépendante catégories sales_line_count",
+      "statut": "OK"
+    },
+    {
+      "controle": "Contributions recomputées catégories",
+      "statut": "OK"
+    },
+    {
+      "controle": "Neuf catégories non manquantes",
+      "statut": "OK"
+    },
+    {
+      "controle": "Chaque catégorie recomputée depuis les produits",
+      "statut": "OK"
+    },
+    {
+      "controle": "Somme parts catégories",
+      "statut": "OK"
+    },
+    {
+      "controle": "Médiane Gold recomputée net_paid",
+      "statut": "OK"
+    },
+    {
+      "controle": "Bornes Gold recomputées net_paid",
+      "statut": "OK"
+    },
+    {
+      "controle": "Médiane Gold recomputée quantity_sold",
+      "statut": "OK"
+    },
+    {
+      "controle": "Bornes Gold recomputées quantity_sold",
+      "statut": "OK"
+    },
+    {
+      "controle": "Médiane Gold recomputée sales_line_count",
+      "statut": "OK"
+    },
+    {
+      "controle": "Bornes Gold recomputées sales_line_count",
+      "statut": "OK"
+    },
+    {
+      "controle": "Classement top10",
+      "statut": "OK"
+    },
+    {
+      "controle": "Contrôles Spark V2 tous réussis",
+      "statut": "OK"
+    },
+    {
+      "controle": "26 contrôles initiaux réexécutés",
+      "statut": "OK"
+    },
+    {
+      "controle": "Graphique initial conservé top10_produits",
+      "statut": "OK"
+    },
+    {
+      "controle": "Graphique initial conservé ventes_par_magasin",
+      "statut": "OK"
+    },
+    {
+      "controle": "Format notebook 4",
+      "statut": "OK"
+    },
+    {
+      "controle": "Notebook exécuté dans l’ordre",
+      "statut": "OK"
+    },
+    {
+      "controle": "Aucune erreur notebook",
+      "statut": "OK"
+    },
+    {
+      "controle": "Trois images dans le notebook",
+      "statut": "OK"
+    },
+    {
+      "controle": "Pixels notebook et PNG top10_produits",
+      "statut": "OK"
+    },
+    {
+      "controle": "PNG haute résolution top10_produits",
+      "statut": "OK"
+    },
+    {
+      "controle": "Pixels notebook et PNG ventes_par_magasin",
+      "statut": "OK"
+    },
+    {
+      "controle": "PNG haute résolution ventes_par_magasin",
+      "statut": "OK"
+    },
+    {
+      "controle": "Pixels notebook et PNG ventes_par_categorie",
+      "statut": "OK"
+    },
+    {
+      "controle": "PNG haute résolution ventes_par_categorie",
+      "statut": "OK"
+    },
+    {
+      "controle": "Quatorze questions",
+      "statut": "OK"
+    },
+    {
+      "controle": "Sécurité documentée",
+      "statut": "OK"
+    },
+    {
+      "controle": "Simulation explicite",
+      "statut": "OK"
+    }
+  ],
+  "all_passed": true,
+  "count": 57
+}

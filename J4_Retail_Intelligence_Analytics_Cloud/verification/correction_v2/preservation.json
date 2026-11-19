@@ -1,0 +1,39 @@
+{
+  "all_passed": true,
+  "previous_files_unchanged": 617,
+  "hdfs_listing_unchanged": true,
+  "cloud_only_reference_changed": [
+    "cloud/simulation/scenario_non_execute.md"
+  ],
+  "cloud_architecture_security_and_diagrams_unchanged": true,
+  "backup_path": "C:\\Users\\Kevin GREGOIRE\\Desktop\\Projet\\Sauvegardes_J4\\J4_initial_20261119T104631",
+  "changed_content_files": [
+    "README.md",
+    "configuration/environnement.md",
+    "documentation/analyses_metier.md",
+    "documentation/dictionnaire_kpi.md",
+    "documentation/questions_recul.md",
+    "documentation/statistiques.md",
+    "documentation/synthese_decisionnelle.md",
+    "preuves/analyses_execution.log",
+    "rapport/DAT_Retail_Intelligence_J4.md",
+    "rapport/DAT_Retail_Intelligence_J4.pdf",
+    "rapport/exporter_pdf.py",
+    "rapport/preparer_documents.py",
+    "rapport/sections.json",
+    "verification/revue_visuelle.md",
+    "verification/verifier_livrables.py",
+    "analytics/notebooks/TP4_Retail_Intelligence.html",
+    "analytics/notebooks/TP4_Retail_Intelligence.ipynb",
+    "analytics/outputs/kpi.csv",
+    "analytics/outputs/synthese.json",
+    "analytics/scripts/analyser.py",
+    "analytics/scripts/executer_notebook.py",
+    "cloud/simulation/scenario_non_execute.md",
+    "preuves/analyses/controles.csv",
+    "preuves/analyses/validation.json",
+    "preuves/environnement/environnement.json",
+    "preuves/provenance/references.md"
+  ],
+  "limits": "Les métadonnées internes HDFS évoluent au démarrage ; listings de fichiers et empreintes locales sont comparés."
+}

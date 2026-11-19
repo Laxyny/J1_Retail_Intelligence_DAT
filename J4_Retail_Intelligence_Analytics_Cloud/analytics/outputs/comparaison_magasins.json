@@ -1,0 +1,19 @@
+{
+  "nombre": 12,
+  "premier": {
+    "ss_store_sk": 7,
+    "net_paid": "98950137.76",
+    "quantity_sold": 2915053,
+    "sales_line_count": 57589,
+    "contribution_pct": "8.600399236337"
+  },
+  "dernier": {
+    "ss_store_sk": 2,
+    "net_paid": "94040402.78",
+    "quantity_sold": 2760007,
+    "sales_line_count": 54633,
+    "contribution_pct": "8.173662276405"
+  },
+  "ecart_net_paid": "4909734.98",
+  "rapport_max_min": "1.052208782979013097757384999"
+}
